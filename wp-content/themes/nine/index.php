@@ -68,7 +68,7 @@
         <ul>
           <li data-transition="fade"> <img src="<?php bloginfo('template_url'); ?>/style/images/dummy.png" alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="repeat">
             <h1 class="tp-caption caption large sfb" data-x="center" data-y="center" data-voffset="-25" data-speed="900" data-start="1000" data-endspeed="100" data-easing="Sine.easeOut">"Девяточка"</h1>
-            <div class="tp-caption medium_dark tp-fade fadeout tp-resizeme" data-x="center" data-y="center" data-voffset="25" data-speed="100"
+            <div class="tp-caption small tp-fade fadeout tp-resizeme" data-x="center" data-y="center" data-voffset="25" data-speed="100"
 			data-start="1500"
 			data-easing="Power4.easeOut"
 			data-splitin="chars"
