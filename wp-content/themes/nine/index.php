@@ -13,8 +13,8 @@
 <link href="<?php bloginfo('template_url'); ?>/style/css/prettify.css" rel="stylesheet">
 <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
 <link href="<?php bloginfo('template_url'); ?>/style/css/color/green.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,700,600,500,300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,800,700,600,500,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
 <link href="<?php bloginfo('template_url'); ?>/style/type/fontello.css" rel="stylesheet">
 <link href="<?php bloginfo('template_url'); ?>/style/type/budicons.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
