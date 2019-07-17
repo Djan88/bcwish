@@ -1279,14 +1279,14 @@ figure a .text-overlay .info span {
     font-size: 44px;
     font-weight: 700;
     margin-bottom: 30px;
-    color: #FFF;
+    color: #535353;
 }
 .revolution .small {
     font-size: 22px;
     letter-spacing: 0.3px;
     font-family: 'Libre Baskerville', serif;
     font-style: italic;
-    color: #FFF;
+    color: #535353;
 }
 .tp-leftarrow.default,
 .tp-rightarrow.default {
