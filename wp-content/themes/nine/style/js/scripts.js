@@ -479,6 +479,6 @@ var instagramFeed = new Instafeed({
 		});
     }
 });
-$('#instafeed').each(function() {
+jQuery('#instafeed').each(function() {
     instagramFeed.run();
 });
