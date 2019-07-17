@@ -208,7 +208,7 @@ jQuery(document).ready(function() {
     jQuery('a[href*="#"]').click(function() {
         $page.animate({
             scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top
-        }, 400);
+        }, 600);
         return false;
     });
 
