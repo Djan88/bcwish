@@ -400,7 +400,7 @@
 <script src="<?php bloginfo('template_url'); ?>/style/js/plugins.js"></script> 
 <script src="<?php bloginfo('template_url'); ?>/style/js/scripts.js"></script>  
 <script>
-	jQuery.backstretch(["<?php bloginfo('template_url'); ?>/style/images/art/bg1.jpg"]);
+	jQuery.backstretch(["<?php bloginfo('template_url'); ?>/style/images/art/bg3_1.png"]);
 </script>
 </body>
 </html>
