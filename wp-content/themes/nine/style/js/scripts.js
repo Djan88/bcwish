@@ -1,13 +1,13 @@
-$(document).ready(function () {
+jQuery(document).ready(function () {
 "use strict";
 	/*-----------------------------------------------------------------------------------*/
 	/*	VIDEO
 	/*-----------------------------------------------------------------------------------*/
-    $('.player').fitVids();
+    jQuery('.player').fitVids();
 	/*-----------------------------------------------------------------------------------*/
 	/*	REVOLUTION
 	/*-----------------------------------------------------------------------------------*/
-    $('.fullscreenbanner').revolution(
+    jQuery('.fullscreenbanner').revolution(
     {
         delay: 9000,
         startwidth: 1170,
@@ -24,7 +24,7 @@ $(document).ready(function () {
 	/*-----------------------------------------------------------------------------------*/
 	/*	SLIDER PRO
 	/*-----------------------------------------------------------------------------------*/
-$( '.portfolio-slider' ).sliderPro({
+jQuery( '.portfolio-slider' ).sliderPro({
 			width: 1070,
 			height: 600,
 			fade: true,
@@ -41,15 +41,15 @@ $( '.portfolio-slider' ).sliderPro({
 	/*-----------------------------------------------------------------------------------*/
 	/*	RETINA
 	/*-----------------------------------------------------------------------------------*/
-	$('.retina').retinise();
+	jQuery('.retina').retinise();
 	/*-----------------------------------------------------------------------------------*/
 	/*	IMAGE ICON HOVER
 	/*-----------------------------------------------------------------------------------*/
-    $('.icon-overlay a').prepend('<span class="icn-more"></span>');
+    jQuery('.icon-overlay a').prepend('<span class="icn-more"></span>');
 	/*-----------------------------------------------------------------------------------*/
 	/*	FANCYBOX
 	/*-----------------------------------------------------------------------------------*/
-    $(".fancybox-media").fancybox({
+    jQuery(".fancybox-media").fancybox({
         arrows: true,
         padding: 0,
         closeBtn: true,
@@ -72,16 +72,16 @@ $( '.portfolio-slider' ).sliderPro({
             }
         },
         beforeLoad: function () {
-            var el, id = $(this.element).data('title-id');
+            var el, id = jQuery(this.element).data('title-id');
             if (id) {
-                el = $('#' + id);
+                el = jQuery('#' + id);
                 if (el.length) {
                     this.title = el.html();
                 }
             }
         }
     });
-    $(".fancybox-inline").fancybox({
+    jQuery(".fancybox-inline").fancybox({
 	    arrows: false,
         padding: 20,
         closeBtn: false,
@@ -105,80 +105,80 @@ $( '.portfolio-slider' ).sliderPro({
 	/*-----------------------------------------------------------------------------------*/
 	/*	DATA REL
 	/*-----------------------------------------------------------------------------------*/
-	$('a[data-rel]').each(function () {
-	    $(this).attr('rel', $(this).data('rel'));
+	jQuery('a[data-rel]').each(function () {
+	    jQuery(this).attr('rel', jQuery(this).data('rel'));
 	});
 	/*-----------------------------------------------------------------------------------*/
 	/*	TOOLTIP
 	/*-----------------------------------------------------------------------------------*/
-    if ($("[rel=tooltip]").length) {
-        $("[rel=tooltip]").tooltip();
+    if (jQuery("[rel=tooltip]").length) {
+        jQuery("[rel=tooltip]").tooltip();
     }
 	/*-----------------------------------------------------------------------------------*/
 	/*	FORM
 	/*-----------------------------------------------------------------------------------*/
-    $('.forms').dcSlickForms();
+    jQuery('.forms').dcSlickForms();
 
-    $('.comment-form input[title], .comment-form textarea, .forms textarea').each(function () {
-        if ($(this).val() === '') {
-            $(this).val($(this).attr('title'));
+    jQuery('.comment-form input[title], .comment-form textarea, .forms textarea').each(function () {
+        if (jQuery(this).val() === '') {
+            jQuery(this).val(jQuery(this).attr('title'));
         }
 
-        $(this).focus(function () {
-            if ($(this).val() == $(this).attr('title')) {
-                $(this).val('').addClass('focused');
+        jQuery(this).focus(function () {
+            if (jQuery(this).val() == jQuery(this).attr('title')) {
+                jQuery(this).val('').addClass('focused');
             }
         });
-        $(this).blur(function () {
-            if ($(this).val() === '') {
-                $(this).val($(this).attr('title')).removeClass('focused');
+        jQuery(this).blur(function () {
+            if (jQuery(this).val() === '') {
+                jQuery(this).val(jQuery(this).attr('title')).removeClass('focused');
             }
         });
     });
 	/*-----------------------------------------------------------------------------------*/
 	/*	TABS & TOGGLE
 	/*-----------------------------------------------------------------------------------*/
-    $('.tabs.tabs-top').easytabs({
+    jQuery('.tabs.tabs-top').easytabs({
         animationSpeed: 300,
         updateHash: false
     });
-	$('.panel-group').find('.panel-default:has(".in")').addClass('panel-active');
-	$('.panel-group').on('shown.bs.collapse', function (e) {
-	   $(e.target).closest('.panel-default').addClass(' panel-active');
+	jQuery('.panel-group').find('.panel-default:has(".in")').addClass('panel-active');
+	jQuery('.panel-group').on('shown.bs.collapse', function (e) {
+	   jQuery(e.target).closest('.panel-default').addClass(' panel-active');
 	}).on('hidden.bs.collapse', function (e) {
-	   $(e.target).closest('.panel-default').removeClass(' panel-active');
+	   jQuery(e.target).closest('.panel-default').removeClass(' panel-active');
 	});
 	/*-----------------------------------------------------------------------------------*/
 	/*	MENU
 	/*-----------------------------------------------------------------------------------*/
-    $('.js-activated').dropdownHover({
+    jQuery('.js-activated').dropdownHover({
         instantlyCloseOthers: false,
         delay: 0
     }).dropdown();
-    $('.dropdown-menu a, .social .dropdown-menu, .social .dropdown-menu input').click(function (e) {
+    jQuery('.dropdown-menu a, .social .dropdown-menu, .social .dropdown-menu input').click(function (e) {
         e.stopPropagation();
     });
-	$('.btn.responsive-menu').on('click', function() {
-	    $(this).toggleClass('opn');
+	jQuery('.btn.responsive-menu').on('click', function() {
+	    jQuery(this).toggleClass('opn');
 	});
-    $('.navbar .nav li a').on('click', function() {
-        $('.navbar .navbar-collapse.in').collapse('hide');
-        $('.btn.responsive-menu').removeClass('opn');
+    jQuery('.navbar .nav li a').on('click', function() {
+        jQuery('.navbar .navbar-collapse.in').collapse('hide');
+        jQuery('.btn.responsive-menu').removeClass('opn');
     });
     /*-----------------------------------------------------------------------------------*/
 	/*	LOCALSCROLL
 	/*-----------------------------------------------------------------------------------*/
-    $('.navbar, .smooth').localScroll({
+    jQuery('.navbar, .smooth').localScroll({
 	    hash: true
     });
 });
 /*-----------------------------------------------------------------------------------*/
 /*	PRELOADER
 /*-----------------------------------------------------------------------------------*/
-$(window).load(function() { // makes sure the whole site is loaded
-		$('#status').fadeOut(); // will first fade out the loading animation
-		$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-		$('body').delay(350).css({'overflow':'visible'});
+jQuery(window).load(function() { // makes sure the whole site is loaded
+		jQuery('#status').fadeOut(); // will first fade out the loading animation
+		jQuery('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+		jQuery('body').delay(350).css({'overflow':'visible'});
 })
 /*-----------------------------------------------------------------------------------*/
 /*	STICKY HEADER
@@ -239,10 +239,10 @@ jQuery(document).ready(function() {
 /*-----------------------------------------------------------------------------------*/
 /*	CUBE PORTFOLIO
 /*-----------------------------------------------------------------------------------*/			
-(function($, window, document, undefined) {
+(function(jQuery, window, document, undefined) {
     'use strict';
-    var gridContainer = $('#grid-container'),
-        filtersContainer = $('#filters-container'),
+    var gridContainer = jQuery('#grid-container'),
+        filtersContainer = jQuery('#filters-container'),
         wrap, filtersCallback;
     /*********************************
         init cubeportfolio
@@ -282,13 +282,13 @@ jQuery(document).ready(function() {
             // to update singlePage content use the following method: this.updateSinglePage(yourContent)
             
             
-			$('a[data-rel]').each(function () {
-    $(this).attr('rel', $(this).data('rel'));
+			jQuery('a[data-rel]').each(function () {
+    jQuery(this).attr('rel', jQuery(this).data('rel'));
 });
 
             var t = this;
 
-            $.ajax({
+            jQuery.ajax({
                     url: url,
                     type: 'GET',
                     dataType: 'html',
@@ -332,14 +332,14 @@ jQuery(document).ready(function() {
     }
 
     filtersContainer.on('click.cbp', '.cbp-filter-item-custom', function() {
-        var me = $(this);
+        var me = jQuery(this);
 
         if (me.hasClass('cbp-filter-item-custom-active')) {
             return;
         }
 
         // get cubeportfolio data and check if is still animating (reposition) the items.
-        if (!$.data(gridContainer[0], 'cubeportfolio').isAnimating) {
+        if (!jQuery.data(gridContainer[0], 'cubeportfolio').isAnimating) {
             filtersCallback.call(null, me);
         }
 
@@ -367,9 +367,9 @@ jQuery(document).ready(function() {
     /*********************************
         add listener for load more
      *********************************/
-    $('.cbp-l-loadMore-button-link').on('click.cbp', function(e) {
+    jQuery('.cbp-l-loadMore-button-link').on('click.cbp', function(e) {
         e.preventDefault();
-        var clicks, me = $(this),
+        var clicks, me = jQuery(this),
             oMsg;
 
         if (me.hasClass('cbp-l-loadMore-button-stop')) {
@@ -377,16 +377,16 @@ jQuery(document).ready(function() {
         }
 
         // get the number of times the loadMore link has been clicked
-        clicks = $.data(this, 'numberOfClicks');
+        clicks = jQuery.data(this, 'numberOfClicks');
         clicks = (clicks) ? ++clicks : 1;
-        $.data(this, 'numberOfClicks', clicks);
+        jQuery.data(this, 'numberOfClicks', clicks);
 
         // set loading status
         oMsg = me.text();
         me.text('LOADING...');
 
         // perform ajax request
-        $.ajax({
+        jQuery.ajax({
             url: me.attr('href'),
             type: 'GET',
             dataType: 'HTML'
@@ -394,8 +394,8 @@ jQuery(document).ready(function() {
             var items, itemsNext;
 
             // find current container
-            items = $(result).filter(function() {
-                return $(this).is('div' + '.cbp-loadMore-block' + clicks);
+            items = jQuery(result).filter(function() {
+                return jQuery(this).is('div' + '.cbp-loadMore-block' + clicks);
             });
 
             gridContainer.cubeportfolio('appendItems', items.html(),
@@ -404,8 +404,8 @@ jQuery(document).ready(function() {
                     me.text(oMsg);
 
                     // check if we have more works
-                    itemsNext = $(result).filter(function() {
-                        return $(this).is('div' + '.cbp-loadMore-block' + (clicks + 1));
+                    itemsNext = jQuery(result).filter(function() {
+                        return jQuery(this).is('div' + '.cbp-loadMore-block' + (clicks + 1));
                     });
 
                     if (itemsNext.length === 0) {
@@ -425,9 +425,9 @@ jQuery(document).ready(function() {
 /*-----------------------------------------------------------------------------------*/
 /*	ISOTOPE
 /*-----------------------------------------------------------------------------------*/
-$( function() {
+jQuery( function() {
   // init Isotope
-  var $container = $('.isotope');
+  var $container = jQuery('.isotope');
   
   $container.isotope({
     itemSelector: '.post-grid',
@@ -436,7 +436,7 @@ $( function() {
     layoutMode: 'masonry'
   });
   
-  $(window).resize(function(){
+  jQuery(window).resize(function(){
   	$container.isotope({
   		masonry: { columnWidth: '.col-md-6.col-sm-12' }
   	});
@@ -456,8 +456,8 @@ var instagramFeed = new Instafeed({
     resolution: 'low_resolution',
     template: '<div class="item"><figure class="frame"><img src="{{image}}" /><a href="{{link}}" class="ins-link" target="_blank"><i class="icon-link"></i></a></figure></div>',
     after: function () {
-        $('.swiper-container.instagram').each(function(){
-			  $(this).swiper({
+        jQuery('.swiper-container.instagram').each(function(){
+			  jQuery(this).swiper({
 			     grabCursor: true,
 			    slidesPerView: 'auto',
 			    wrapperClass: 'swiper',
