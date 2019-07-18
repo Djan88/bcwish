@@ -1276,14 +1276,14 @@ figure a .text-overlay .info span {
     position: relative
 }
 .revolution .large {
-    font-size: 44px;
+    font-size: 54px;
     font-weight: 700;
     font-family: 'Amatic SC', cursive;
     margin-bottom: 30px;
     color: #535353;
 }
 .revolution .small {
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: 0.3px;
     font-family: 'Comfortaa', cursive;
     font-style: italic;
