@@ -47,9 +47,9 @@
             <li><a href="/wp-admin" class="hint--right" data-hint="Панель"><i class="budicon-setting"></i><span>Панель</span></a></li>
           <?php } ?>
         <?php } ?>
-        <!-- <li><a href="#login" class="hint--right" data-hint="Вход"><i class="budicon-image"></i><span>Вход</span></a></li> -->
-        <li><a href="#about" class="hint--right" data-hint="О программе"><i class="budicon-book-1"></i><span>О программе</span></a></li>
+        <li><a href="#about" class="hint--right" data-hint="Что это такое?"><i class="budicon-book-1"></i><span>Что это такое?</span></a></li>
         <li><a href="#contact" class="hint--right" data-hint="Техподдержка"><i class="budicon-support"></i><span>Техподдержка</span></a></li>
+        <li><a href="https://chikurov.com" target="_blank" class="hint--right" data-hint="Кто это придумал?"><i class="budicon-autor"></i><span>Кто это придумал?</span></a></li>
         <!-- <li><a href="#elsewhere" class="hint--right fancybox-inline" data-hint="Elsewhere" data-fancybox-width="325" data-fancybox-height="220"><i class="icon-heart-empty-1"></i><span>Elsewhere</span></a></li> -->
       </ul>
       <!-- /.navbar-nav --> 
