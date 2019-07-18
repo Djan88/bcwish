@@ -1278,13 +1278,14 @@ figure a .text-overlay .info span {
 .revolution .large {
     font-size: 44px;
     font-weight: 700;
+    font-family: 'Amatic SC', cursive;
     margin-bottom: 30px;
     color: #535353;
 }
 .revolution .small {
     font-size: 32px;
     letter-spacing: 0.3px;
-    font-family: 'Montserrat', serif;
+    font-family: 'Comfortaa', cursive;
     font-style: italic;
     color: #535353;
 }

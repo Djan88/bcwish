@@ -14,7 +14,8 @@
 <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
 <link href="<?php bloginfo('template_url'); ?>/style/css/color/orange.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
 <link href="<?php bloginfo('template_url'); ?>/style/type/fontello.css" rel="stylesheet">
 <link href="<?php bloginfo('template_url'); ?>/style/type/budicons.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -77,7 +78,7 @@
 			data-endelementdelay="0"
 			data-endspeed="100"
 			data-endeasing="Power1.easeOut"
-			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Психофизическая трансфорационная игра</div>
+			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Психофизическая трансформационная игра</div>
             <div class="arrow smooth"><a href="#portfolio"><i class="icon-down-open-big"></i></a></div>
           </li>
         </ul>
