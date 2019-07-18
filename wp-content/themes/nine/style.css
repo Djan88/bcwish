@@ -1285,8 +1285,8 @@ figure a .text-overlay .info span {
 .revolution .small {
     font-size: 25px;
     letter-spacing: 0.3px;
-    font-family: 'Comfortaa', sans-serif;
-    font-style: italic;
+    font-family: 'Comfortaa', cursive;
+    /*font-style: italic;*/
     color: #535353;
 }
 .tp-leftarrow.default,
