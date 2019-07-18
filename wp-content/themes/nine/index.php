@@ -40,7 +40,7 @@
         <?php if(is_user_logged_in()){ ?>
           <li><a href="#nine" class="hint--right nine_link" data-hint="Оцифратор">9<span>Оцифратор</span></a></li>
         <?php } else { ?>
-          <li><a href="#login" class="hint--right" data-hint="Войти"><i class="budicon-author"></i><span>Войти</span></a></li>
+          <li><a href="#login" class="hint--right" data-hint="Войти"><i class="budicon-lock"></i><span>Войти</span></a></li>
         <?php } ?>
         <?php if(is_user_logged_in()){ ?>
           <?php if(is_user_role('administrator')) { ?>
@@ -48,15 +48,14 @@
           <?php } ?>
         <?php } ?>
         <!-- <li><a href="#login" class="hint--right" data-hint="Вход"><i class="budicon-image"></i><span>Вход</span></a></li> -->
-        
-        <!-- <li><a href="#contact" class="hint--right" data-hint="Contact"><i class="budicon-profile"></i><span>Contact</span></a></li> -->
-        <!-- <li><a href="blog.html" class="hint--right" data-hint="Blog"><i class="budicon-book-1"></i><span>Blog</span></a></li> -->
+        <li><a href="#about" class="hint--right" data-hint="О программе"><i class="budicon-book-1"></i><span>О программе</span></a></li>
+        <li><a href="#contact" class="hint--right" data-hint="Техподдержка"><i class="budicon-support"></i><span>Техподдержка</span></a></li>
         <!-- <li><a href="#elsewhere" class="hint--right fancybox-inline" data-hint="Elsewhere" data-fancybox-width="325" data-fancybox-height="220"><i class="icon-heart-empty-1"></i><span>Elsewhere</span></a></li> -->
       </ul>
       <!-- /.navbar-nav --> 
     </div>
     <!-- /.navbar-collapse -->
-    <div id="elsewhere" style="display:none;">
+    <!-- <div id="elsewhere" style="display:none;">
       <h1>Me, Elsewhere</h1>
       <div class="divide20"></div>
       <ul class="social">
@@ -67,7 +66,7 @@
         <li><a href="#"><i class="icon-s-pinterest"></i></a></li>
         <li><a href="#"><i class="icon-s-linkedin"></i></a></li>
       </ul>
-    </div>
+    </div> -->
     <!-- /#elsewhere --> 
   </nav>
   <!-- /.navbar -->
