@@ -1285,7 +1285,7 @@ figure a .text-overlay .info span {
 .revolution .small {
     font-size: 25px;
     letter-spacing: 0.3px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', sans-serif;
     font-style: italic;
     color: #535353;
 }
@@ -1389,7 +1389,7 @@ figure a .text-overlay .info span {
     -moz-animation: floating 2s infinite linear;
     -ms-animation: floating 2s infinite linear;
     -o-animation: floating 2s infinite linear;
-    color: #FFF;
+    color: #535353;
 }
 @-webkit-keyframes floating { 
     0% {
