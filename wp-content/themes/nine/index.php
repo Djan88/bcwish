@@ -37,12 +37,21 @@
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="current"><a href="#home" class="hint--right" data-hint="Home"><i class="budicon-home-1"></i><span>Home</span></a></li>
-        <li><a href="#portfolio" class="hint--right" data-hint="Portfolio"><i class="budicon-image"></i><span>Portfolio</span></a></li>
-        <li><a href="#about" class="hint--right" data-hint="About"><i class="budicon-author"></i><span>About</span></a></li>
-        <li><a href="#contact" class="hint--right" data-hint="Contact"><i class="budicon-profile"></i><span>Contact</span></a></li>
-        <li><a href="blog.html" class="hint--right" data-hint="Blog"><i class="budicon-book-1"></i><span>Blog</span></a></li>
-        <li><a href="elements.html" class="hint--right" data-hint="Elements"><i class="budicon-setting"></i><span>Elements</span></a></li>
-        <li><a href="#elsewhere" class="hint--right fancybox-inline" data-hint="Elsewhere" data-fancybox-width="325" data-fancybox-height="220"><i class="icon-heart-empty-1"></i><span>Elsewhere</span></a></li>
+        <?php if(is_user_logged_in()){ ?>
+          <li><a href="#nine" class="hint--right nine_link" data-hint="Оцифратор">9<span>Оцифратор</span></a></li>
+        <?php } else { ?>
+          <li><a href="#login" class="hint--right" data-hint="Войти"><i class="budicon-author"></i><span>Войти</span></a></li>
+        <?php } ?>
+        <?php if(is_user_logged_in()){ ?>
+          <?php if(is_user_role('administrator')) { ?>
+            <li><a href="/wp-admin" class="hint--right" data-hint="Панель"><i class="budicon-setting"></i><span>Панель</span></a></li>
+          <?php } ?>
+        <?php } ?>
+        <!-- <li><a href="#login" class="hint--right" data-hint="Вход"><i class="budicon-image"></i><span>Вход</span></a></li> -->
+        
+        <!-- <li><a href="#contact" class="hint--right" data-hint="Contact"><i class="budicon-profile"></i><span>Contact</span></a></li> -->
+        <!-- <li><a href="blog.html" class="hint--right" data-hint="Blog"><i class="budicon-book-1"></i><span>Blog</span></a></li> -->
+        <!-- <li><a href="#elsewhere" class="hint--right fancybox-inline" data-hint="Elsewhere" data-fancybox-width="325" data-fancybox-height="220"><i class="icon-heart-empty-1"></i><span>Elsewhere</span></a></li> -->
       </ul>
       <!-- /.navbar-nav --> 
     </div>
@@ -79,7 +88,13 @@
 			data-endspeed="100"
 			data-endeasing="Power1.easeOut"
 			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Психофизическая трансформационная игра</div>
-            <div class="arrow smooth"><a href="#portfolio"><i class="icon-down-open-big"></i></a></div>
+            <div class="arrow smooth">
+              <?php if(is_user_logged_in()){ ?>
+                <a href="#nine"><i class="icon-down-open-big"></i></a>
+              <?php } else { ?>
+                <a href="#login"><i class="icon-down-open-big"></i></a>
+              <?php } ?>
+            </div>
           </li>
         </ul>
         <div class="tp-bannertimer"></div>
@@ -91,116 +106,64 @@
   <!-- /#home -->
   
   <div class="container">
-    <section id="portfolio" class="portfolio">
-      <div class="box">
-        <h2 class="section-title pull-left">From My Portfolio</h2>
-        <div id="filters-container" class="cbp-l-filters-alignRight pull-right">
-          <div data-filter="*" class="cbp-filter-item-custom-active cbp-filter-item-custom btn">All</div>
-          <div data-filter=".architecture" class="cbp-filter-item-custom btn">Architecture</div>
-          <div data-filter=".macro" class="cbp-filter-item-custom btn">Macro</div>
-          <div data-filter=".portrait" class="cbp-filter-item-custom btn">Portrait</div>
-          <div data-filter=".still-life" class="cbp-filter-item-custom btn">Still Life</div>
+    <?php if(is_user_logged_in()){ ?>
+      <section id="nine" class="nine">
+        <div class="box">
+          <h2 class="section-title pull-left">Оцифратор</h2>
+          
         </div>
-        <!-- /#filters-container -->
-        <div class="clearfix"></div>
-        <div id="grid-container" class="cbp-l-grid-masonry">
-          <ul>
-            <li class="cbp-item frame architecture"> <a class="cbp-caption cbp-singlePage" href="ajax/post1.html">
-              <div class="cbp-caption-defaultWrap"> <img src="<?php bloginfo('template_url'); ?>/style/images/art/pa1.jpg" alt=""> </div>
-              <div class="cbp-caption-activeWrap">
-                <div class="cbp-l-caption-alignCenter">
-                  <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Thumbnail Slider</div>
-                  </div>
+        <!-- /.box --> 
+      </section>
+      <!-- /#login -->
+    <?php } else { ?>
+      <section id="login" class="login">
+        <div class="box">
+          <h2 class="section-title pull-left">Введите Ваши логин и пароль</h2>
+          <div class="login__form">
+            <div class="container main-header">
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
+                    <p>
+                        <label for="user_login"><?php _e('Username') ?><br />
+                        <input type="text" name="log" id="user_login" class="input" value="<?php echo esc_attr($user_login); ?>" size="20" /></label>
+                    </p>
+                    <p>
+                        <label for="user_pass"><?php _e('Password') ?><br />
+                        <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>
+                    </p>
+                    <?php
+                    /**
+                     * Fires following the 'Password' field in the login form.
+                     *
+                     * @since 2.1.0
+                     */
+                    do_action( 'login_form' );
+                    ?>
+                    <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <?php esc_attr_e('Remember Me'); ?></label></p>
+                    <p class="submit">
+                        <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e('Log In'); ?>" />
+                <?php   if ( $interim_login ) { ?>
+                        <input type="hidden" name="interim-login" value="1" />
+                <?php   } else { ?>
+                        <input type="hidden" name="redirect_to" value="/" />
+                <?php   } ?>
+                <?php   if ( $customize_login ) : ?>
+                        <input type="hidden" name="customize-login" value="1" />
+                <?php   endif; ?>
+                        <input type="hidden" name="testcookie" value="1" />
+                    </p>
+                    <p class="note_small">Вопросы связанные с получением доступа на проект "MARAKATA" можно задать на <a class="bablosadres" href="mailto:info@chikurov.com" style="color: #fff;">info@chikurov.com</a></p>
+                  </form>
                 </div>
               </div>
-              </a> 
-            </li>
-            <li class="cbp-item frame macro"> <a class="cbp-caption cbp-singlePage" href="ajax/post2.html">
-              <div class="cbp-caption-defaultWrap"> <img src="<?php bloginfo('template_url'); ?>/style/images/art/pm1.jpg" alt=""> </div>
-              <div class="cbp-caption-activeWrap">
-                <div class="cbp-l-caption-alignCenter">
-                  <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Fullscreen Gallery</div>
-                  </div>
-                </div>
-              </div>
-              </a> 
-            </li>
-            <li class="cbp-item frame portrait"> <a class="cbp-caption cbp-singlePage" href="ajax/post3.html">
-              <div class="cbp-caption-defaultWrap"> <img src="<?php bloginfo('template_url'); ?>/style/images/art/pp1.jpg" alt=""> </div>
-              <div class="cbp-caption-activeWrap">
-                <div class="cbp-l-caption-alignCenter">
-                  <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Multiple Images</div>
-                  </div>
-                </div>
-              </div>
-              </a> 
-            </li>
-            <li class="cbp-item frame still-life"> <a class="cbp-caption cbp-singlePage" href="ajax/post4.html">
-              <div class="cbp-caption-defaultWrap"> <img src="<?php bloginfo('template_url'); ?>/style/images/art/ps1.jpg" alt=""> </div>
-              <div class="cbp-caption-activeWrap">
-                <div class="cbp-l-caption-alignCenter">
-                  <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Fullwidth Video</div>
-                  </div>
-                </div>
-              </div>
-              </a> 
-            </li>
-            <li class="cbp-item frame architecture"> <a class="cbp-caption cbp-singlePage" href="ajax/post1.html">
-              <div class="cbp-caption-defaultWrap"> <img src="<?php bloginfo('template_url'); ?>/style/images/art/pa2.jpg" alt=""> </div>
-              <div class="cbp-caption-activeWrap">
-                <div class="cbp-l-caption-alignCenter">
-                  <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Thumbnail Slider</div>
-                  </div>
-                </div>
-              </div>
-              </a> 
-            </li>
-            <li class="cbp-item frame macro"> <a class="cbp-caption cbp-singlePage" href="ajax/post2.html">
-              <div class="cbp-caption-defaultWrap"> <img src="<?php bloginfo('template_url'); ?>/style/images/art/pm2.jpg" alt=""> </div>
-              <div class="cbp-caption-activeWrap">
-                <div class="cbp-l-caption-alignCenter">
-                  <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Fullscreen Gallery</div>
-                  </div>
-                </div>
-              </div>
-              </a> 
-            </li>
-            <li class="cbp-item frame portrait"> <a class="cbp-caption cbp-singlePage" href="ajax/post3.html">
-              <div class="cbp-caption-defaultWrap"> <img src="<?php bloginfo('template_url'); ?>/style/images/art/pp2.jpg" alt=""> </div>
-              <div class="cbp-caption-activeWrap">
-                <div class="cbp-l-caption-alignCenter">
-                  <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Multiple Images</div>
-                  </div>
-                </div>
-              </div>
-              </a> 
-            </li>
-            <li class="cbp-item frame still-life"> <a class="cbp-caption cbp-singlePage" href="ajax/post4.html">
-              <div class="cbp-caption-defaultWrap"> <img src="<?php bloginfo('template_url'); ?>/style/images/art/ps2.jpg" alt=""> </div>
-              <div class="cbp-caption-activeWrap">
-                <div class="cbp-l-caption-alignCenter">
-                  <div class="cbp-l-caption-body">
-                    <div class="cbp-l-caption-title">Fullwidth Video</div>
-                  </div>
-                </div>
-              </div>
-              </a> </li>
-          </ul>
+            </div>
+          </div>
         </div>
-        <!-- /.cbp-l-grid-masonry -->
-        <div class="cbp-l-loadMore-button"> <a href="ajax/port1-more.html" class="cbp-l-loadMore-button-link btn">LOAD MORE</a> </div>
-      </div>
-      <!-- /.box --> 
-    </section>
-    <!-- /#portfolio -->
-    
+        <!-- /.box --> 
+      </section>
+      <!-- /#login -->
+    <?php } ?>
     <section id="about">
       <div class="box">
         <h2 class="section-title">Who is Behind All This</h2>
