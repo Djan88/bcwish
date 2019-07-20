@@ -3185,7 +3185,7 @@ textarea {
         transition: all 0.3s;
     }
     .navbar.fixed {
-        background: rgba(255,255,255,0.96)
+        background: transparent;
     }
     .navbar.fixed .navbar-brand {
         margin: 16px 0
@@ -3230,7 +3230,7 @@ textarea {
         max-height: none;
         text-align: left;
         overflow: hidden;
-        background: none;
+        background: rgba(255,255,255,0.96);
         border: 0;
         padding: 0 40px;
         -webkit-box-shadow: none;
