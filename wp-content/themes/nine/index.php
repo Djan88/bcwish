@@ -122,7 +122,7 @@
         <div class="box">
           <h2 class="section-title pull-left">Введите Ваши логин и пароль</h2>
           <div class="login__form">
-            <div class="container main-header">
+            <div>
               <div class="row">
                 <div class="">
                   <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
