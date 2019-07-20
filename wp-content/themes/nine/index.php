@@ -168,7 +168,7 @@
         <h2 class="section-title">Who is Behind All This</h2>
         <div class="row">
 	      <div class="col-md-5 col-md-push-7 col-sm-12">
-            <figure class="frame"><img src="<?php bloginfo('template_url'); ?>/style/images/art/about.jpg" alt="" /></figure>
+            <figure class="frame"><img src="<?php bloginfo('template_url'); ?>/style/images/art/nine.jpg" alt="" /></figure>
           </div>
           <!-- /column -->
           <div class="col-md-7 col-md-pull-5 col-sm-12">
