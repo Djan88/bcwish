@@ -38,7 +38,7 @@
       <ul class="nav navbar-nav">
         <li class="current"><a href="#home" class="hint--right" data-hint="К Началу"><i class="budicon-home-1"></i><span>К Началу</span></a></li>
         <?php if(is_user_logged_in()){ ?>
-          <li><a href="#nine" class="hint--right nine_link" data-hint="Оцифратор">9<span>Оцифратор</span></a></li>
+          <li><a href="#nine" class="hint--right nine_link" data-hint="Оцифратор">9<span> Оцифратор</span></a></li>
         <?php } else { ?>
           <li><a href="#login" class="hint--right" data-hint="Войти"><i class="budicon-lock"></i><span>Войти</span></a></li>
         <?php } ?>
