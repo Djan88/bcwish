@@ -3066,6 +3066,49 @@ textarea {
         width: auto;
     }
 }
+@media (max-device-width : 1024px) {
+    .video-overlay {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        background: url('style/video/seattleferryride.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    #bgvid { 
+        display: none; 
+    }
+}
+@media (max-width: 991px) { 
+    [class*="col-"] {
+        margin-bottom: 20px
+    }
+    .grid-view [class*="col-"] .post {
+        margin-bottom: 0
+    }
+    .services-1 .divide30 {
+        display: none
+    }
+    .blog .sidebar {
+        padding-left: 15px
+    }
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .footer p.pull-left,
+    .footer .social.pull-right {
+        float: none !important;
+        text-align: center;
+    }
+    .footer p {
+        margin-bottom: 20px
+    }
+}
 @media (min-width: 768px) { 
     .body-wrapper {
         padding-left: 80px
@@ -3230,49 +3273,6 @@ textarea {
     }
     .footer {
         margin-top: -86px
-    }
-}
-@media (max-device-width : 1024px) {
-    .video-overlay {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        background: url('style/video/seattleferryride.jpg') center center no-repeat;
-        background-size: cover;
-    }
-    #bgvid { 
-        display: none; 
-    }
-}
-@media (max-width: 991px) { 
-    [class*="col-"] {
-        margin-bottom: 20px
-    }
-    .grid-view [class*="col-"] .post {
-        margin-bottom: 0
-    }
-    .services-1 .divide30 {
-        display: none
-    }
-    .blog .sidebar {
-        padding-left: 15px
-    }
-    .container {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .footer p.pull-left,
-    .footer .social.pull-right {
-        float: none !important;
-        text-align: center;
-    }
-    .footer p {
-        margin-bottom: 20px
     }
 }
 @media (max-width: 767px) { 
