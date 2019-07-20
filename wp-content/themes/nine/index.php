@@ -249,12 +249,12 @@
                 </div>
                 <div class="col-sm-6">
                   <div class="button-row pull-right">
-                    <input type="submit" value="Send Message" name="submit" class="btn btn-submit bm0" />
+                    <input type="submit" value="Отправить сообщение" name="submit" class="btn btn-submit bm0" />
                   </div>
                 </div>
                 <div class="col-sm-6 lp5">
                   <div class="button-row pull-left">
-                    <input type="reset" value="Clear Message" name="reset" class="btn btn-submit bm0" />
+                    <input type="reset" value="Очистить сообщение" name="reset" class="btn btn-submit bm0" />
                   </div>
                 </div>
                 <input type="hidden" name="v_error" id="v-error" value="Required" />
