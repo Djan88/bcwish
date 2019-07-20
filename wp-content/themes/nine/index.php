@@ -155,7 +155,7 @@
                 <?php   endif; ?>
                         <input type="hidden" name="testcookie" value="1" />
                     </p>
-                    <p class="note_small">У вас нет доступ к проекту "Девяточка"? Зполните <a class="bablosadres" href="#contact">эту форму</a> и мы расскажем как его получить.</p>
+                    <p class="note_small">У вас нет доступ к игре <b>"Девяточка"</b>? Зполните <a class="bablosadres" href="#contact">эту форму</a> и мы расскажем как его получить.</p>
                   </form>
                 </div>
               </div>
