@@ -3329,10 +3329,11 @@ textarea {
         display: none
     }
     .box {
-        padding: 25px
+        padding: 25px;
     }
     section .box {
-        padding: 25px
+        padding: 25px;
+        min-height: 100px;
     }
     .post.box {
         padding-bottom: 10px
