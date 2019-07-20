@@ -49,7 +49,7 @@
         <?php } ?>
         <li><a href="#about" class="hint--right" data-hint="Что это такое?"><i class="budicon-book-1"></i><span>Что это такое?</span></a></li>
         <li><a href="#author" class="hint--right" data-hint="Кто это придумал?"><i class="budicon-author"></i><span>Кто это придумал?</span></a></li>
-        <li><a href="#contact" class="hint--right" data-hint="Обратная связь"><i class="budicon-support"></i><span>Обратная связь</span></a></li>
+        <li><a href="#contact" class="hint--right" data-hint="Обратная связь"><i class="budicon-mail"></i><span>Обратная связь</span></a></li>
         <?php if(is_user_logged_in()){ ?>
           <li><a href="/wp-login.php?action=logout&_wpnonce=e93c4401c3" class="hint--right" data-hint="Выйти"><i class="budicon-power"></i><span>Выйти</span></a></li>
         <?php } ?>
