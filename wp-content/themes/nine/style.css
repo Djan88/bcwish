@@ -3066,7 +3066,7 @@ textarea {
         width: auto;
     }
 }
-@media (min-width: 1271px) { 
+@media (min-width: 768px) { 
     .body-wrapper {
         padding-left: 80px
     }
@@ -3113,7 +3113,7 @@ textarea {
         float: none !important
     }
 }
-@media (max-width: 1270px) { 
+@media (max-width: 767px) { 
     .navbar-header {
         padding: 0 40px
     }
