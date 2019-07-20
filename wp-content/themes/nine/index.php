@@ -187,16 +187,16 @@
     <!-- /#about -->
         <section id="author">
           <div class="box">
-            <h2 class="section-title">Доктор Ю. Чикуров. Человек придумавший "Девяточку"?</h2>
+            <h2 class="section-title">Кто создал "Девяточку"?</h2>
             <div class="row">
-              <div class="col-md-7 col-md-pull-5 col-sm-12">
+              <div class="col-md-7 col-md-push-5 col-sm-12">
                 <p class="lead">Доктор Ю. Чикуров, кандидат медицинских наук, специализации в области неврологии, остеопатии и психологии</p>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus. </p>
                 <p>Tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <p>Fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla.</p>
               </div>
               <!-- /column -->
-              <div class="col-md-5 col-md-push-7 col-sm-12">
+              <div class="col-md-5 col-md-pull-7 col-sm-12">
                 <figure class="frame"><img src="<?php bloginfo('template_url'); ?>/style/images/art/chikurov.jpg" alt="" /></figure>
               </div>
               <!-- /column -->
