@@ -210,27 +210,9 @@
     
     <section id="contact">
       <div class="box">
-        <h2 class="section-title">Get in Touch with Me</h2>
-        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <h2 class="section-title">Обратная связь</h2>
+        <p>Хотите узнать как получить доступ к "Девяточке", задать вопрос или сказать нам спасибо? Воскользуйтесь формой ниже</p>
         <div class="divide20"></div>
-        <div class="row text-center services-2">
-          <div class="col-md-3 col-sm-6"> <i class="budicon-map"></i>
-            <p>Moon Street Light Avenue <br />
-              14/05 Jupiter, JP 80630</p>
-          </div>
-          <div class="col-md-3 col-sm-6"> <i class="budicon-telephone"></i>
-            <p>00 (123) 456 78 90 <br />
-              00 (987) 654 32 10 </p>
-          </div>
-          <div class="col-md-3 col-sm-6"> <i class="budicon-mobile"></i>
-            <p>00 (123) 456 78 90 <br />
-              00 (987) 654 32 10 </p>
-          </div>
-          <div class="col-md-3 col-sm-6"> <i class="budicon-mail"></i>
-            <p> <a class="nocolor" href="mailto:#">manager@email.com</a> <br />
-              <a class="nocolor" href="mailto:#">asistant@email.com</a> </p>
-          </div>
-        </div>
         <!-- /.services-2 -->
         <div class="divide30"></div>
         <div class="form-container">
@@ -240,7 +222,7 @@
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-row text-input-row name-field">
-                    <label>Name</label>
+                    <label>Имя</label>
                     <input type="text" name="name" class="text-input defaultText required"/>
                   </div>
                   <div class="form-row text-input-row email-field">
@@ -248,20 +230,20 @@
                     <input type="text" name="email" class="text-input defaultText required email"/>
                   </div>
                   <div class="form-row text-input-row subject-field">
-                    <label>Subject</label>
+                    <label>Тема</label>
                     <input type="text" name="subject" class="text-input defaultText"/>
                   </div>
                 </div>
                 <div class="col-sm-6 lp5">
                   <div class="form-row text-area-row">
-                    <label>Message</label>
+                    <label>Сообщение</label>
                     <textarea name="message" class="text-area required"></textarea>
                   </div>
                   <div class="form-row hidden-row">
                     <input type="hidden" name="hidden" value="" />
                   </div>
                   <div class="nocomment">
-                    <label for="nocomment">Leave This Field Empty</label>
+                    <label for="nocomment">Оставьте это поле пустым</label>
                     <input id="nocomment" value="" name="nocomment" />
                   </div>
                 </div>
@@ -289,7 +271,7 @@
     <!-- /#contact -->
     
     <footer class="footer box">
-      <p class="pull-left">© 2015 Lumos. All rights reserved. Theme by <a href="http://elemisfreebies.com">elemis</a>.</p>
+      <p class="pull-left">© 2019 "Девяточка". <a href="http://chikurov.com">Школа Доктора Чикурова</a>.</p>
       <ul class="social pull-right">
         <li><a href="#"><i class="icon-s-rss"></i></a></li>
         <li><a href="#"><i class="icon-s-twitter"></i></a></li>
