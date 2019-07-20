@@ -3053,6 +3053,24 @@ textarea {
 {
     margin-bottom: 100px;
 }
+section#login 
+{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+input#rememberme 
+{
+    width: auto;
+}
+#loginform p 
+{
+    margin: 0;
+}
+p.forgetmenot label 
+{
+    font-weight: 100;
+}
 /*-----------------------------------------------------------------------------------*/
 /*  25. RESPONSIVE
 /*-----------------------------------------------------------------------------------*/

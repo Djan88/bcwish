@@ -50,6 +50,9 @@
         <li><a href="#about" class="hint--right" data-hint="Что это такое?"><i class="budicon-book-1"></i><span>Что это такое?</span></a></li>
         <li><a href="#author" class="hint--right" data-hint="Кто это придумал?"><i class="budicon-author"></i><span>Кто это придумал?</span></a></li>
         <li><a href="#contact" class="hint--right" data-hint="Обратная связь"><i class="budicon-support"></i><span>Обратная связь</span></a></li>
+        <?php if(is_user_logged_in()){ ?>
+          <li><a href="/wp-login.php?action=logout&_wpnonce=e93c4401c3" class="hint--right" data-hint="Выйти"><i class="budicon-power"></i><span>Выйти</span></a></li>
+        <?php } ?>
         <!-- <li><a href="#elsewhere" class="hint--right fancybox-inline" data-hint="Elsewhere" data-fancybox-width="325" data-fancybox-height="220"><i class="icon-heart-empty-1"></i><span>Elsewhere</span></a></li> -->
       </ul>
       <!-- /.navbar-nav --> 
@@ -121,7 +124,7 @@
           <div class="login__form">
             <div class="container main-header">
               <div class="row">
-                <div class="col-md-6 col-md-offset-3">
+                <div class="">
                   <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
                     <p>
                         <label for="user_login"><?php _e('Username') ?><br />
@@ -141,7 +144,7 @@
                     ?>
                     <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <?php esc_attr_e('Remember Me'); ?></label></p>
                     <p class="submit">
-                        <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e('Log In'); ?>" />
+                        <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-submit bm0" value="<?php esc_attr_e('Log In'); ?>" />
                 <?php   if ( $interim_login ) { ?>
                         <input type="hidden" name="interim-login" value="1" />
                 <?php   } else { ?>
@@ -152,7 +155,7 @@
                 <?php   endif; ?>
                         <input type="hidden" name="testcookie" value="1" />
                     </p>
-                    <p class="note_small">Вопросы связанные с получением доступа на проект "MARAKATA" можно задать на <a class="bablosadres" href="mailto:info@chikurov.com" style="color: #fff;">info@chikurov.com</a></p>
+                    <p class="note_small">У вас нет доступ к проекту "Девяточка"? Зполните <a class="bablosadres" href="#contact">эту форму</a> и мы расскажем как его получить.</p>
                   </form>
                 </div>
               </div>
