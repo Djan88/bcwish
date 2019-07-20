@@ -3178,6 +3178,7 @@ textarea {
         position: fixed;
         top: 0;
         left: 0;
+        background: transparent;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
