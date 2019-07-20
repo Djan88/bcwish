@@ -3350,11 +3350,12 @@ textarea {
     }
     .tp-caption.large
     {
-
+        line-height: 30px!important;
+        font-size: 55px!important;
     }
     .tp-caption.small .tp-splitted
     {
-        text-align: center;
+        text-align: center!important;
     }
 }
 
