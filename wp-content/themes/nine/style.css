@@ -3071,6 +3071,45 @@ p.forgetmenot label
 {
     font-weight: 100;
 }
+.marakata_game 
+{
+  display: block;
+  margin: auto;
+  float: none;
+  overflow: hidden;
+  width: 400px;
+  height: 500px!important;
+  background: #fff;
+  /*background: url(img/counter_back.gif) 17px -30px/91% no-repeat;*/
+}
+#deviatochka .no_padding_wrap
+{
+  overflow: hidden;
+}
+.marakata_game .marakata_sim 
+{
+  background: url(style/images/numbers_game.png) repeat-y;
+  height: 4543px!important;
+  border: none;
+  border-left: 2px solid rgba(99,99,99,0.3);
+  border-right: 2px solid rgba(99,99,99,0.3);
+}
+.game_number
+{
+  color: #d94f5c;
+  font-size: 29px;
+  font-weight: 600;
+}
+.game_numbers 
+{
+  padding-bottom: 7px;
+  display: block;
+  white-space: nowrap;
+}
+.marakata_sim-active, .marakata_game .marakata_sim.marakata_sim-active
+{
+  border-color: #d94f5c;
+}
 /*-----------------------------------------------------------------------------------*/
 /*  25. RESPONSIVE
 /*-----------------------------------------------------------------------------------*/

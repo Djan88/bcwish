@@ -112,7 +112,9 @@
       <section id="nine" class="nine">
         <div class="box">
           <h2 class="section-title pull-left">Оцифратор</h2>
-          
+          <div class="col-md-4 col-sm-6 col-xs-9 marakata_sim-wrap marakata_game">
+            <div class="marakata_sim marakata_sim_g marakata_sim-0 marakata_sim_game"></div>
+          </div>
         </div>
         <!-- /.box --> 
       </section>
@@ -155,7 +157,7 @@
                 <?php   endif; ?>
                         <input type="hidden" name="testcookie" value="1" />
                     </p>
-                    <p class="note_small">У вас нет доступ к игре <b>"Девяточка"</b>? Зполните <a class="bablosadres" href="#contact">эту форму</a> и мы расскажем как его получить.</p>
+                    <p class="note_small">У Вас нет доступа к игре <b>"Девяточка"</b>? Заполните <a class="bablosadres" href="#contact">эту форму</a> и мы расскажем как его получить.</p>
                   </form>
                 </div>
               </div>
@@ -190,7 +192,7 @@
     <!-- /#about -->
         <section id="author">
           <div class="box">
-            <h2 class="section-title">Кто создал "Девяточку"?</h2>
+            <h2 class="section-title">Кто создал игру "Девяточка"?</h2>
             <div class="row">
               <div class="col-md-7 col-md-push-5 col-sm-12">
                 <p class="lead">Доктор Ю. Чикуров, кандидат медицинских наук, специализации в области неврологии, остеопатии и психологии</p>
