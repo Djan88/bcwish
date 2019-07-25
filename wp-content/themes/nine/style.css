@@ -3088,7 +3088,7 @@ p.forgetmenot label
 }
 .marakata_game .marakata_sim 
 {
-  background: url(style/images/numbers_game.png) repeat-y;
+  background: url(style/images/art/numbers_game.png) repeat-y;
   height: 4543px!important;
   border: none;
   border-left: 2px solid rgba(99,99,99,0.3);

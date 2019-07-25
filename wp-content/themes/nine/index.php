@@ -112,8 +112,24 @@
       <section id="nine" class="nine">
         <div class="box">
           <h2 class="section-title pull-left">Оцифратор</h2>
-          <div class="col-md-4 col-sm-6 col-xs-9 marakata_sim-wrap marakata_game">
-            <div class="marakata_sim marakata_sim_g marakata_sim-0 marakata_sim_game"></div>
+          <div class="row section-description text-center no_padding_wrap">
+            <div class="col-md-12 no_padding_wrap content">
+              <div class="row">
+                <h2 class="col-md-12 marakata_heading">
+                  <span class="game_numbers">
+                  </span>
+                  <button type="button" class="btn btn-submit bm0 btn_reset">Сброс</button>
+                </h2>
+                <div class="col-md-4 col-sm-6 col-xs-9 marakata_sim-wrap marakata_game">
+                  <div class="marakata_sim marakata_sim_g marakata_sim-0 marakata_sim_game"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="row" style="text-align: center;">
+                  <button type="button" class="btn btn-submit bm0 btn_game">Начать с начала</button>
+              </div>
+            </div>
           </div>
         </div>
         <!-- /.box --> 
