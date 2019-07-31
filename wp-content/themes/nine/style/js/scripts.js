@@ -239,6 +239,10 @@ var counter_game = 0,
         scroll_game = 505.78;
     };
 
+cur_window_width();
+jQuery(window).on('resize', function(event) {
+  cur_window_width();
+});
 jQuery('.marakata_sim_game').on('click', function(event) {
     if (jQuery(this).hasClass('marakata_sim_game')) {
       jQuery(this).addClass('marakata_sim-active');
