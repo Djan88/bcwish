@@ -109,7 +109,7 @@
   
   <div class="container">
     <?php if(is_user_logged_in()){ ?>
-      <section id="nine" class="nine">
+      <section class="nine">
         <div class="box">
           <h2 class="section-title">Оцифратор</h2>
           <div class="row section-description text-center no_padding_wrap">
@@ -118,7 +118,7 @@
                 <h2 class="col-md-12 marakata_heading">
                   <span class="game_numbers">
                   </span>
-                  <button type="button" class="btn btn-submit bm0 btn_reset">Сброс</button>
+                  <button type="button" id="nine" class="btn btn-submit bm0 btn_reset">Сброс</button>
                 </h2>
                 <div class="col-md-4 col-sm-6 col-xs-9 marakata_sim-wrap marakata_game">
                   <div class="marakata_sim marakata_sim_g marakata_sim-0 marakata_sim_game"></div>
