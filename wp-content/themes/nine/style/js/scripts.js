@@ -217,6 +217,7 @@ var counter_game = 0,
       9: 0,
     },
     max_time_game = 1,
+    global_counter = 0,
     cur_window_width = function(){
         block_w = parseFloat(jQuery(".marakata_sim.marakata_sim_prot").css('width'));
         page_h = jQuery("html").width();
