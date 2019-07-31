@@ -215,7 +215,8 @@ var counter_game = 0,
       7: 0,
       8: 0,
       9: 0,
-    };
+    },
+    max_time_game = 1;
 
 jQuery('.marakata_sim_game').on('click', function(event) {
     if (jQuery(this).hasClass('marakata_sim_game')) {
