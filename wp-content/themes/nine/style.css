@@ -3076,11 +3076,18 @@ p.forgetmenot label
   display: block;
   margin: auto;
   float: none;
+  padding: 0;
+  max-width: 100%;
   overflow: hidden;
   width: 400px;
   height: 500px!important;
   background: #fff;
   /*background: url(img/counter_back.gif) 17px -30px/91% no-repeat;*/
+}
+
+.no_padding_wrap
+{
+    padding: 0;
 }
 #deviatochka .no_padding_wrap
 {
@@ -3095,13 +3102,14 @@ p.forgetmenot label
   -webkit-transition: margin-top 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -moz-transition: margin-top 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: margin-top 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border-left: 2px solid rgba(99,99,99,0.3);
-  border-right: 2px solid rgba(99,99,99,0.3);
+  /*border-left: 2px solid rgba(99,99,99,0.3);*/
+  /*border-right: 2px solid rgba(99,99,99,0.3);*/
 }
 .game_number
 {
-  color: #d94f5c;
-  font-size: 29px;
+  color: #e18e4a;
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
 .game_numbers 
