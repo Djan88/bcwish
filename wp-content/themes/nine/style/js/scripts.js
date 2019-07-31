@@ -216,7 +216,28 @@ var counter_game = 0,
       8: 0,
       9: 0,
     },
-    max_time_game = 1;
+    max_time_game = 1,
+    cur_window_width = function(){
+        block_w = parseFloat(jQuery(".marakata_sim.marakata_sim_prot").css('width'));
+        page_h = jQuery("html").width();
+        console.log(block_w);
+        if (page_h > 1200) {
+          scroll_val = 171;
+        } else if (page_h <= 1200 && page_h > 1001) {
+          scroll_val = 171.4;
+        } else if (page_h <= 1000 && page_h > 769) {
+          scroll_val = 125.5;
+        } else if (page_h <= 768 && page_h > 600) {
+          scroll_val =  block_w * 1.220000017582302;
+          jQuery(".marakata_sim-wrap").css('height', scroll_val+'px');
+          jQuery(".marakata_dot").css('height', scroll_val+'px');
+        } else {
+          scroll_val =  block_w * 1.14468085106383;
+          jQuery(".marakata_sim-wrap").css('height', scroll_val+'px');
+          jQuery(".marakata_dot").css('height', scroll_val+'px');
+        }
+        scroll_game = 505.78;
+    };
 
 jQuery('.marakata_sim_game').on('click', function(event) {
     if (jQuery(this).hasClass('marakata_sim_game')) {
