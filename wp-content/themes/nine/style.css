@@ -3091,6 +3091,10 @@ p.forgetmenot label
   background: url(style/images/art/numbers_game.png) repeat-y;
   height: 4543px!important;
   border: none;
+  background-position-y: 0px;
+  -webkit-transition: margin-top 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: margin-top 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: margin-top 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border-left: 2px solid rgba(99,99,99,0.3);
   border-right: 2px solid rgba(99,99,99,0.3);
 }
