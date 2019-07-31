@@ -111,7 +111,7 @@
     <?php if(is_user_logged_in()){ ?>
       <section id="nine" class="nine">
         <div class="box">
-          <h2 class="section-title pull-left">Оцифратор</h2>
+          <h2 class="section-title">Оцифратор</h2>
           <div class="row section-description text-center no_padding_wrap">
             <div class="col-md-12 no_padding_wrap content">
               <div class="row">
