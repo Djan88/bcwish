@@ -233,7 +233,7 @@ jQuery('.marakata_sim_game').on('click', function(event) {
           }
           console.log(elems_obj_game);
           console.log('Лучшее: '+ max_time_game+', Текущее: '+(end_time - start_time));
-          console.log(cur_item);
+          // console.log(cur_item);
         }
         counter_game += 1;
       } else {
