@@ -203,8 +203,6 @@ function init() {
 /*-----------------------------------------------------------------------------------*/
 /*	9 PROTOCOL
 /*-----------------------------------------------------------------------------------*/
-var 
-
 jQuery('.marakata_sim_game').on('click', function(event) {
     if (jQuery(this).hasClass('marakata_sim_game')) {
       jQuery(this).addClass('marakata_sim-active');
@@ -263,6 +261,7 @@ jQuery('.marakata_sim_game').on('click', function(event) {
       jQuery('.btn_reset').addClass('hidden');
     }
 });
+
 jQuery('.btn_game, .menu-game').on('click', function(event) {
   jQuery('.game_numbers').text('');
   game_counter = 0;
