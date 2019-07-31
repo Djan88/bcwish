@@ -113,9 +113,9 @@
         <div class="box">
           <h2 class="section-title">Оцифратор</h2>
           <div class="row section-description text-center no_padding_wrap">
-            <div class="col-md-12 no_padding_wrap content">
+            <div id="nine" class="col-md-12 no_padding_wrap content">
               <div class="row">
-                <h2 id="nine" class="col-md-12 marakata_heading">
+                <h2 class="col-md-12 marakata_heading">
                   <span class="game_numbers">
                   </span>
                   <button type="button" class="btn btn-submit bm0 btn_reset">Сброс</button>
