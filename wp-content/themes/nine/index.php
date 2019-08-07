@@ -166,7 +166,7 @@
                 <?php   if ( $interim_login ) { ?>
                         <input type="hidden" name="interim-login" value="1" />
                 <?php   } else { ?>
-                        <input type="hidden" name="redirect_to" value="/" />
+                        <input type="hidden" name="redirect_to" value="<?php echo esc_attr($redirect_to); ?>" />
                 <?php   } ?>
                 <?php   if ( $customize_login ) : ?>
                         <input type="hidden" name="customize-login" value="1" />
