@@ -249,6 +249,7 @@
         <div class="divide30"></div>
         <div class="form-container">
           <div class="response alert alert-success"></div>
+          <?php echo do_shortcode('[contact-form-7 id="141" title="Без названия"]'); ?>
           <!-- <form class="forms" action="contact/form-handler.php" method="post">
             <fieldset>
               <div class="row">
