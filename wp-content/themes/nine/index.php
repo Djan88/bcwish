@@ -305,13 +305,11 @@
     <footer class="footer box">
       <p class="pull-left">© 2019 "Девяточка". <a href="http://chikurov.com">Школа Доктора Чикурова</a>.</p>
       <ul class="social pull-right">
-        <li><a href="#"><i class="icon-s-rss"></i></a></li>
-        <li><a href="#"><i class="icon-s-twitter"></i></a></li>
-        <li><a href="#"><i class="icon-s-facebook"></i></a></li>
-        <li><a href="#"><i class="icon-s-dribbble"></i></a></li>
-        <li><a href="#"><i class="icon-s-pinterest"></i></a></li>
-        <li><a href="#"><i class="icon-s-instagram"></i></a></li>
-        <li><a href="#"><i class="icon-s-vimeo"></i></a></li>
+        <!-- <li><a href="#"><i class="icon-s-rss"></i></a></li> -->
+        <!-- <li><a href="#"><i class="icon-s-twitter"></i></a></li> -->
+        <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100012253260685&pnref"><i class="icon-s-facebook"></i></a></li>
+        <li><a target="_blank" href="https://www.instagram.com/dr.chikurov/"><i class="icon-s-instagram"></i></a></li>
+        <li><a target="_blank" href="https://www.youtube.com/user/ThePractik01/"><i class="icon-s-youtube"></i></a></li>
       </ul>
       <div class="clearfix"></div>
     </footer>
