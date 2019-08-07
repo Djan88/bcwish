@@ -166,7 +166,7 @@
                 <?php   if ( $interim_login ) { ?>
                         <input type="hidden" name="interim-login" value="1" />
                 <?php   } else { ?>
-                        <input type="hidden" name="redirect_to" value="<?php echo esc_attr($redirect_to); ?>" />
+                        <input type="hidden" name="redirect_to" value="" />
                 <?php   } ?>
                 <?php   if ( $customize_login ) : ?>
                         <input type="hidden" name="customize-login" value="1" />
@@ -249,7 +249,7 @@
         <div class="divide30"></div>
         <div class="form-container">
           <div class="response alert alert-success"></div>
-          <form class="forms" action="contact/form-handler.php" method="post">
+          <!-- <form class="forms" action="contact/form-handler.php" method="post">
             <fieldset>
               <div class="row">
                 <div class="col-sm-6">
@@ -271,29 +271,16 @@
                     <label>Сообщение</label>
                     <textarea name="message" class="text-area required"></textarea>
                   </div>
-                  <div class="form-row hidden-row">
-                    <input type="hidden" name="hidden" value="" />
-                  </div>
-                  <div class="nocomment">
-                    <label for="nocomment">Оставьте это поле пустым</label>
-                    <input id="nocomment" value="" name="nocomment" />
-                  </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="button-row pull-right">
+                <div class="col-sm-12">
+                  <div class="button-row">
                     <input type="submit" value="Отправить сообщение" name="submit" class="btn btn-submit bm0" />
                   </div>
                 </div>
-                <div class="col-sm-6 lp5">
-                  <div class="button-row pull-left">
-                    <input type="reset" value="Очистить сообщение" name="reset" class="btn btn-submit bm0" />
-                  </div>
-                </div>
-                <input type="hidden" name="v_error" id="v-error" value="Required" />
-                <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />
               </div>
             </fieldset>
-          </form>
+          </form> -->
+
         </div>
         <!-- /.form-container --> 
         
