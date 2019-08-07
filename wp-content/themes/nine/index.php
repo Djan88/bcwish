@@ -149,7 +149,7 @@
                         <input type="text" name="log" id="user_login" class="input" value="<?php echo esc_attr($user_login); ?>" size="20" /></label>
                     </p>
                     <p>
-                        <label for="user_pass"><?php _e('Password') ?><br />
+                        <label for="user_pass ss"><?php _e('Password') ?><br />
                         <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>
                     </p>
                     <?php
