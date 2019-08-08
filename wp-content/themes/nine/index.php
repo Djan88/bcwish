@@ -228,7 +228,7 @@
               </div>
               <!-- /column -->
               <div class="col-md-5 col-md-pull-7 col-sm-12">
-                <figure class="frame"><img src="<?php bloginfo('template_url'); ?>/style/images/art/chikurov_.jpg" alt="" /></figure>
+                <figure class="frame"><img src="<?php bloginfo('template_url'); ?>/style/images/art/chikurov_.jpeg" alt="" /></figure>
               </div>
               <!-- /column -->
             </div>
