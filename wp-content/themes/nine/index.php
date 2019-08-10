@@ -89,7 +89,7 @@
 			data-endelementdelay="0"
 			data-endspeed="100"
 			data-endeasing="Power1.easeOut"
-			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Психофизическая трансформационная игра</div>
+			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Психодинамическая трансформационная игра</div>
             <div class="arrow smooth">
               <?php if(is_user_logged_in()){ ?>
                 <a href="#nine"><i class="icon-down-open-big"></i></a>
