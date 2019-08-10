@@ -190,6 +190,7 @@
         <div class="row">
 	        <div class="col-md-5 col-md-7 col-sm-12 pull-right">
             <figure class="frame"><img src="<?php bloginfo('template_url'); ?>/style/images/art/nine.jpg" alt="" /></figure>
+            <figure class="frame"><img src="<?php bloginfo('template_url'); ?>/style/images/art/nine_patent.jpeg" alt="" /></figure>
           </div>
           <!-- /column -->
           <div>
