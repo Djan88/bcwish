@@ -1,1 +1,0 @@
-<div class="sa-pane" id="tab-<?php echo $params['id']; ?>">
