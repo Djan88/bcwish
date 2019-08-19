@@ -98,11 +98,11 @@
           </div>
         </div>
   
-        <div class="col-md-6 intro-img order-md-last order-first">
+        <!-- <div class="col-md-6 intro-img order-md-last order-first">
           <img src="<?php bloginfo('template_url'); ?>/img/intro_alt.svg" alt="" class="img-fluid">
-        </div>
+        </div> -->
       </div>
-
+    <img src="<?php bloginfo('template_url'); ?>/img/intro_alt.svg" alt="" class="img-fluid main_bg">
     </div>
   </section><!-- #intro -->
 

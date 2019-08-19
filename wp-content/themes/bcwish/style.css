@@ -1457,6 +1457,13 @@ html.all
 {
   margin: 0!important;
 }
+.main_bg.img-fluid
+{
+  max-width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 
 /*--------------------------------------------------------------
 # Responsive Media Queries
