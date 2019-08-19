@@ -50,7 +50,7 @@
 
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
-        <h1 class="text-light"><a href="#intro" class="scrollto"><span>МАСТЕР РЕАЛЬНОСТИ</span></a></h1>
+        <h1 class="text-light"><a href="#intro" class="scrollto"><span>ИСПОЛНИТЕЛЬ ЖЕЛАНИЙ</span></a></h1>
         <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
@@ -89,7 +89,7 @@
     Intro Section
   ============================-->
   <section id="intro" class="clearfix">
-    <div class="container d-flex h-100">
+    <div class="container h-100">
       <div class="row justify-content-center align-self-center">
         <div class="col-md-6 intro-info order-md-first order-last">
           <h2>Биологическое центрирование <span>Система здоровья!</span></h2>
