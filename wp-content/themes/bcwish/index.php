@@ -99,7 +99,7 @@
         </div>
   
         <div class="col-md-6 intro-img order-md-last order-first">
-          <img src="<?php bloginfo('template_url'); ?>/img/intro-img.svg" alt="" class="img-fluid">
+          <img src="<?php bloginfo('template_url'); ?>/img/intro_alt.svg" alt="" class="img-fluid">
         </div>
       </div>
 
