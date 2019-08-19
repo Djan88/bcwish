@@ -94,11 +94,11 @@
         <div class="col-md-6 intro-info order-md-first order-last">
           <h2>Биологическое центрирование <span>Система здоровья!</span></h2>
           <div>
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="#about" class="btn-get-started scrollto">Начать</a>
           </div>
         </div>
   
-        <div class="col-md-6 intro-img order-md-last order-first">
+        <div class="col-md-6 intro-img order-md-last order-first"> 
           <!-- <img src="<?php //bloginfo('template_url'); ?>/img/intro_alt.svg" alt="" class="img-fluid"> -->
         </div>
       </div>
