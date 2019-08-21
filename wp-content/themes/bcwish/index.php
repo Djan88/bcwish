@@ -187,7 +187,7 @@
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #e1eeff;"><i class="ion-checkmark" style="color: #2282ff;"></i></div>
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-checkmark" style="color: #2282ff;"></i></div>
               <h4 class="title"><a href="">Подтверждение</a></h4>
               <p class="description">Нажмав кнопку «Я это принимаю» Вы берете ответственность за свои желания!</p>
             </div>
