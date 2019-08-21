@@ -179,7 +179,7 @@
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #eafde7;"><i class="ion-more-outline" style="color:#41cf2e;"></i></div>
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-more-outline" style="color:#41cf2e;"></i></div>
               <h4 class="title"><a href="">Расстановка</a></h4>
               <p class="description">Поставьте кружки в ровную линию произвольного направления</p>
             </div>
