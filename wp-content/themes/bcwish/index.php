@@ -157,7 +157,7 @@
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #fceef3;"><ion-icon  style="color: #ff689b;" name="git-merge"></ion-icon></div>
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-lightbulb-outline" style="color: #ff689b;"></i></div>
               <h4 class="title">Определение</h4>
               <p class="description">Четко определитесь с Вашим желанием, проговорите его вслух, а лучше запишите, чтобы до Вас реально дошло - чего же именно Вы хотите</p>
             </div>
@@ -172,7 +172,7 @@
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-git-merge-outline" style="color: #3fcdc7;"></i></div>
+              <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-merge-outline" style="color: #3fcdc7;"></i></div>
               <h4 class="title"><a href="">Подготовка</a></h4>
               <p class="description">Расставьте хаотично кружки на экране. За тем произвольно пронумеруйте их</p>
             </div>
