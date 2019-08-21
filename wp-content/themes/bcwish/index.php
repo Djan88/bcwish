@@ -150,14 +150,14 @@
 
         <header class="section-header">
           <h3>Инструкция</h3>
-          <h4>Будьте осторожны со своими жениями, они могут исполниться!</h4>
+          <h4 class="center-block">Будьте осторожны со своими жениями, они могут исполниться!</h4>
         </header>
 
         <div class="row">
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #fceef3;"><i class="ion-ios-bulb-outline" style="color: #ff689b;"></i></div>
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-bulb" style="color: #ff689b;"></i></div>
               <h4 class="title">Определение</h4>
               <p class="description">Четко определитесь с Вашим желанием, проговорите его вслух, а лучше запишите, чтобы до Вас реально дошло - чего же именно Вы хотите</p>
             </div>
