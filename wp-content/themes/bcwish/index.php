@@ -187,16 +187,16 @@
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-checkmark" style="color: #2282ff;"></i></div>
+              <div class="icon" style="background: #e1eeff;"><i class="ion-checkmark-round" style="color: #2282ff;"></i></div>
               <h4 class="title"><a href="">Подтверждение</a></h4>
               <p class="description">Нажмав кнопку «Я это принимаю» Вы берете ответственность за свои желания!</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
-              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              <div class="icon" style="background: #ecebff;"><i class="ion-ios-calendar-outline" style="color: #8660fe;"></i></div>
+              <h4 class="title"><a href="">Результат</a></h4>
+              <p class="description">Полученный цифровой код необходимо просматривать ежедневно на протяжении 21 дня, акуализируясь на желании.</p>
             </div>
           </div>
 
