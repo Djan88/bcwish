@@ -150,7 +150,7 @@
 
         <header class="section-header">
           <h3>Инструкция</h3>
-          <h4 class="center-block">Будьте осторожны со своими жениями, они могут исполниться!</h4>
+          <h4 class="center-block" style="text-align: center;">Будьте осторожны со своими жениями, они могут исполниться!</h4>
         </header>
 
         <div class="row">
