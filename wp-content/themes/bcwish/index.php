@@ -159,7 +159,7 @@
             <div class="box">
               <div class="icon" style="background: #fceef3;"><i class="ion-ios-lightbulb-outline" style="color: #ff689b;"></i></div>
               <h4 class="title">Определение</h4>
-              <p class="description">Определитесь с Вашим желанием, запишите его, чтобы до Вас реально дошло - чего же именно Вы хотите.</p>
+              <p class="description">Определитесь со своим желанием, запомните, а лучше запишите его чего же именно Вы хотите.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
