@@ -145,7 +145,7 @@
     <!--==========================
       Services Section
     ============================-->
-    <section id="about" class="section-bg">
+    <section id="services" class="section-bg">
       <div class="container">
 
         <header class="section-header">
