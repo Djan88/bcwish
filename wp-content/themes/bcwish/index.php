@@ -150,31 +150,31 @@
 
         <header class="section-header">
           <h3>Инструкция</h3>
-          <p>Будьте осторожны со своими жениями, они могут испольниться!</p>
+          <h4>Будьте осторожны со своими жениями, они могут исполниться!</h4>
         </header>
 
         <div class="row">
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #fceef3;"><i class="ion-ios-book-outline" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="">Определение</a></h4>
-              <p class="description">Четко определитесь с вашим желанием, проговорите его вслух, чтобы до вас реально дошло - чего же именно вы хотите</p>
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-bulb-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title">Определение</h4>
+              <p class="description">Четко определитесь с Вашим желанием, проговорите его вслух, а лучше запишите, чтобы до Вас реально дошло - чего же именно Вы хотите</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <div class="icon" style="background: #fff0da;"><i class="ion-ios-book-outline" style="color: #e98e06;"></i></div>
+              <h4 class="title">Актуализация</h4>
+              <p class="description">Представьте себе в картинках и ощущениях, что у вас это уже случилось.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-git-merge-outline" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">Подготовка</a></h4>
+              <p class="description">Расставьте хаотично кружки на экране. За тем произвольно пронумеруйте их</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
