@@ -111,14 +111,14 @@
     <!--==========================
       About Us Section
     ============================-->
-    <section id="about">
+    <!-- <section id="about">
 
       <div class="container">
         <div class="row">
 
           <div class="col-lg-5 col-md-6">
             <div class="about-img">
-              <img src="<?php bloginfo('template_url'); ?>/img/about-img.jpg" alt="">
+              <img src="<?php //bloginfo('template_url'); ?>/img/about-img.jpg" alt="">
             </div>
           </div>
 
@@ -138,27 +138,28 @@
         </div>
       </div>
 
-    </section><!-- #about -->
+    </section> -->
+    <!-- #about -->
 
 
     <!--==========================
       Services Section
     ============================-->
-    <section id="services" class="section-bg">
+    <section id="about" class="section-bg">
       <div class="container">
 
         <header class="section-header">
-          <h3>Services</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+          <h3>Инструкция</h3>
+          <p>Будьте осторожны со своими жениями, они могут испольниться!</p>
         </header>
 
         <div class="row">
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-book-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Определение</a></h4>
+              <p class="description">Четко определитесь с вашим желанием, проговорите его вслух, чтобы до вас реально дошло - чего же именно вы хотите</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
