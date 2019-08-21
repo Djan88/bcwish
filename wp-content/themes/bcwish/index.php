@@ -159,7 +159,7 @@
             <div class="box">
               <div class="icon" style="background: #fceef3;"><i class="ion-ios-lightbulb-outline" style="color: #ff689b;"></i></div>
               <h4 class="title">Определение</h4>
-              <p class="description">Четко определитесь с Вашим желанием, проговорите его вслух, а лучше запишите, чтобы до Вас реально дошло - чего же именно Вы хотите</p>
+              <p class="description">Определитесь с Вашим желанием, запишите его, чтобы до Вас реально дошло - чего же именно Вы хотите.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
@@ -179,17 +179,17 @@
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #eafde7;"><i class="ion-ios-more-outline" style="color:#41cf2e;"></i></div>
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-more-outline" style="color:#41cf2e; transform: rotate(135deg);"></i></div>
               <h4 class="title"><a href="">Расстановка</a></h4>
-              <p class="description">Поставьте кружки в ровную линию произвольного направления</p>
+              <p class="description">Поставьте кружки в ровную линию. Направление линии можете быть произвольным</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <div class="icon" style="background: #e1eeff;"><i class="ion-checkmark" style="color: #2282ff;"></i></div>
+              <h4 class="title"><a href="">Подтверждение</a></h4>
+              <p class="description">Нажмав кнопку «Я это принимаю» Вы берете ответственность за свои желания!</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
