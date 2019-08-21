@@ -164,7 +164,7 @@
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #fff0da;"><i class="ion-ios-book-outline" style="color: #e98e06;"></i></div>
+              <div class="icon" style="background: #fff0da;"><i class="ion-ios-images-outline" style="color: #e98e06;"></i></div>
               <h4 class="title">Актуализация</h4>
               <p class="description">Представьте себе в картинках и ощущениях, что у вас это уже случилось.</p>
             </div>
@@ -172,7 +172,7 @@
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #e6fdfc;"><i class="ion-merge-outline" style="color: #3fcdc7; transform: rotate(200deg); display: inline-block;"></i></div>
+              <div class="icon" style="background: #e6fdfc;"><i class="ion-merge" style="color: #3fcdc7; transform: rotate(200deg); display: inline-block;"></i></div>
               <h4 class="title"><a href="">Подготовка</a></h4>
               <p class="description">Расставьте хаотично кружки на экране. За тем произвольно пронумеруйте их</p>
             </div>
@@ -187,7 +187,7 @@
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #e1eeff;"><i class="ion-checkmark-round" style="color: #2282ff;"></i></div>
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-checkmark-empty" style="color: #2282ff;"></i></div>
               <h4 class="title"><a href="">Подтверждение</a></h4>
               <p class="description">Нажмав кнопку «Я это принимаю» Вы берете ответственность за свои желания!</p>
             </div>
