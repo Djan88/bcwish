@@ -57,8 +57,8 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#intro">Вверх</a></li>
-          <li><a href="#about">Инструкция</a></li>
-          <li><a href="#services">Программа</a></li>
+          <li><a href="#services">Инструкция</a></li>
+          <li><a href="#why-us">Программа</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <!-- <li><a href="#team">Team</a></li> -->
           <!-- <li class="drop-down"><a href="">Drop Down</a>
