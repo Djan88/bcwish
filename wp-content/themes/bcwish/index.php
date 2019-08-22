@@ -94,7 +94,7 @@
         <div class="col-md-6 intro-info order-md-first order-last">
           <h2>Биологическое центрирование <span>Система здоровья!</span></h2>
           <div>
-            <a href="#about" class="btn-get-started scrollto">Начать</a>
+            <a href="#services" class="btn-get-started scrollto">Начать</a>
           </div>
         </div>
   
@@ -196,7 +196,7 @@
             <div class="box">
               <div class="icon" style="background: #ecebff;"><i class="ion-ios-calendar-outline" style="color: #8660fe;"></i></div>
               <h4 class="title"><a href="">Результат</a></h4>
-              <p class="description">Полученный цифровой код необходимо просматривать ежедневно на протяжении 21 дня, акуализируясь на желании.</p>
+              <p class="description">Полученный цифровой код нужно просматривать ежедневно на протяжении 21 дня, акуализируясь на желании.</p>
             </div>
           </div>
 
