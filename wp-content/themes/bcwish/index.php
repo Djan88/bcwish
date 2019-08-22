@@ -196,7 +196,7 @@
             <div class="box">
               <div class="icon" style="background: #ecebff;"><i class="ion-ios-calendar-outline" style="color: #8660fe;"></i></div>
               <h4 class="title"><a href="">Результат</a></h4>
-              <p class="description">Полученный цифровой код нужно просматривать ежедневно на протяжении 21 дня, акуализируясь на желании.</p>
+              <p class="description">Полученный цифровой код нужно просматривать на протяжении 21 дня, акуализируясь на желании.</p>
             </div>
           </div>
 
