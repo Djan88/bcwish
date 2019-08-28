@@ -1492,6 +1492,14 @@ html.all
   background: #fff;
   padding: 30px;
 }
+.login_field input.form-control 
+{
+  background: #f5f8fd;
+}
+.login_field label
+{
+  margin-right: 10px;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
