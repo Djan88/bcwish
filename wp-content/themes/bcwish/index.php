@@ -108,13 +108,12 @@
             <h2>Программа для коррекции <span>личностных психосоматических проблем!</span></h2>
             <div class="row">
               <div class="col-md-12 login_form bounceInUp">
+                <h3 class="form_heading">Вход</h3>
                 <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
                     <p class="login_field">
-                        <label for="user_login"><?php _e('Username') ?><br />
                         <input type="text" name="log" id="user_login" class="input form-control" value="<?php echo esc_attr($user_login); ?>" placeholder="Логин" size="20" /></label>
                     </p>
                     <p class="login_field">
-                        <label for="user_pass"><?php _e('Password') ?><br />
                         <input type="password" name="pwd" id="user_pass" placeholder="Пароль" class="input form-control" value="" size="20" /></label>
                     </p>
                     <?php
@@ -142,15 +141,14 @@
                 </form>
               </div>
               <div class="col-md-12 register_form bounceInUp hidden">
+                <h3 class="form_heading">Регистрация</h3>
                 <form id="registerform" action="<?php echo site_url('wp-login.php?action=register'); ?>" method="post">
                     <p class="login_field">
-                        <label for="user_login">Придумайте логин<br>
-                        <input type="text" name="user_login" id="user_login" class="input form-control" value="" placeholder="Логин" size="20" style="">
+                        <input type="text" name="user_login" id="user_login" class="input form-control" value="" placeholder="Придумайте логин" size="20" style="">
                         </label>
                     </p>
                     <p class="login_field">
-                        <label for="user_email">E-mail<br>
-                        <input type="email" name="user_email" id="user_email" class="input form-control" value="" placeholder="Email" size="25">
+                        <input type="email" name="user_email" id="user_email" class="input form-control" value="" placeholder="Ваш email" size="25">
                         </label>
                     </p>
                     <p id="reg_passmail">Подтверждение регистрации будет отправлено на ваш e-mail.</p>
