@@ -140,7 +140,7 @@
                     <p class="note_small">У Вас еще нет учетной записи? <span class="toRegistration">Зарегистрируйтесь</span> в "WizardMachine" и узнайте как получить доступ</p>
                 </form>
               </div>
-              <div class="col-md-12 register_form bounceInUp hidden">
+              <div class="col-md-12 register_form bounceInUp wow hidden" data-wow-duration="1.4s">
                 <h3 class="form_heading">Регистрация</h3>
                 <form id="registerform" action="<?php echo site_url('wp-login.php?action=register'); ?>" method="post">
                     <p class="login_field">
