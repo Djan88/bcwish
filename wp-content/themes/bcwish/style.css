@@ -1577,7 +1577,7 @@ html.all
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   #intro {
     height: auto;
     padding: 80px 0 60px 0;
