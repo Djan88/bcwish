@@ -1476,7 +1476,7 @@ html.all
 {
   margin: 0;
 }
-.toLogin, .register_form
+.toLogin, .toRegistration
 {
   color: #1bb1dc;
   cursor: pointer;
