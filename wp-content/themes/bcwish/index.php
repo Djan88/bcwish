@@ -101,7 +101,7 @@
             <?php } else if (current_user_can('contributor') || current_user_can('administrator')) { ?>
               <h2>Программа для коррекции <span>личностных психосоматических проблем!</span></h2>
               <div>
-                <a href="#services" class="btn-get-started scrollto">Начать</a>
+                <!-- <a href="#services" class="btn-get-started scrollto">Начать</a> -->
               </div>
             <?php } ?>
           <?php } else { ?>
@@ -127,7 +127,7 @@
                     ?>
                     <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <?php esc_attr_e('Remember Me'); ?></label></p>
                     <p class="submit">
-                        <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e('Log In'); ?>" />
+                        <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large btn-get-started" value="<?php esc_attr_e('Log In'); ?>" />
                         <?php   if ( $interim_login ) { ?>
                             <input type="hidden" name="interim-login" value="1" />
                         <?php   } else { ?>
@@ -156,7 +156,7 @@
                     <p id="reg_passmail">Подтверждение регистрации будет отправлено на ваш e-mail.</p>
                     <br class="clear">
                     <input type="hidden" name="redirect_to" value="">
-                    <p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Регистрация"></p>
+                    <p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large btn-get-started" value="Регистрация"></p>
                     <p class="note_small">У Вас уже есть учетная запись? <span class="toLogin">Войдите</span> в "WizardMachine" используя свои логин и пароль</p>
                 </form>
               </div>
