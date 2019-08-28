@@ -1,0 +1,2 @@
+[28-Mar-2017 09:38:57 Europe/Simferopol] PHP Fatal error:  Call to undefined function get_header() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/404.php on line 1
+[30-Mar-2017 10:28:08 Europe/Simferopol] PHP Fatal error:  Call to undefined function get_header() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/404.php on line 1
