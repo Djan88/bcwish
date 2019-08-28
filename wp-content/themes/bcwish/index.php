@@ -50,7 +50,7 @@
 
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
-        <h1 class="text-light"><a href="#intro" class="scrollto"><span>ИСПОЛНИТЕЛЬ ЖЕЛАНИЙ</span></a></h1>
+        <h1 class="text-light"><a href="#intro" class="scrollto"><span>WIZARDMACHINE</span></a></h1>
         <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
@@ -92,7 +92,75 @@
     <div class="container h-100">
       <div class="row justify-content-center align-self-center">
         <div class="col-md-6 intro-info order-md-first order-last">
-          <h2>Биологическое центрирование <span>Система здоровья!</span></h2>
+          <?php if(!is_user_logged_in()){ ?>
+            <?php if(current_user_can('subscriber')){ ?>
+              <h2>Доступ к программе закрыт!<br>Оплатите доступ в личном кабинете<span>и пользуйтесь программой целый год!</span></h2>
+              <div>
+                <a href="/cabinet" class="btn-get-started">Личный кабинет</a>
+              </div>
+            <?php } else if (current_user_can('contributor') || current_user_can('administrator')) { ?>
+              <h2>Программа для коррекции <span>личностных психосоматических проблем!</span></h2>
+              <div>
+                <a href="#services" class="btn-get-started scrollto">Начать</a>
+              </div>
+            <?php } ?>
+          <?php } else { ?>
+            <h2>Программа для коррекции <span>личностных психосоматических проблем!</span></h2>
+            <div class="col-md-6 login_form">
+              <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
+                  <p>
+                      <label for="user_login"><?php _e('Username') ?><br />
+                      <input type="text" name="log" id="user_login" class="input" value="<?php echo esc_attr($user_login); ?>" size="20" /></label>
+                  </p>
+                  <p>
+                      <label for="user_pass"><?php _e('Password') ?><br />
+                      <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>
+                  </p>
+                  <?php
+                  /**
+                   * Fires following the 'Password' field in the login form.
+                   *
+                   * @since 2.1.0
+                   */
+                  do_action( 'login_form' );
+                  ?>
+                  <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <?php esc_attr_e('Remember Me'); ?></label></p>
+                  <p class="submit">
+                      <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e('Log In'); ?>" />
+                      <?php   if ( $interim_login ) { ?>
+                          <input type="hidden" name="interim-login" value="1" />
+                      <?php   } else { ?>
+                          <input type="hidden" name="redirect_to" value="<?php echo esc_attr($redirect_to); ?>" />
+                      <?php   } ?>
+                      <?php   if ( $customize_login ) : ?>
+                          <input type="hidden" name="customize-login" value="1" />
+                      <?php   endif; ?>
+                      <input type="hidden" name="testcookie" value="1" />
+                  </p>
+                  <p class="note_small">У Вас еще нет учетной записи? <span class="toRegistration">Зарегистрируйтесь</span> в "WizardMachine" и узнайте как получить доступ</p>
+              </form>
+            </div>
+            <div class="col-md-6 register_form hidden">
+              <form id="registerform" action="<?php echo site_url('wp-login.php?action=register'); ?>" method="post">
+                  <p>
+                      <label for="user_login">Придумайте логин<br>
+                      <input type="text" name="user_login" id="user_login" class="input" value="" size="20" style="">
+                      </label>
+                  </p>
+                  <p>
+                      <label for="user_email">E-mail<br>
+                      <input type="email" name="user_email" id="user_email" class="input" value="" size="25">
+                      </label>
+                  </p>
+                  <p id="reg_passmail">Подтверждение регистрации будет отправлено на ваш e-mail.</p>
+                  <br class="clear">
+                  <input type="hidden" name="redirect_to" value="">
+                  <p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Регистрация"></p>
+                  <p class="note_small">У Вас уже есть учетная запись? <span class="toLogin">Войдите</span> в "WizardMachine" используя свои логин и пароль</p>
+              </form>
+            </div>
+          <?php } ?>
+          
           <div>
             <a href="#services" class="btn-get-started scrollto">Начать</a>
           </div>
@@ -975,6 +1043,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 
 </body>
 </html>

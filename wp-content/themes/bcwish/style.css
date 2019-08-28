@@ -1462,7 +1462,11 @@ html.all
   max-width: 50%;
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0;
+}
+#intro
+{
+  overflow: hidden;
 }
 
 /*--------------------------------------------------------------
