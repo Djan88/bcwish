@@ -1495,6 +1495,7 @@ html.all
 .login_field input.form-control 
 {
   background: #f5f8fd;
+  max-width: 195px;
 }
 .login_field
 {
