@@ -107,7 +107,7 @@
           <?php } else { ?>
             <h2>Программа для коррекции <span>личностных психосоматических проблем!</span></h2>
             <div class="row">
-              <div class="col-md-12 login_form bounceInUp">
+              <div class="col-md-12 login_form bounceInUp wow" data-wow-duration="1.4s">
                 <h3 class="form_heading">Вход</h3>
                 <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
                     <p class="login_field">
