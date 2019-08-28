@@ -151,7 +151,7 @@
                         <input type="email" name="user_email" id="user_email" class="input form-control" value="" placeholder="Ваш email" size="25">
                         </label>
                     </p>
-                    <p id="reg_passmail">Подтверждение регистрации будет отправлено на ваш e-mail.</p>
+                    <p id="reg_passmail">Подтверждение регистрации будет отправлено email.</p>
                     <br class="clear">
                     <input type="hidden" name="redirect_to" value="">
                     <p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large btn-get-started" value="Регистрация"></p>
