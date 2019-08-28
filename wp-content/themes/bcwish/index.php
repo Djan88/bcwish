@@ -101,7 +101,7 @@
             <?php } else if (current_user_can('contributor') || current_user_can('administrator')) { ?>
               <h2>Программа для коррекции <span>личностных психосоматических проблем!</span></h2>
               <div>
-                <!-- <a href="#services" class="btn-get-started scrollto">Начать</a> -->
+                <a href="#services" class="btn-get-started scrollto">Начать</a>
               </div>
             <?php } ?>
           <?php } else { ?>
@@ -164,7 +164,7 @@
           <?php } ?>
           
           <div>
-            <a href="#services" class="btn-get-started scrollto">Начать</a>
+            <!-- <a href="#services" class="btn-get-started scrollto">Начать</a> -->
           </div>
         </div>
   
