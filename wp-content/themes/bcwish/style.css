@@ -1479,6 +1479,7 @@ html.all
 .toLogin, .register_form
 {
   color: #1bb1dc;
+  cursor: pointer;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
