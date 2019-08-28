@@ -1481,6 +1481,10 @@ html.all
   color: #1bb1dc;
   cursor: pointer;
 }
+.login_field
+{
+  display: inline-block;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
