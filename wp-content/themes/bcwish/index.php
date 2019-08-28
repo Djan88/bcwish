@@ -110,11 +110,11 @@
               <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
                   <p>
                       <label for="user_login"><?php _e('Username') ?><br />
-                      <input type="text" name="log" id="user_login" class="input" value="<?php echo esc_attr($user_login); ?>" size="20" /></label>
+                      <input type="text" name="log" id="user_login" class="input form-control" value="<?php echo esc_attr($user_login); ?>" size="20" /></label>
                   </p>
                   <p>
                       <label for="user_pass"><?php _e('Password') ?><br />
-                      <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>
+                      <input type="password" name="pwd" id="user_pass" class="input form-control" value="" size="20" /></label>
                   </p>
                   <?php
                   /**
@@ -144,12 +144,12 @@
               <form id="registerform" action="<?php echo site_url('wp-login.php?action=register'); ?>" method="post">
                   <p>
                       <label for="user_login">Придумайте логин<br>
-                      <input type="text" name="user_login" id="user_login" class="input" value="" size="20" style="">
+                      <input type="text" name="user_login" id="user_login" class="input form-control" value="" size="20" style="">
                       </label>
                   </p>
                   <p>
                       <label for="user_email">E-mail<br>
-                      <input type="email" name="user_email" id="user_email" class="input" value="" size="25">
+                      <input type="email" name="user_email" id="user_email" class="input form-control" value="" size="25">
                       </label>
                   </p>
                   <p id="reg_passmail">Подтверждение регистрации будет отправлено на ваш e-mail.</p>
