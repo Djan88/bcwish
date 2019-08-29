@@ -99,13 +99,13 @@
                 <a href="/cabinet" class="btn-get-started">Личный кабинет</a>
               </div>
             <?php } else if (current_user_can('contributor') || current_user_can('administrator')) { ?>
-              <h2>Программа для коррекции <span>личностных психосоматических проблем!</span></h2>
+              <h2>Программа для коррекции <br><span>личностных психосоматических проблем!</span></h2>
               <div>
                 <a href="#services" class="btn-get-started scrollto">Начать</a>
               </div>
             <?php } ?>
           <?php } else { ?>
-            <h2>Программа для коррекции <span>личностных психосоматических проблем!</span></h2>
+            <h2>Программа для коррекции <br><span>личностных психосоматических проблем!</span></h2>
             <div class="row">
               <div class="col-md-12 login_form bounceInUp wow" data-wow-duration="1.4s">
                 <h3 class="form_heading">Вход</h3>
