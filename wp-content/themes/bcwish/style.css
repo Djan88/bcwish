@@ -1535,6 +1535,10 @@ html.all
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
+  .main_bg
+  {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {

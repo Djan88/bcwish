@@ -169,7 +169,7 @@
           <!-- <img src="<?php //bloginfo('template_url'); ?>/img/intro_alt.svg" alt="" class="img-fluid"> -->
         <!-- </div> -->
       </div>
-    <!-- <img src="<?php //bloginfo('template_url'); ?>/img/intro_alt.svg" alt="" class="img-fluid main_bg"> -->
+    <img src="<?php bloginfo('template_url'); ?>/img/intro_alt.svg" alt="" class="img-fluid main_bg">
     </div>
   </section><!-- #intro -->
 
