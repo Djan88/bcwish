@@ -1516,6 +1516,14 @@ html.all
     padding: 20px;
     /*margin: auto;*/
 }
+.steps
+{
+  position: relative;
+}
+.steps_item
+{
+  /*position: absolute;*/
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/

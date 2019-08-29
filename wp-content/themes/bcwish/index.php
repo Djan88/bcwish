@@ -212,6 +212,29 @@
     <!--==========================
       Services Section
     ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Как это работает?</h3>
+          <h4 class="center-block" style="text-align: center;">Пошаговое описание алгоритма работы "WizardMachine"!</h4>
+        </header>
+
+        <div class="row">
+          <div class="col-md-12 steps">
+            <div class="steps_item steps_item_1">
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-lightbulb-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title">Загрузка и коррекция фото</h4>
+              <p class="description">Загрузите фото клиента и при необходимости выполните подрезку. Для этого в "WizardMachine" есть встроенные механизмы</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #services -->
+    <!--==========================
+      Services Section
+    ============================-->
     <section id="services" class="section-bg">
       <div class="container">
 
