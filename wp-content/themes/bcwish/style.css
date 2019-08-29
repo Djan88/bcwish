@@ -603,12 +603,11 @@ h6 {
 
 #services .icon {
   margin: 0 auto 15px auto;
-  padding-top: 12px;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
 }
 
 #services .icon i {
@@ -1522,7 +1521,19 @@ html.all
 }
 .steps_item
 {
-  /*position: absolute;*/
+  max-width: 370px;
+  text-align: center;
+  border: 6px solid #1bb1dc;
+  border-radius: 50%;
+  padding: 40px;
+}
+#services .icon svg {
+  margin: 0 auto 15px auto;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
