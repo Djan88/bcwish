@@ -1535,14 +1535,6 @@ html.all
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
-  .login_form, .register_form
-  {
-    margin: auto;
-  }
-  #intro .intro-info h2
-  {
-    text-align: center;
-  }
 }
 
 @media (min-width: 992px) {
@@ -1559,27 +1551,30 @@ html.all
   #topbar {
     display: none;
   }
-
   #header {
     height: 70px;
     padding: 15px 0;
   }
-
   #header .logo h1 {
     font-size: 28px;
     padding: 8px 0;
   }
-
   #why-us .why-us-content {
     padding-top: 30px;
   }
-
   #pricing {
     padding-bottom: 30px;
   }
-
   #pricing .card {
     margin-bottom: 50px;
+  }
+  .login_form, .register_form
+  {
+    margin: auto;
+  }
+  #intro .intro-info h2
+  {
+    text-align: center;
   }
 }
 
