@@ -91,7 +91,7 @@
   <section id="intro" class="clearfix">
     <div class="container h-100">
       <div class="row justify-content-center align-self-center">
-        <div class="col-md-6 col-sm-12 intro-info order-md-first order-last">
+        <div class="col-md-9 col-sm-12 intro-info order-md-first order-last">
           <?php if(is_user_logged_in()){ ?>
             <?php if(current_user_can('subscriber')){ ?>
               <h2>Доступ к программе закрыт!<br>Оплатите доступ в личном кабинете<span>и пользуйтесь программой целый год!</span></h2>

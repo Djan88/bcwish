@@ -1501,7 +1501,7 @@ html.all
 {
   border-color: transparent;
 }
-.login_field
+.login_field, .register_form
 {
   margin-right: 10px!important;
   margin-bottom: 10px!important;
@@ -1509,6 +1509,12 @@ html.all
 .form_heading
 {
   color: #1bb1dc;
+}
+.login_form, .register_form
+{
+    max-width: 500px;
+    padding: 20px;
+    /*margin: auto;*/
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
@@ -1528,6 +1534,10 @@ html.all
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+  }
+  .login_form, .register_form
+  {
+    margin: auto;
   }
 }
 
