@@ -1539,6 +1539,10 @@ html.all
   {
     margin: auto;
   }
+  #intro .intro-info h2
+  {
+    text-align: center;
+  }
 }
 
 @media (min-width: 992px) {
