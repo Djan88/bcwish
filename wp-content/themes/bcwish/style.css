@@ -1524,7 +1524,7 @@ html.all
   display: inline-block;
   max-width: 370px;
   text-align: center;
-  border: 6px solid #1bb1dc;
+  /*border: 6px solid #1bb1dc;*/
   border-radius: 50%;
   padding: 40px;
 }
