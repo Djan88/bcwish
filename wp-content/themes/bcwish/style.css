@@ -596,10 +596,10 @@ h6 {
   text-align: center;
 }
 
-#services .box:hover {
+/*#services .box:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-}
+}*/
 
 #services .icon {
   margin: 0 auto 15px auto;

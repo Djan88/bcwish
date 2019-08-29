@@ -216,8 +216,8 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Инструкция</h3>
-          <h4 class="center-block" style="text-align: center;">Будьте осторожны со своими жениями, они могут исполниться!</h4>
+          <h3>Как это работает?</h3>
+          <h4 class="center-block" style="text-align: center;">Пошаговое описание алгоритма работы "WizardMachine"!</h4>
         </header>
 
         <div class="row">
