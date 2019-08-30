@@ -1534,9 +1534,10 @@ html.all
   position: absolute;
   width: 100px;
 }
-.arrow_box_1
+.arrow_box_1 
 {
-  
+  top: 90px;
+  left: 400px;
 }
 
 /*--------------------------------------------------------------
