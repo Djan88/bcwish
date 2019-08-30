@@ -1528,6 +1528,10 @@ html.all
   padding: 40px;
   margin: 30px;
 }
+.steps_item_6
+{
+  max-width: 670px;
+}
 .arrow_box 
 {
   display: inline-block;
@@ -1553,14 +1557,20 @@ html.all
 }
 .arrow_box_4
 {
-  top: 590px;
-  left: 200px;
+  top: 550px;
+  left: 180px;
   /*transform: rotate(90deg);*/
 }
 .arrow_box_5
 {
-  top: 890px;
+  top: 700px;
   left: 400px;
+}
+.arrow_box_6 
+{
+  width: 1250px;
+  left: -35px;
+  top: 700px;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
