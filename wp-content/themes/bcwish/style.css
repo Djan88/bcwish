@@ -19,6 +19,7 @@ body {
 .container 
 {
   min-width: 992px!important;
+  overflow: hidden;
 }
 
 a {
