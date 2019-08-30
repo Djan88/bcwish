@@ -16,6 +16,10 @@ body {
   font-family: "Open Sans", sans-serif;
   min-width: 995px;
 }
+.container 
+{
+  min-width: 992px!important;
+}
 
 a {
   color: #1bb1dc;
