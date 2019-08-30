@@ -56,7 +56,7 @@
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#intro">Вверх</a></li>
+          <!-- <li class="active"><a href="#intro">Вверх</a></li> -->
           <?php if(is_user_logged_in()){ ?>
             <li><a href="/cabinet">Личный кабинет</a></li>
           <?php } else { ?>
