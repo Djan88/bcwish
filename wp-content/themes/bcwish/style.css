@@ -1551,6 +1551,17 @@ html.all
   left: 400px;
   transform: rotate(180deg);
 }
+.arrow_box_4
+{
+  top: 590px;
+  left: 200px;
+  transform: rotate(90deg);
+}
+.arrow_box_5
+{
+  top: 890px;
+  left: 400px;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
