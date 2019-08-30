@@ -1524,18 +1524,19 @@ html.all
   display: inline-block;
   max-width: 370px;
   text-align: center;
-  /*border: 6px solid #1bb1dc;*/
   border-radius: 50%;
   padding: 40px;
 }
 .arrow_box 
 {
   display: inline-block;
+  position: absolute;
 }
-#services .icon svg 
+.arrow_box_1
 {
   
 }
+
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
