@@ -1549,13 +1549,13 @@ html.all
 {
   top: 390px;
   left: 400px;
-  transform: rotate(180deg);
+  /*transform: rotate(180deg);*/
 }
 .arrow_box_4
 {
   top: 590px;
   left: 200px;
-  transform: rotate(90deg);
+  /*transform: rotate(90deg);*/
 }
 .arrow_box_5
 {
