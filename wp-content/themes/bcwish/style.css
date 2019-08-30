@@ -1539,6 +1539,12 @@ html.all
   top: 90px;
   left: 400px;
 }
+.arrow_box_2 
+{
+  width: 1250px;
+  left: -35px;
+  top: 10px;
+}
 
 /*--------------------------------------------------------------
 # Responsive Media Queries
