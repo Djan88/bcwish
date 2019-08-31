@@ -1253,6 +1253,7 @@
   <!-- Template Main Javascript File -->
   <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/JCrop.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/exif.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 
 </body>
