@@ -224,8 +224,7 @@
       <div class="container">
 
         <header class="section-header">
-          <!-- <h3>Как это работает?</h3> -->
-          <h4 class="center-block wizard_heading" style="text-align: center;">Загрузите и отредактируйте фото</h4>
+          <h3>Загрузите и отредактируйте фото</h3>
         </header>
 
         <div class="row">
