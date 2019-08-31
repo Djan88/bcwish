@@ -335,7 +335,7 @@
                     <!-- <h2>Выберите изображение</h2> -->
                     <div>
                       <input id="image_file" class="hidden" name="mci_image_file" type="file" />
-                      <label class="btn-get-started photo_upload" for="image_file">Выберите файл</label>
+                      <label class="btn btn-success photo_upload" for="image_file">Выберите файл</label>
                     </div>
                     <div class="error"></div>
                     <div class="step2">
