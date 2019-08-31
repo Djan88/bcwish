@@ -333,7 +333,10 @@
                     <input id="x2" name="mci_x2" type="hidden" />
                     <input id="y2" name="mci_y2" type="hidden" />
                     <!-- <h2>Выберите изображение</h2> -->
-                    <div><input id="image_file" name="mci_image_file" type="file" /></div>
+                    <div>
+                      <input id="image_file" class="hidden" name="mci_image_file" type="file" />
+                      <label class="btn-get-started photo_upload" for="image_file">Выберите файл</label>
+                    </div>
                     <div class="error"></div>
                     <div class="step2">
                     <h3>Выделите область для обрезки</h3>
