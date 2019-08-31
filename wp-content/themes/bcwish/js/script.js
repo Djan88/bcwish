@@ -7,4 +7,9 @@ jQuery(function() {
     jQuery('.login_form').addClass('hidden').removeClass('bounceInUp');
     jQuery('.register_form').removeClass('hidden').addClass('bounceInUp');
   });
+
+  //Скрываем возможно загруженное изображение
+  jQuery('#main img:first-child').addClass('returned hidden');
+
+  
 });

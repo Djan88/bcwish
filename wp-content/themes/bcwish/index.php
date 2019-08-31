@@ -324,7 +324,7 @@
                     echo '<img src="'.$sImage.'" />';
                 }
             ?>
-            <div class="machine_screen clearfix hidden">
+            <div class="machine_screen clearfix">
                 <div class="bbody">
                     <!-- upload form -->
                     <form id="upload_form" action="/wizard/" enctype="multipart/form-data" method="post"><!-- hidden crop params -->
@@ -339,7 +339,7 @@
                     <h3>Выделите область для обрезки</h3>
                     <img id="preview" alt="" />
                     <!--<canvas id="preview-canvas" style="border: 3px red solid;/*position: absolute; visibility: hidden; /*left: -20000px*/"></canvas>-->
-                    <div class="info"><label>Размер файла</label> <input id="filesize" name="mci_filesize" type="text" />
+                    <div class="info hidden"><label>Размер файла</label> <input id="filesize" name="mci_filesize" type="text" />
                     <label>Тип</label> <input id="filetype" name="mci_filetype" type="text" />
                     <label>Разрешение изображения</label> <input id="filedim" name="mci_filedim" type="text" />
                     <label>Ширина</label> <input id="w" name="mci_w" type="text" />
