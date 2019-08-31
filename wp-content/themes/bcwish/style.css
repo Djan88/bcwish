@@ -1579,22 +1579,47 @@ html.all
   left: -165px;
   top: 650px;
 }
+.machine_screen 
+{
+  text-align: center;
+}
 .step2
 {
   display: none;
 }
-.machine_screen 
+.step2 img 
 {
-  text-align: center;
+  display: block;
+  margin: auto;
+  max-width: 800px;
+  height: auto!important;
+}
+.jcrop-holder 
+{
+  display: block;
+  margin: auto;
+}
+.crop_photo 
+{
+  margin-bottom: 10px;
 }
 #preview 
 {
   display: none!important;
 }
-.jcrop-holder 
+.loaded_img
 {
-    display: block;
-    margin: auto;
+  min-width: 200px;
+  width: 80%;
+  display: inline-block;
+  margin: auto;
+  max-width: 400px;
+  padding: 0;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .arrow_box path 
 {
@@ -1630,6 +1655,10 @@ html.all
   font-size: 1px;
   height: 30px;
   width: 30px;
+}
+.crop_photo
+{
+  margin-top: 20px;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
