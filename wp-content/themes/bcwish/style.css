@@ -1615,11 +1615,13 @@ html.all
   transition: 0.5s;
   color: #fff;
   background: #1bb1dc;
+  border: 1px solid #0a98c0;
   color: #fff;
 }
 .photo_upload:hover
 {
   background: #0a98c0;
+  border: 1px solid #0a98c0;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
