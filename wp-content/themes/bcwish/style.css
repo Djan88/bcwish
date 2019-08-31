@@ -1587,6 +1587,15 @@ html.all
 {
   text-align: center;
 }
+#preview 
+{
+  display: none!important;
+}
+.jcrop-holder 
+{
+    display: block;
+    margin: auto;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
