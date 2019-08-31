@@ -220,7 +220,7 @@
     <!--==========================
       Main Section
     ============================-->
-    <section id="why-us">
+    <section id="services">
       <div class="container">
 
         <header class="section-header">
