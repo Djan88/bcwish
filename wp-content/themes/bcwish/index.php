@@ -25,6 +25,7 @@
   <link href="<?php bloginfo('template_url'); ?>/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
+  <link href="<?php bloginfo('template_url'); ?>/JCrop.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
   <?php wp_head(); ?>
 </head>
@@ -217,7 +218,7 @@
 
 
     <!--==========================
-      Services Section
+      Steps Section
     ============================-->
     <section id="services">
       <div class="container">
@@ -299,6 +300,121 @@
               <p class="description">Когда программа выполнится на экране появится модальное окно с сответствующим сообщением и кнопками "Завершить" и "Другой протокол". Клинув на кнопку "Завершить" Вы переместитесь на главную страницу и можете выйти из программы или начать работу с другим клиентом. Кликнув на кнопку "Другой протокол" Вы можете продолжить работу с текущим клиентом по другому протоколу. При этом не надо будет заново проводить каллибровку и расставляться зоны. Вы просто выбираете другой протокол и запускаете выполнение программы.</p>
             </div>
           </div>
+        </div>
+
+      </div>
+    </section><!-- #services -->
+    <?php if(is_user_logged_in()){ ?>
+    <!--==========================
+      Main Section
+    ============================-->
+    <section id="why-us" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <!-- <h3>Как это работает?</h3> -->
+          <h4 class="center-block wizard_heading" style="text-align: center;">Загрузите и отредактируйте фото</h4>
+        </header>
+
+        <div class="row">
+          <div class="col-md-12 wizard">
+            <?php
+                if($_POST['mci_magic']){
+                    $sImage = uploadImageFile();
+                    echo '<img src="'.$sImage.'" />';
+                }
+            ?>
+            <div class="machine_screen clearfix hidden">
+                <div class="bbody">
+                    <!-- upload form -->
+                    <form id="upload_form" action="/wizard/" enctype="multipart/form-data" method="post"><!-- hidden crop params -->
+                    <input id="x1" name="mci_x1" type="hidden" />
+                    <input id="y1" name="mci_y1" type="hidden" />
+                    <input id="x2" name="mci_x2" type="hidden" />
+                    <input id="y2" name="mci_y2" type="hidden" />
+                    <!-- <h2>Выберите изображение</h2> -->
+                    <div><input id="image_file" name="mci_image_file" type="file" /></div>
+                    <div class="error"></div>
+                    <div class="step2">
+                    <h3>Выделите область для обрезки</h3>
+                    <img id="preview" alt="" />
+                    <!--<canvas id="preview-canvas" style="border: 3px red solid;/*position: absolute; visibility: hidden; /*left: -20000px*/"></canvas>-->
+                    <div class="info"><label>Размер файла</label> <input id="filesize" name="mci_filesize" type="text" />
+                    <label>Тип</label> <input id="filetype" name="mci_filetype" type="text" />
+                    <label>Разрешение изображения</label> <input id="filedim" name="mci_filedim" type="text" />
+                    <label>Ширина</label> <input id="w" name="mci_w" type="text" />
+                    <label>Высота</label> <input id="h" name="mci_h" type="text" /></div>
+                    <input type="submit" class="crop_photo" value="Редактировать фото" name="mci_magic" />
+                    </div>
+                    </form>
+                
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- #services -->
+    <?php ?>
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="why-us" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <!-- <h3>Как это работает?</h3> -->
+          <h4 class="center-block wizard_heading" style="text-align: center;">Загрузите и отредактируйте фото</h4>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-lightbulb-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title">Определение</h4>
+              <p class="description">Определитесь со своим желанием, запомните, а лучше запишите его чего же именно Вы хотите.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fff0da;"><i class="ion-ios-body-outline" style="color: #e98e06;"></i></div>
+              <h4 class="title">Актуализация</h4>
+              <p class="description">Представьте себе в картинках и ощущениях, что у вас это уже случилось.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #e6fdfc;"><i class="ion-merge" style="color: #3fcdc7; transform: rotate(200deg); display: inline-block;"></i></div>
+              <h4 class="title"><a href="">Подготовка</a></h4>
+              <p class="description">Расставьте хаотично кружки на экране. За тем произвольно пронумеруйте их</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-more-outline" style="color:#41cf2e; transform: rotate(135deg);"></i></div>
+              <h4 class="title"><a href="">Расстановка</a></h4>
+              <p class="description">Поставьте кружки в ровную линию. Направление линии можете быть произвольным</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-checkmark-empty" style="color: #2282ff; display: inline-block; transform: scale(1.5);"></i></div>
+              <h4 class="title"><a href="">Подтверждение</a></h4>
+              <p class="description">Нажмав кнопку «Я это принимаю» Вы берете ответственность за свои желания!</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #ecebff;"><i class="ion-ios-calendar-outline" style="color: #8660fe;"></i></div>
+              <h4 class="title"><a href="">Результат</a></h4>
+              <p class="description">Полученный цифровой код нужно просматривать на протяжении 21 дня, акуализируясь на желании.</p>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -1136,6 +1252,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/JCrop.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 
 </body>
