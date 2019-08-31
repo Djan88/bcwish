@@ -1623,6 +1623,14 @@ html.all
   background: #0a98c0;
   border: 1px solid #0a98c0;
 }
+.jcrop-handle
+{
+  background-color: #333;
+  border: 1px #EEE solid;
+  font-size: 1px;
+  height: 30px;
+  width: 30px;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
