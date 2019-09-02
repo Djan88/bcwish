@@ -27,7 +27,7 @@ jQuery(function() {
   }
 
 // Вторая кнопка обрезки
-  jQuery('.btn_crop').on('click', function(event) {
+  jQuery('.wizard_crop').on('click', function(event) {
     jQuery('.crop_photo').click();
   });
 
