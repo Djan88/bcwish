@@ -10,9 +10,9 @@ jQuery(function() {
   });
 
   //Скрываем возможно загруженное изображение
-  jQuery('.machine_screen img:first-child').addClass('returned hidden');
+  jQuery('.wizard img:first-child').addClass('returned hidden');
 
-  croppedImg = jQuery('.machine_screen').children()[0];
+  croppedImg = jQuery('.wizard').children()[0];
 
   if (croppedImg && croppedImg.hasAttribute('src')) {
     console.log('img');
