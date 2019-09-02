@@ -38,6 +38,7 @@ jQuery(function() {
     jQuery('.wizard_to_start').addClass('hidden');
     jQuery('.wizard_to_what_way').removeClass('hidden');
     jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_heading').text('Выберите протокол');
   });
 
 
