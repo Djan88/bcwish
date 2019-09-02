@@ -35,6 +35,8 @@
   Header
   ============================-->
   <header id="header">
+    <button type="button" class="wizard_crop hidden d-lg-none"><i class="fas fa-crop-alt"></i></button>
+    <button type="button" class="wizard_to_start hidden d-lg-none"><i class="fas fa-arrow-left"></i></i></button>
 
     <div id="topbar">
       <div class="container">
@@ -1210,6 +1212,7 @@
   <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/JCrop.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/exif.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 
 </body>

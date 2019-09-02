@@ -15,6 +15,9 @@ jQuery(function() {
   croppedImg = jQuery('.wizard').children()[0];
 
 
+
+
+
 // Если фото уже загружено
   if (croppedImg && croppedImg.hasAttribute('src')) {
     jQuery('.machine_screen, #intro').addClass('hidden');
@@ -132,8 +135,8 @@ jQuery(function() {
 
                   // display step 2
                   jQuery('.step2').fadeIn(500);
-                  jQuery('.btn_crop').fadeIn(500);
-                  jQuery('.btn__crop').removeClass('hidden');
+                  jQuery('.wizard_crop').fadeIn(500);
+                  jQuery('.wizard_crop').removeClass('hidden');
                   // display some basic image info
                   var sResultFileSize = bytesToSize(oFile.size);
                   jQuery('#filesize').val(sResultFileSize);
