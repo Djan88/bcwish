@@ -36,7 +36,7 @@
   ============================-->
   <header id="header">
     <button type="button" class="wizard_crop hidden header_btn"><i class="fa fa-crop"></i></button>
-    <button type="button" class="wizard_to_start hidden header_btn"><i class="fa fa-arrow-left"></i></i></button>
+    <a href="/" class="wizard_to_start hidden header_btn"><i class="fa fa-arrow-left"></i></a>
 
     <div id="topbar">
       <div class="container">

@@ -1706,9 +1706,9 @@ h3.wizard_heading
   margin: 18px 18px 0 0;
   color: #065e77;
 }
-.wizard_crop
+.wizard_crop, .wizard_to_start
 {
-  right: 35px;
+  right: 50px;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries

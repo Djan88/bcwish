@@ -22,7 +22,8 @@ jQuery(function() {
   if (croppedImg && croppedImg.hasAttribute('src')) {
     jQuery('.machine_screen, #intro').addClass('hidden');
     jQuery('.wizard_way').removeClass('hidden');
-    jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?')
+    jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
+    jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
   }
 
 
