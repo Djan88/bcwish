@@ -1476,7 +1476,7 @@ html.all
 }
 .hidden
 {
-  display: none;
+  display: none!important;
 }
 .login_form p, .register_form p 
 {
