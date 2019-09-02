@@ -39,11 +39,11 @@
     <div id="topbar">
       <div class="container">
         <div class="social-links">
-          <a href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
-          <a href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100012253260685&pnref" class="facebook"><i class="fa fa-facebook"></i></a>
-          <a href="https://vk.com/id139677998" class="vk"><i class="fa fa-vk"></i></a>
-          <a href="https://chikurov.com" class="site"><i class="fa fa-globe"></i></a>
+          <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
+          <a target="_blank" href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100012253260685&pnref" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a target="_blank" href="https://vk.com/id139677998" class="vk"><i class="fa fa-vk"></i></a>
+          <a target="_blank" href="https://chikurov.com" class="site"><i class="fa fa-globe"></i></a>
         </div>
       </div>
     </div>
@@ -65,25 +65,6 @@
             <li><a href="#services">Инструкция</a></li>
           <?php } ?>
           <li><a href="#why-us">Программа</a></li>
-          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-          <!-- <li><a href="#team">Team</a></li> -->
-          <!-- <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li> -->
           <li><a href="#footer">Обратная связь</a></li>
           <?php if(is_user_logged_in()){ ?>
             <li><a href="/wp-login.php?action=logout&_wpnonce=0d90a53269">Выход</a></li>
@@ -184,39 +165,6 @@
 
   <main id="main">
 
-    <!--==========================
-      About Us Section
-    ============================-->
-    <!-- <section id="about">
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-5 col-md-6">
-            <div class="about-img">
-              <img src="<?php //bloginfo('template_url'); ?>/img/about-img.jpg" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-7 col-md-6">
-            <div class="about-content">
-              <h2>About Us</h2>
-              <h3>Odio sed id eos et laboriosam consequatur eos earum soluta.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p>Aut dolor id. Sint aliquam consequatur ex ex labore. Et quis qui dolor nulla dolores neque. Aspernatur consectetur omnis numquam quaerat. Sed fugiat nisi. Officiis veniam molestiae. Et vel ut quidem alias veritatis repudiandae ut fugit. Est ut eligendi aspernatur nulla voluptates veniam iusto vel quisquam. Fugit ut maxime incidunt accusantium totam repellendus eum error. Et repudiandae eum iste qui et ut ab alias.</p>
-              <ul>
-                <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section> -->
-    <!-- #about -->
-
     <?php if(is_user_logged_in()){ ?>
     <!--==========================
       Main Section
@@ -237,33 +185,35 @@
                 }
             ?>
             <div class="machine_screen clearfix">
-                <div class="bbody">
-                    <!-- upload form -->
-                    <form id="upload_form" action="/wizard/" enctype="multipart/form-data" method="post"><!-- hidden crop params -->
-                    <input id="x1" name="mci_x1" type="hidden" />
-                    <input id="y1" name="mci_y1" type="hidden" />
-                    <input id="x2" name="mci_x2" type="hidden" />
-                    <input id="y2" name="mci_y2" type="hidden" />
-                    <!-- <h2>Выберите изображение</h2> -->
-                    <div>
-                      <input id="image_file" class="hidden" name="mci_image_file" type="file" />
-                      <label class="btn btn-success photo_upload" for="image_file">Выберите файл</label>
-                    </div>
-                    <div class="error"></div>
-                    <div class="step2">
-                    <h3>Выделите область для обрезки</h3>
-                    <img id="preview" alt="" />
-                    <!--<canvas id="preview-canvas" style="border: 3px red solid;/*position: absolute; visibility: hidden; /*left: -20000px*/"></canvas>-->
-                    <div class="info hidden"><label>Размер файла</label> <input id="filesize" name="mci_filesize" type="text" />
-                    <label>Тип</label> <input id="filetype" name="mci_filetype" type="text" />
-                    <label>Разрешение изображения</label> <input id="filedim" name="mci_filedim" type="text" />
-                    <label>Ширина</label> <input id="w" name="mci_w" type="text" />
-                    <label>Высота</label> <input id="h" name="mci_h" type="text" /></div>
-                    <input type="submit" class="btn btn-success crop_photo" value="Редактировать фото" name="mci_magic" />
-                    </div>
-                    </form>
-                
+              <div class="bbody">
+                <!-- upload form -->
+                <form id="upload_form" action="/wizard/" enctype="multipart/form-data" method="post"><!-- hidden crop params -->
+                <input id="x1" name="mci_x1" type="hidden" />
+                <input id="y1" name="mci_y1" type="hidden" />
+                <input id="x2" name="mci_x2" type="hidden" />
+                <input id="y2" name="mci_y2" type="hidden" />
+                <!-- <h2>Выберите изображение</h2> -->
+                <div>
+                  <input id="image_file" class="hidden" name="mci_image_file" type="file" />
+                  <label class="btn btn-success photo_upload" for="image_file">Выберите файл</label>
                 </div>
+                <div class="error"></div>
+                <div class="step2">
+                <h3>Выделите область для обрезки</h3>
+                <img id="preview" alt="" />
+                <!--<canvas id="preview-canvas" style="border: 3px red solid;/*position: absolute; visibility: hidden; /*left: -20000px*/"></canvas>-->
+                <div class="info hidden"><label>Размер файла</label> <input id="filesize" name="mci_filesize" type="text" />
+                <label>Тип</label> <input id="filetype" name="mci_filetype" type="text" />
+                <label>Разрешение изображения</label> <input id="filedim" name="mci_filedim" type="text" />
+                <label>Ширина</label> <input id="w" name="mci_w" type="text" />
+                <label>Высота</label> <input id="h" name="mci_h" type="text" /></div>
+                <input type="submit" class="btn btn-success crop_photo" value="Редактировать фото" name="mci_magic" />
+                </div>
+                </form>
+              </div>
+            </div>
+            <div class="row wizard_operation">
+              <div class="col-md-12 wizard_way"></div>
             </div>
           </div>
         </div>
