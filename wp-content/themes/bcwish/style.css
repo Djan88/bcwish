@@ -1686,6 +1686,20 @@ h3.wizard_heading
 {
   text-align: center;
 }
+.header_btn
+{
+  position: fixed;
+  top: 0;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
 .wizard_crop
 {
   right: 35px;
