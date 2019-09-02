@@ -35,7 +35,7 @@
   Header
   ============================-->
   <header id="header">
-    <button type="button" class="wizard_crop hidden header_btn"><i class="fa fa-crop-alt"></i></button>
+    <button type="button" class="wizard_crop hidden header_btn"><i class="fa-crop"></i></button>
     <button type="button" class="wizard_to_start hidden header_btn"><i class="fa fa-arrow-left"></i></i></button>
 
     <div id="topbar">
