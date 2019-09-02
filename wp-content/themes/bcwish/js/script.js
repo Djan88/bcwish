@@ -9,7 +9,7 @@ jQuery(function() {
     jQuery('.register_form').removeClass('hidden').addClass('bounceInUp');
   });
 
-  //Скрываем возможно загруженное изображение
+//Скрываем возможно загруженное изображение
   jQuery('.wizard img:first-child').addClass('returned hidden');
 
   croppedImg = jQuery('.wizard').children()[0];
@@ -25,6 +25,11 @@ jQuery(function() {
     jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
     jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
   }
+
+// Вторая кнопка обрезки
+  jQuery('.btn_crop').on('click', function(event) {
+    jQuery('.crop_photo').click();
+  });
 
 
 
