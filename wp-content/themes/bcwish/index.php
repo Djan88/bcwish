@@ -175,7 +175,7 @@
       <div class="container">
 
         <header class="section-header">
-          <h3 class="wizard_heading">Загрузите и отредактируйте фото</h3>
+          <h3 class="wizard_heading wow bounceInUp" data-wow-duration="1.4s">Загрузите и отредактируйте фото</h3>
         </header>
 
         <div class="row">
@@ -216,8 +216,8 @@
             </div>
             <div class="row wizard_operation">
               <div class="col-md-12 wizard_way hidden">
-                <button class="btn btn-success btn_diag">Диагностика</button>
-                <button class="btn btn-success btn_prot_choice">Выбор протокола</button>
+                <button class="btn btn-success btn_diag wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.1s">Диагностика</button>
+                <button class="btn btn-success btn_prot_choice wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">Выбор протокола</button>
               </div>
             </div>
           </div>
