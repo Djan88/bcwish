@@ -1677,6 +1677,15 @@ html.all
 .d-lg-none {
     display: block!important;
 }
+h3.wizard_heading
+{
+  font-size: 28px;
+  margin-top: 20px;
+}
+.col-md-12.wizard_way 
+{
+  text-align: center;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/

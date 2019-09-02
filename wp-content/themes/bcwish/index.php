@@ -169,7 +169,7 @@
     <!--==========================
       Main Section
     ============================-->
-    <section id="services">
+    <section id="services" class="section-bg">
       <div class="container">
 
         <header class="section-header">
