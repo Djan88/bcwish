@@ -220,7 +220,7 @@
                 <button class="btn btn-success btn_diag wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.1s">Диагностика</button>
                 <button class="btn btn-success btn_prot_choice wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">Выбор протокола</button>
               </div>
-              <div class="col-md-12 wizard_prots hidden">
+              <div id="faq" class="col-md-12 wizard_prots hidden">
                 <ul id="faq-list" class="wow fadeInUp">
                   <li>
                     <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="ion-android-remove"></i></a>
