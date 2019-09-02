@@ -173,7 +173,7 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Загрузите и отредактируйте фото</h3>
+          <h3 class="wizard_heading">Загрузите и отредактируйте фото</h3>
         </header>
 
         <div class="row">
@@ -213,7 +213,7 @@
               </div>
             </div>
             <div class="row wizard_operation">
-              <div class="col-md-12 wizard_way">
+              <div class="col-md-12 wizard_way hidden">
                 <button class="btn btn-success btn_diag">Диагностика</button>
                 <button class="btn btn-success btn_prot_choice">Выбор протокола</button>
               </div>
@@ -321,7 +321,7 @@
 
         <header class="section-header">
           <!-- <h3>Как это работает?</h3> -->
-          <h4 class="center-block wizard_heading" style="text-align: center;">Загрузите и отредактируйте фото</h4>
+          <h4 class="center-block" style="text-align: center;">Загрузите и отредактируйте фото</h4>
         </header>
 
         <div class="row">

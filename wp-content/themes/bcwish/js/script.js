@@ -14,8 +14,11 @@ jQuery(function() {
 
   croppedImg = jQuery('.wizard').children()[0];
 
+
+// Если фото уже загружено
   if (croppedImg && croppedImg.hasAttribute('src')) {
-    console.log('img');
+    jQuery('.machine_screen, #intro').addClass('hidden');
+    jQuery('.wizard_way').removeClass('hidden')
   }
 
 
