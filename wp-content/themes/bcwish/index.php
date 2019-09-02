@@ -213,7 +213,10 @@
               </div>
             </div>
             <div class="row wizard_operation">
-              <div class="col-md-12 wizard_way"></div>
+              <div class="col-md-12 wizard_way">
+                <button class="btn btn-success btn_diag">Диагностика</button>
+                <button class="btn btn-success btn_prot_choice">Выбор протокола</button>
+              </div>
             </div>
           </div>
         </div>

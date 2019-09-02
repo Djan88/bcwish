@@ -10,6 +10,9 @@ jQuery(function() {
 
   //Скрываем возможно загруженное изображение
   jQuery('#main img:first-child').addClass('returned hidden');
+  if (jQuery('.returned')) {
+    console.log('img');
+  }
 
 
 
