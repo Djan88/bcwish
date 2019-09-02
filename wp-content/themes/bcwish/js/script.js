@@ -10,7 +10,7 @@ jQuery(function() {
 
   //Скрываем возможно загруженное изображение
   jQuery('.machine_screen img:first-child').addClass('returned hidden');
-  if (jQuery('.returned')) {
+  if (jQuery('.machine_screen').find('.returned')) {
     console.log('img');
   }
 
