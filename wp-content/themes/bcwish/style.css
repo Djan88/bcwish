@@ -1671,6 +1671,12 @@ html.all
   font-size: 28px;
   padding: 8px 0;
 }
+.d-none {
+  display: none!important;
+}
+.d-lg-none {
+    display: block!important;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
