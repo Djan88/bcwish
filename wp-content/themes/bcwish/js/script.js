@@ -9,7 +9,7 @@ jQuery(function() {
   });
 
   //Скрываем возможно загруженное изображение
-  jQuery('#main img:first-child').addClass('returned hidden');
+  jQuery('.machine_screen img:first-child').addClass('returned hidden');
   if (jQuery('.returned')) {
     console.log('img');
   }
