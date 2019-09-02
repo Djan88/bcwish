@@ -32,6 +32,15 @@ jQuery(function() {
   });
 
 
+  // К протоколам
+  jQuery('.btn_prot_choice').on('click', function(event) {
+    jQuery('.wizard_way').addClass('hidden');
+    jQuery('.wizard_to_start').addClass('hidden');
+    jQuery('.wizard_to_what_way').removeClass('hidden');
+    jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
+  });
+
+
 
 //CROPPING SCRIPT
   // convert bytes into friendly format

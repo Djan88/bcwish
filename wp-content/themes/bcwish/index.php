@@ -37,6 +37,7 @@
   <header id="header">
     <button type="button" class="wizard_crop hidden header_btn"><i class="fa fa-crop"></i></button>
     <a href="/" class="wizard_to_start hidden header_btn"><i class="fa fa-arrow-left"></i></a>
+    <button type="button" class="wizard_to_what_way hidden header_btn"><i class="fa fa-arrow-left"></i></button>
 
     <div id="topbar">
       <div class="container">
@@ -219,6 +220,58 @@
                 <button class="btn btn-success btn_diag wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.1s">Диагностика</button>
                 <button class="btn btn-success btn_prot_choice wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">Выбор протокола</button>
               </div>
+              <div class="col-md-12 wizard_prots hidden">
+                <ul id="faq-list" class="wow fadeInUp">
+                  <li>
+                    <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="ion-android-remove"></i></a>
+                    <div id="faq1" class="collapse" data-parent="#faq-list">
+                      <p>
+                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="ion-android-remove"></i></a>
+                    <div id="faq2" class="collapse" data-parent="#faq-list">
+                      <p>
+                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="ion-android-remove"></i></a>
+                    <div id="faq3" class="collapse" data-parent="#faq-list">
+                      <p>
+                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="ion-android-remove"></i></a>
+                    <div id="faq4" class="collapse" data-parent="#faq-list">
+                      <p>
+                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="ion-android-remove"></i></a>
+                    <div id="faq5" class="collapse" data-parent="#faq-list">
+                      <p>
+                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="ion-android-remove"></i></a>
+                    <div id="faq6" class="collapse" data-parent="#faq-list">
+                      <p>
+                        Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -315,68 +368,6 @@
         </div>
       </section><!-- #services -->
     <?php } ?>
-    <!--==========================
-      Services Section
-    ============================-->
-    <section id="why-us" class="section-bg">
-      <div class="container">
-
-        <header class="section-header">
-          <!-- <h3>Как это работает?</h3> -->
-          <h4 class="center-block" style="text-align: center;">Загрузите и отредактируйте фото</h4>
-        </header>
-
-        <div class="row">
-
-          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
-            <div class="box">
-              <div class="icon" style="background: #fceef3;"><i class="ion-ios-lightbulb-outline" style="color: #ff689b;"></i></div>
-              <h4 class="title">Определение</h4>
-              <p class="description">Определитесь со своим желанием, запомните, а лучше запишите его чего же именно Вы хотите.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
-            <div class="box">
-              <div class="icon" style="background: #fff0da;"><i class="ion-ios-body-outline" style="color: #e98e06;"></i></div>
-              <h4 class="title">Актуализация</h4>
-              <p class="description">Представьте себе в картинках и ощущениях, что у вас это уже случилось.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="box">
-              <div class="icon" style="background: #e6fdfc;"><i class="ion-merge" style="color: #3fcdc7; transform: rotate(200deg); display: inline-block;"></i></div>
-              <h4 class="title"><a href="">Подготовка</a></h4>
-              <p class="description">Расставьте хаотично кружки на экране. За тем произвольно пронумеруйте их</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="box">
-              <div class="icon" style="background: #eafde7;"><i class="ion-ios-more-outline" style="color:#41cf2e; transform: rotate(135deg);"></i></div>
-              <h4 class="title"><a href="">Расстановка</a></h4>
-              <p class="description">Поставьте кружки в ровную линию. Направление линии можете быть произвольным</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
-            <div class="box">
-              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-checkmark-empty" style="color: #2282ff; display: inline-block; transform: scale(1.5);"></i></div>
-              <h4 class="title"><a href="">Подтверждение</a></h4>
-              <p class="description">Нажмав кнопку «Я это принимаю» Вы берете ответственность за свои желания!</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
-            <div class="box">
-              <div class="icon" style="background: #ecebff;"><i class="ion-ios-calendar-outline" style="color: #8660fe;"></i></div>
-              <h4 class="title"><a href="">Результат</a></h4>
-              <p class="description">Полученный цифровой код нужно просматривать на протяжении 21 дня, акуализируясь на желании.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #services -->
     <!--==========================
       Services Section
     ============================-->
