@@ -1,4 +1,5 @@
 jQuery(function() {
+  var croppedImg;
   jQuery('.toLogin').on('click', function(event) {
     jQuery('.register_form').addClass('hidden').removeClass('bounceInUp');
     jQuery('.login_form').removeClass('hidden').addClass('bounceInUp');
@@ -10,7 +11,10 @@ jQuery(function() {
 
   //Скрываем возможно загруженное изображение
   jQuery('.machine_screen img:first-child').addClass('returned hidden');
-  if (jQuery('.machine_screen').find('.returned')) {
+
+  croppedImg = jQuery('.machine_screen').children()[0];
+
+  if (croppedImg && croppedImg.hasAttribute('src')) {
     console.log('img');
   }
 
