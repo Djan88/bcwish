@@ -588,6 +588,7 @@ h6 {
 
 #services {
   padding: 60px 0 40px 0;
+  border-top: 2px solid #535175;
 }
 
 #services .box {
@@ -1699,6 +1700,11 @@ h3.wizard_heading
   line-height: 1;
   cursor: pointer;
   text-align: right;
+}
+.header_btn i
+{
+  margin: 18px 18px 0 0;
+  color: #065e77;
 }
 .wizard_crop
 {
