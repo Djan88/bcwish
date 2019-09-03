@@ -502,29 +502,17 @@
   <footer id="footer" class="section-bg">
     <div class="footer-top">
       <div class="container">
-
         <div class="row">
-
           <div class="col-lg-6">
-
             <div class="row">
-
-                <div class="col-sm-6">
-
-                  <div class="footer-info">
-                    <h3>WizardMachine</h3>
-                    <p>"WizardMachine" — это программа для коррекции актуальных личностных проблем методами "Биологического Центрирования". Разработана в Москве, в "Школе Доктора Чикурова" 2015 г.</p>
-                  </div>
-
-                  <div class="footer-newsletter">
-                    <h4>Новости школы</h4>
-                    <p>Подпишитесь на новости "Школы Доктора Чикурова" в любой из социальных сетей. Будет интересно, гарантируем!</p>
-                  </div>
-
+              <div class="col-sm-6">
+                <div class="footer-info">
+                  <h3>WizardMachine</h3>
+                  <p>"WizardMachine" — это программа для коррекции актуальных личностных проблем методами "Биологического Центрирования". Разработана в Москве, в "Школе Доктора Чикурова" 2015 г.</p>
                 </div>
-
-                <div class="col-sm-6">
-
+                <div class="footer-newsletter">
+                  <h4>Новости школы</h4>
+                  <p>Подпишитесь на новости "Школы Доктора Чикурова" в любой из социальных сетей. Будет интересно, гарантируем!</p>
                   <div class="social-links">
                     <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
                     <a target="_blank" href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
@@ -532,17 +520,12 @@
                     <a target="_blank" href="https://vk.com/id139677998" class="vk"><i class="fa fa-vk"></i></a>
                     <a target="_blank" href="https://chikurov.com" class="site"><i class="fa fa-globe"></i></a>
                   </div>
-
                 </div>
-
+              </div>
             </div>
-
           </div>
-
           <div class="col-lg-6">
-
             <div class="form">
-              
               <h4>Есть вопрос? Есть ответ!</h4>
               <p>У Вас остались вопросы? Нужна помощь в освоениии "WizardMachine"? Хотите сказать нам спасибо? Воспользуйтесь формой ниже. Вам оперативно ответят!</p>
               <form action="" method="post" role="form" class="contactForm">
@@ -569,13 +552,8 @@
                 <div class="text-center"><button type="submit" title="Отправить">Отправить</button></div>
               </form>
             </div>
-
           </div>
-
-          
-
         </div>
-
       </div>
     </div>
 
