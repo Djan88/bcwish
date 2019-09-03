@@ -223,7 +223,7 @@
               <div id="faq" class="col-md-12 wizard_prots hidden">
                 <ul id="faq-list" class="wow fadeInUp">
                   <li>
-                    <a data-toggle="collapse" class="collapsed" href="#faq1">(V1) «Краниальный протокол» <i class="ion-android-remove"></i></a>
+                    <a data-toggle="collapse" class="collapsed" href="#faq1">(V1) Краниальный протокол <i class="ion-android-remove"></i></a>
                     <div id="faq1" class="collapse" data-parent="#faq-list">
                       <p>
                         «Краниальный протокол» - «используется при актуальности зоны головы, а также для терапевтической дефрагментации ума»
@@ -231,42 +231,58 @@
                     </div>
                   </li>
                   <li>
-                    <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="ion-android-remove"></i></a>
+                    <a data-toggle="collapse" href="#faq2" class="collapsed">(V2—V5) Люди и отношения. Предметы, вещи и достижение целей <i class="ion-android-remove"></i></a>
                     <div id="faq2" class="collapse" data-parent="#faq-list">
                       <p>
-                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                        «Показания для коррекции - застрявшие мысли/дилеммы категорий люди и отношения, а также предметы/вещи/деньги. Рационализации (самообман), неотпущенные переживания обиды и вины, клинические проявления V2 заболеваний.»
                       </p>
                     </div>
                   </li>
                   <li>
-                    <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="ion-android-remove"></i></a>
+                    <a data-toggle="collapse" href="#faq3" class="collapsed">(V3—V4) Раздражение и неприятие <i class="ion-android-remove"></i></a>
                     <div id="faq3" class="collapse" data-parent="#faq-list">
                       <p>
-                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                        «Показания к применению - чувство непереносимости ситуации либо отношений, невозможности принять для себя это переживания, раздражение от всех и вся, попытки заставить вас принять чужое мнение, или ваши попытки заставить кого-либо принять вашу точку зрения, клинические проявления V3 заболеваний.»
                       </p>
                     </div>
                   </li>
                   <li>
-                    <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="ion-android-remove"></i></a>
+                    <a data-toggle="collapse" href="#faq4" class="collapsed">(V4—V3) Суета беспокойство и напряжение <i class="ion-android-remove"></i></a>
                     <div id="faq4" class="collapse" data-parent="#faq-list">
                       <p>
-                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                        «Показания к применению - переживание беспокойства, тревожности, суеты и торопливости, злости и заниженной самооценки. Клинические проявления V4 заболеваний.»
                       </p>
                     </div>
                   </li>
                   <li>
-                    <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="ion-android-remove"></i></a>
+                    <a data-toggle="collapse" href="#faq5" class="collapsed">(V5—V2) Иррациональное, витальная сила <i class="ion-android-remove"></i></a>
                     <div id="faq5" class="collapse" data-parent="#faq-list">
                       <p>
-                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                        «Показания к применению - невротические переживания нехватки воздуха, страхов закрытого пространства, высоты. Синдром хронической усталости, последствия физических травм, насилия, утопления, кровопотери, общего наркоза и прочих ситуаций, связанных с угрозой жизни. Клинические проявления V5 заболеваний.»
                       </p>
                     </div>
                   </li>
                   <li>
-                    <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="ion-android-remove"></i></a>
+                    <a data-toggle="collapse" href="#faq6" class="collapsed">(ДРЕНАЖ) Реактивация ресурса <i class="ion-android-remove"></i></a>
                     <div id="faq6" class="collapse" data-parent="#faq-list">
                       <p>
-                        Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                        «Дренажный протокол предназначен для флюидической очистки зон DSV тела ума. Рекомендован при хронических либо кармически отягощенных, а также гипоресурсных состояниях. Можно применять сразу дополнительно после основного протокола (кроме V5) либо самостоятельно»
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a data-toggle="collapse" href="#faq7" class="collapsed">(SOLIS) Коррекция гиперресурса <i class="ion-android-remove"></i></a>
+                    <div id="faq6" class="collapse" data-parent="#faq-list">
+                      <p>
+                        «Протокол "Solis" предназначен для "гиперресурсных" состояний, которые закономерно возникают после удачных проработок клиента на "wizardmachine", терапевтической дефрагментации, "Tarotmachine", а также после проработки кармических и родовых проблем либо после длительной "отжимке" негативного флюида из физического тела. При калибровке ставьте зону v3 на нижнюю границу сердца! Показания к применению - напряжения в теле и поведенческие дисфункции на полнолуние. Нормализация метафункционала вентральной оси. рекомендован ежедневно с 10-го по 15-й дни Луны!
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a data-toggle="collapse" href="#faq8" class="collapsed">(ВИСЦЕРАЛЬНЫЙ) Коррекция гиперресурса <i class="ion-android-remove"></i></a>
+                    <div id="faq6" class="collapse" data-parent="#faq-list">
+                      <p>
+                        «Протокол "Solis" предназначен для "гиперресурсных" состояний, которые закономерно возникают после удачных проработок клиента на "wizardmachine", терапевтической дефрагментации, "Tarotmachine", а также после проработки кармических и родовых проблем либо после длительной "отжимке" негативного флюида из физического тела. При калибровке ставьте зону v3 на нижнюю границу сердца! Показания к применению - напряжения в теле и поведенческие дисфункции на полнолуние. Нормализация метафункционала вентральной оси. рекомендован ежедневно с 10-го по 15-й дни Луны!
                       </p>
                     </div>
                   </li>
