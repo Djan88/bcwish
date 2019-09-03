@@ -223,10 +223,10 @@
               <div id="faq" class="col-md-12 wizard_prots hidden">
                 <ul id="faq-list" class="wow fadeInUp">
                   <li>
-                    <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="ion-android-remove"></i></a>
+                    <a data-toggle="collapse" class="collapsed" href="#faq1">(V1) «Краниальный протокол» <i class="ion-android-remove"></i></a>
                     <div id="faq1" class="collapse" data-parent="#faq-list">
                       <p>
-                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                        «Краниальный протокол» - «используется при актуальности зоны головы, а также для терапевтической дефрагментации ума»
                       </p>
                     </div>
                   </li>
