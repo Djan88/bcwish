@@ -217,8 +217,8 @@
             </div>
             <div class="row wizard_operation">
               <div class="col-md-12 wizard_way hidden">
-                <button class="btn btn-success btn_diag wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.1s">Диагностика</button>
-                <button class="btn btn-success btn_prot_choice wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">Выбор протокола</button>
+                <button class="btn btn-success btn_diag wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">Диагностика</button>
+                <button class="btn btn-success btn_prot_choice wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.8s">Выбор протокола</button>
               </div>
               <div id="faq" class="col-md-12 wizard_prots hidden">
                 <ul id="faq-list" class="wow fadeInUp">
