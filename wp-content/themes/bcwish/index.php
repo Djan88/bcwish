@@ -514,7 +514,7 @@
     <section id="pricing" class="wow fadeInUp section-bg">
       <div class="container">
         <header class="section-header">
-          <h3>Сколько это стоит?</h3>
+          <h3>Сколько стоит доступ?</h3>
         </header>
         <div class="row flex-items-xs-middle flex-items-xs-center">
           <!-- Basic Plan  -->
@@ -522,7 +522,7 @@
           <div class="col-xs-12 col-lg-4">
             <div class="card">
               <div class="card-header">
-                <h3><span class="currency">₽</span>35000<span class="period">/год</span></h3>
+                <h3><span class="currency"></span>35 тыс<span class="period">₽/год</span></h3>
               </div>
               <div class="card-block">
                 <h4 class="card-title"> 
@@ -538,14 +538,14 @@
           <div class="col-xs-12 col-lg-4">
             <div class="card">
               <div class="card-header">
-                <h3><span class="currency">₽</span>25000<span class="period">/год</span></h3>
+                <h3><span class="currency"></span>25 тыс<span class="period">₽/год</span></h3>
               </div>
               <div class="card-block">
                 <h4 class="card-title"> 
                   Продление доступа
                 </h4>
                 <ul class="list-group">
-                  <li class="list-group-item">Начиная со второго года пользования "WizardMachine" Вам доступна скидка. Сейчас и далее Вы можете оплатить доступ на 30% дешевле!</li>
+                  <li class="list-group-item">Начиная со второго года пользования "WizardMachine" Вам доступна скидка. Сейчас и далее Вы можете оплатить доступ на 30% дешевле! Даже если Вы некоторое время не продлевали доступ</li>
                 </ul>
               </div>
             </div>
