@@ -198,7 +198,7 @@
                 <!-- <h2>Выберите изображение</h2> -->
                 <div>
                   <input id="image_file" class="hidden" name="mci_image_file" type="file" />
-                  <label class="btn btn-success photo_upload" for="image_file">Выберите файл</label>
+                  <label class="btn btn-success photo_upload wizard_blue" for="image_file">Выберите файл</label>
                 </div>
                 <div class="error"></div>
                 <div class="step2">
@@ -228,6 +228,7 @@
                       <p>
                         «Краниальный протокол» - «используется при актуальности зоны головы, а также для терапевтической дефрагментации ума»
                       </p>
+                      <p><button class="btn wizard_blue wizard_prot_1 wow bounceInUp" data-wow-duration="1.4s">Активировать V1</button></p>
                     </div>
                   </li>
                   <li>
