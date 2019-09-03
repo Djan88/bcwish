@@ -588,7 +588,7 @@ h6 {
 
 #services {
   padding: 60px 0 40px 0;
-  border-top: 2px solid #535175;
+  /*border-top: 2px solid #535175;*/
 }
 
 #services .box {
