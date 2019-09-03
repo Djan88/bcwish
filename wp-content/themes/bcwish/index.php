@@ -503,9 +503,9 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-5">
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-sm-12">
                 <div class="footer-info">
                   <h3>WizardMachine</h3>
                   <p>"WizardMachine" — это программа для коррекции актуальных личностных проблем методами "Биологического Центрирования". Разработана в Москве, в "Школе Доктора Чикурова" 2015 г.</p>
@@ -524,7 +524,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-8">
             <div class="form">
               <h4>Есть вопрос? Есть ответ!</h4>
               <p>У Вас остались вопросы? Нужна помощь в освоениии "WizardMachine"? Хотите сказать нам спасибо? Воспользуйтесь формой ниже. Вам оперативно ответят!</p>
@@ -542,7 +542,7 @@
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Пожалуйста напишите нам что-нибудь" placeholder="Message"></textarea>
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Пожалуйста напишите нам что-нибудь" placeholder="Пожалуйста напишите нам что-нибудь"></textarea>
                   <div class="validation"></div>
                 </div>
 
