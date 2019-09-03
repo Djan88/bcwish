@@ -198,7 +198,7 @@
                 <!-- <h2>Выберите изображение</h2> -->
                 <div>
                   <input id="image_file" class="hidden" name="mci_image_file" type="file" />
-                  <label class="btn btn-success photo_upload wizard_blue" for="image_file">Выберите файл</label>
+                  <label class="btn btn-success photo_upload wizard_blue wow bounceInUp"  data-wow-duration="1.4s" data-wow-delay="0.4s" for="image_file">Выберите файл</label>
                 </div>
                 <div class="error"></div>
                 <div class="step2">
