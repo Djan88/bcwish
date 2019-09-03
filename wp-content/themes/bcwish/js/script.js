@@ -41,6 +41,15 @@ jQuery(function() {
     jQuery('.wizard_heading').text('Выберите протокол');
   });
 
+  //Назад. К выбору режимов
+  jQuery('.wizard_to_what_way').on('click', function(event) {
+    jQuery('.wizard_prots').addClass('hidden');
+    jQuery('.wizard_to_what_way').addClass('hidden');
+    jQuery('.wizard_to_start').removeClass('hidden');
+    jQuery('.wizard_way').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
+  });
+
 
 
 //CROPPING SCRIPT

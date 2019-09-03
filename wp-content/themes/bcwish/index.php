@@ -172,7 +172,7 @@
     <!--==========================
       Main Section
     ============================-->
-    <section id="services" class="section-bg">
+    <section id="services">
       <div class="container">
 
         <header class="section-header">
@@ -335,7 +335,7 @@
               <div class="steps_item steps_item_2 wow bounceInUp" data-wow-duration="1.4s">
                 <!-- <div class="icon"></div> -->
                 <h4 class="title">Определение актуальности</h4>
-                <p class="description">Загрузите фото клиента. При необходимости выполните подрезку. Для этого в "WizardMachine" есть встроенные механизмы позволяющие удалить с фото ненужные элементы</p>
+                <p class="description">Определите актуальную зону по которой далее будет происходить работа. Для этого в программе "WizardMachine" есть встроенный помощник</p>
               </div>
               <div class="steps_item steps_item_3 wow bounceInUp" data-wow-duration="1.4s">
                 <!-- <div class="icon"></div> -->
@@ -554,12 +554,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="credits">
-        <a href="https://chikurov.com/">Школа Доктора Чикурова</a>
       </div>
     </div>
   </footer><!-- #footer -->
