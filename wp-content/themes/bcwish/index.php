@@ -176,7 +176,7 @@
       <div class="container">
 
         <header class="section-header">
-          <h3 class="wizard_heading wow bounceInUp" data-wow-duration="1.4s">Загрузите и отредактируйте фото</h3>
+          <h3 class="wizard_heading wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.1s">Загрузите и отредактируйте фото</h3>
         </header>
 
         <div class="row">
