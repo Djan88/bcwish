@@ -1175,8 +1175,11 @@ h6 {
 }
 
 #faq #faq-list {
-  padding: 0;
   list-style: none;
+  padding: 20px;
+  list-style: none;
+  background: #f5f8fd;
+  border-radius: 6px;
 }
 
 #faq #faq-list li {
