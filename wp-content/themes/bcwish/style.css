@@ -1398,6 +1398,7 @@ h6 {
   box-shadow: none;
   border: 1px solid #dce1ec;
   font-size: 14px;
+  border-radius: 6px;
 }
 
 #footer .footer-top .form input::-webkit-input-placeholder,
