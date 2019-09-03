@@ -433,7 +433,7 @@
     <section id="pricing" class="wow fadeInUp">
       <div class="container">
         <header class="section-header">
-          <h3>Сколько стоит доступ?</h3>
+          <h3>Сколько стоит "WizardMachine"?</h3>
         </header>
         <div class="row flex-items-xs-middle flex-items-xs-center">
           <!-- Basic Plan  -->
@@ -448,7 +448,7 @@
                   Первичное подключение
                 </h4>
                 <ul class="list-group">
-                  <li class="list-group-item">Если Вы впервые подключаетесь к программе "WizardMachine".В стоимость включена инструкция в PDF и техническая поддержка специалистом 7 дней в неделю на год.</li>
+                  <li class="list-group-item">Если Вы впервые подключаетесь к программе <b>"WizardMachine"</b>.В стоимость включена инструкция в PDF и техническая поддержка специалистом 7 дней в неделю на год.</li>
                 </ul>
               </div>
             </div>
@@ -464,7 +464,7 @@
                   Продление доступа
                 </h4>
                 <ul class="list-group">
-                  <li class="list-group-item">Начиная со второго года пользования "WizardMachine" Вам доступна скидка. Сейчас и далее Вы можете оплатить доступ на 30% дешевле! Даже если Вы некоторое время не продлевали доступ</li>
+                  <li class="list-group-item">Начиная со второго года пользования <b>"WizardMachine"</b> Вам доступна скидка. Сейчас и далее Вы можете оплатить доступ на 30% дешевле! Даже если Вы некоторое время не продлевали доступ</li>
                 </ul>
               </div>
             </div>
@@ -508,11 +508,11 @@
               <div class="col-sm-12">
                 <div class="footer-info">
                   <h3>WizardMachine</h3>
-                  <p>"WizardMachine" — это программа для коррекции актуальных личностных проблем методами "Биологического Центрирования". Разработана в Москве, в "Школе Доктора Чикурова" 2015 г.</p>
+                  <p><b>"WizardMachine"</b> — это программа для коррекции актуальных личностных проблем методами "Биологического Центрирования". Разработана в Москве, в <b>"Школе Доктора Чикурова"</b> 2015 г.</p>
                 </div>
                 <div class="footer-newsletter">
                   <h4>Новости школы</h4>
-                  <p>Подпишитесь на новости "Школы Доктора Чикурова" в любой из социальных сетей. Будет интересно, гарантируем!</p>
+                  <p>Подпишитесь на новости <b>"Школы Доктора Чикурова"</b> и <b>"WizardMachine"</b> в любой из социальных сетей. Будет интересно, гарантируем!</p>
                   <div class="social-links">
                     <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
                     <a target="_blank" href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
@@ -524,10 +524,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-7">
             <div class="form">
               <h4>Есть вопрос? Есть ответ!</h4>
-              <p>У Вас остались вопросы? Нужна помощь в освоениии "WizardMachine"? Хотите сказать нам спасибо? Воспользуйтесь формой ниже. Вам оперативно ответят!</p>
+              <p>У Вас остались вопросы? Нужна помощь в освоениии <b>"WizardMachine"</b>? Хотите сказать нам спасибо? Воспользуйтесь формой ниже. Вам оперативно ответят!</p>
               <form action="" method="post" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Ваше имя" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
