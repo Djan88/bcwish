@@ -35,7 +35,7 @@ jQuery(function() {
   // К протоколам
   jQuery('.btn_prot_choice').on('click', function(event) {
     jQuery('.wizard_way').addClass('hidden');
-    jQuery('.wizard_to_start').addClass('hidden');
+    jQuery('.wizard_to_start, .btn_diag, .btn_prot_choice').addClass('hidden');
     jQuery('.wizard_to_what_way').removeClass('hidden');
     jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').text('Выберите протокол');
@@ -45,7 +45,7 @@ jQuery(function() {
   jQuery('.wizard_to_what_way').on('click', function(event) {
     jQuery('.wizard_prots').addClass('hidden');
     jQuery('.wizard_to_what_way').addClass('hidden');
-    jQuery('.wizard_to_start').removeClass('hidden');
+    jQuery('.wizard_to_start .btn_diag, .btn_prot_choice').removeClass('hidden');
     jQuery('.wizard_way').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
   });
