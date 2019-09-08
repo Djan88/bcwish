@@ -10,9 +10,8 @@ jQuery(function() {
   });
 
 //Скрываем возможно загруженное изображение
-  jQuery('.wizard').find('img:first-child').addClass('returned hidden');
-
-  croppedImg = jQuery('.wizard').children()[0];
+  jQuery('.wizard_returned').find('img:first-child').addClass('returned hidden');
+  croppedImg = jQuery('.wizard_returned').children()[0];
 
 
 

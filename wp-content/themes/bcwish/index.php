@@ -186,12 +186,14 @@
 
         <div class="row">
           <div class="col-md-12 wizard">
-            <?php
-                if($_POST['mci_magic']){
-                    $sImage = uploadImageFile();
-                    echo '<img src="'.$sImage.'" />';
-                }
-            ?>
+            <div class="wizard_returned">
+              <?php
+                  if($_POST['mci_magic']){
+                      $sImage = uploadImageFile();
+                      echo '<img src="'.$sImage.'" />';
+                  }
+              ?>
+            </div>
             <div class="machine_screen clearfix">
               <div class="bbody">
                 <!-- upload form -->
