@@ -304,7 +304,7 @@
             </div>
             <div class="row wizard_main_screen hidden">
               <div class="col-md-6 wizard_zones">
-                <img src="<?php bloginfo('template_url'); ?>/wp-content/uploads/cropped/093dc3ed989f5b2b8e1fd77a88b009e9.jpg" class="wizard_template" alt="wizard_template">
+                <img src="<?php bloginfo('template_url'); ?>/img/template.jpg" class="wizard_template" alt="wizard_template">
               </div>
               <div class="col-md-6">
                 <img src="" class="wizard_returned" alt="wizard_returned">
