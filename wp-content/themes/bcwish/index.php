@@ -307,6 +307,7 @@
             <div class="row wizard_main_screen hidden">
               <div class="col-md-6 wizard_zones">
                 <img src="<?php bloginfo('template_url'); ?>/img/template.jpg" class="wizard_template" alt="wizard_template">
+                <div class="zone draggable">V1</div>
               </div>
               <div class="col-md-6">
                 <img src="" class="wizard_returned" alt="wizard_returned">
@@ -621,6 +622,7 @@
   <script src="<?php bloginfo('template_url'); ?>/js/JCrop.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/exif.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 
 </body>

@@ -14,7 +14,10 @@ jQuery(function() {
   croppedImg = jQuery('.wizard_returned').children()[0];
 
 
-
+  //Dragging elems
+  jQuery( ".draggable" ).draggable({
+      snap: false
+  });
 
 
 // Если фото уже загружено
