@@ -1,6 +1,5 @@
 jQuery(function() {
-  var croppedImg,
-      croppedImgSrc;
+  var croppedImg;
   jQuery('.toLogin').on('click', function(event) {
     jQuery('.register_form').addClass('hidden').removeClass('bounceInUp');
     jQuery('.login_form').removeClass('hidden').addClass('bounceInUp');
@@ -14,7 +13,6 @@ jQuery(function() {
   jQuery('.wizard img:first-child').addClass('returned hidden');
 
   croppedImg = jQuery('.wizard').children()[0];
-  croppedImgSrc = croppedImg.attr('src');
 
 
 
@@ -24,7 +22,7 @@ jQuery(function() {
   if (croppedImg && croppedImg.hasAttribute('src')) {
     jQuery('.machine_screen, #intro').addClass('hidden');
     jQuery('.wizard_way').removeClass('hidden');
-    jQuery('.wizard_returned').attr('src', croppedImgSrc);
+    jQuery('.wizard_returned').attr('src', croppedImg.src);
     jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
     jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
   }
