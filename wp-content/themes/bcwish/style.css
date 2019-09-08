@@ -1732,6 +1732,11 @@ h3.wizard_heading
 {
   padding: 0 20px;
 }
+.wizard_main_screen .col-md-6 img 
+{
+  display: block;
+  margin: auto;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
