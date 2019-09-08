@@ -55,7 +55,7 @@ jQuery(function() {
     jQuery('.wizard_operation').addClass('hidden');
     jQuery('.wizard_to_what_way').addClass('hidden');
     jQuery('.wizard_to_protList').removeClass('hidden');
-    jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.wizard_heading').text('Осталось перенести зоны на фото и можно начинать!');
   });
 
