@@ -1720,6 +1720,10 @@ h3.wizard_heading
 {
   color: #1bb1dc;
 }
+.wizard_returned.returned
+{
+  display: block!important;
+}
 .wizard
 {
   padding-bottom: 30px;
