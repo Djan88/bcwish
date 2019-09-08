@@ -4,7 +4,7 @@
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function () {
+      $('#preloader').delay(50).fadeOut('slow', function () {
         $(this).remove();
       });
     }
@@ -12,7 +12,7 @@
 
   // Back to top button
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 50) {
       $('.back-to-top').fadeIn('slow');
     } else {
       $('.back-to-top').fadeOut('slow');
@@ -28,14 +28,14 @@
 
   // Header scroll class
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 50) {
       $('#header').addClass('header-scrolled');
     } else {
       $('#header').removeClass('header-scrolled');
     }
   });
 
-  if ($(window).scrollTop() > 100) {
+  if ($(window).scrollTop() > 50) {
     $('#header').addClass('header-scrolled');
   }
 
