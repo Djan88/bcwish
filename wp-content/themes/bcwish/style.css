@@ -1737,6 +1737,22 @@ h3.wizard_heading
   display: block;
   margin: auto;
 }
+.zone 
+{
+  width: 30px!important;
+  height: 30px!important;
+  background: #413e66;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  padding-top: 3px;
+}
+.zone_v1
+{
+  left: 267px;
+  top: -486px;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
@@ -1772,6 +1788,13 @@ h3.wizard_heading
   }
 }
 
+@media (max-width: 1199px) {
+  .zone_v1
+  {
+    left: 228px;
+    top: -486px;
+  }
+} 
 @media (max-width: 1080px) {
   .arrow_box_2 
   {
