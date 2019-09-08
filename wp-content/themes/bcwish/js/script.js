@@ -14,7 +14,7 @@ jQuery(function() {
   jQuery('.wizard img:first-child').addClass('returned hidden');
 
   croppedImg = jQuery('.wizard').children()[0];
-  croppedImgSrc = jQuery('.wizard').children()[0].attr('src');
+  croppedImgSrc = croppedImg.attr('src');
 
 
 
