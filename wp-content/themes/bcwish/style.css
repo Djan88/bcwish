@@ -1720,9 +1720,9 @@ h3.wizard_heading
 {
   color: #1bb1dc;
 }
-.wizard_returned.returned
+.wizard_returned
 {
-  display: inline-block!important;
+  display: inline-block;
 }
 .wizard
 {
