@@ -1741,12 +1741,13 @@ h3.wizard_heading
 {
   width: 30px!important;
   height: 30px!important;
-  background: #413e66;
+  background: #fff;
   cursor: pointer;
   border-radius: 50%;
-  color: #fff;
+  color: #413e66;
   text-align: center;
-  padding-top: 3px;
+  padding-top: 2px;
+  border: 1px solid #413e66;
   position: absolute!important;
 }
 .wizard_main_screen 
