@@ -1747,13 +1747,103 @@ h3.wizard_heading
   color: #fff;
   text-align: center;
   padding-top: 3px;
+  position: absolute!important;
+}
+.wizard_main_screen 
+{
+  position: relative;
 }
 .zone_v0
 {
-  left: 268px;
-  top: -523px;
+  left: 307px;
+  top: 373px;
 }
 .zone_v1
+{
+  left: 255px;
+  top: 373px;
+}
+.zone_v2
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_v3
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_v4
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_v5
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_v-
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_d2
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_d2_
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_d3
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_d4
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_d5
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_d6
+{
+  left: 307px;
+  top: 373px;
+}
+.zone_s2
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_s2_
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_s3
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_s4
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_s5
+{
+  left: 267px;
+  top: -486px;
+}
+.zone_s6
 {
   left: 267px;
   top: -486px;
@@ -1796,11 +1886,97 @@ h3.wizard_heading
 @media (max-width: 1199px) {
   .zone_v0
   {
-    left: 230px;
-    top: -525px;
-  }.zone_v1
+    left: 268px;
+    top: -523px;
+  }
+  .zone_v1
   {
-    left: 228px;
+    left: 267px;
+    top: -486px;
+  }
+  .zone_v2
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_v3
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_v4
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_v5
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_v-
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_d2
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_d2_
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_d3
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_d4
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_d5
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_d6
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_s2
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_s2_
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_s3
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_s4
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_s5
+  {
+    left: 267px;
+    top: -486px;
+  }
+  .zone_s6
+  {
+    left: 267px;
     top: -486px;
   }
 } 
