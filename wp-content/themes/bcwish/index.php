@@ -328,6 +328,8 @@
                 <div class="zone zone_s4 draggable">S4</div>
                 <div class="zone zone_s5 draggable">S5</div>
                 <div class="zone zone_s6 draggable">S6</div>
+
+                <div class="zone zone_cl draggable">L</div>
               </div>
               <div class="col-md-6">
                 <img src="" class="wizard_returned" alt="wizard_returned">
