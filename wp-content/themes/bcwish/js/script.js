@@ -22,6 +22,7 @@ jQuery(function() {
   if (croppedImg && croppedImg.hasAttribute('src')) {
     jQuery('.machine_screen, #intro').addClass('hidden');
     jQuery('.wizard_way').removeClass('hidden');
+    jQuery('.wizard_returned').attr('src', jQuery('.wizard img:first-child').attr('src'));
     jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
     jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
   }
@@ -48,6 +49,25 @@ jQuery(function() {
     jQuery('.wizard_to_start').removeClass('hidden');
     jQuery('.wizard_way').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
+  });
+
+  //К переносу зон
+  jQuery('.wizard_protocol').on('click', function(event) {
+    jQuery('.wizard_operation').addClass('hidden');
+    jQuery('.wizard_to_what_way').addClass('hidden');
+    jQuery('.wizard_to_protList').removeClass('hidden');
+    jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_heading').text('Осталось перенести зоны на фото и можно начинать!');
+  });
+
+
+   //Назад. К списку протоколов
+  jQuery('.wizard_to_protList').on('click', function(event) {
+    jQuery('.wizard_main_screen').addClass('hidden');
+    jQuery('.wizard_to_protList').addClass('hidden');
+    jQuery('.wizard_to_what_way').removeClass('hidden');
+    jQuery('.wizard_operation').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_heading').text('Выберите протокол');
   });
 
 

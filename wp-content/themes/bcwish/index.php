@@ -37,7 +37,12 @@
   <header id="header">
     <button type="button" class="wizard_crop hidden header_btn"><i class="fa fa-crop"></i></button>
     <a href="/" class="wizard_to_start hidden header_btn"><i class="fa fa-arrow-left"></i></a>
-    <button type="button" class="wizard_to_what_way hidden header_btn"><i class="fa fa-arrow-left"></i></button>
+    <button type="button" class="wizard_to_what_way hidden header_btn">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+    <button type="button" class="wizard_to_protList hidden header_btn">
+      <i class="fa fa-arrow-left"></i>
+    </button>
 
     <div id="topbar">
       <div class="container">
@@ -228,7 +233,7 @@
                       <p>
                         «Краниальный протокол» - «используется при актуальности зоны головы, а также для терапевтической дефрагментации ума»
                       </p>
-                      <p><button class="btn wizard_blue wizard_prot_1 wow bounceInUp" data-wow-duration="1.4s">Активировать V1</button></p>
+                      <p><button class="btn wizard_blue wizard_protocol wizard_protocol_1 wizard_prot_1 wow bounceInUp" data-wow-duration="1.4s">Активировать V1</button></p>
                     </div>
                   </li>
                   <li>
@@ -237,7 +242,7 @@
                       <p>
                         «Показания для коррекции - застрявшие мысли/дилеммы категорий люди и отношения, а также предметы/вещи/деньги. Рационализации (самообман), неотпущенные переживания обиды и вины, клинические проявления V2 заболеваний.»
                       </p>
-                      <p><button class="btn wizard_blue wizard_prot_2 wow bounceInUp" data-wow-duration="1.4s">Активировать V2-V5</button></p>
+                      <p><button class="btn wizard_blue wizard_protocol wizard_protocol_2 wizard_prot_2 wow bounceInUp" data-wow-duration="1.4s">Активировать V2-V5</button></p>
                     </div>
                   </li>
                   <li>
@@ -246,7 +251,7 @@
                       <p>
                         «Показания к применению - чувство непереносимости ситуации либо отношений, невозможности принять для себя это переживания, раздражение от всех и вся, попытки заставить вас принять чужое мнение, или ваши попытки заставить кого-либо принять вашу точку зрения, клинические проявления V3 заболеваний.»
                       </p>
-                      <p><button class="btn wizard_blue wizard_prot_3 wow bounceInUp" data-wow-duration="1.4s">Активировать V3-V4</button></p>
+                      <p><button class="btn wizard_blue wizard_protocol wizard_protocol_3 wizard_prot_3 wow bounceInUp" data-wow-duration="1.4s">Активировать V3-V4</button></p>
                     </div>
                   </li>
                   <li>
@@ -255,7 +260,7 @@
                       <p>
                         «Показания к применению - переживание беспокойства, тревожности, суеты и торопливости, злости и заниженной самооценки. Клинические проявления V4 заболеваний.»
                       </p>
-                      <p><button class="btn wizard_blue wizard_prot_4 wow bounceInUp" data-wow-duration="1.4s">Активировать V4-V3</button></p>
+                      <p><button class="btn wizard_blue wizard_protocol wizard_protocol_4 wizard_prot_4 wow bounceInUp" data-wow-duration="1.4s">Активировать V4-V3</button></p>
                     </div>
                   </li>
                   <li>
@@ -264,7 +269,7 @@
                       <p>
                         «Показания к применению - невротические переживания нехватки воздуха, страхов закрытого пространства, высоты. Синдром хронической усталости, последствия физических травм, насилия, утопления, кровопотери, общего наркоза и прочих ситуаций, связанных с угрозой жизни. Клинические проявления V5 заболеваний.»
                       </p>
-                      <p><button class="btn wizard_blue wizard_prot_5 wow bounceInUp" data-wow-duration="1.4s">Активировать V5-V2</button></p>
+                      <p><button class="btn wizard_blue wizard_protocol wizard_protocol_5 wizard_prot_5 wow bounceInUp" data-wow-duration="1.4s">Активировать V5-V2</button></p>
                     </div>
                   </li>
                   <li>
@@ -273,7 +278,7 @@
                       <p>
                         «Дренажный протокол предназначен для флюидической очистки зон DSV тела ума. Рекомендован при хронических либо кармически отягощенных, а также гипоресурсных состояниях. Можно применять сразу дополнительно после основного протокола (кроме V5) либо самостоятельно»
                       </p>
-                      <p><button class="btn wizard_blue wizard_prot_6 wow bounceInUp" data-wow-duration="1.4s">Активировать ДРЕНАЖ</button></p>
+                      <p><button class="btn wizard_blue wizard_protocol wizard_protocol_6 wizard_prot_6 wow bounceInUp" data-wow-duration="1.4s">Активировать ДРЕНАЖ</button></p>
                     </div>
                   </li>
                   <li>
@@ -282,7 +287,7 @@
                       <p>
                         «Протокол "Solis" предназначен для "гиперресурсных" состояний, которые закономерно возникают после удачных проработок клиента на "wizardmachine", терапевтической дефрагментации, "Tarotmachine", а также после проработки кармических и родовых проблем либо после длительной "отжимке" негативного флюида из физического тела. При калибровке ставьте зону v3 на нижнюю границу сердца! Показания к применению - напряжения в теле и поведенческие дисфункции на полнолуние. Нормализация метафункционала вентральной оси. рекомендован ежедневно с 10-го по 15-й дни Луны!
                       </p>
-                      <p><button class="btn wizard_blue wizard_prot_7 wow bounceInUp" data-wow-duration="1.4s">Активировать SOLIS</button></p>
+                      <p><button class="btn wizard_blue wizard_protocol wizard_protocol_7 wizard_prot_7 wow bounceInUp" data-wow-duration="1.4s">Активировать SOLIS</button></p>
                     </div>
                   </li>
                   <li>
@@ -291,10 +296,18 @@
                       <p>
                         «Печеночное продвижение. Для коррекции вегетативно/сосудистых, висцеральных, психосоматических проблем, а также состояний, связанных с нарушением иммунитета и обмена веществ»
                       </p>
-                      <p><button class="btn wizard_blue wizard_prot_8 wow bounceInUp" data-wow-duration="1.4s">Активировать ВИСЦЕРАЛЬНЫЙ</button></p>
+                      <p><button class="btn wizard_blue wizard_protocol wizard_protocol_8 wizard_prot_8 wow bounceInUp" data-wow-duration="1.4s">Активировать ВИСЦЕРАЛЬНЫЙ</button></p>
                     </div>
                   </li>
                 </ul>
+              </div>
+            </div>
+            <div class="row wizard_main_screen hidden">
+              <div class="col-md-6 wizard_zones">
+                <img src="" class="wizard_template" alt="wizard_template">
+              </div>
+              <div class="col-md-6">
+                <img src="" class="wizard_returned" alt="wizard_returned">
               </div>
             </div>
           </div>
