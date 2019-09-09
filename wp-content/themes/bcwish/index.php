@@ -640,12 +640,12 @@
   <!-- <script src="<?php //bloginfo('template_url'); ?>/lib/isotope/isotope.pkgd.min.js"></script> -->
   <!-- <script src="<?php //bloginfo('template_url'); ?>/lib/lightbox/js/lightbox.min.js"></script> -->
   <!-- Contact Form JavaScript File -->
-  <script src="<?php bloginfo('template_url'); ?>/contactform/contactform.js"></script>
+  <!-- <script src="<?php //bloginfo('template_url'); ?>/contactform/contactform.js"></script> -->
 
   <!-- Template Main Javascript File -->
   <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/exif.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/JCrop.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/exif.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/protocols.js"></script>
 
