@@ -24,6 +24,11 @@ jQuery(function() {
 
   
 
+  //Изменение размера круга
+  jQuery(".ring").resizable({
+    aspectRatio: 1/1;
+  });
+
 // Если фото уже загружено
   if (croppedImg && croppedImg.hasAttribute('src')) {
     jQuery('.machine_screen, #intro').addClass('hidden');
