@@ -1736,7 +1736,7 @@ h3.wizard_heading
 {
   display: block;
   margin: auto;
-  max-width: 400px;
+  max-width: 500px;
   position: relative;
   z-index: 1;
 }
@@ -1800,103 +1800,103 @@ h3.wizard_heading
 }
 .zone_v0
 {
-  left: 283px;
-  top: 7px;
+  left: 270px;
+  top: 1px;
 }
 .zone_v1
 {
-  left: 283px;
-  top: 45px;
+  left: 270px;
+  top: 37px;
 }
 .zone_v2
 {
-  left: 283px;
-  top: 114px;
+  left: 270px;
+  top: 93px;
 }
 .zone_v3
 {
-  left: 283px;
-  top: 176px;
+  left: 270px;
+  top: 145px;
 }
 .zone_v4
 {
-  left: 283px;
-  top: 230px;
+  left: 270px;
+  top: 191px;
 }
 .zone_v5
 {
-  left: 283px;
-  top: 278px;
+  left: 270px;
+  top: 230px;
 }
 .zone_v-
 {
-  left: 283px;
-  top: 552px;
+  left: 270px;
+  top: 460px;
 }
 .zone_d2
 {
-  left: 223px;
-  top: 115px;
+  left: 219px;
+  top: 94px;
 }
 .zone_d2_
 {
-  left: 223px;
-  top: 169px;
+  left: 219px;
+  top: 138px;
 }
 .zone_d3
 {
-  left: 244px;
-  top: 207px;
+  left: 236px;
+  top: 170px;
 }
 .zone_d4
 {
-  left: 244px;
-  top: 253px;
+  left: 234px;
+  top: 210px;
 }
 .zone_d5
 {
-  left: 244px;
-  top: 333px;
+  left: 235px;
+  top: 277px;
 }
 .zone_d6
 {
-  left: 246px;
-  top: 468px;
+  left: 239px;
+  top: 390px;
 }
 .zone_s2
 {
-  left: 339px;
-  top: 116px;
+  left: 317px;
+  top: 94px;
 }
 .zone_s2_
 {
-  left: 333px;
-  top: 170px;
+  left: 312px;
+  top: 138px;
 }
 .zone_s3
 {
-  left: 324px;
-  top: 207px;
+  left: 303px;
+  top: 170px;
 }
 .zone_s4
 {
-  left: 325px;
-  top: 253px;
+  left: 306px;
+  top: 210px;
 }
 .zone_s5
 {
-  left: 324px;
-  top: 334px;
+  left: 307px;
+  top: 277px;
 }
 .zone_s6
 {
-  left: 320px;
-  top: 468px;
+  left: 302px;
+  top: 390px;
 }
 .zone_cl
 {
-  left: 18px;
-  top: 135px;
+  left: 49px;
+  top: 110px;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
