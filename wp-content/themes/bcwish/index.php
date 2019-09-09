@@ -26,6 +26,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="<?php bloginfo('template_url'); ?>/css/JCrop.min.css" rel="stylesheet">
+  <link href="<?php bloginfo('template_url'); ?>/jquery-ui.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
   <?php wp_head(); ?>
 </head>
