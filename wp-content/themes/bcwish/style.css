@@ -1782,7 +1782,7 @@ h3.wizard_heading
 }
 .ring
 {
-  border: 1px dashed red;
+  border: 2px dashed red;
   border-radius: 50%;
   width: 500px;
   height: 500px;
