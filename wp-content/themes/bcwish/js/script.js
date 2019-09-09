@@ -22,10 +22,7 @@ jQuery(function() {
   croppedImg = jQuery('.wizard_returned').children()[0];
 
 
-  //Изменение размера круга
-  jQuery(".ring").resizable({
-    aspectRatio: 1/1;
-  });
+
 
 // Если фото уже загружено
   if (croppedImg && croppedImg.hasAttribute('src')) {
