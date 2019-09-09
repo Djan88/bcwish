@@ -308,7 +308,7 @@
             <div class="row wizard_main_screen hidden">
               <div class="col-xs-6 wizard_zones">
                 <img src="<?php bloginfo('template_url'); ?>/img/template.png" class="wizard_template" alt="wizard_template">
-                <div class="ring draggable">
+                <div class="ring draggable" id="ring">
                   <div class="zone zone_ring hidden"></div>
                 </div>
                 <div class="zone zone_v0 draggable">V0</div>
