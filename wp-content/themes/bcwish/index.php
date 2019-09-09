@@ -26,7 +26,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="<?php bloginfo('template_url'); ?>/css/JCrop.min.css" rel="stylesheet">
-  <link href="<?php bloginfo('template_url'); ?>/jquery-ui.min.css" rel="stylesheet">
+  <link href="<?php bloginfo('template_url'); ?>/css/jquery-ui.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
   <?php wp_head(); ?>
 </head>
@@ -635,13 +635,13 @@
   <script src="<?php bloginfo('template_url'); ?>/lib/easing/easing.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/lib/mobile-nav/mobile-nav.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/lib/wow/wow.min.js"></script>
-  <!-- <script src="<?php //bloginfo('template_url'); ?>/lib/waypoints/waypoints.min.js"></script> -->
+  <script src="<?php bloginfo('template_url'); ?>/lib/waypoints/waypoints.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/lib/counterup/counterup.min.js"></script>
-  <!-- <script src="<?php //bloginfo('template_url'); ?>/lib/owlcarousel/owl.carousel.min.js"></script> -->
+  <script src="<?php bloginfo('template_url'); ?>/lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/lib/isotope/isotope.pkgd.min.js"></script>
-  <!-- <script src="<?php //bloginfo('template_url'); ?>/lib/lightbox/js/lightbox.min.js"></script> -->
+  <script src="<?php bloginfo('template_url'); ?>/lib/lightbox/js/lightbox.min.js"></script>
   <!-- Contact Form JavaScript File -->
-  <!-- <script src="<?php //bloginfo('template_url'); ?>/contactform/contactform.js"></script> -->
+  <script src="<?php bloginfo('template_url'); ?>/contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
