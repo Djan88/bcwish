@@ -1732,10 +1732,11 @@ h3.wizard_heading
 {
   padding: 0 20px;
 }
-.wizard_main_screen .col-md-6 img 
+.wizard_main_screen .col-xs-6 img 
 {
   display: block;
   margin: auto;
+  max-width: 100%;
 }
 .zone 
 {
@@ -1756,102 +1757,102 @@ h3.wizard_heading
 }
 .zone_v0
 {
-  left: 298px;
+  left: 283px;
   top: 7px;
 }
 .zone_v1
 {
-  left: 298px;
+  left: 283px;
   top: 45px;
 }
 .zone_v2
 {
-  left: 298px;
+  left: 283px;
   top: 114px;
 }
 .zone_v3
 {
-  left: 298px;
+  left: 283px;
   top: 176px;
 }
 .zone_v4
 {
-  left: 298px;
+  left: 283px;
   top: 230px;
 }
 .zone_v5
 {
-  left: 298px;
+  left: 283px;
   top: 278px;
 }
 .zone_v-
 {
-  left: 298px;
+  left: 283px;
   top: 552px;
 }
 .zone_d2
 {
-  left: 238px;
+  left: 223px;
   top: 115px;
 }
 .zone_d2_
 {
-  left: 238px;
+  left: 223px;
   top: 169px;
 }
 .zone_d3
 {
-  left: 257px;
+  left: 244px;
   top: 207px;
 }
 .zone_d4
 {
-  left: 257px;
+  left: 244px;
   top: 253px;
 }
 .zone_d5
 {
-  left: 257px;
+  left: 244px;
   top: 333px;
 }
 .zone_d6
 {
-  left: 261px;
+  left: 246px;
   top: 468px;
 }
 .zone_s2
 {
-  left: 354px;
+  left: 339px;
   top: 116px;
 }
 .zone_s2_
 {
-  left: 348px;
+  left: 333px;
   top: 170px;
 }
 .zone_s3
 {
-  left: 339px;
+  left: 324px;
   top: 207px;
 }
 .zone_s4
 {
-  left: 340px;
+  left: 325px;
   top: 253px;
 }
 .zone_s5
 {
-  left: 339px;
+  left: 324px;
   top: 334px;
 }
 .zone_s6
 {
-  left: 335px;
+  left: 320px;
   top: 468px;
 }
 .zone_cl
 {
-  left: 33px;
+  left: 18px;
   top: 135px;
 }
 /*--------------------------------------------------------------

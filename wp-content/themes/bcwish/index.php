@@ -305,7 +305,7 @@
               </div>
             </div>
             <div class="row wizard_main_screen hidden">
-              <div class="col-md-6 wizard_zones">
+              <div class="col-xs-6 wizard_zones">
                 <img src="<?php bloginfo('template_url'); ?>/img/template.png" class="wizard_template" alt="wizard_template">
                 <div class="zone zone_v0 draggable">V0</div>
                 <div class="zone zone_v1 draggable">V1</div>
@@ -331,7 +331,7 @@
 
                 <div class="zone zone_cl draggable">L</div>
               </div>
-              <div class="col-md-6">
+              <div class="col-xs-6">
                 <img src="" class="wizard_returned" alt="wizard_returned">
               </div>
             </div>
