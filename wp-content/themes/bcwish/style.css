@@ -1755,18 +1755,18 @@ h3.wizard_heading
 {
   content: '';
   position: absolute;
-  width: 1000px;
+  width: 500px;
   border-top: 1px solid red;
   top: 14px;
-  left: -475px;
+  left: -220px;
 }
 .zone:hover:after
 {
   content: '';
   position: absolute;
-  height: 1000px;
+  height: 500px;
   border-left: 1px solid red;
-  top: -475px;
+  top: -220px;
   left: 14px;
 }
 .wizard_main_screen 
