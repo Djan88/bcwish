@@ -22,10 +22,17 @@ jQuery(function() {
   croppedImg = jQuery('.wizard_returned').children()[0];
 
 
-  //Dragging elems
-  jQuery(".draggable").draggable({
-    snap: false;
-  });
+  if (jQuery('.draggable')) {
+    //Dragging elems
+    jQuery(".draggable, .ring").draggable({
+      snap: false;
+    });
+
+    //Изменение размера круга
+    jQuery(".ring").resizable({
+      aspectRatio: 1/1;
+    });
+  }
 
 // Если фото уже загружено
   if (croppedImg && croppedImg.hasAttribute('src')) {
