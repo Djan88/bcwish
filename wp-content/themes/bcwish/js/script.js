@@ -1,5 +1,13 @@
 jQuery(function() {
-  var croppedImg;
+  var croppedImg,
+      cur_protocol,
+      supportsStorage = function(){
+          try {
+              return 'localStorage' in window && window['localStorage'] !== null;
+          } catch (e) {
+              return false;
+          }
+      };
   jQuery('.toLogin').on('click', function(event) {
     jQuery('.register_form').addClass('hidden').removeClass('bounceInUp');
     jQuery('.login_form').removeClass('hidden').addClass('bounceInUp');
@@ -60,6 +68,27 @@ jQuery(function() {
     jQuery('.wizard_to_protList').removeClass('hidden');
     jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.wizard_heading').text('Осталось перенести зоны на фото и можно начинать!');
+    if (jQuery(this).hasClass('wizard_protocol_1')) {
+      cur_protocol = 'v1';
+    } else if (jQuery(this).hasClass('wizard_protocol_2')) {
+      cur_protocol = 'v2';
+    } else if (jQuery(this).hasClass('wizard_protocol_3')) {
+      cur_protocol = 'v3';
+    } else if (jQuery(this).hasClass('wizard_protocol_4')) {
+      cur_protocol = 'v4';
+    } else if (jQuery(this).hasClass('wizard_protocol_5')) {
+      cur_protocol = 'v5';
+    } else if (jQuery(this).hasClass('wizard_protocol_6')) {
+      cur_protocol = 'drenag';
+    } else if (jQuery(this).hasClass('wizard_protocol_7')) {
+      cur_protocol = 'solis';
+    } else if (jQuery(this).hasClass('wizard_protocol_7')) {
+      cur_protocol = 'visceral';
+    }
+    localStorage.setItem('cur_protocol', cur_protocol);
+
+    var temp = localStorage.getItem(cur_protocol);
+    console.log(temp);
   });
 
 
