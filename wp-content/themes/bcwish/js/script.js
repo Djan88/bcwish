@@ -1,4 +1,22 @@
 jQuery(function() {
+  var croppedImg,
+      cur_protocol,
+      supportsStorage = function(){
+          try {
+              return 'localStorage' in window && window['localStorage'] !== null;
+          } catch (e) {
+              return false;
+          }
+      };
+  jQuery('.toLogin').on('click', function(event) {
+    jQuery('.register_form').addClass('hidden').removeClass('bounceInUp');
+    jQuery('.login_form').removeClass('hidden').addClass('bounceInUp');
+  });
+  jQuery('.toRegistration').on('click', function(event) {
+    jQuery('.login_form').addClass('hidden').removeClass('bounceInUp');
+    jQuery('.register_form').removeClass('hidden').addClass('bounceInUp');
+  });
+
 
 
 
