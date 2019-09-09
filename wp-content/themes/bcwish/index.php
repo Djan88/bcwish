@@ -308,7 +308,7 @@
               <div class="col-xs-6 wizard_zones">
                 <img src="<?php bloginfo('template_url'); ?>/img/template.png" class="wizard_template" alt="wizard_template">
                 <div class="ring draggable">
-                  <div class="zone zone_ring">S6</div>
+                  <div class="zone zone_ring hidden"></div>
                 </div>
                 <div class="zone zone_v0 draggable">V0</div>
                 <div class="zone zone_v1 draggable">V1</div>
