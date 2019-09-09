@@ -1732,11 +1732,11 @@ h3.wizard_heading
 {
   padding: 0 20px;
 }
-.wizard_main_screen .col-xs-6 img 
+.wizard_main_screen .col-sm-6 img 
 {
   display: block;
   margin: auto;
-  max-width: 100%;
+  max-width: 400px;
   position: relative;
   z-index: 1;
 }
