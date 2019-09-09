@@ -22,7 +22,9 @@ jQuery(function() {
   croppedImg = jQuery('.wizard_returned').children()[0];
 
 
-  
+  //Dragging elems
+  jQuery(".draggable, .ring").draggable({
+  });
 
   //Изменение размера круга
   jQuery(".ring").resizable({
