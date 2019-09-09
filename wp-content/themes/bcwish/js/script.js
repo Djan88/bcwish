@@ -17,7 +17,7 @@ jQuery(function() {
     jQuery('.register_form').removeClass('hidden').addClass('bounceInUp');
   });
 
-//Скрываем возможно загруженное изображение
+// Скрываем возможно загруженное изображение
   jQuery('.wizard_returned').find('img:first-child').addClass('returned hidden');
   croppedImg = jQuery('.wizard_returned').children()[0];
 
@@ -208,6 +208,15 @@ jQuery(function() {
                   jQuery('.step2').fadeIn(500);
                   jQuery('.wizard_crop').fadeIn(500);
                   jQuery('.wizard_crop').removeClass('hidden');
+                  // Dragging elems
+                  jQuery(".draggable, .ring").draggable({
+                    snap: false;
+                  });
+
+                  // Resize ring
+                  jQuery(".ring").resizable({
+                    aspectRatio: 1/1;
+                  });
                   // display some basic image info
                   var sResultFileSize = bytesToSize(oFile.size);
                   jQuery('#filesize').val(sResultFileSize);
