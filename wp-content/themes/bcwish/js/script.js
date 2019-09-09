@@ -17,9 +17,7 @@ jQuery(function() {
     jQuery('.register_form').removeClass('hidden').addClass('bounceInUp');
   });
 
-//Скрываем возможно загруженное изображение
-  jQuery('.wizard_returned').find('img:first-child').addClass('returned hidden');
-  croppedImg = jQuery('.wizard_returned').children()[0];
+
 
 
   //Dragging elems
