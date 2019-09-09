@@ -492,7 +492,7 @@ h6 {
   margin: auto;
   font-size: 15px;
   padding-bottom: 60px;
-  color: #535074;
+  color: #3a88d8;
   width: 50%;
 }
 
@@ -1751,9 +1751,31 @@ h3.wizard_heading
   border: 1px solid #413e66;
   position: absolute!important;
 }
+.zone:hover:before 
+{
+  content: '';
+  position: absolute;
+  width: 1000px;
+  border-top: 1px solid red;
+  top: 26px;
+  left: -475px;
+}
+.zone:hover:after
+{
+  content: '';
+  position: absolute;
+  height: 1000px;
+  border-left: 1px solid red;
+  top: -475px;
+  left: 26px;
+}
 .wizard_main_screen 
 {
   position: relative;
+}
+.wizard_zones 
+{
+  border-right: 1px solid #413e66;
 }
 .zone_v0
 {
@@ -1879,7 +1901,6 @@ h3.wizard_heading
     display: none;
   }
 }
-
 @media (min-width: 992px) {
   #intro .intro-info {
     padding-top: 150px;
