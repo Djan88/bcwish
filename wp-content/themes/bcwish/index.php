@@ -628,20 +628,23 @@
   <!-- <div id="preloader"></div> -->
   <?php wp_footer(); ?>
   <!-- JavaScript Libraries -->
+  <script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/lib/easing/easing.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/lib/mobile-nav/mobile-nav.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/lib/wow/wow.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/lib/waypoints/waypoints.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/lib/isotope/isotope.pkgd.min.js"></script>
+  <!-- <script src="<?php //bloginfo('template_url'); ?>/lib/waypoints/waypoints.min.js"></script> -->
+  <!-- <script src="<?php //bloginfo('template_url'); ?>/lib/counterup/counterup.min.js"></script> -->
+  <!-- <script src="<?php //bloginfo('template_url'); ?>/lib/owlcarousel/owl.carousel.min.js"></script> -->
+  <!-- <script src="<?php //bloginfo('template_url'); ?>/lib/isotope/isotope.pkgd.min.js"></script> -->
+  <!-- <script src="<?php //bloginfo('template_url'); ?>/lib/lightbox/js/lightbox.min.js"></script> -->
   <!-- Contact Form JavaScript File -->
   <script src="<?php bloginfo('template_url'); ?>/contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/exif.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/JCrop.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/protocols.js"></script>
