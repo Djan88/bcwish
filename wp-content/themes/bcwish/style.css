@@ -1757,7 +1757,7 @@ h3.wizard_heading
   position: absolute;
   width: 1000px;
   border-top: 1px solid red;
-  top: 26px;
+  top: 14px;
   left: -475px;
 }
 .zone:hover:after
@@ -1767,7 +1767,7 @@ h3.wizard_heading
   height: 1000px;
   border-left: 1px solid red;
   top: -475px;
-  left: 26px;
+  left: 14px;
 }
 .wizard_main_screen 
 {
