@@ -1780,7 +1780,18 @@ h3.wizard_heading
 .ring
 {
   border: 1px dashed red;
-  border-radius: 50%; 
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  top: 0;
+  left: 0;
+  position: absolute!important;
+}
+.zone.zone_ring 
+{
+  position: absolute;
+  left: 50%;
+  top: 10px;
 }
 .zone_v0
 {
