@@ -642,10 +642,10 @@
 
   <!-- Template Main Javascript File -->
   <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/JCrop.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/exif.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/JCrop.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/protocols.js"></script>
 
