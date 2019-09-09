@@ -628,8 +628,6 @@
   <!-- <div id="preloader"></div> -->
   <?php wp_footer(); ?>
   <!-- JavaScript Libraries -->
-  <script src="<?php bloginfo('template_url'); ?>/lib/jquery/jquery.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/lib/jquery/jquery-migrate.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/lib/easing/easing.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/lib/mobile-nav/mobile-nav.js"></script>
