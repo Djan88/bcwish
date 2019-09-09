@@ -24,11 +24,7 @@ jQuery(function() {
 
   //Dragging elems
   jQuery(".draggable, .ring").draggable({
-  });
-
-  //Изменение размера круга
-  jQuery(".ring").resizable({
-    aspectRatio: 1/1;
+    snap: false;
   });
 
 // Если фото уже загружено
