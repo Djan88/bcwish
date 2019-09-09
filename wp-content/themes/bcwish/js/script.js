@@ -87,7 +87,7 @@ jQuery(function() {
     }
     localStorage.setItem('cur_protocol', cur_protocol);
 
-    var temp = localStorage.getItem(cur_protocol);
+    var temp = localStorage.getItem('cur_protocol');
     console.log(cur_protocol);
     console.log('temp '+temp);
   });
