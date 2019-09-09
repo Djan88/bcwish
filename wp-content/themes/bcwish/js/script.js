@@ -21,6 +21,12 @@ jQuery(function() {
   jQuery('.wizard_returned').find('img:first-child').addClass('returned hidden');
   croppedImg = jQuery('.wizard_returned').children()[0];
 
+
+  //Dragging elems
+  jQuery(".draggable").draggable({
+    snap: false;
+  });
+
 // Если фото уже загружено
   if (croppedImg && croppedImg.hasAttribute('src')) {
     jQuery('.machine_screen, #intro').addClass('hidden');
@@ -259,6 +265,4 @@ jQuery(function() {
       oReader.readAsDataURL(oFile);
   }
   jQuery('#image_file').on('change', fileSelectHandler);
-
-
 });
