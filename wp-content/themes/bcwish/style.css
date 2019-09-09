@@ -1777,6 +1777,11 @@ h3.wizard_heading
 {
   border-right: 1px solid #413e66;
 }
+.ring
+{
+  border: 1px dashed red;
+  border-radius: 50%; 
+}
 .zone_v0
 {
   left: 283px;

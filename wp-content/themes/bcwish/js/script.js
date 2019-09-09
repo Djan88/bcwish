@@ -23,8 +23,13 @@ jQuery(function() {
 
 
   //Dragging elems
-  jQuery( ".draggable" ).draggable({
+  jQuery( ".draggable, .ring" ).draggable({
       snap: false
+  });
+
+  //Изменение размера круга
+  jQuery( ".ring" ).resizable({
+    aspectRatio: 1/ 1
   });
 
 
@@ -87,9 +92,10 @@ jQuery(function() {
     }
     localStorage.setItem('cur_protocol', cur_protocol);
 
-    var temp = localStorage.getItem('cur_protocol');
-    console.log(cur_protocol);
-    console.log('temp '+temp);
+    // var temp = localStorage.getItem('cur_protocol');
+    // console.log(cur_protocol);
+    // console.log('temp '+temp);
+
   });
 
 
