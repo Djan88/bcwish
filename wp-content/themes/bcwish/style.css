@@ -1922,7 +1922,7 @@ h3.wizard_heading
 .marakata
 {
   cursor: pointer;
-  width: 73%;
+  width: 72%;
   height: auto!important;
 }
 .knife_rate
@@ -1988,6 +1988,10 @@ h3.wizard_heading
 }
 
 @media (max-width: 1199px) {
+  .marakata
+  {
+    width: 83%;
+  }
   .zone_v0
   {
     left: 250px;
