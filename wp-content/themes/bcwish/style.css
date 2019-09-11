@@ -184,7 +184,7 @@ h6 {
 
 #header.header-scrolled .header_btn i, #header.header-scrolled .mobile-nav-toggle i
 {
-  margin: 10px 18px 0 0;
+  /*margin: 2px 9px;*/
   color: #413e66;
 }
 
@@ -206,6 +206,11 @@ h6 {
 #header .logo h1 a,
 #header .logo h1 a:hover {
   color: #413e66;
+  text-decoration: none;
+}
+#header .logo h1 a span.acent,
+#header .logo h1 a:hover span.acent {
+  color: #1bb1dc;
   text-decoration: none;
 }
 
@@ -446,7 +451,7 @@ h6 {
   cursor: pointer;
   text-align: right;
   border-radius: 6px;
-  margin: 18px 18px 0 0;
+  margin: 10px 18px 0 0;
   border: 2px solid #1bb1dc;
 }
 
@@ -1714,7 +1719,8 @@ h3.wizard_heading
   text-align: right;
   border: 2px solid #1bb1dc;
   border-radius: 6px;
-  margin: 18px 18px 0 0;
+  margin: 10px 18px 0 0;
+  padding: 0;
 }
 .header_btn i
 {
@@ -1723,7 +1729,7 @@ h3.wizard_heading
 }
 .wizard_crop, .wizard_to_start, .wizard_to_what_way, .wizard_to_protList
 {
-  right: 44px;
+  right: 47px;
   transition: all linear 0.5s;
 }
 .wizard_crop:hover, .wizard_to_start:hover, .wizard_to_what_way:hover, .wizard_to_protList:hover;
@@ -1955,7 +1961,7 @@ h3.wizard_heading
 }
 .wizard_clean_graf
 {
-  right: 88px;
+  right: 99px;
 }
 .wizard_to_start
 {
