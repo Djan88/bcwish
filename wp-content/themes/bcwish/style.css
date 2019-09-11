@@ -1922,6 +1922,8 @@ h3.wizard_heading
 .marakata
 {
   cursor: pointer;
+  width: 100%;
+  height: auto!important;
 }
 .knife_rate
 {
