@@ -1737,6 +1737,7 @@ h3.wizard_heading
   display: block;
   margin: auto;
   max-width: 500px;
+  max-height: 500px;
   position: relative;
   z-index: 1;
 }
