@@ -438,7 +438,6 @@ h6 {
   right: 0;
   top: 0;
   z-index: 9998;
-  border: 0;
   background: none;
   font-size: 24px;
   transition: all 0.4s;
@@ -446,10 +445,13 @@ h6 {
   line-height: 1;
   cursor: pointer;
   text-align: right;
+  border-radius: 6px;
+  margin: 18px 18px 0 0;
+  border: 2px solid #1bb1dc;
 }
 
 .mobile-nav-toggle i {
-  margin: 18px 18px 0 0;
+  /*margin: 18px 18px 0 0;*/
   color: #413e66;
 }
 
@@ -1703,7 +1705,6 @@ h3.wizard_heading
   position: fixed;
   top: 0;
   z-index: 9998;
-  border: 0;
   background: none;
   font-size: 24px;
   transition: all 0.4s;
@@ -1711,15 +1712,18 @@ h3.wizard_heading
   line-height: 1;
   cursor: pointer;
   text-align: right;
+  border: 2px solid #1bb1dc;
+  border-radius: 6px;
+  margin: 18px 18px 0 0;
 }
 .header_btn i
 {
-  margin: 18px 18px 0 0;
+  /*margin: 18px 18px 0 0;*/
   color: #413e66;
 }
 .wizard_crop, .wizard_to_start, .wizard_to_what_way, .wizard_to_protList
 {
-  right: 50px;
+  right: 44px;
   transition: all linear 0.5s;
 }
 .wizard_crop:hover, .wizard_to_start:hover, .wizard_to_what_way:hover, .wizard_to_protList:hover;
@@ -1951,7 +1955,7 @@ h3.wizard_heading
 }
 .wizard_clean_graf
 {
-  right: 85px;
+  right: 88px;
 }
 .wizard_to_start
 {

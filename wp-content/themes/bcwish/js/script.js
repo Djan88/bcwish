@@ -40,7 +40,7 @@ jQuery(function() {
   jQuery('.btn_prot_choice').on('click', function(event) {
     jQuery('.wizard_way').addClass('hidden');
     jQuery('.wizard_to_start').addClass('hidden');
-    jQuery('.wizard_to_what_way').removeClass('hidden');
+    jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').text('Выберите протокол');
   });
@@ -48,7 +48,7 @@ jQuery(function() {
   jQuery('.btn_diag').on('click', function(event) {
     jQuery('.wizard_way').addClass('hidden');
     jQuery('.wizard_to_start').addClass('hidden');
-    jQuery('.wizard_to_what_way').removeClass('hidden');
+    jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_diag').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.wizard_heading').text('Определите актуальную зону.');
   });
@@ -57,7 +57,7 @@ jQuery(function() {
   jQuery('.wizard_to_what_way').on('click', function(event) {
     jQuery('.wizard_prots, .wizard_diag').addClass('hidden');
     jQuery('.wizard_to_what_way').addClass('hidden');
-    jQuery('.wizard_to_start').removeClass('hidden');
+    jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_way').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
   });
@@ -66,7 +66,7 @@ jQuery(function() {
   jQuery('.wizard_protocol').on('click', function(event) {
     jQuery('.wizard_operation').addClass('hidden');
     jQuery('.wizard_to_what_way').addClass('hidden');
-    jQuery('.wizard_to_protList').removeClass('hidden');
+    jQuery('.wizard_to_protList').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.wizard_heading').text('Осталось перенести зоны на фото и можно начинать!');
     if (jQuery(this).hasClass('wizard_protocol_1')) {
@@ -99,7 +99,7 @@ jQuery(function() {
   jQuery('.wizard_to_protList').on('click', function(event) {
     jQuery('.wizard_main_screen').addClass('hidden');
     jQuery('.wizard_to_protList').addClass('hidden');
-    jQuery('.wizard_to_what_way').removeClass('hidden');
+    jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_operation').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').text('Выберите протокол');
   });
