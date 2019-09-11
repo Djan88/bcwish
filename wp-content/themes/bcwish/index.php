@@ -340,12 +340,9 @@
               </div>
             </div>
             <div class="row wizard_diag hidden">
-              <div class="col-sm-6 wizard_grafic">
+              <div class="col-sm-6 wizard_grafic graph">
                 <div class="row">
-                  <div class="col-sm-8 marakata_wrap" id="marakata_wrap">
-                    <img src="<?php bloginfo('template_url'); ?>/img/marakata.png" class="marakata" alt="">
-                  </div>
-                  <div class="col-sm-4 graph"></div>
+                  <img src="<?php bloginfo('template_url'); ?>/img/marakata.png" class="marakata" alt="">
                 </div>
               </div>
               <div class="col-sm-6 wizard_grafic_photo">
