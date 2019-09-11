@@ -44,10 +44,18 @@ jQuery(function() {
     jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').text('Выберите протокол');
   });
+  // К диагностике
+  jQuery('.btn_diag').on('click', function(event) {
+    jQuery('.wizard_way').addClass('hidden');
+    jQuery('.wizard_to_start').addClass('hidden');
+    jQuery('.wizard_to_what_way').removeClass('hidden');
+    jQuery('.wizard_diag').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_heading').text('Определите актуальную зону.');
+  });
 
   //Назад. К выбору режимов
   jQuery('.wizard_to_what_way').on('click', function(event) {
-    jQuery('.wizard_prots').addClass('hidden');
+    jQuery('.wizard_prots, .wizard_diag').addClass('hidden');
     jQuery('.wizard_to_what_way').addClass('hidden');
     jQuery('.wizard_to_start').removeClass('hidden');
     jQuery('.wizard_way').fadeIn(500).removeClass('hidden');
@@ -94,6 +102,29 @@ jQuery(function() {
     jQuery('.wizard_to_what_way').removeClass('hidden');
     jQuery('.wizard_operation').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').text('Выберите протокол');
+  });
+
+
+  // Анимация ножа
+  jQuery('.marakata').draggable({
+    containment: '#marakata_wrap',
+    axis: 'y',
+    drag: function() {
+      // if(jQuery('.btn_graf').hasClass('active')){
+        knife = jQuery('.marakata').css('top');
+        knife = knife.substr(0, knife.length - 2);
+        knifeDate = new Date();
+        knifeDateDiff = knifeDate - knifeDateOld;
+        knife_rate_class = 'knife_rate-'+knife;
+        knife_rate_class_dotted = '.knife_rate-'+knife;
+        jQuery('.graph').append('<div class='+knife_rate_class+'></div>');
+        jQuery(knife_rate_class_dotted).addClass('knife_rate').css({
+            top: +knife+45+'px',
+            width: knifeDateDiff*2+'px'
+        });
+        knifeDateOld = knifeDate;
+      // }
+    }
   });
 
 

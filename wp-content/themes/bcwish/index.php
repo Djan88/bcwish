@@ -339,6 +339,19 @@
                 <img src="" class="wizard_returned draggable" alt="wizard_returned">
               </div>
             </div>
+            <div class="row wizard_diag hidden">
+              <div class="col-sm-6 wizard_grafic">
+                <div class="row">
+                  <div class="col-sm-8 marakata_wrap" id="marakata_wrap">
+                    <img src="<?php bloginfo('template_url'); ?>/img/template.png" class="marakata" alt="">
+                  </div>
+                  <div class="col-sm-4 graph"></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <img src="" class="wizard_returned" alt="wizard_returned">
+              </div>
+            </div>
           </div>
         </div>
 
@@ -445,7 +458,7 @@
         </header>
 
         <div class="row justify-content-center">
-          <div class="col-lg-8">
+          <div class="col-xs-8">
 
             <div class="owl-carousel testimonials-carousel wow fadeInUp">
     
@@ -504,7 +517,7 @@
         <div class="row flex-items-xs-middle flex-items-xs-center">
           <!-- Basic Plan  -->
           <div class="col-xs-12 col-lg-2"></div>
-          <div class="col-xs-12 col-lg-4">
+          <div class="col-xs-6 col-lg-4">
             <div class="card">
               <div class="card-header">
                 <h3><span class="currency"></span>35 тыс<span class="period">₽/год</span></h3>
@@ -520,7 +533,7 @@
             </div>
           </div>
           <!-- Regular Plan  -->
-          <div class="col-xs-12 col-lg-4">
+          <div class="col-xs-6 col-lg-4">
             <div class="card">
               <div class="card-header">
                 <h3><span class="currency"></span>25 тыс<span class="period">₽/год</span></h3>
@@ -569,7 +582,7 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5">
+          <div class="col-xs-5">
             <div class="row">
               <div class="col-sm-12">
                 <div class="footer-info">
@@ -590,7 +603,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-7">
+          <div class="col-xs-7">
             <div class="form">
               <h4>Есть вопрос? Есть ответ!</h4>
               <p>У Вас остались вопросы? Нужна помощь в освоениии <b>"WizardMachine"</b>? Хотите сказать нам спасибо? Воспользуйтесь формой ниже. Вам оперативно ответят!</p>

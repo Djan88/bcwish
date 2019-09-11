@@ -1919,6 +1919,28 @@ h3.wizard_heading
   left: 49px;
   top: 110px;
 }
+.marakata_wrap
+{
+
+}
+.knife_rate
+{
+  height: 3px;
+  width: 0;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  max-width: 200px;
+  background: #5e1043;
+  position: absolute;
+  left: 410px;
+  -webkit-transition: width 0.5s linear;
+  -moz-transition: width 0.5s linear;
+  transition: width 0.5s linear;
+}
+.knife-wrap
+{
+  position: relative;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
