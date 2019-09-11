@@ -516,8 +516,8 @@
         </header>
         <div class="row flex-items-xs-middle flex-items-xs-center">
           <!-- Basic Plan  -->
-          <div class="col-xs-12 col-lg-2"></div>
-          <div class="col-xs-6 col-lg-4">
+          <div class="col-sm-12 col-lg-2"></div>
+          <div class="col-sm-6 col-lg-4">
             <div class="card">
               <div class="card-header">
                 <h3><span class="currency"></span>35 тыс<span class="period">₽/год</span></h3>
@@ -533,7 +533,7 @@
             </div>
           </div>
           <!-- Regular Plan  -->
-          <div class="col-xs-6 col-lg-4">
+          <div class="col-sm-6 col-lg-4">
             <div class="card">
               <div class="card-header">
                 <h3><span class="currency"></span>25 тыс<span class="period">₽/год</span></h3>
@@ -548,7 +548,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-lg-2"></div>
+          <div class="col-sm-12 col-lg-2"></div>
         </div>
       </div>
     </section><!-- #pricing -->
@@ -582,7 +582,7 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-xs-5">
+          <div class="col-sm-5">
             <div class="row">
               <div class="col-sm-12">
                 <div class="footer-info">
@@ -603,7 +603,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-7">
+          <div class="col-sm-7">
             <div class="form">
               <h4>Есть вопрос? Есть ответ!</h4>
               <p>У Вас остались вопросы? Нужна помощь в освоениии <b>"WizardMachine"</b>? Хотите сказать нам спасибо? Воспользуйтесь формой ниже. Вам оперативно ответят!</p>
