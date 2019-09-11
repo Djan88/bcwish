@@ -1919,9 +1919,9 @@ h3.wizard_heading
   left: 49px;
   top: 110px;
 }
-.marakata_wrap
+.marakata
 {
-
+  cursor: pointer;
 }
 .knife_rate
 {
@@ -1940,6 +1940,12 @@ h3.wizard_heading
 .knife-wrap
 {
   position: relative;
+}
+.wizard_grafic_photo img
+{
+  display: block;
+  max-width: 500px;
+  max-height: 500px;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries

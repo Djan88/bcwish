@@ -343,12 +343,12 @@
               <div class="col-sm-6 wizard_grafic">
                 <div class="row">
                   <div class="col-sm-8 marakata_wrap" id="marakata_wrap">
-                    <img src="<?php bloginfo('template_url'); ?>/img/template.png" class="marakata" alt="">
+                    <img src="<?php bloginfo('template_url'); ?>/img/marakata.png" class="marakata" alt="">
                   </div>
                   <div class="col-sm-4 graph"></div>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 wizard_grafic_photo">
                 <img src="" class="wizard_returned" alt="wizard_returned">
               </div>
             </div>
