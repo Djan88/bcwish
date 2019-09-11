@@ -1814,6 +1814,10 @@ h3.wizard_heading
 {
   display: block!important;
 }
+.mobile-nav-toggle_open .mobile-nav-toggle i
+{
+  margin: 10px 18px 0 0;
+}
 
 .zone_v0
 {
