@@ -188,6 +188,15 @@ h6 {
   color: #413e66;
 }
 
+.mobile-nav-toggle_open 
+{
+  display: none!important;
+}
+.mobile-nav-active .mobile-nav-toggle_open 
+{
+  display: block!important;
+}
+
 #header.header-scrolled #topbar,
 #header.header-pages #topbar {
   display: none;
