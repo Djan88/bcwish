@@ -7,6 +7,7 @@
       class: 'mobile-nav d-lg-none'
     });
     $('body').append($mobile_nav);
+    $('body').prepend('<button type="button" class="mobile-nav-toggle mobile-nav-toggle_open d-lg-none"><i class="fa fa-bars"></i></button>');
     $('#header').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="fa fa-bars"></i></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');
 
