@@ -1960,8 +1960,7 @@ h3.wizard_heading
 .wizard_grafic_photo img
 {
   display: block;
-  max-width: 500px;
-  max-height: 500px;
+  width: 70%;
 }
 .wizard_clean_graf
 {
