@@ -209,7 +209,8 @@ h6 {
   text-decoration: none;
 }
 #header .logo h1 a span.acent,
-#header .logo h1 a:hover span.acent {
+#header .logo h1 a:hover span.acent,
+.footer-info h3 span.acent {
   color: #1bb1dc;
   text-decoration: none;
 }

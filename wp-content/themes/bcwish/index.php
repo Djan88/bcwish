@@ -586,7 +586,7 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="footer-info">
-                  <h3>WizardMachine</h3>
+                  <h3><span class="acent">W</span>izard<span class="acent">M</span>achine</h3>
                   <p><b>"WizardMachine"</b> — это программа для коррекции актуальных личностных проблем методами "Биологического Центрирования". Разработана в Москве, в <b>"Школе Доктора Чикурова"</b> 2015 г.</p>
                 </div>
                 <div class="footer-newsletter">
