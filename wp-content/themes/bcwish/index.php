@@ -44,6 +44,9 @@
     <button type="button" class="wizard_to_protList hidden header_btn">
       <i class="fa fa-arrow-left"></i>
     </button>
+    <button type="button" class="wizard_clean_graf hidden header_btn">
+      <i class="fa fa-trash"></i>
+    </button>
 
     <div id="topbar">
       <div class="container">

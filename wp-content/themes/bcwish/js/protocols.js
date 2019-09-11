@@ -22,6 +22,7 @@ jQuery(function() {
     axis: 'y',
     drag: function() {
       // if(jQuery('.btn_graf').hasClass('active')){
+        jQuery('.wizard_clean_graf').removeClass('hidden');
         knife = jQuery('.marakata').css('top');
         knife = knife.substr(0, knife.length - 2);
         knifeDate = new Date();

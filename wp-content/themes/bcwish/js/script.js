@@ -104,6 +104,11 @@ jQuery(function() {
     jQuery('.wizard_heading').text('Выберите протокол');
   });
 
+  jQuery('.wizard_clean_graf').on('click', function(event) {
+    jQuery('.knife_rate').detach();
+    jQuery(this).addClass('hidden');
+  });
+
 
 
 //CROPPING SCRIPT
