@@ -450,7 +450,7 @@ h6 {
   outline: none !important;
   line-height: 1;
   cursor: pointer;
-  text-align: right;
+  text-align: center;
   border-radius: 6px;
   margin: 10px 18px 0 0;
   border: 2px solid #1bb1dc;
@@ -1960,7 +1960,7 @@ h3.wizard_heading
 .wizard_grafic_photo img
 {
   display: block;
-  width: 70%;
+  width: 65%;
 }
 .wizard_clean_graf
 {
@@ -1969,6 +1969,10 @@ h3.wizard_heading
 .wizard_to_start
 {
   right: 47px;
+}
+.wizard_grafic_photo
+{
+  padding: 30px 0;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
