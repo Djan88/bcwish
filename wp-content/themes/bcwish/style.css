@@ -188,15 +188,6 @@ h6 {
   color: #413e66;
 }
 
-.mobile-nav-toggle_open 
-{
-  display: none!important;
-}
-.mobile-nav-active .mobile-nav-toggle_open 
-{
-  display: block!important;
-}
-
 #header.header-scrolled #topbar,
 #header.header-pages #topbar {
   display: none;
@@ -1814,6 +1805,16 @@ h3.wizard_heading
   top: 10px;
   color: transparent;
 }
+
+.d-lg-none.mobile-nav-toggle_open
+{
+  display: none!important;
+}
+.mobile-nav-active .d-lg-none.mobile-nav-toggle_open
+{
+  display: block!important;
+}
+
 .zone_v0
 {
   left: 270px;
