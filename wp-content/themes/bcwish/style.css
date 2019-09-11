@@ -1933,7 +1933,106 @@ h3.wizard_heading
 }
 
 @media (max-width: 1199px) {
-  
+  .zone_v0
+  {
+    left: 250px;
+    top: 2px;
+  }
+  .zone_v1
+  {
+    left: 250px;
+    top: 37px;
+  }
+  .zone_v2
+  {
+    left: 250px;
+    top: 93px;
+  }
+  .zone_v3
+  {
+    left: 250px;
+    top: 145px;
+  }
+  .zone_v4
+  {
+    left: 250px;
+    top: 192px;
+  }
+  .zone_v5
+  {
+    left: 250px;
+    top: 230px;
+  }
+  .zone_v-
+  {
+    left: 250px;
+    top: 460px;
+  }
+  .zone_d2
+  {
+    left: 200px;
+    top: 94px;
+  }
+  .zone_d2_
+  {
+    left: 200px;
+    top: 138px;
+  }
+  .zone_d3
+  {
+    left: 215px;
+    top: 170px;
+  }
+  .zone_d4
+  {
+    left: 215px;
+    top: 210px;
+  }
+  .zone_d5
+  {
+    left: 278px;
+    top: 277px;
+  }
+  .zone_d6
+  {
+    left: 217px;
+    top: 390px;
+  }
+  .zone_s2
+  {
+    left: 295px;
+    top: 94px;
+  }
+  .zone_s2_
+  {
+    left: 295px;
+    top: 138px;
+  }
+  .zone_s3
+  {
+    left: 285px;
+    top: 170px;
+  }
+  .zone_s4
+  {
+    left: 248px;
+    top: 210px;
+  }
+  .zone_s5
+  {
+    left: 307px;
+    top: 277px;
+  }
+  .zone_s6
+  {
+    left: 284px;
+    top: 390px;
+  }
+  .zone_cl
+  {
+    left: 282px;
+    top: 110px;
+  }
 } 
 @media (max-width: 1080px) {
   .arrow_box_2 
