@@ -2003,7 +2003,7 @@ h3.wizard_heading
   display: block;
   position: absolute;
   bottom: 10px;
-  left: 46%;
+  left: 47%;
   width: 35px;
   height: 35px;
   font-size: 30px;
@@ -2213,6 +2213,7 @@ h3.wizard_heading
   #intro {
     height: auto;
     padding: 80px 0 60px 0;
+    position: relative;
   }
 
   #intro .container {

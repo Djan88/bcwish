@@ -178,8 +178,8 @@
           <img src="<?php bloginfo('template_url'); ?>/img/intro_alt.svg" alt="" class="main_bg img-fluid">
         </div>
       </div>
-    <a href="#services" class="scroller"><i class="fa fa-chevron-down"></i></a>
     </div>
+    <a href="#services" class="scroller scrollto"><i class="fa fa-chevron-down"></i></a>
   </section><!-- #intro -->
 
   <main id="main">
@@ -647,7 +647,7 @@
     </div>
   </footer><!-- #footer -->
 
-  <a href="#" class="back-to-top_2"><i class="fa fa-chevron-up"></i></a>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <!-- Uncomment below i you want to use a preloader -->
   <!-- <div id="preloader"></div> -->
   <?php wp_footer(); ?>
