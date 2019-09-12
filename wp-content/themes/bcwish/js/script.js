@@ -44,6 +44,14 @@ jQuery(function() {
     jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').text('Выберите протокол');
   });
+  // К протоколам с ножа
+  jQuery('.btn_prot_choice_fromDiag').on('click', function(event) {
+    jQuery('.wizard_diag').addClass('hidden');
+    jQuery('.wizard_to_what_way, .wizard_clean_graf').addClass('hidden');
+    jQuery('.wizard_to_protDiag').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_heading').text('Выберите протокол');
+  });
   // К диагностике
   jQuery('.btn_diag').on('click', function(event) {
     jQuery('.wizard_way').addClass('hidden');

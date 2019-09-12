@@ -44,6 +44,9 @@
     <button type="button" class="wizard_to_protList hidden header_btn">
       <i class="fa fa-arrow-left"></i>
     </button>
+    <button type="button" class="wizard_to_protDiag hidden header_btn">
+      <i class="fa fa-arrow-left"></i>
+    </button>
     <button type="button" class="wizard_clean_graf hidden header_btn">
       <i class="fa fa-trash"></i>
     </button>
@@ -350,6 +353,9 @@
               </div>
               <div class="col-sm-6 wizard_grafic_photo">
                 <img src="" class="wizard_returned" alt="wizard_returned">
+              </div>
+              <div class="col-sm-12">
+                <div class="btn btn-success btn_prot_choice_fromDiag"></div>
               </div>
             </div>
           </div>
