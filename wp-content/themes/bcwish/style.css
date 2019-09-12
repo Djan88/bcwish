@@ -1971,7 +1971,7 @@ h3.wizard_heading
   display: block;
   width: 65%;
 }
-.wizard_clean_graf
+.wizard_clean_graf, .wizard_play
 {
   right: 99px;
 }
