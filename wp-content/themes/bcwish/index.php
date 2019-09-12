@@ -180,6 +180,7 @@
         </div>
       </div>
     <!-- <img src="<?php //bloginfo('template_url'); ?>/img/intro_alt.svg" alt="" class="img-fluid main_bg"> -->
+    <div class="scroller"><i class="fas fa-chevron-down"></i></div>
     </div>
   </section><!-- #intro -->
 

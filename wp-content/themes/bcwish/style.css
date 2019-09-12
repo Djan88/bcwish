@@ -20,6 +20,7 @@ body {
 {
   min-width: 992px!important;
   overflow: hidden;
+  position: relative;
 }
 
 a {
@@ -1990,10 +1991,19 @@ h3.wizard_heading
 .wizard_percent
 {
   padding: 2px 5px 2px;
+  color: #413e66;
 }
 .wizard_play
 {
   height: 32px;
+}
+.scroller
+{
+  color: #413e66;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
