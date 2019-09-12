@@ -18,7 +18,7 @@
       $('.back-to-top').fadeOut('slow');
     }
   });
-  $('.back-to-top').click(function(){
+  $('.back-to-top, .back-to-top_2').click(function(){
     $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
     return false;
   });
