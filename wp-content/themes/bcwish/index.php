@@ -52,8 +52,8 @@
     </button>
     <button type="button" class="wizard_play hidden header_btn">
       <span class="wizard_percent hidden">0%</span>
-      <i class="fa fa-play"></i>
-      <i class="fa fa-stop hidden"></i>
+      <i class="fa fa-play wizard_start_icon"></i>
+      <i class="fa fa-stop wizard_stop_icon hidden"></i>
     </button>
 
     <div id="topbar">
