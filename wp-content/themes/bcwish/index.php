@@ -231,8 +231,8 @@
             </div>
             <div class="row wizard_operation">
               <div class="col-md-12 wizard_way hidden">
-                <button class="btn btn-success btn_diag wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">Диагностика</button>
-                <button class="btn btn-success btn_prot_choice wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.8s">Выбор протокола</button>
+                <button class="btn btn-success btn_diag wow bounceInUp back-to-top" data-wow-duration="1.4s" data-wow-delay="0.4s">Диагностика</button>
+                <button class="btn btn-success btn_prot_choice wow bounceInUp back-to-top" data-wow-duration="1.4s" data-wow-delay="0.8s">Выбор протокола</button>
               </div>
               <div id="faq" class="col-md-12 wizard_prots hidden">
                 <ul id="faq-list" class="wow fadeInUp">
@@ -354,8 +354,8 @@
               <div class="col-sm-6 wizard_grafic_photo">
                 <img src="" class="wizard_returned" alt="wizard_returned">
               </div>
-              <div class="col-sm-12">
-                <div class="btn btn-success btn_prot_choice_fromDiag"></div>
+              <div class="col-sm-12" style="text-align: center;">
+                <div class="btn btn-success btn_prot_choice_fromDiag back-to-top">Выбрать протокол</div>
               </div>
             </div>
           </div>

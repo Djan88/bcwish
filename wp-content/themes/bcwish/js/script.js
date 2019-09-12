@@ -69,6 +69,14 @@ jQuery(function() {
     jQuery('.wizard_way').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
   });
+  //Назад. К диагностике
+  jQuery('.wizard_to_protDiag').on('click', function(event) {
+    jQuery('.wizard_prots').addClass('hidden');
+    jQuery('.wizard_to_protDiag').addClass('hidden');
+    jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_diag').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_heading').text('Определите актуальную зону.');
+  });
 
   //К переносу зон
   jQuery('.wizard_protocol').on('click', function(event) {
