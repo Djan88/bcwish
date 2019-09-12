@@ -4,7 +4,15 @@ jQuery(function() {
       knifeDateOld,
       knifeDateDiff,
       knife_rate_class,
-      knife_rate_class_dotted;
+      knife_rate_class_dotted,
+      protocol,
+      supportsStorage = function(){
+          try {
+              return 'localStorage' in window && window['localStorage'] !== null;
+          } catch (e) {
+              return false;
+          }
+      };
 
   //Изменение размера круга
   jQuery('#ring').resizable({
@@ -38,5 +46,21 @@ jQuery(function() {
       // }
     }
   });
+
+  var protocol = localStorage.getItem('cur_protocol');
+  console.log(protocol);
+  
+
+  jQuery('.wizard_play').on('click', function(event) {
+    jQuery(this).addClass('wizard_play_started');
+    jQuery('.wizard_percent fa-play').addClass('hidden');
+    jQuery('.wizard_percent fa-stop, .wizard_percent').fadeIn(500).removeClass('hidden');
+    // jQuery('.wizard_heading').text('Определите актуальную зону.');
+  });
+
+
+  v1 = function(){
+    console.log('Фаза 1');
+  }
 
 });

@@ -50,6 +50,11 @@
     <button type="button" class="wizard_clean_graf hidden header_btn">
       <i class="fa fa-trash"></i>
     </button>
+    <button type="button" class="wizard_play hidden header_btn">
+      <span class="wizard_percent hidden">0%</span>
+      <i class="fa fa-play"></i>
+      <i class="fa fa-stop hidden"></i>
+    </button>
 
     <div id="topbar">
       <div class="container">

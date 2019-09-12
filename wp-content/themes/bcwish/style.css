@@ -446,17 +446,20 @@ h6 {
   z-index: 9998;
   background: none;
   font-size: 24px;
-  transition: all 0.4s;
+  transition: all 0.5s;
   outline: none !important;
   line-height: 1;
   cursor: pointer;
   text-align: center;
   border-radius: 6px;
   margin: 10px 18px 0 0;
-  border: 2px solid #1bb1dc;
+  border: 2px solid #d7edf3;
   width: 37px;
   height: 32px;
   padding: 0;
+}
+.mobile-nav-toggle:hover {
+  border-color: #1bb1dc;
 }
 
 .mobile-nav-toggle i {
@@ -1721,13 +1724,13 @@ h3.wizard_heading
   line-height: 1;
   cursor: pointer;
   text-align: right;
-  border: 2px solid #1bb1dc;
+  border: 2px solid #d7edf3;
   border-radius: 6px;
   margin: 10px 18px 0 0;
   padding: 0;
   transition: all linear 0.5s;
 }
-.header_btn:hover
+.header_btn:hover, .mobile-nav-toggle:hover
 {
   border-color: #413e66;
 }
@@ -1744,7 +1747,7 @@ h3.wizard_heading
 .wizard_crop:hover, .wizard_to_start:hover, .wizard_to_what_way:hover, .wizard_to_protList:hover, .wizard_to_protDiag:hover;
 {
   color: #1bb1dc;
-  border-color: #413e66;
+  border-color: #1bb1dc;
 }
 .wizard_returned
 {
@@ -1979,6 +1982,10 @@ h3.wizard_heading
 .wizard_grafic_photo
 {
   padding: 30px 0;
+}
+.wizard_play .fa-stop
+{
+  color: red;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries

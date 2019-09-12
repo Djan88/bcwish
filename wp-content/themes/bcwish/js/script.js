@@ -73,7 +73,7 @@ jQuery(function() {
   jQuery('.wizard_to_protDiag').on('click', function(event) {
     jQuery('.wizard_prots').addClass('hidden');
     jQuery('.wizard_to_protDiag').addClass('hidden');
-    jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_to_what_way, .wizard_clean_graf').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_diag').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').text('Определите актуальную зону.');
   });
@@ -82,7 +82,7 @@ jQuery(function() {
   jQuery('.wizard_protocol').on('click', function(event) {
     jQuery('.wizard_operation').addClass('hidden');
     jQuery('.wizard_to_what_way').addClass('hidden');
-    jQuery('.wizard_to_protList').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_to_protList, .wizard_play').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.wizard_heading').text('Осталось перенести зоны на фото и можно начинать!');
     if (jQuery(this).hasClass('wizard_protocol_1')) {
@@ -104,17 +104,13 @@ jQuery(function() {
     }
     localStorage.setItem('cur_protocol', cur_protocol);
 
-    // var temp = localStorage.getItem('cur_protocol');
-    // console.log(cur_protocol);
-    // console.log('temp '+temp);
-
   });
 
 
    //Назад. К списку протоколов
   jQuery('.wizard_to_protList').on('click', function(event) {
     jQuery('.wizard_main_screen').addClass('hidden');
-    jQuery('.wizard_to_protList').addClass('hidden');
+    jQuery('.wizard_to_protList, .wizard_play').addClass('hidden');
     jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_operation').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').text('Выберите протокол');
