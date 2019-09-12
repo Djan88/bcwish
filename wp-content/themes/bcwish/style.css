@@ -1983,13 +1983,14 @@ h3.wizard_heading
 {
   padding: 30px 0;
 }
-.wizard_play .fa-stop
+.wizard_play .fa-stop-circle
 {
   color: red;
 }
 .wizard_percent
 {
-  padding-left: 5px;
+  padding: 2px 5px 2px;
+  display: inline-block!important;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
