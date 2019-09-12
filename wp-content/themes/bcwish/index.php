@@ -172,15 +172,13 @@
           <?php } ?>
           
           <div>
-            <!-- <a href="#services" class="btn-get-started scrollto">Начать</a> -->
           </div>
         </div>
         <div class="col-md-6 intro-img order-md-last order-first">
           <img src="<?php bloginfo('template_url'); ?>/img/intro_alt.svg" alt="" class="main_bg img-fluid">
         </div>
       </div>
-    <!-- <img src="<?php //bloginfo('template_url'); ?>/img/intro_alt.svg" alt="" class="img-fluid main_bg"> -->
-    <div class="scroller"><i class="fas fa-chevron-down"></i></div>
+    <a href="#services" class="scroller"><i class="fa fa-chevron-down"></i></a>
     </div>
   </section><!-- #intro -->
 

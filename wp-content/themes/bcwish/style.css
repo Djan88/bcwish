@@ -2000,10 +2000,14 @@ h3.wizard_heading
 .scroller
 {
   color: #413e66;
+  display: block;
   position: absolute;
   bottom: 10px;
-  left: 0;
-  right: 0;
+  left: 46%;
+  width: 35px;
+  height: 35px;
+  font-size: 30px;
+  text-align: center;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
