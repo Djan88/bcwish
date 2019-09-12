@@ -1990,7 +1990,10 @@ h3.wizard_heading
 .wizard_percent
 {
   padding: 2px 5px 2px;
-  display: inline-block!important;
+}
+.wizard_play
+{
+  height: 32px;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
