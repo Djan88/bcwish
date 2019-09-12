@@ -53,8 +53,8 @@ jQuery(function() {
 
   jQuery('.wizard_play').on('click', function(event) {
     jQuery(this).addClass('wizard_play_started');
-    jQuery('.wizard_percent fa-play').addClass('hidden');
-    jQuery('.wizard_percent fa-stop, .wizard_percent').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_play fa-play').addClass('hidden');
+    jQuery('.wizard_play fa-stop, .wizard_percent').fadeIn(500).removeClass('hidden');
     // jQuery('.wizard_heading').text('Определите актуальную зону.');
   });
 
