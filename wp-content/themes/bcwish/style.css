@@ -1786,6 +1786,7 @@ h3.wizard_heading
   border: 1px solid #413e66;
   z-index: 3;
   position: absolute!important;
+  transition: transform 0.250s linear;
 }
 .zone:hover:before 
 {
@@ -1823,6 +1824,7 @@ h3.wizard_heading
   left: 0;
   z-index: 2;
   position: absolute!important;
+  transition: transform 0.250s linear;
 }
 .zone.zone_ring 
 {
@@ -1830,6 +1832,7 @@ h3.wizard_heading
   left: 50%;
   top: 10px;
   color: transparent;
+  transition: transform 0.250s linear;
 }
 
 .d-lg-none.mobile-nav-toggle_open
