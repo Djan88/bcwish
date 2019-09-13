@@ -96,7 +96,7 @@ jQuery(function() {
             opacity: 0.8,
             transform: 'scale(1.3)',
             background: '#fff url(/wp-content/themes/bcwish/img/lovushka.jpg) 0 0/100% no-repeat',
-            transform: 'rotate(-'+d12Val+'deg)';
+            transform: 'rotate(-'+d12Val+'deg)'
           });
         count_animation += 1;
         rotateVal += 1.5;
