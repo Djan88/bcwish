@@ -53,21 +53,18 @@ jQuery(function() {
   console.log(protocol);
   
   // checkPoints = function(){
-    jQuery('.zone_movable').each(function() {
-      if(parseFloat(jQuery(this).css('left')) < 20){
-        pointsStatus = false;
-        console.log('status '+' '+jQuery(this).text()+' '+jQuery(this).css('top')+' '+pointsStatus);
-      }
-    });
+    // jQuery('.zone_movable').each(function() {
+    //   if(parseFloat(jQuery(this).css('left')) < 20){
+    //     pointsStatus = false;
+    //     console.log('status '+' '+jQuery(this).text()+' '+jQuery(this).css('top')+' '+pointsStatus);
+    //   }
+    // });
   // }
 
   jQuery('.wizard_play').on('click', function(event) {
     // checkPoints();
     jQuery('.zone_movable').each(function() {
-      if(parseFloat(jQuery(this).css('left')) < 20){
-        pointsStatus = false;
-        console.log('status '+' '+jQuery(this).text()+' '+jQuery(this).css('top')+' '+pointsStatus);
-      }
+      console.log('test');
     });
     if(pointsStatus == false){
       // swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести на фото все зоны", "info");
