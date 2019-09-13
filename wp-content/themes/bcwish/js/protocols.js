@@ -133,12 +133,10 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_v5, .zone_d5, .zone_d6, .zone_v-').css({
             background: 'rgba(255,255,255, 0.5)',
-            color: 'red',
-            borderColor: 'red',
-            opacity: 1,
+            color: '#413e66',
+            borderColor: '#413e66',
             transform: 'scale(1)',
-            borderWidth: '2px',
-            paddingTop: '5px',
+            paddingTop: '2px',
             zIndex: '1'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
