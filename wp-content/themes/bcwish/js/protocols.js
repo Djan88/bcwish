@@ -6,6 +6,8 @@ jQuery(function() {
       knife_rate_class,
       knife_rate_class_dotted,
       protocol,
+      checkPoints,
+      pointsStatus = false,
       supportsStorage = function(){
           try {
               return 'localStorage' in window && window['localStorage'] !== null;
@@ -50,12 +52,29 @@ jQuery(function() {
   var protocol = localStorage.getItem('cur_protocol');
   console.log(protocol);
   
+  checkPoints = function(){
+    jQuery('.zone').each(function() {
+      if(parseFloat(jQuery(this).css('left')) < 25){
+        pointsStatus = false;
+        console.log('status '+' '+jQuery(this).text()+' '+jQuery(this).css('top')+' '+pointsStatus);
+      }
+    });
+  }
+
 
   jQuery('.wizard_play').on('click', function(event) {
+    checkPoints();
+    if(pointsStatus == false){
+      // swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести на фото все зоны", "info");
+      // pointsStatus = true;
+      console.log('zones_alert');
+    } else {
+
+    }
     jQuery(this).addClass('wizard_play_started');
     jQuery('.wizard_start_icon').addClass('hidden');
     jQuery('.wizard_stop_icon, .wizard_percent').fadeIn(500).removeClass('hidden');
-    // jQuery('.wizard_heading').text('Определите актуальную зону.');
+    
   });
 
 

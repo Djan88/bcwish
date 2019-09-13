@@ -27,6 +27,7 @@
   <!-- Main Stylesheet File -->
   <link href="<?php bloginfo('template_url'); ?>/css/JCrop.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/css/jquery-ui.min.css" rel="stylesheet">
+  <link href="<?php bloginfo('template_url'); ?>/css/sweetalert.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
   <?php wp_head(); ?>
 </head>
@@ -676,6 +677,7 @@
   <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/JCrop.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/exif.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/sweetalert.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/protocols.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 
