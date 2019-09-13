@@ -53,12 +53,12 @@ jQuery(function() {
   console.log(protocol);
   
   checkPoints = function(){
-    jQuery('.zone_movable').each(function() {
+    // jQuery('.zone_movable').each(function() {
       // if(parseFloat(jQuery(this).css('top')) < 20){
         // pointsStatus = false;
-        console.log('status '+parseFloat(jQuery(this).css('top'));
+        console.log('status '+parseFloat(jQuery('.zone_movable').css('top'));
       // }
-    });
+    // });
   }
 
   jQuery('.wizard_play').on('click', function(event) {
