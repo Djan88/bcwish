@@ -86,7 +86,7 @@ jQuery(function() {
             opacity: 0.8,
             borderWidth: '1px',
             paddingTop: '4px',
-            background: 'url(/wp-content/themes/bcwish/img/vig_.png) 0 0/100% no-repeat',
+            background: '#fff url(/wp-content/themes/bcwish/img/vig_.png) 0 0/100% no-repeat',
             transform: 'scale(1.4)',
             zIndex: '1000'
         });
@@ -132,7 +132,7 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.zone_v5, .zone_d5, .zone_d6, .zone_v-').css({
-            background: 'rgba(255,255,255, 0.5)',
+            background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
             transform: 'scale(1)',
