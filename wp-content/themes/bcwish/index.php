@@ -81,6 +81,9 @@
         <ul>
           <?php if(is_user_logged_in()){ ?>
             <li><a href="/cabinet">Личный кабинет</a></li>
+            <?php if(current_user_can('administrator')){ ?>
+              <li><a href="/wp-admin">Панель управления</a></li>
+            <?php } ?>
           <?php } else { ?>
             <li class="active"><a href="#intro">Вход</a></li>
             <li><a href="#services">Инструкция</a></li>
