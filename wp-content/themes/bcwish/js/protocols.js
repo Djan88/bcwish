@@ -54,16 +54,12 @@ jQuery(function() {
   
   checkPoints = function(){
     jQuery('.zone_movable').each(function() {
-      if(parseFloat(jQuery(this).css('left')) < 25){
-        pointsStatus = false;
-        console.log('status '+' '+jQuery(this).text()+' '+jQuery(this).css('top')+' '+pointsStatus);
-      }
+      console.log(parseFloat(jQuery(this).css('left'))
     });
   }
 
-
   jQuery('.wizard_play').on('click', function(event) {
-    checkPoints;
+    checkPoints();
     if(pointsStatus == false){
       // swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести на фото все зоны", "info");
       pointsStatus = true;
