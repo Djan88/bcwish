@@ -7,6 +7,7 @@ jQuery(function() {
       knife_rate_class_dotted,
       protocol,
       checkPoints,
+      curPoint
       pointsStatus = true,
       supportsStorage = function(){
           try {
@@ -64,7 +65,8 @@ jQuery(function() {
   jQuery('.wizard_play').on('click', function(event) {
     // checkPoints();
     jQuery('.zone_movable').each(function() {
-      console.log('test');
+      curPoint = jQuery(this).css('left');
+      console.log(curPoint);
     });
     if(pointsStatus == false){
       // swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести на фото все зоны", "info");
