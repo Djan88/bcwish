@@ -1988,7 +1988,7 @@ h3.wizard_heading
 }
 .wizard_play .fa-stop-circle
 {
-  color: red;
+  color: red!important;
 }
 .wizard_percent
 {
