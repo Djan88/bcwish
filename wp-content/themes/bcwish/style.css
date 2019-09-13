@@ -263,6 +263,8 @@ h6 {
   color: #fff;
   background: #1bb1dc;
   color: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 #intro .intro-info .btn-get-started:hover,
@@ -2012,6 +2014,7 @@ h3.wizard_heading
 .for_desktop 
 {
   position: relative;
+  z-index: 1;
 }
 .main_arrow
 {
@@ -2023,8 +2026,8 @@ h3.wizard_heading
 .second_arrow
 {
   position: absolute;
-  top: -75px;
-  left: 15px;
+  top: -160px;
+  left: 291px;
   width: 900px;
 }
 .arrow_title 
@@ -2043,8 +2046,22 @@ h3.wizard_heading
 }
 .second_arrow_title 
 {
-  left: 105px;
-  top: 40px;
+  left: 395px;
+  top: 20px;
+}
+.btn.wizard_continue
+{
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  position: relative;
+  z-index: 2;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
