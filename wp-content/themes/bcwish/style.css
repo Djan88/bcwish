@@ -2020,6 +2020,32 @@ h3.wizard_heading
   left: 15px;
   width: 900px;
 }
+.second_arrow
+{
+  position: absolute;
+  top: -75px;
+  left: 15px;
+  width: 900px;
+}
+.arrow_title 
+{
+  width: 278px;
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+  font-style: italic;
+  position: absolute;
+}
+.main_arrow_title 
+{
+  left: 105px;
+  top: 40px;
+}
+.second_arrow_title 
+{
+  left: 105px;
+  top: 40px;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
