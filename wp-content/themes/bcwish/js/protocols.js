@@ -76,7 +76,7 @@ jQuery(function() {
             opacity: 0.8,
             borderWidth: '1px',
             paddingTop: '4px',
-            transform: 'rotate('+rotateVal+'deg) scale(1)',
+            transform: 'rotate('+rotateVal+'deg) scale(1.3)',
             background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) 0 0/100% no-repeat',
             zIndex: '1000'
         });
@@ -87,46 +87,44 @@ jQuery(function() {
             borderWidth: '1px',
             paddingTop: '4px',
             background: 'url(/wp-content/themes/bcwish/img/vig_.png) 0 0/100% no-repeat',
-            transform: 'scale(1)',
+            transform: 'scale(1.3)',
             zIndex: '1000'
         });
         jQuery('.zone_ring')
           .removeClass('hidden')
           .css({
             opacity: 0.8,
-            transform: 'scale(1)',
+            transform: 'scale(1.3)',
             background: '#fff url(/wp-content/themes/bcwish/img/lovushka.jpg) 0 0/100% no-repeat',
-            transform: 'rotate(-'+d12Val+'deg)',
-            borderWidth: '1px',
-            borderColor: 'transparent'
+            transform: 'rotate(-'+d12Val+'deg)';
           });
         count_animation += 1;
         rotateVal += 1.5;
         if(count_animation <= 120){
             cur_animation_val += 1.5;
             d12Val+= 9;
-            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg) scale(1.3)');
         } else if (count_animation >= 120 && count_animation <= 228){
             cur_animation_val -= 1.5;
             d12Val+= 9;
             jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg)');
-            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg) scale(1.3)');
         } else if (count_animation >= 228 && count_animation <= 292){
             cur_animation_val -= 1.5;
             d12Val+= 9;
-            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg) scale(1.3)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) 0 0/100% no-repeat');
         } else if (count_animation >= 292 && count_animation <= 344){
             cur_animation_val += 1.5;
             d12Val+= 9;
-            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg) scale(1.3)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) 0 0/100% no-repeat');
         } else {
             d12Val+= 9;
             cur_animation_val += 1.5;
-            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg) scale(1.3)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) 0 0/100% no-repeat');
         }
@@ -138,12 +136,12 @@ jQuery(function() {
             color: 'red',
             borderColor: 'red',
             opacity: 1,
-            transform: 'scale(0.5)',
+            transform: 'scale(1)',
             borderWidth: '2px',
             paddingTop: '5px',
             zIndex: '1'
         });
-        jQuery('.ring').css('transform', 'rotate(0deg) scale(1)');
+        jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
       }
     }, 250);
@@ -160,15 +158,14 @@ jQuery(function() {
 
   jQuery('.wizard_play').on('click', function(event) {
     checkPoints();
-    if(pointsStatus == false){
-      swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото все зоны.", "info");
-      pointsStatus = true;
-    } else {
+    // if(pointsStatus == false){
+    //   swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото все зоны.", "info");
+    //   pointsStatus = true;
+    // } else {
       jQuery('.wizard_heading').text('Программа выполняется.');
       jQuery(this).addClass('wizard_play_started');
       jQuery('.wizard_start_icon').addClass('hidden');
       jQuery('.wizard_stop_icon, .wizard_percent').fadeIn(500).removeClass('hidden');
-      jQuery('.zone').css('background', 'rgba(83,35,69, 0.4)');
       var protocol = localStorage.getItem('cur_protocol');
       console.log(protocol);
 
@@ -200,7 +197,7 @@ jQuery(function() {
         mmt();
         jQuery('.status_title').text('Висцеральный протокол');
       }
-    }
+    // }
   });
 
 });
