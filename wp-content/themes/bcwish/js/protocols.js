@@ -53,12 +53,7 @@ jQuery(function() {
   console.log(protocol);
   
   checkPoints = function(){
-    jQuery('.zone_movable').each(function() {
-      if(parseFloat(jQuery(this).css('left')) < 25){
-        pointsStatus = false;
-        console.log('status '+' '+jQuery(this).text()+' '+jQuery(this).css('top')+' '+pointsStatus);
-      }
-    });
+    console.log('eeee');
   }
 
 
