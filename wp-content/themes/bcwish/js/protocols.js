@@ -63,11 +63,10 @@ jQuery(function() {
 
 
   jQuery('.wizard_play').on('click', function(event) {
-    pointsStatus = true;
     checkPoints();
     if(pointsStatus == false){
       // swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести на фото все зоны", "info");
-      // pointsStatus = true;
+      pointsStatus = true;
       console.log('zones_alert');
     } else {
       jQuery(this).addClass('wizard_play_started');
