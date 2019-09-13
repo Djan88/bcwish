@@ -2279,8 +2279,30 @@ h3.wizard_heading
   }
 
   #intro .intro-info {
+    height: 100vh;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 200px;
+  }
+  .main_arrow
+  {
+    top: -70px;
+    left: 310px;
+  }
+  .second_arrow
+  {
+    top: -160px;
+    left: 620px;
+  }
+  .main_arrow_title
+  {
+    left: 400px;
+    top: 50px;
+  }
+  .second_arrow_title
+  {
+    left: 655px;
+    top: 20px;
   }
 
   #intro .intro-info h2 {
