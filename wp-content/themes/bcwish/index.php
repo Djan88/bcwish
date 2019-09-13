@@ -183,9 +183,6 @@
           <div>
           </div>
         </div>
-        <div class="col-md-6 intro-img order-md-last order-first">
-          <img src="<?php bloginfo('template_url'); ?>/img/intro_alt.svg" alt="" class="main_bg img-fluid">
-        </div>
       </div>
     </div>
     <a href="#services" class="scroller scrollto"><i class="fa fa-chevron-down"></i></a>
