@@ -54,10 +54,10 @@ jQuery(function() {
   
   checkPoints = function(){
     jQuery('.zone_movable').each(function() {
-      if(parseFloat(jQuery(this).css('left')) < 25){
-        pointsStatus = false;
-        console.log('status '+' '+jQuery(this).text()+' '+jQuery(this).css('top')+' '+pointsStatus);
-      }
+      // if(parseFloat(jQuery(this).css('top')) < 20){
+        // pointsStatus = false;
+        console.log('status '+parseFloat(jQuery(this).css('top'));
+      // }
     });
   }
 
