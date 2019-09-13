@@ -64,7 +64,7 @@ jQuery(function() {
   jQuery('.wizard_play').on('click', function(event) {
     checkPoints();
     if(pointsStatus == false){
-      swal("Good job!", "You clicked the button!", "info");
+      swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото все зоны.", "info");
       pointsStatus = true;
       console.log('zones_alert');
     } else {
