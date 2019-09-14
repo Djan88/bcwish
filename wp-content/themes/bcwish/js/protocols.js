@@ -239,10 +239,9 @@ jQuery(function() {
   jQuery('.wizard_stop') .on('click', function(event) {
     jQuery('.header-title').text('Программа останавливается');
     // endStatus = true;
-    // jQuery('.btn-to_endNow').popover('show');
-    jQuery(this).addClass('hidden');
     jQuery('.wizard_stop').popover('show');
-    jQuery('.wizard_play').fadeIn(500).removeClass('hidden');
+    // jQuery(this).addClass('hidden');
+    // jQuery('.wizard_play').fadeIn(500).removeClass('hidden');
     setTimeout(hideNote, 5000);
     localStorage.setItem('pausedPhoto', jQuery('.loaded_img').attr('src'));
     pausedStatus = true;
