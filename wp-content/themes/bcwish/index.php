@@ -51,7 +51,7 @@
     <button type="button" class="wizard_clean_graf hidden header_btn">
       <i class="fa fa-trash"></i>
     </button>
-    <button type="button" class="wizard_play">
+    <button type="button" class="wizard_play header_btn">
       <i class="fa fa-play-circle wizard_start_icon"></i>
     </button>
     <button type="button" class="wizard_stop hidden header_btn" data-toggle="popover" data-placement="bottom" title="Протокол остановлен!" data-content="Выполнение протокола будет приостановлено по окончании текущей фазы. Все данные будут сохранены">
