@@ -26,21 +26,6 @@ jQuery(function() {
     console.log('pausedStatus = false');
   });
 
-
-// Если есть незавершенный протокол
-  if (localStorage.getItem('paused')) {
-    jQuery('.wizard_continue').removeClass('hidden');
-    returned_img = localStorage.getItem('pausedPhoto');
-  }
-
-  jQuery('.wizard_continue.btn-warning').on('click', function(event) {
-    jQuery('.machine_screen, #intro').addClass('hidden');
-    jQuery('.wizard_returned').attr('src', returned_img);
-    jQuery('.wizard_to_protList, .wizard_play').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.wizard_heading').text('Перенесите зоны на фото и можно будет продолжить работу.');
-  });
-
 //Скрываем возможно загруженное изображение
   jQuery('.wizard_returned').find('img:first-child').addClass('returned hidden');
   croppedImg = jQuery('.wizard_returned').children()[0];
