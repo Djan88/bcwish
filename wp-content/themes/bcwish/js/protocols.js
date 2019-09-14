@@ -52,7 +52,7 @@ jQuery(function() {
       if (isConfirm) {
         jQuery(location).attr('href','/');
       } else {
-        jQuery('.wizard_stop').addClass('hidden');
+        jQuery('.wizard_stop, .zone_ring').addClass('hidden');
         jQuery('.wizard_play').fadeIn(500).removeClass('hidden');
       }
     })
@@ -198,8 +198,9 @@ jQuery(function() {
     //   swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото все зоны.", "info");
     //   pointsStatus = true;
     // } else {
+      pausedStatus = false;
       jQuery(this).addClass('hidden');
-      jQuery('.wizard_stop').fadeIn(500).removeClass('hidden');
+      jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
       jQuery('.wizard_heading').text('Программа выполняется.');
       var protocol = localStorage.getItem('cur_protocol');
       console.log(protocol);
