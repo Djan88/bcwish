@@ -293,6 +293,7 @@ jQuery(function() {
         // jQuery('.wizard_returned').attr('src', localStorage.getItem('pausedPhoto'));
         // console.log(localStorage.getItem('pausedPhoto'));
         protocolfromMemory = eval(localStorage.getItem('paused'));
+        console.log(protocolfromMemory);
         protocolfromMemory();
         pausedStatus = false;
         jQuery(this).addClass('hidden');
