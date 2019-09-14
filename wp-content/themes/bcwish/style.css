@@ -22,6 +22,10 @@ body {
   overflow: hidden;
   position: relative;
 }
+.container_main
+{
+  overflow: visible;
+}
 
 a {
   color: #1bb1dc;

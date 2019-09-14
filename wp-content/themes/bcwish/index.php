@@ -71,7 +71,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container container_main">
 
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->

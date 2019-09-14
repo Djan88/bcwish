@@ -14,6 +14,7 @@ jQuery(function() {
       cur_animation_val = 0,
       rotateVal = 0,
       count_animation = 1,
+      pausedStatus = false,
       endNow,
       supportsStorage = function(){
           try {
@@ -178,7 +179,8 @@ jQuery(function() {
           localStorage.setItem('paused', 'v1_2');
           endNow()
         } else {
-          v1_2();
+          // v1_2();
+          console.log('continue');
         } 
       }
     }, 250);
