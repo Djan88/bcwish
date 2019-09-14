@@ -38,7 +38,7 @@ jQuery(function() {
     cur_animation_val = 0;
     rotateVal = 0;
     count_animation = 1;
-    
+
     swal({
       title: "Приостановлено пользователем",
       text: "Что делать дальше?",
@@ -229,6 +229,22 @@ jQuery(function() {
         jQuery('.status_title').text('Висцеральный протокол');
       }
     // }
+  });
+
+
+  // STOP
+  function hideNote() {
+    jQuery('.btn-to_endNow').popover('hide');
+  }
+  
+  jQuery('body').find('.wizard_play_started') .on('click', function(event) {
+    jQuery('.header-title').text('Программа останавливается');
+    // endStatus = true;
+    // jQuery('.btn-to_endNow').popover('show');
+    setTimeout(hideNote, 5000);
+    localStorage.setItem('pausedPhoto', jQuery('.loaded_img').attr('src'));
+    pausedStatus = true;
+    console.log('pausedStatus = true');
   });
 
 });
