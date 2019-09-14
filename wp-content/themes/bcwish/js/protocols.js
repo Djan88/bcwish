@@ -16,6 +16,7 @@ jQuery(function() {
       count_animation = 1,
       pausedStatus = false,
       endNow,
+      protocolfromMemory,
       supportsStorage = function(){
           try {
               return 'localStorage' in window && window['localStorage'] !== null;
@@ -278,40 +279,50 @@ jQuery(function() {
     //   swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото все зоны.", "info");
     //   pointsStatus = true;
     // } else {
-      pausedStatus = false;
-      jQuery(this).addClass('hidden');
-      jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
-      jQuery('.wizard_heading').text('Программа выполняется.');
-      var protocol = localStorage.getItem('cur_protocol');
-      console.log(protocol);
-
-      if (protocol == 'v1') {
-        v1();
-        jQuery('.status_title').text('Протокол V1');
-      } else if (protocol == 'v2') {
-        v2();
-        jQuery('.status_title').text('Протокол V2-5');
-      } else if (protocol == 'v3') {
-        v3();
-        jQuery('.status_title').text('Протокол V3-4');
-      } else if (protocol == 'v4') {
-        v4();
-        jQuery('.status_title').text('Протокол V4-3');
-      } else if (protocol == 'v5') {
-        v5();
-        jQuery('.status_title').text('Протокол V5-2');
-      } else if (protocol == 'solis') {
-        solis();
-        jQuery('.status_title').text('Протокол Solis');
-      } else if (protocol == 'drenag') {
-        drenag();
-        jQuery('.status_title').text('Дренажный протокол');
-      } else if (protocol == 'universal') {
-        universal();
-        jQuery('.status_title').text('Универсальный протокол');
-      } else if (protocol == 'visceral') {
-        mmt();
-        jQuery('.status_title').text('Висцеральный протокол');
+      if (pausedStatus == true) {
+        jQuery('.wizard_returned').attr('src', localStorage.getItem('pausedPhoto'));
+        console.log(localStorage.getItem('pausedPhoto'));
+        protocolfromMemory = eval(localStorage.getItem('paused'));
+        protocolfromMemory();
+        pausedStatus = false;
+        jQuery(this).addClass('hidden');
+        jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
+        jQuery('.wizard_heading').text('Программа выполняется.');
+      } else {
+        pausedStatus = false;
+        jQuery(this).addClass('hidden');
+        jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
+        jQuery('.wizard_heading').text('Программа выполняется.');
+        var protocol = localStorage.getItem('cur_protocol');
+        console.log(protocol);
+        if (protocol == 'v1') {
+          v1();
+          jQuery('.status_title').text('Протокол V1');
+        } else if (protocol == 'v2') {
+          v2();
+          jQuery('.status_title').text('Протокол V2-5');
+        } else if (protocol == 'v3') {
+          v3();
+          jQuery('.status_title').text('Протокол V3-4');
+        } else if (protocol == 'v4') {
+          v4();
+          jQuery('.status_title').text('Протокол V4-3');
+        } else if (protocol == 'v5') {
+          v5();
+          jQuery('.status_title').text('Протокол V5-2');
+        } else if (protocol == 'solis') {
+          solis();
+          jQuery('.status_title').text('Протокол Solis');
+        } else if (protocol == 'drenag') {
+          drenag();
+          jQuery('.status_title').text('Дренажный протокол');
+        } else if (protocol == 'universal') {
+          universal();
+          jQuery('.status_title').text('Универсальный протокол');
+        } else if (protocol == 'visceral') {
+          mmt();
+          jQuery('.status_title').text('Висцеральный протокол');
+        }
       }
     // }
   });
@@ -327,7 +338,7 @@ jQuery(function() {
     // endStatus = true;
     jQuery('.wizard_stop').popover('show');
     setTimeout(hideNote, 5000);
-    localStorage.setItem('pausedPhoto', jQuery('.loaded_img').attr('src'));
+    localStorage.setItem('pausedPhoto', jQuery('.wizard_returned').attr('src'));
     pausedStatus = true;
     console.log('pausedStatus = true');
   });
