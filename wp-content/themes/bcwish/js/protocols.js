@@ -30,9 +30,6 @@ jQuery(function() {
   });
 
   endNow = function(){
-    jQuery('.wizard_play').removeClass('wizard_play_started');
-    jQuery('.wizard_stop_icon, .wizard_percent').addClass('hidden');
-    jQuery('.wizard_start_icon').fadeIn(500).removeClass('hidden');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -55,7 +52,7 @@ jQuery(function() {
       if (isConfirm) {
         jQuery(location).attr('href','/');
       } else {
-        jQuery(this).addClass('hidden');
+        jQuery('.wizard_stop').addClass('hidden');
         jQuery('.wizard_play').fadeIn(500).removeClass('hidden');
       }
     })
