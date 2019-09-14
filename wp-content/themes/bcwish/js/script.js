@@ -1,6 +1,7 @@
 jQuery(function() {
   var croppedImg,
       cur_protocol,
+      returned_img,
       supportsStorage = function(){
           try {
               return 'localStorage' in window && window['localStorage'] !== null;
@@ -15,6 +16,29 @@ jQuery(function() {
   jQuery('.toRegistration').on('click', function(event) {
     jQuery('.login_form').addClass('hidden').removeClass('bounceInUp');
     jQuery('.register_form').removeClass('hidden').addClass('bounceInUp');
+  });
+
+
+  jQuery('.btn-get-started').on('click', function(event) {
+    localStorage.removeItem('paused');
+    localStorage.removeItem('pausedPhoto'); 
+    pausedStatus = false;
+    console.log('pausedStatus = false');
+  });
+
+
+// Если есть незавершенный протокол
+  if (localStorage.getItem('paused')) {
+    jQuery('.wizard_continue').removeClass('hidden');
+    returned_img = localStorage.getItem('pausedPhoto');
+  }
+
+  jQuery('.wizard_continue.btn-warning').on('click', function(event) {
+    jQuery('.machine_screen, #intro').addClass('hidden');
+    jQuery('.wizard_returned').attr('src', returned_img);
+    jQuery('.wizard_to_protList, .wizard_play').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
+    jQuery('.wizard_heading').text('Осталось перенести зоны на фото и можно начинать!');
   });
 
 //Скрываем возможно загруженное изображение

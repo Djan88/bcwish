@@ -280,8 +280,8 @@ jQuery(function() {
     //   pointsStatus = true;
     // } else {
       if (pausedStatus == true) {
-        jQuery('.wizard_returned').attr('src', localStorage.getItem('pausedPhoto'));
-        console.log(localStorage.getItem('pausedPhoto'));
+        // jQuery('.wizard_returned').attr('src', localStorage.getItem('pausedPhoto'));
+        // console.log(localStorage.getItem('pausedPhoto'));
         protocolfromMemory = eval(localStorage.getItem('paused'));
         protocolfromMemory();
         pausedStatus = false;
@@ -324,6 +324,8 @@ jQuery(function() {
           jQuery('.status_title').text('Висцеральный протокол');
         }
       }
+      localStorage.removeItem('paused');
+      localStorage.removeItem('pausedPhoto'); 
     // }
   });
 
