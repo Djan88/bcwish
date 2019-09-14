@@ -38,7 +38,7 @@ jQuery(function() {
     jQuery('.wizard_returned').attr('src', returned_img);
     jQuery('.wizard_to_protList, .wizard_play').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.wizard_heading').text('Осталось перенести зоны на фото и можно начинать!');
+    jQuery('.wizard_heading').text('Перенесите зоны на фото и можно будет продолжить работу.');
   });
 
 //Скрываем возможно загруженное изображение
