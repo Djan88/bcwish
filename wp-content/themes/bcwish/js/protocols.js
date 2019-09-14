@@ -193,10 +193,9 @@ jQuery(function() {
     //   swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото все зоны.", "info");
     //   pointsStatus = true;
     // } else {
+      jQuery(this).addClass('hidden');
+      jQuery('.wizard_stop').fadeIn(500).removeClass('hidden');
       jQuery('.wizard_heading').text('Программа выполняется.');
-      jQuery(this).addClass('wizard_play_started');
-      jQuery('.wizard_start_icon').addClass('hidden');
-      jQuery('.wizard_stop_icon, .wizard_percent').fadeIn(500).removeClass('hidden');
       var protocol = localStorage.getItem('cur_protocol');
       console.log(protocol);
 
@@ -234,13 +233,15 @@ jQuery(function() {
 
   // STOP
   function hideNote() {
-    jQuery('.btn-to_endNow').popover('hide');
+    jQuery('.wizard_stop').popover('hide');
   }
-  
-  jQuery('body').find('.wizard_play_started') .on('click', function(event) {
+
+  jQuery('.wizard_stop') .on('click', function(event) {
     jQuery('.header-title').text('Программа останавливается');
     // endStatus = true;
     // jQuery('.btn-to_endNow').popover('show');
+    jQuery(this).addClass('hidden');
+    jQuery('.wizard_play').fadeIn(500).removeClass('hidden');
     setTimeout(hideNote, 5000);
     localStorage.setItem('pausedPhoto', jQuery('.loaded_img').attr('src'));
     pausedStatus = true;
