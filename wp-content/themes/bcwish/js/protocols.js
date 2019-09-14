@@ -45,12 +45,18 @@ jQuery(function() {
       type: "info",
       showCancelButton: true,
       confirmButtonClass: "btn-danger",
+      cancelButtonClass: "btn-success",
       cancelButtonText: "Продолжить",
       confirmButtonText: "К началу",
       closeOnConfirm: false
     },
-    function(){
-      jQuery(location).attr('href','/');
+    function(isConfirm) {
+      if (isConfirm) {
+        jQuery(location).attr('href','/');
+      } else {
+        jQuery(this).addClass('hidden');
+        jQuery('.wizard_play').fadeIn(500).removeClass('hidden');
+      }
     })
   }
 
@@ -240,8 +246,6 @@ jQuery(function() {
     jQuery('.header-title').text('Программа останавливается');
     // endStatus = true;
     jQuery('.wizard_stop').popover('show');
-    // jQuery(this).addClass('hidden');
-    // jQuery('.wizard_play').fadeIn(500).removeClass('hidden');
     setTimeout(hideNote, 5000);
     localStorage.setItem('pausedPhoto', jQuery('.loaded_img').attr('src'));
     pausedStatus = true;
