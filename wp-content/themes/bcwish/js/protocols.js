@@ -14,6 +14,7 @@ jQuery(function() {
       cur_animation_val = 0,
       rotateVal = 0,
       count_animation = 1,
+      endNow,
       supportsStorage = function(){
           try {
               return 'localStorage' in window && window['localStorage'] !== null;
@@ -26,6 +27,32 @@ jQuery(function() {
   jQuery('#ring').resizable({
     aspectRatio: 1/1
   });
+
+  endNow = function(){
+    jQuery('.wizard_play').removeClass('wizard_play_started');
+    jQuery('.wizard_stop_icon, .wizard_percent').addClass('hidden');
+    jQuery('.wizard_start_icon').fadeIn(500).removeClass('hidden');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    
+    swal({
+      title: "Приостановлено пользователем",
+      text: "Что делать дальше?",
+      type: "info",
+      showCancelButton: true,
+      confirmButtonClass: "btn-danger",
+      cancelButtonText: "Продолжить",
+      confirmButtonText: "К началу",
+      closeOnConfirm: false
+    },
+    function(){
+      jQuery(location).attr('href','/');
+    })
+  }
 
   //Dragging elems
   jQuery('.draggable, .ring').draggable({
@@ -141,6 +168,12 @@ jQuery(function() {
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'v1_2');
+          endNow()
+        } else {
+          v1_2();
+        } 
       }
     }, 250);
   }
