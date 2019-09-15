@@ -110,8 +110,8 @@ jQuery(function() {
   //анимация против часовой стрелки
           jQuery('.triangle').css({
               transform: 'scale(0.1) rotateY(180deg)rotateZ(120deg)',
-              left: '-184px',
-              top: '-149px'
+              left: '-190px',
+              top: '-142px'
           });
   //анимация первого треугольника
           jQuery('.zone_v1').addClass('transparent');
@@ -132,8 +132,8 @@ jQuery(function() {
   //анимация по часовой стрелке
                         jQuery('.triangle').css({
                             transform: 'scale(0.1) rotateY(0deg)rotateZ(120deg)',
-                            left: '-170px',
-                            top: '-120px'
+                            left: '-190px',
+                            top: '-142px'
                         });
   //анимация первого треугольника
                         jQuery('.zone_v1').addClass('transparent');                                                                    
