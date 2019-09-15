@@ -2084,6 +2084,16 @@ h3.wizard_heading
     stroke: #F0B615!important;
     stroke-width: 20px;
 }
+.transparent
+{
+    border-color: transparent!important;
+    color: transparent!important;
+    background: transparent!important;
+}
+.transparent svg
+{
+    display: block!important;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
