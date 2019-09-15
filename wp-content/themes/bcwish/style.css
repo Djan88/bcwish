@@ -1699,6 +1699,7 @@ html.all
 #header {
   height: 70px;
   padding: 15px 0;
+  z-index: 1001;
 }
 #header .logo h1 {
   font-size: 28px;
@@ -2069,6 +2070,19 @@ h3.wizard_heading
   transition: 0.5s;
   position: relative;
   z-index: 2;
+}
+.triangle
+{
+  width: 400px;
+  margin: auto;
+  position: absolute;
+  left: -170px;
+  top: -140px;
+  transform: scale(0.2);
+}
+.triangle path, .triangle line, .triangle polyline {
+    stroke: #F0B615!important;
+    stroke-width: 20px;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries

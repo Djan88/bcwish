@@ -17,6 +17,10 @@ jQuery(function() {
       pausedStatus = false,
       endNow,
       protocolfromMemory,
+      firstTriangleAnimation,
+      secondTriangleAnimation,
+      thirdTriangleAnimation,
+      fourthTriangleAnimation,
       supportsStorage = function(){
           try {
               return 'localStorage' in window && window['localStorage'] !== null;
@@ -88,8 +92,147 @@ jQuery(function() {
   });
 
 
+
+  v1_3 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V1"');
+    jQuery('.wizard_percent').text('12%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        //анимация против часовой стрелки
+        jQuery('.triangle').css({
+            transform: 'scale(0.2) rotateY(180deg)rotateZ(120deg)',
+            left: '-180px',
+            top: '-120px'
+        });
+        //анимация первого треугольника
+        jQuery('#draggable1').addClass('transparent');
+        firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
+        //анимация второго треугольника
+          setTimeout(function(){
+            jQuery('#draggable2').addClass('transparent');
+            secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 600}, function(){
+    //анимация третьего треугольника
+              setTimeout(function(){
+                jQuery('#draggable3').addClass('transparent');
+                thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 600}, function(){
+//анимация четвертого треугольника
+                  setTimeout(function(){
+                    jQuery('#draggable4').addClass('transparent');
+                    fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 600}, function(){
+                      jQuery('.itemlist_item').removeClass('transparent');
+                  //анимация по часовой стрелке
+                      jQuery('.triangle').css({
+                          transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
+                          left: '-170px',
+                          top: '-120px'
+                      });
+                      //анимация первого треугольника
+                      jQuery('#draggable1').addClass('transparent');                                                                    
+                      firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
+                      //анимация второго треугольника
+                        setTimeout(function(){
+                          jQuery('#draggable2').addClass('transparent');
+                          secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 600}, function(){
+                  //анимация третьего треугольника
+                            setTimeout(function(){
+                              jQuery('#draggable3').addClass('transparent');
+                              thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 600}, function(){
+              //анимация четвертого треугольника
+                                setTimeout(function(){
+                                  jQuery('#draggable4').addClass('transparent');
+                                  fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 600}, function(){
+                                  });
+                                  fourthTriangleAnimation.play();
+                                }, 250)
+                              });
+                              thirdTriangleAnimation.play();
+                            }, 250)
+                          });
+                          secondTriangleAnimation.play();
+                        }, 250)
+                      });
+                      firstTriangleAnimation.play();
+                    });
+                    fourthTriangleAnimation.play();
+                  }, 250)
+                });
+                thirdTriangleAnimation.play();
+              }, 250)
+            });
+            secondTriangleAnimation.play();
+          }, 250)
+        });
+        firstTriangleAnimation.play();
+        jQuery('.zone_ring')
+          .removeClass('hidden')
+          .css({
+            opacity: 0.8,
+            transform: 'scale(1.4)',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) 0 0/100% no-repeat',
+            transform: 'rotate(-'+d12Val+'deg) scale(1.4)'
+          });
+        count_animation += 1;
+        rotateVal += 1.5;
+        if(count_animation <= 120){
+            cur_animation_val += 1.5;
+            d12Val+= 9;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 120 && count_animation <= 228){
+            cur_animation_val -= 1.5;
+            d12Val+= 9;
+            jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.4)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 228 && count_animation <= 292){
+            cur_animation_val -= 1.5;
+            d12Val+= 9;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.4)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) 0 0/100% no-repeat');
+        } else if (count_animation >= 292 && count_animation <= 344){
+            cur_animation_val += 1.5;
+            d12Val+= 9;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.4)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) 0 0/100% no-repeat');
+        } else {
+            d12Val+= 9;
+            cur_animation_val += 1.5;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.4)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) 0 0/100% no-repeat');
+        }
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v0, .zone_v2, .zone_d2, .zone_cl, .zone_v-').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '1'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'v1_2');
+          endNow()
+        } else {
+          v1_3();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
   v1_2 = function(){
-    localStorage.setItem('pausedProtName', 'Универсальный протокол');
+    jQuery('.wizard_heading').text('Выполняется протокол "V1"');
     jQuery('.wizard_percent').text('6%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -174,15 +317,15 @@ jQuery(function() {
           localStorage.setItem('paused', 'v1_2');
           endNow()
         } else {
-          // v1_3();
-          console.log('continue');
+          v1_3();
+          // console.log('continue');
         } 
       }
     }, 250);
   }
 
   v1 = function(){
-    localStorage.setItem('pausedProtName', 'Универсальный протокол');
+    jQuery('.wizard_heading').text('Выполняется протокол "V1"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -313,12 +456,10 @@ jQuery(function() {
         pausedStatus = false;
         jQuery(this).addClass('hidden');
         jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
-        jQuery('.wizard_heading').text('Программа выполняется.');
       } else {
         pausedStatus = false;
         jQuery(this).addClass('hidden');
         jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
-        jQuery('.wizard_heading').text('Программа выполняется.');
         var protocol = localStorage.getItem('cur_protocol');
         console.log(protocol);
         if (protocol == 'v1') {
