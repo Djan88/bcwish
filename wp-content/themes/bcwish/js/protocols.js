@@ -107,7 +107,7 @@ jQuery(function() {
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 22){                                                                         //22
             cur_animation_val += 1.5;
-            jQuery('.zone_v5, .zone_v-').css({
+            jQuery('.zone_v0, .zone_v-').css({
               background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) 0 0/100% no-repeat',
               transform: 'rotate(-'+cur_animation_val+'deg) scale(1.4)',
               color: 'transparent',
@@ -123,7 +123,7 @@ jQuery(function() {
         } else {
             clearInterval(phaseSeven_one);
             count_animation = 1;
-            jQuery('.zone_v5, .zone_v-').css({
+            jQuery('.zone_v0, .zone_v-').css({
               background: '#fff',
               color: '#413e66',
               borderColor: '#413e66',
@@ -222,14 +222,14 @@ jQuery(function() {
                                       zIndex: '1'
                                     });
 //Этап 5-2-1
-                                    cur_animation_val = 55;
+                                    cur_animation_val = 10;
                                     count_animation = 1;
                                     phaseSeven_one = setInterval(function(){
                                         if (count_animation <= 22){                                                                         //22
                                             cur_animation_val += 1.5;
                                             jQuery('.zone_v4, .zone_v3').css({
-                                              background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) 0 0/100% no-repeat',
-                                              transform: 'rotate(-'+cur_animation_val+'deg) scale(1.4)',
+                                              background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) 0 0/100% no-repeat',
+                                              transform: 'rotate('+cur_animation_val+'deg) scale(1.4)',
                                               color: 'transparent',
                                               borderColor: 'transparent',
                                               opacity: 0.8,
