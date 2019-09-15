@@ -104,71 +104,75 @@ jQuery(function() {
     count_animation = 1;
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
-//анимация против часовой стрелки
-        jQuery('.triangle').css({
-            transform: 'scale(0.2) rotateY(180deg)rotateZ(120deg)',
-            left: '-180px',
-            top: '-120px'
-        });
-//анимация первого треугольника
-        jQuery('.zone_v1').addClass('transparent');
-        firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
-//анимация второго треугольника
-          setTimeout(function(){
-            jQuery('.zone_v2').addClass('transparent');
-            secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 600}, function(){
-//анимация третьего треугольника
-              setTimeout(function(){
-                jQuery('.zone_v3').addClass('transparent');
-                thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 600}, function(){
-//анимация четвертого треугольника
-                  setTimeout(function(){
-                    jQuery('.zone_v4').addClass('transparent');
-                    fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 600}, function(){
-                      jQuery('.zone').removeClass('transparent');
-//анимация по часовой стрелке
-                      jQuery('.triangle').css({
-                          transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
-                          left: '-170px',
-                          top: '-120px'
+        if (count_animation == 1) {
+          cur_animation_val = 0;
+          count_animation = 1;
+  //анимация против часовой стрелки
+          jQuery('.triangle').css({
+              transform: 'scale(0.2) rotateY(180deg)rotateZ(120deg)',
+              left: '-180px',
+              top: '-120px'
+          });
+  //анимация первого треугольника
+          jQuery('.zone_v1').addClass('transparent');
+          firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
+  //анимация второго треугольника
+            setTimeout(function(){
+              jQuery('.zone_v2').addClass('transparent');
+              secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 600}, function(){
+  //анимация третьего треугольника
+                setTimeout(function(){
+                  jQuery('.zone_v3').addClass('transparent');
+                  thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 600}, function(){
+  //анимация четвертого треугольника
+                    setTimeout(function(){
+                      jQuery('.zone_v4').addClass('transparent');
+                      fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 600}, function(){
+                        jQuery('.zone').removeClass('transparent');
+  //анимация по часовой стрелке
+                        jQuery('.triangle').css({
+                            transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
+                            left: '-170px',
+                            top: '-120px'
+                        });
+  //анимация первого треугольника
+                        jQuery('.zone_v1').addClass('transparent');                                                                    
+                        firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
+  //анимация второго треугольника
+                          setTimeout(function(){
+                            jQuery('.zone_v2').addClass('transparent');
+                            secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 600}, function(){
+  //анимация третьего треугольника
+                              setTimeout(function(){
+                                jQuery('.zone_v3').addClass('transparent');
+                                thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 600}, function(){
+  //анимация четвертого треугольника
+                                  setTimeout(function(){
+                                    jQuery('.zone_v4').addClass('transparent');
+                                    fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 600}, function(){
+                                    });
+                                    fourthTriangleAnimation.play();
+                                  }, 250)
+                                });
+                                thirdTriangleAnimation.play();
+                              }, 250)
+                            });
+                            secondTriangleAnimation.play();
+                          }, 250)
+                        });
+                        firstTriangleAnimation.play();
                       });
-//анимация первого треугольника
-                      jQuery('.zone_v1').addClass('transparent');                                                                    
-                      firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
-//анимация второго треугольника
-                        setTimeout(function(){
-                          jQuery('.zone_v2').addClass('transparent');
-                          secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 600}, function(){
-//анимация третьего треугольника
-                            setTimeout(function(){
-                              jQuery('.zone_v3').addClass('transparent');
-                              thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 600}, function(){
-//анимация четвертого треугольника
-                                setTimeout(function(){
-                                  jQuery('.zone_v4').addClass('transparent');
-                                  fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 600}, function(){
-                                  });
-                                  fourthTriangleAnimation.play();
-                                }, 250)
-                              });
-                              thirdTriangleAnimation.play();
-                            }, 250)
-                          });
-                          secondTriangleAnimation.play();
-                        }, 250)
-                      });
-                      firstTriangleAnimation.play();
-                    });
-                    fourthTriangleAnimation.play();
-                  }, 250)
-                });
-                thirdTriangleAnimation.play();
-              }, 250)
-            });
-            secondTriangleAnimation.play();
-          }, 250)
-        });
-        firstTriangleAnimation.play();
+                      fourthTriangleAnimation.play();
+                    }, 250)
+                  });
+                  thirdTriangleAnimation.play();
+                }, 250)
+              });
+              secondTriangleAnimation.play();
+            }, 250)
+          });
+          firstTriangleAnimation.play();
+        }
         jQuery('.zone_ring')
           .removeClass('hidden')
           .css({

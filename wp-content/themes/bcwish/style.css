@@ -2076,13 +2076,14 @@ h3.wizard_heading
   width: 400px;
   margin: auto;
   position: absolute;
-  left: -170px;
-  top: -140px;
-  transform: scale(0.2);
+  left: -184px;
+  top: -149px;
+  transform: scale(0.1);
 }
 .triangle path, .triangle line, .triangle polyline {
     stroke: #F0B615!important;
     stroke-width: 20px;
+    fill: transparent!important;
 }
 .transparent
 {
