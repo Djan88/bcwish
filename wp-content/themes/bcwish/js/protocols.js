@@ -164,25 +164,18 @@ jQuery(function() {
     count_animation = 1;
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
-        jQuery('.zone_v0').css({
+        jQuery('.zone_v0, .zone_v-').css({
             color: 'transparent',
             borderColor: 'transparent',
             opacity: 0.8,
             borderWidth: '1px',
             paddingTop: '4px',
-            transform: 'rotate('+rotateVal+'deg) scale(1.5)',
-            background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) 0 0/100% no-repeat',
+            transform: 'scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/plod.png) 0 0/100% no-repeat',
             zIndex: '1000'
         });
         jQuery('.zone_v-').css({
-            color: 'transparent',
-            borderColor: 'transparent',
-            opacity: 0.8,
-            borderWidth: '1px',
-            paddingTop: '4px',
-            transform: 'rotate(-'+rotateVal+'deg) scale(1.5)',
-            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) 0 0/100% no-repeat',
-            zIndex: '1000'
+            background: '#fff url(/wp-content/themes/bcwish/img/x.png) 0 0/100% no-repeat'
         });
         
         count_animation += 1;
