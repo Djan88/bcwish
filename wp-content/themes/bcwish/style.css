@@ -2103,6 +2103,7 @@ main#main
 .wm_start
 {
   transition: all 0.5s linear;
+  overflow: hidden;
 }
 .wm_start.unopacity
 {
