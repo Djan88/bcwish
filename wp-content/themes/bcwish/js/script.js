@@ -45,6 +45,12 @@ jQuery(function() {
   });
 
 
+  // НАЧАТЬ
+  jQuery('.wm_init').on('click', function(event) {
+    jQuery('#wm_start').addClass('wow bounceInUp')
+  });
+
+
   // К протоколам
   jQuery('.btn_prot_choice').on('click', function(event) {
     jQuery('.wizard_way').addClass('hidden');
