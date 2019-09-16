@@ -1741,7 +1741,7 @@ h3.wizard_heading
 }
 .header_btn:hover, .mobile-nav-toggle:hover, .wizard_stop
 {
-  border-color: #ff0000;
+  border-color: #1bb1dc;
 }
 .header_btn i
 {
@@ -2011,6 +2011,7 @@ h3.wizard_heading
 .wizard_stop_inProgress
 {
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(255, 0, 0);
+  border-color: #1bb1dc;
 }
 .scroller
 {
