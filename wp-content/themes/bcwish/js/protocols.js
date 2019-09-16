@@ -151,7 +151,7 @@ jQuery(function() {
     }
   });
 
-  v1_2 = function(){
+  v1_7 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V1"');
     jQuery('.wizard_percent').text('6%');
     jQuery('.ring').addClass('hidden');
