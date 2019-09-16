@@ -38,6 +38,7 @@ jQuery(function() {
     jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
     jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
     jQuery('.wm_start').removeClass('unopacity');
+    jQuery('.wm_start').removeAttr('style');
   }
 
 // Вторая кнопка обрезки
