@@ -2096,6 +2096,10 @@ h3.wizard_heading
 {
     display: block!important;
 }
+main#main
+{
+  background: #f5f8fd;
+}
 .wm_start
 {
   transition: all 0.5s linear;

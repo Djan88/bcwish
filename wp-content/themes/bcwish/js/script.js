@@ -47,7 +47,7 @@ jQuery(function() {
 
   // НАЧАТЬ
   jQuery('.wm_init').on('click', function(event) {
-    jQuery('#wm_start').removeClass('unopacity');
+    jQuery('.wm_start').removeClass('unopacity');
   });
 
 
