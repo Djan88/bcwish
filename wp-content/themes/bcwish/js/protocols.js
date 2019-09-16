@@ -1021,6 +1021,7 @@ jQuery(function() {
     jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.wizard_heading').text('Перенесите зоны на фото и можно будет продолжить работу.');
   });
+
   
   checkPoints = function(){
     jQuery('.zone_movable').each(function() {
@@ -1093,6 +1094,7 @@ jQuery(function() {
   }
 
   jQuery('.wizard_stop') .on('click', function(event) {
+    jQuery(this).addClass('wizard_stop_inProgress');
     jQuery('.header-title').text('Программа останавливается');
     // endStatus = true;
     jQuery('.wizard_stop').popover('show');
