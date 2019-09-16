@@ -132,7 +132,7 @@ jQuery(function() {
 
   v1_7 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
-    jQuery('.wizard_percent').text('6%');
+    jQuery('.wizard_percent').text('91%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -176,7 +176,7 @@ jQuery(function() {
 
   v1_6 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
-    jQuery('.wizard_percent').text('6%');
+    jQuery('.wizard_percent').text('78%');
     jQuery('.ring').css('transform', 'rotate(0deg)');
     jQuery('.zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -213,6 +213,7 @@ jQuery(function() {
             zIndex: '1'
         });
 // II
+        jQuery('.wizard_percent').text('81%');
         phaseOne = setInterval(function(){
           if (count_animation <= 88){
             jQuery('.zone_v1, .zone_s2, .zone_s4, .zone_v5, .zone_s5, .zone_s6').css({
@@ -238,6 +239,7 @@ jQuery(function() {
                 zIndex: '1'
             });
 // III
+            jQuery('.wizard_percent').text('84%');
             phaseOne = setInterval(function(){
               if (count_animation <= 88){
                 jQuery('.zone_s3, .zone_v4').css({
@@ -263,6 +265,7 @@ jQuery(function() {
                     zIndex: '1'
                 });
 // IV
+                jQuery('.wizard_percent').text('87%');
                 phaseOne = setInterval(function(){
                   if (count_animation <= 88){
                     jQuery('.zone_d4, .zone_d3, .zone_d2_, .zone_v2, .zone_v3').css({
@@ -292,7 +295,6 @@ jQuery(function() {
                       endNow()
                     } else {
                       v1_7();
-                      // console.log('continue');
                     } 
                   }
                 }, 250);
@@ -304,9 +306,302 @@ jQuery(function() {
     }, 250);
   }
 
-  v1_5 = function(){
+  v1_5_7 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
-    jQuery('.wizard_percent').text('24%');
+    jQuery('.wizard_percent').text('72%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+//Этап 5-2-4
+    cur_animation_val = 300;
+    count_animation = 1;
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){                                                                         //40
+          cur_animation_val += 1.5;
+          jQuery('.zone_v4').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+            transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            zIndex: '1000'
+          });
+          count_animation += 1;
+        } else if(count_animation <= 57) {                                                         //57
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '1'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_6');
+            endNow();
+          } else {
+            v1_6();
+          } 
+        }
+    }, 1000);
+  }
+
+  v1_5_6 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('66%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+//Этап 5-2-3
+    cur_animation_val = 270;
+    count_animation = 1;
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 60){                                                                         //60
+          cur_animation_val += 1.5;
+          jQuery('.zone_v3, .zone_s3').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+            transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            zIndex: '1000'
+          });
+          count_animation += 1;
+        } else if(count_animation <= 77) {                                                         //77
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v3, .zone_s3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '1'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_5_7');
+            endNow();
+          } else {
+            v1_5_7();
+          } 
+        }
+    }, 1000);
+  }
+
+  v1_5_5 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('60%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+//Этап 5-2-1
+    cur_animation_val = 10;
+    count_animation = 1;
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 22){                                                                         //22
+          cur_animation_val += 1.5;
+          jQuery('.zone_v4, .zone_v3').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+            transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            zIndex: '1000'
+          });
+          count_animation += 1;
+        } else if(count_animation <= 39) {                                                         //39
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v4, .zone_v3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '1'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_5_6');
+            endNow();
+          } else {
+            v1_5_6();
+          } 
+        }
+    }, 1000);
+  }
+
+  v1_5_4 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('54%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+//Этап 5-1-4
+    cur_animation_val = 300;
+    count_animation = 1;
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){                                                                         //40
+          cur_animation_val += 1.5;
+          jQuery('.zone_v1, .zone_v4, .zone_v5').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+            transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            zIndex: '1000'
+          });
+          count_animation += 1;
+        } else if(count_animation <= 57) {                                                         //57
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v1, .zone_v4, .zone_v5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '1'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_5_5');
+            endNow();
+          } else {
+            v1_5_5();
+          } 
+        }
+    }, 1000);
+  }
+
+  v1_5_3 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('48%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+//Этап 5-1-3
+    cur_animation_val = 270;
+    count_animation = 1;
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 60){                                                                         //60
+          cur_animation_val += 1.5;
+          jQuery('.zone_v1, .zone_s3').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+            transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            zIndex: '1000'
+          });
+          count_animation += 1;
+        } else if(count_animation <= 77) {                                                         //77
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v5, .zone_s3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '1'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_5_4');
+            endNow();
+          } else {
+            v1_5_4();
+          } 
+        }
+    }, 1000);
+  }
+
+  v1_5_2 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('42%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 10;
+    count_animation = 1;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 53){                                                                         //53
+          cur_animation_val += 1.5;
+          jQuery('.zone_v1, .zone_v4').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+            transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            zIndex: '1000'
+          });
+          count_animation += 1;
+        } else if(count_animation <= 70) {                                                         //70
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v1, .zone_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '1'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_5_3');
+            endNow();
+          } else {
+            v1_5_3();
+          } 
+        }
+    }, 1000);
+  }
+
+  v1_5_1 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('36%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -318,238 +613,44 @@ jQuery(function() {
 //Этап 5-1-1
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 22){                                                                         //22
-            cur_animation_val += 1.5;
-            jQuery('.zone_v0, .zone_v-').css({
-              background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-              transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
-              color: 'transparent',
-              borderColor: 'transparent',
-              opacity: 0.8,
-              borderWidth: '1px',
-              paddingTop: '4px',
-              zIndex: '1000'
-            });
-            count_animation += 1;
+          cur_animation_val += 1.5;
+          jQuery('.zone_v0, .zone_v-').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+            transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            zIndex: '1000'
+          });
+          count_animation += 1;
         } else if(count_animation <= 39) {                                                         //39
             count_animation += 1;
         } else {
-            clearInterval(phaseSeven_one);
-            count_animation = 1;
-            jQuery('.zone_v0, .zone_v-').css({
-              background: '#fff',
-              color: '#413e66',
-              borderColor: '#413e66',
-              transform: 'rotate(-'+0+'deg) scale(1)',
-              paddingTop: '2px',
-              zIndex: '1'
-            });
-//Этап 5-1-2
-            cur_animation_val = 10;
-            count_animation = 1;
-            phaseSeven_one = setInterval(function(){
-                if (count_animation <= 53){                                                                         //53
-                    cur_animation_val += 1.5;
-                    jQuery('.zone_v1, .zone_v4').css({
-                      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-                      transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
-                      color: 'transparent',
-                      borderColor: 'transparent',
-                      opacity: 0.8,
-                      borderWidth: '1px',
-                      paddingTop: '4px',
-                      zIndex: '1000'
-                    });
-                    count_animation += 1;
-                } else if(count_animation <= 70) {                                                         //70
-                    count_animation += 1;
-                } else {
-                    clearInterval(phaseSeven_one);
-                    count_animation = 1;
-                    jQuery('.zone_v1, .zone_v4').css({
-                      background: '#fff',
-                      color: '#413e66',
-                      borderColor: '#413e66',
-                      transform: 'rotate(-'+0+'deg) scale(1)',
-                      paddingTop: '2px',
-                      zIndex: '1'
-                    });
-//Этап 5-1-3
-                    cur_animation_val = 270;
-                    count_animation = 1;
-                    phaseSeven_one = setInterval(function(){
-                        if (count_animation <= 60){                                                                         //60
-                            cur_animation_val += 1.5;
-                            jQuery('.zone_v1, .zone_s3').css({
-                              background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-                              transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
-                              color: 'transparent',
-                              borderColor: 'transparent',
-                              opacity: 0.8,
-                              borderWidth: '1px',
-                              paddingTop: '4px',
-                              zIndex: '1000'
-                            });
-                            count_animation += 1;
-                        } else if(count_animation <= 77) {                                                         //77
-                            count_animation += 1;
-                        } else {
-                            clearInterval(phaseSeven_one);
-                            count_animation = 1;
-                            jQuery('.zone_v5, .zone_s3').css({
-                              background: '#fff',
-                              color: '#413e66',
-                              borderColor: '#413e66',
-                              transform: 'rotate(-'+0+'deg) scale(1)',
-                              paddingTop: '2px',
-                              zIndex: '1'
-                            });
-//Этап 5-1-4
-                            cur_animation_val = 300;
-                            count_animation = 1;
-                            phaseSeven_one = setInterval(function(){
-                                if (count_animation <= 40){                                                                         //40
-                                    cur_animation_val += 1.5;
-                                    jQuery('.zone_v1, .zone_v4, .zone_v5').css({
-                                      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-                                      transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
-                                      color: 'transparent',
-                                      borderColor: 'transparent',
-                                      opacity: 0.8,
-                                      borderWidth: '1px',
-                                      paddingTop: '4px',
-                                      zIndex: '1000'
-                                    });
-                                    count_animation += 1;
-                                } else if(count_animation <= 57) {                                                         //57
-                                    count_animation += 1;
-                                } else {
-                                    clearInterval(phaseSeven_one);
-                                    count_animation = 1;
-                                    jQuery('.zone_v1, .zone_v4, .zone_v5').css({
-                                      background: '#fff',
-                                      color: '#413e66',
-                                      borderColor: '#413e66',
-                                      transform: 'rotate(-'+0+'deg) scale(1)',
-                                      paddingTop: '2px',
-                                      zIndex: '1'
-                                    });
-//Этап 5-2-1
-                                    cur_animation_val = 10;
-                                    count_animation = 1;
-                                    phaseSeven_one = setInterval(function(){
-                                        if (count_animation <= 22){                                                                         //22
-                                            cur_animation_val += 1.5;
-                                            jQuery('.zone_v4, .zone_v3').css({
-                                              background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-                                              transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
-                                              color: 'transparent',
-                                              borderColor: 'transparent',
-                                              opacity: 0.8,
-                                              borderWidth: '1px',
-                                              paddingTop: '4px',
-                                              zIndex: '1000'
-                                            });
-                                            count_animation += 1;
-                                        } else if(count_animation <= 39) {                                                         //39
-                                            count_animation += 1;
-                                        } else {
-                                            clearInterval(phaseSeven_one);
-                                            count_animation = 1;
-                                            jQuery('.zone_v4, .zone_v3').css({
-                                              background: '#fff',
-                                              color: '#413e66',
-                                              borderColor: '#413e66',
-                                              transform: 'rotate(-'+0+'deg) scale(1)',
-                                              paddingTop: '2px',
-                                              zIndex: '1'
-                                            });
-
-                        //Этап 5-2-3
-                                            cur_animation_val = 270;
-                                            count_animation = 1;
-                                            phaseSeven_one = setInterval(function(){
-                                                if (count_animation <= 60){                                                                         //60
-                                                    cur_animation_val += 1.5;
-                                                    jQuery('.zone_v3, .zone_s3').css({
-                                                      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-                                                      transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
-                                                      color: 'transparent',
-                                                      borderColor: 'transparent',
-                                                      opacity: 0.8,
-                                                      borderWidth: '1px',
-                                                      paddingTop: '4px',
-                                                      zIndex: '1000'
-                                                    });
-                                                    count_animation += 1;
-                                                } else if(count_animation <= 77) {                                                         //77
-                                                    count_animation += 1;
-                                                } else {
-                                                    clearInterval(phaseSeven_one);
-                                                    count_animation = 1;
-                                                    jQuery('.zone_v3, .zone_s3').css({
-                                                      background: '#fff',
-                                                      color: '#413e66',
-                                                      borderColor: '#413e66',
-                                                      transform: 'rotate(-'+0+'deg) scale(1)',
-                                                      paddingTop: '2px',
-                                                      zIndex: '1'
-                                                    });
-                //Этап 5-2-4
-                                                    cur_animation_val = 300;
-                                                    count_animation = 1;
-                                                    phaseSeven_one = setInterval(function(){
-                                                        if (count_animation <= 40){                                                                         //40
-                                                            cur_animation_val += 1.5;
-                                                            jQuery('.zone_v4').css({
-                                                              background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-                                                              transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
-                                                              color: 'transparent',
-                                                              borderColor: 'transparent',
-                                                              opacity: 0.8,
-                                                              borderWidth: '1px',
-                                                              paddingTop: '4px',
-                                                              zIndex: '1000'
-                                                            });
-                                                            count_animation += 1;
-                                                        } else if(count_animation <= 57) {                                                         //57
-                                                            count_animation += 1;
-                                                        } else {
-                                                          clearInterval(phaseSeven_one);
-                                                          count_animation = 1;
-                                                          jQuery('.zone_v4').css({
-                                                            background: '#fff',
-                                                            color: '#413e66',
-                                                            borderColor: '#413e66',
-                                                            transform: 'rotate(-'+0+'deg) scale(1)',
-                                                            paddingTop: '2px',
-                                                            zIndex: '1'
-                                                          });
-                                                          if (pausedStatus == true) {
-                                                            localStorage.setItem('paused', 'v1_6');
-                                                            endNow()
-                                                          } else {
-                                                            v1_6();
-                                                            // console.log('continue');
-                                                          } 
-                                                        }
-                                                    }, 1000);
-                                                }
-                                            }, 1000);
-                                        }
-                                    }, 1000);
-                                }
-                            }, 1000);
-                        }
-                    }, 1000);
-                }
-            }, 1000);
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v0, .zone_v-').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '1'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_5_2');
+            endNow();
+          } else {
+            v1_5_2();
+          } 
         }
     }, 1000);
   }
 
   v1_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
-    jQuery('.wizard_percent').text('12%');
+    jQuery('.wizard_percent').text('27%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -684,7 +785,7 @@ jQuery(function() {
 
   v1_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
-    jQuery('.wizard_percent').text('9%');
+    jQuery('.wizard_percent').text('18%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -819,7 +920,7 @@ jQuery(function() {
 
   v1_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
-    jQuery('.wizard_percent').text('6%');
+    jQuery('.wizard_percent').text('9%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
