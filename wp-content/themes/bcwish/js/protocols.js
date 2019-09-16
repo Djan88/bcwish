@@ -117,7 +117,7 @@ jQuery(function() {
       } else {
         jQuery('.wizard_main_screen').addClass('hidden');
         jQuery('.wizard_stop').addClass('hidden');
-        jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
+        jQuery('.wizard_prots, .wizard_operation').fadeIn(500).removeClass('hidden');
         jQuery('.wizard_heading').text('Выберите протокол');
       }
     })
