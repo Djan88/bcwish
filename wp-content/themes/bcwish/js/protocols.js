@@ -82,7 +82,7 @@ jQuery(function() {
     swal({
       title: "Протокол завершен",
       text: "Что делать дальше?",
-      type: "info",
+      type: "success",
       showCancelButton: true,
       confirmButtonClass: "btn-danger",
       cancelButtonClass: "btn-success",
