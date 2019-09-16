@@ -131,7 +131,7 @@ jQuery(function() {
   });
 
   v1_7 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "V1"');
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
     jQuery('.wizard_percent').text('6%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
@@ -175,7 +175,7 @@ jQuery(function() {
   }
 
   v1_6 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "V1"');
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
     jQuery('.wizard_percent').text('6%');
     jQuery('.ring').css('transform', 'rotate(0deg)');
     jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -305,7 +305,7 @@ jQuery(function() {
   }
 
   v1_5 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "V1"');
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
     jQuery('.wizard_percent').text('24%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -548,7 +548,7 @@ jQuery(function() {
   }
 
   v1_4 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "V1"');
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
     jQuery('.wizard_percent').text('12%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -683,7 +683,7 @@ jQuery(function() {
   }
 
   v1_3 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "V1"');
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
     jQuery('.wizard_percent').text('9%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -818,7 +818,7 @@ jQuery(function() {
   }
 
   v1_2 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "V1"');
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
     jQuery('.wizard_percent').text('6%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -911,7 +911,7 @@ jQuery(function() {
   }
 
   v1 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "V1"');
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
