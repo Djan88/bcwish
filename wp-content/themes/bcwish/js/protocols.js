@@ -112,9 +112,10 @@ jQuery(function() {
             borderWidth: '1px',
             paddingTop: '4px',
             transform: 'rotate(0deg) scale(1.4)',
-            background: '#fff url(/wp-content/themes/bcwish/img/triangle_air.png) 0 0/100% no-repeat',
+            background: 'url(/wp-content/themes/bcwish/img/triangle_air.png) 0 0/100% no-repeat',
             zIndex: '1000'
         });
+        count_animation += 1;
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
