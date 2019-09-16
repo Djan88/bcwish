@@ -1083,7 +1083,8 @@ jQuery(function() {
         }
       }
       localStorage.removeItem('paused');
-      localStorage.removeItem('pausedPhoto'); 
+      localStorage.removeItem('pausedPhoto');
+      jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
     // }
   });
 
