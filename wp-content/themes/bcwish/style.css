@@ -2108,6 +2108,7 @@ main#main
 .wm_start.unopacity
 {
   opacity: 0;
+  height: 0;
 }
 .section-wh
 {
