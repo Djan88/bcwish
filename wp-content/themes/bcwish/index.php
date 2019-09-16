@@ -184,7 +184,6 @@
                 </form>
               </div>
             </div>
-            <a href="#services" class="scroller scrollto"><i class="fa fa-chevron-down"></i></a>
           <?php } ?>
           
           <div>
@@ -192,6 +191,9 @@
         </div>
       </div>
     </div>
+    <?php if(!is_user_logged_in()){ ?>
+      <a href="#services" class="scroller scrollto"><i class="fa fa-chevron-down"></i></a>
+    <?php } ?>
   </section><!-- #intro -->
 
   <main id="main">
