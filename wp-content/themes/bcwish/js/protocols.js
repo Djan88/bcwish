@@ -773,10 +773,10 @@ jQuery(function() {
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
         if (pausedStatus == true) {
-          localStorage.setItem('paused', 'v1_5');
+          localStorage.setItem('paused', 'v1_5_1');
           endNow()
         } else {
-          v1_5();
+          v1_5_1();
           // console.log('continue');
         } 
       }
