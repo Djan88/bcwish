@@ -2108,7 +2108,7 @@ main#main
 .wm_start.unopacity
 {
   opacity: 0;
-  height: 0;
+  height: 0!important;
 }
 .section-wh
 {
