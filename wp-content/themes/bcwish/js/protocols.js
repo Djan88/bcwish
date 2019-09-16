@@ -196,7 +196,7 @@ jQuery(function() {
             opacity: 0.8,
             borderWidth: '1px',
             paddingTop: '4px',
-            transform: 'rotate(50deg) scale(1.5)',
+            transform: 'rotate(70deg) scale(1.5)',
             background: 'url(/wp-content/themes/bcwish/img/triangle_air.png) center center/88% no-repeat',
             zIndex: '1000'
         });
@@ -246,7 +246,7 @@ jQuery(function() {
                     opacity: 0.8,
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    transform: 'rotate(350deg) scale(1.5)',
+                    transform: 'rotate(50deg) scale(1.5)',
                     background: 'url(/wp-content/themes/bcwish/img/triangle_water.png) center center/88% no-repeat',
                     zIndex: '1000'
                 });
@@ -271,7 +271,7 @@ jQuery(function() {
                         opacity: 0.8,
                         borderWidth: '1px',
                         paddingTop: '4px',
-                        transform: 'rotate(70deg) scale(1.5)',
+                        transform: 'rotate(90deg) scale(1.5)',
                         background: 'url(/wp-content/themes/bcwish/img/triangle_earth.png) center center/88% no-repeat',
                         zIndex: '1000'
                     });
