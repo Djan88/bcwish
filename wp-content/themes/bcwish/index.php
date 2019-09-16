@@ -202,7 +202,7 @@
     <!--==========================
       Main Section
     ============================-->
-    <section id="services" class="wow bounceInUp wm_start unopacity">
+    <section id="services" class="wm_start unopacity">
       <div class="container container_main">
 
         <header class="section-header">
