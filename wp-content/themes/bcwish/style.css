@@ -2096,6 +2096,15 @@ h3.wizard_heading
 {
     display: block!important;
 }
+#wm_start
+{
+  transition: all 0.5s linear;
+}
+#wm_start.unopaciti
+{
+  opacity: 0;
+}
+
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
