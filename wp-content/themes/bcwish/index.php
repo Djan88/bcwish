@@ -200,7 +200,7 @@
     <!--==========================
       Main Section
     ============================-->
-    <section id="services">
+    <section id="services" class=" wow bounceInUp">
       <div class="container container_main">
 
         <header class="section-header">
@@ -228,7 +228,7 @@
                 <!-- <h2>Выберите изображение</h2> -->
                 <div>
                   <input id="image_file" class="hidden" name="mci_image_file" type="file" />
-                  <label class="btn btn-success photo_upload wizard_blue wow bounceInUp"  data-wow-duration="1.4s" data-wow-delay="0.4s" for="image_file">Выберите файл</label>
+                  <label class="btn btn-success photo_upload wizard_blue"  data-wow-duration="1.4s" data-wow-delay="0.4s" for="image_file">Выберите файл</label>
                 </div>
                 <div class="error"></div>
                 <div class="step2">
@@ -1264,25 +1264,6 @@
     </section><!-- #pricing -->
 
     <?php } ?>
-    
-    <!--==========================
-      Call To Action Section
-    ============================-->
-    <!-- <section id="call-to-action" class="wow fadeInUp">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- #call-to-action -->
   </main>
 
   <!--==========================
