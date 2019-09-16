@@ -90,6 +90,8 @@ jQuery(function() {
   //К переносу зон
   jQuery('.wizard_protocol').on('click', function(event) {
     jQuery('.wizard_operation').addClass('hidden');
+    jQuery('.ring').removeClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     jQuery('.wizard_to_what_way, .wizard_to_protDiag').addClass('hidden');
     jQuery('.wizard_to_protList, .wizard_play').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');

@@ -78,28 +78,7 @@ jQuery(function() {
     localStorage.removeItem('pausedPhoto');
     pausedStatus = false;
 
-    // protocolName = localStorage.getItem('protocolName');
-    // swal({
-    //   title: "Протокол завершен",
-    //   text: "Что делать дальше?",
-    //   type: "success",
-    //   showCancelButton: true,
-    //   confirmButtonColor: "#DD6B55",
-    //   confirmButtonText: "Другой протокол",
-    //   cancelButtonText: "Новый клиент"
-    // },
-    // function(isConfirm){
-    //   var protocol = undefined;
-    //   if (isConfirm) {    
-    //     jQuery('.mobile_screen').addClass('hidden').css('display', 'none');
-    //     jQuery('.btn-to_protocols, .btn_man_with_zones, .btn_start').addClass('hidden');
-    //     jQuery('.mobile_screen_protocols').fadeIn(500);
-    //     jQuery('.btn-to_mode').removeClass('hidden');
-    //     jQuery('.header-title').text('Выберите протокол');
-    //   } else {    
-    //     jQuery(location).attr('href','/');
-    //   } 
-    // });
+    // protocolName = localStor
     swal({
       title: "Протокол завершен",
       text: "Что делать дальше?",
@@ -107,7 +86,7 @@ jQuery(function() {
       showCancelButton: true,
       confirmButtonClass: "btn-danger",
       cancelButtonClass: "btn-success",
-      cancelButtonText: "Дополнительный протокол",
+      cancelButtonText: "Другой протокол",
       confirmButtonText: "Новый клиент",
       closeOnConfirm: false
     },
@@ -171,7 +150,7 @@ jQuery(function() {
             borderWidth: '1px',
             paddingTop: '4px',
             transform: 'scale(1.5)',
-            background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
+            background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/110% no-repeat',
             zIndex: '1000'
         });
         jQuery('.zone_v-').css({
@@ -535,17 +514,23 @@ jQuery(function() {
                                                         } else if(count_animation <= 57) {                                                         //57
                                                             count_animation += 1;
                                                         } else {
-                                                            clearInterval(phaseSeven_one);
-                                                            count_animation = 1;
-                                                            jQuery('.zone_v4').css({
-                                                              background: '#fff',
-                                                              color: '#413e66',
-                                                              borderColor: '#413e66',
-                                                              transform: 'rotate(-'+0+'deg) scale(1)',
-                                                              paddingTop: '2px',
-                                                              zIndex: '1'
-                                                            });
+                                                          clearInterval(phaseSeven_one);
+                                                          count_animation = 1;
+                                                          jQuery('.zone_v4').css({
+                                                            background: '#fff',
+                                                            color: '#413e66',
+                                                            borderColor: '#413e66',
+                                                            transform: 'rotate(-'+0+'deg) scale(1)',
+                                                            paddingTop: '2px',
+                                                            zIndex: '1'
+                                                          });
+                                                          if (pausedStatus == true) {
+                                                            localStorage.setItem('paused', 'v1_6');
+                                                            endNow()
+                                                          } else {
                                                             v1_6();
+                                                            // console.log('continue');
+                                                          } 
                                                         }
                                                     }, 1000);
                                                 }
