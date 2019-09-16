@@ -2311,12 +2311,17 @@ h3.wizard_heading
   }
 
   #intro .intro-info {
-    height: auto;
+    height: 100vh;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 200px;
   }
   .main_arrow
+  {
+    top: -70px;
+    left: 435px;
+  }
+  .main_arrow.main_arrow_combine
   {
     top: -70px;
     left: 310px;
@@ -2327,6 +2332,11 @@ h3.wizard_heading
     left: 620px;
   }
   .main_arrow_title
+  {
+    left: 530px;
+    top: 50px;
+  }
+  .main_arrow_title.main_arrow_title_combine
   {
     left: 400px;
     top: 50px;

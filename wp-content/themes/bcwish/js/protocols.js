@@ -1008,6 +1008,8 @@ jQuery(function() {
     jQuery('.wizard_continue').removeClass('hidden');
     returned_img = localStorage.getItem('pausedPhoto');
     pausedStatus = true;
+    jQuery('.main_arrow').addClass('main_arrow_combine');
+    jQuery('.main_arrow_title').addClass('main_arrow_title_combine');
   }
 
   jQuery('.wizard_continue.btn-warning').on('click', function(event) {
