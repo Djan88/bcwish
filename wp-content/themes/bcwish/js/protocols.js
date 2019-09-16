@@ -115,9 +115,7 @@ jQuery(function() {
             borderWidth: '1px',
             paddingTop: '4px',
             transform: 'rotate(50deg) scale(1.5)',
-            backgroundSize: 88%,
-            backgroundPosition: center,
-            background: 'url(/wp-content/themes/bcwish/img/triangle_air.png) 0 0/100% no-repeat',
+            background: 'url(/wp-content/themes/bcwish/img/triangle_air.png) center center/88% no-repeat',
             zIndex: '1000'
         });
         count_animation += 1;
@@ -142,9 +140,7 @@ jQuery(function() {
                 borderWidth: '1px',
                 paddingTop: '4px',
                 transform: 'rotate(20deg) scale(1.5)',
-                backgroundSize: 88%,
-                backgroundPosition: center,
-                background: 'url(/wp-content/themes/bcwish/img/triangle_fire.png) 0 0/100% no-repeat',
+                background: 'url(/wp-content/themes/bcwish/img/triangle_fire.png) center center/88% no-repeat',
                 zIndex: '1000'
             });
             count_animation += 1;
@@ -169,9 +165,7 @@ jQuery(function() {
                     borderWidth: '1px',
                     paddingTop: '4px',
                     transform: 'rotate(350deg) scale(1.5)',
-                    backgroundSize: 88%,
-                    backgroundPosition: center,
-                    background: 'url(/wp-content/themes/bcwish/img/triangle_water.png) 0 0/100% no-repeat',
+                    background: 'url(/wp-content/themes/bcwish/img/triangle_water.png) center center/88% no-repeat',
                     zIndex: '1000'
                 });
                 count_animation += 1;
@@ -196,9 +190,7 @@ jQuery(function() {
                         borderWidth: '1px',
                         paddingTop: '4px',
                         transform: 'rotate(50deg) scale(1.5)',
-                        backgroundSize: 88%,
-                        backgroundPosition: center,
-                        background: 'url(/wp-content/themes/bcwish/img/triangle_earth.png) 0 0/100% no-repeat',
+                        background: 'url(/wp-content/themes/bcwish/img/triangle_earth.png) center center/88% no-repeat',
                         zIndex: '1000'
                     });
                     count_animation += 1;
