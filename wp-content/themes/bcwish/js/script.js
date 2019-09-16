@@ -37,6 +37,7 @@ jQuery(function() {
     jQuery('.wizard_returned').attr('src', croppedImg.src);
     jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
     jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
+    jQuery('.wm_start').removeClass('unopacity');
   }
 
 // Вторая кнопка обрезки
