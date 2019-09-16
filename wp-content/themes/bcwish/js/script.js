@@ -249,7 +249,7 @@ jQuery(function() {
 
                   // display step 2
                   jQuery('.step2').fadeIn(500);
-                  jQuery('.wm_start').css('height', 'auto!important');
+                  jQuery('.wm_start').removeAttr('style');
                   jQuery('.wizard_crop').fadeIn(500);
                   jQuery('.wizard_crop').removeClass('hidden');
                   // display some basic image info
