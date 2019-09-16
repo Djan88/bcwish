@@ -46,9 +46,9 @@ jQuery(function() {
 
 
   // НАЧАТЬ
-  jQuery('.wm_init').on('click', function(event) {
-    jQuery('#wm_start').addClass('wow bounceInUp')
-  });
+  // jQuery('.wm_init').on('click', function(event) {
+  //   jQuery('#wm_start').addClass('wow bounceInUp')
+  // });
 
 
   // К протоколам
