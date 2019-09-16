@@ -71,7 +71,7 @@
       </div>
     </div>
 
-    <div class="container container_main">
+    <div class="container container_main container container_main_main">
 
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
@@ -105,7 +105,7 @@
     Intro Section
   ============================-->
   <section id="intro" class="clearfix">
-    <div class="container h-100">
+    <div class="container container_main h-100">
       <div class="row justify-content-center align-self-center">
         <div class="col-md-12 intro-info order-md-first order-last">
           <?php if(is_user_logged_in()){ ?>
@@ -201,7 +201,7 @@
       Main Section
     ============================-->
     <section id="services">
-      <div class="container">
+      <div class="container container_main">
 
         <header class="section-header">
           <h3 class="wizard_heading">Загрузите и отредактируйте фото</h3>
