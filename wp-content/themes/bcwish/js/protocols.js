@@ -92,6 +92,53 @@ jQuery(function() {
   });
 
 
+  v1_6 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V1"');
+    jQuery('.wizard_percent').text('6%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    phaseOne = setInterval(function(){
+      if (count_animation <= 88){
+        jQuery('.zone_v5, .zone_d2, .zone_d5, .zone_d6,.zone_s2_').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'rotate(0deg) scale(1.4)',
+            background: '#fff url(/wp-content/themes/bcwish/img/triangle_air.png) 0 0/100% no-repeat',
+            zIndex: '1000'
+        });
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v5, .zone_d2, .zone_d5, .zone_d6,.zone_s2_').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '1'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'v1_3');
+          endNow()
+        } else {
+          // v1_3();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
   v1_5 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V1"');
     jQuery('.wizard_percent').text('24%');
@@ -312,7 +359,7 @@ jQuery(function() {
                                                               paddingTop: '2px',
                                                               zIndex: '1'
                                                             });
-                                                            console.log('continue');
+                                                            v1_6();
                                                         }
                                                     }, 1000);
                                                 }
