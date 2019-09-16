@@ -16,6 +16,7 @@ jQuery(function() {
       count_animation = 1,
       pausedStatus = false,
       endNow,
+      onEnd,
       protocolfromMemory,
       firstTriangleAnimation,
       secondTriangleAnimation,
@@ -63,6 +64,65 @@ jQuery(function() {
     })
   }
 
+  onEnd = function(){
+    jQuery('.btn-to_endNow').addClass('hidden');
+    jQuery('.btn_start').removeAttr('disabled');
+    jQuery('.wizard_percent').text('100%');
+    rotate_one = 0;
+    rotate_two = 0;
+    rotate_three = 0;
+    rotate_four = 0;
+    rotate_lovushka = 0;
+    count_animation = 0;
+    localStorage.removeItem('paused');
+    localStorage.removeItem('pausedPhoto');
+    pausedStatus = false;
+
+    // protocolName = localStorage.getItem('protocolName');
+    // swal({
+    //   title: "Протокол завершен",
+    //   text: "Что делать дальше?",
+    //   type: "success",
+    //   showCancelButton: true,
+    //   confirmButtonColor: "#DD6B55",
+    //   confirmButtonText: "Другой протокол",
+    //   cancelButtonText: "Новый клиент"
+    // },
+    // function(isConfirm){
+    //   var protocol = undefined;
+    //   if (isConfirm) {    
+    //     jQuery('.mobile_screen').addClass('hidden').css('display', 'none');
+    //     jQuery('.btn-to_protocols, .btn_man_with_zones, .btn_start').addClass('hidden');
+    //     jQuery('.mobile_screen_protocols').fadeIn(500);
+    //     jQuery('.btn-to_mode').removeClass('hidden');
+    //     jQuery('.header-title').text('Выберите протокол');
+    //   } else {    
+    //     jQuery(location).attr('href','/');
+    //   } 
+    // });
+    swal({
+      title: "Протокол завершен",
+      text: "Что делать дальше?",
+      type: "info",
+      showCancelButton: true,
+      confirmButtonClass: "btn-danger",
+      cancelButtonClass: "btn-success",
+      cancelButtonText: "Дополнительный протокол",
+      confirmButtonText: "Новый клиент",
+      closeOnConfirm: false
+    },
+    function(isConfirm) {
+      if (isConfirm) {
+        jQuery(location).attr('href','/');
+      } else {
+        jQuery('.wizard_main_screen').addClass('hidden');
+        jQuery('.wizard_stop').addClass('hidden');
+        jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
+        jQuery('.wizard_heading').text('Выберите протокол');
+      }
+    })
+  }
+
   //Dragging elems
   jQuery('.draggable, .ring').draggable({
     snap: false
@@ -91,6 +151,56 @@ jQuery(function() {
     }
   });
 
+  v1_2 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V1"');
+    jQuery('.wizard_percent').text('6%');
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        jQuery('.zone_v0').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'rotate('+rotateVal+'deg) scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) 0 0/100% no-repeat',
+            zIndex: '1000'
+        });
+        jQuery('.zone_v-').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'rotate(-'+rotateVal+'deg) scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) 0 0/100% no-repeat',
+            zIndex: '1000'
+        });
+        
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v0, .zone_v-').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '1'
+        });
+        onEnd();
+      }
+    }, 250);
+  }
 
   v1_6 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V1"');
@@ -189,7 +299,7 @@ jQuery(function() {
                         opacity: 0.8,
                         borderWidth: '1px',
                         paddingTop: '4px',
-                        transform: 'rotate(50deg) scale(1.5)',
+                        transform: 'rotate(70deg) scale(1.5)',
                         background: 'url(/wp-content/themes/bcwish/img/triangle_earth.png) center center/88% no-repeat',
                         zIndex: '1000'
                     });
@@ -206,11 +316,11 @@ jQuery(function() {
                         zIndex: '1'
                     });
                     if (pausedStatus == true) {
-                      localStorage.setItem('paused', 'v1_6');
+                      localStorage.setItem('paused', 'v1_7');
                       endNow()
                     } else {
-                      // v1_3();
-                      console.log('continue');
+                      v1_7();
+                      // console.log('continue');
                     } 
                   }
                 }, 250);
