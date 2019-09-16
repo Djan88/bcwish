@@ -2096,11 +2096,11 @@ h3.wizard_heading
 {
     display: block!important;
 }
-#wm_start
+.wm_start
 {
   transition: all 0.5s linear;
 }
-#wm_start.unopaciti
+.wm_start.unopacity
 {
   opacity: 0;
 }
