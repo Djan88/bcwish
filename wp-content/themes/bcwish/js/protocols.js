@@ -132,7 +132,7 @@ jQuery(function() {
 
   v2_6 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('96%');
+    jQuery('.wizard_percent').text('93%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -176,7 +176,7 @@ jQuery(function() {
 
   v2_5 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('88%');
+    jQuery('.wizard_percent').text('83%');
     jQuery('.ring').css('transform', 'rotate(0deg)');
     jQuery('.zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -213,7 +213,7 @@ jQuery(function() {
             zIndex: '1'
         });
 // II
-        jQuery('.wizard_percent').text('90%');
+        jQuery('.wizard_percent').text('85%');
         phaseOne = setInterval(function(){
           if (count_animation <= 88){
             jQuery('.zone_v1, .zone_s2, .zone_s4, .zone_v5, .zone_s5, .zone_s6').css({
@@ -239,7 +239,7 @@ jQuery(function() {
                 zIndex: '1'
             });
 // III
-            jQuery('.wizard_percent').text('92%');
+            jQuery('.wizard_percent').text('87%');
             phaseOne = setInterval(function(){
               if (count_animation <= 88){
                 jQuery('.zone_s3, .zone_v4').css({
@@ -265,7 +265,7 @@ jQuery(function() {
                     zIndex: '1'
                 });
 // IV
-                jQuery('.wizard_percent').text('94%');
+                jQuery('.wizard_percent').text('89%');
                 phaseOne = setInterval(function(){
                   if (count_animation <= 88){
                     jQuery('.zone_d4, .zone_d3, .zone_d2_, .zone_v2, .zone_v3').css({
@@ -308,7 +308,7 @@ jQuery(function() {
 
   v2_4_9 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('84%');
+    jQuery('.wizard_percent').text('78%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -357,7 +357,7 @@ jQuery(function() {
 
   v2_4_8 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('80%');
+    jQuery('.wizard_percent').text('73%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -406,7 +406,7 @@ jQuery(function() {
 
   v2_4_7 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('76%');
+    jQuery('.wizard_percent').text('68%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -455,7 +455,7 @@ jQuery(function() {
 
   v2_4_6 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('72%');
+    jQuery('.wizard_percent').text('63%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -504,7 +504,7 @@ jQuery(function() {
 
   v2_4_5 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('68%');
+    jQuery('.wizard_percent').text('58%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -553,7 +553,7 @@ jQuery(function() {
 
   v2_4_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('64%');
+    jQuery('.wizard_percent').text('53%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -602,7 +602,7 @@ jQuery(function() {
 
   v2_4_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('48%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -651,7 +651,7 @@ jQuery(function() {
 
   v2_4_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('56%');
+    jQuery('.wizard_percent').text('43%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -700,7 +700,7 @@ jQuery(function() {
 
   v2_4_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('40%');
+    jQuery('.wizard_percent').text('36%');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -796,7 +796,7 @@ jQuery(function() {
 
   v2_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('32%');
+    jQuery('.wizard_percent').text('28%');
     jQuery('.ring').css('transform', 'rotate(0deg)');
     jQuery('.zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -833,7 +833,7 @@ jQuery(function() {
             zIndex: '1'
         });
 // II
-        jQuery('.wizard_percent').text('34%');
+        jQuery('.wizard_percent').text('30%');
         phaseOne = setInterval(function(){
           if (count_animation <= 88){
             jQuery('.zone_v1, .zone_s2, .zone_s4, .zone_v5, .zone_s5, .zone_s6').css({
@@ -859,7 +859,7 @@ jQuery(function() {
                 zIndex: '1'
             });
 // III
-            jQuery('.wizard_percent').text('36%');
+            jQuery('.wizard_percent').text('32%');
             phaseOne = setInterval(function(){
               if (count_animation <= 88){
                 jQuery('.zone_s3, .zone_v4').css({
@@ -885,7 +885,7 @@ jQuery(function() {
                     zIndex: '1'
                 });
 // IV
-                jQuery('.wizard_percent').text('38%');
+                jQuery('.wizard_percent').text('34%');
                 phaseOne = setInterval(function(){
                   if (count_animation <= 88){
                     jQuery('.zone_d4, .zone_d3, .zone_d2_, .zone_v2, .zone_v3').css({
@@ -928,7 +928,7 @@ jQuery(function() {
 
   v2_2_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('28%');
+    jQuery('.wizard_percent').text('23%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -977,7 +977,7 @@ jQuery(function() {
 
   v2_2_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('24%');
+    jQuery('.wizard_percent').text('18%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1026,7 +1026,7 @@ jQuery(function() {
 
   v2_2_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('20%');
+    jQuery('.wizard_percent').text('13%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1075,7 +1075,7 @@ jQuery(function() {
 
   v2_2_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
-    jQuery('.wizard_percent').text('16%');
+    jQuery('.wizard_percent').text('8%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
