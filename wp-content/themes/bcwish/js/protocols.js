@@ -721,15 +721,15 @@ jQuery(function() {
         });
         if (count_animation > 120 && count_animation <= 120) {
           jQuery('.zone_d5, .zone_v5, .zone_s5, .zone_s6').css({
-            background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
+            background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat'
           });
         } else if (count_animation > 120 && count_animation <= 220) {
           jQuery('.zone_d5, .zone_v5, .zone_s5, .zone_s6').css({
-            background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat',
+            background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'
           });
         } else if (count_animation > 220) {
           jQuery('.zone_d5, .zone_v5, .zone_s5, .zone_s6').css({
-            background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+            background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
           });
         }
         jQuery('.zone_ring')
@@ -1144,15 +1144,15 @@ jQuery(function() {
         });
         if (count_animation > 120 && count_animation <= 120) {
           jQuery('.zone_d2, .zone_d2_, .zone_v2, .zone_s2, .zone_s2_').css({
-            background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat',
+            background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'
           });
         } else if (count_animation > 120 && count_animation <= 220) {
           jQuery('.zone_d2, .zone_d2_, .zone_v2, .zone_s2, .zone_s2_').css({
-            background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat',
+            background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'
           });
         } else if (count_animation > 220) {
           jQuery('.zone_d2, .zone_d2_, .zone_v2, .zone_s2, .zone_s2_').css({
-            background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+            background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
           });
         }
         jQuery('.zone_cl').css({
