@@ -147,7 +147,7 @@ jQuery(function() {
     count_animation = 1;
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
-        jQuery('.zone_d2, .zone_d2_, .zone_v2, .zone_s2 .zone_s2_').css({
+        jQuery('.zone_d2, .zone_d2_, .zone_v2, .zone_s2, .zone_s2_').css({
             color: 'transparent',
             borderColor: 'transparent',
             opacity: 0.8,
@@ -208,7 +208,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_d2, .zone_d2_, .zone_v2, .zone_s2 .zone_s2_, .zone_cl').css({
+        jQuery('.zone_d2, .zone_d2_, .zone_v2, .zone_s2, .zone_s2_, .zone_cl').css({
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
