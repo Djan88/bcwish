@@ -1762,6 +1762,14 @@ jQuery(function() {
     count_animation = 1;
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            tickSound.stop();
+            reloadSound.play();
+            reloadTime += 1;
+        } else if (reloadTime == 1) {
+            // reloadSound.stop();
+            tickSound.play();
+        };
         if (count_animation == 1) {
           cur_animation_val = 0;
           count_animation = 1;
@@ -1875,6 +1883,7 @@ jQuery(function() {
         jQuery('.zone').removeClass('transparent');
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        tickSound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v1_5_1');
           endNow()
@@ -1897,6 +1906,14 @@ jQuery(function() {
     count_animation = 1;
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            tickSound.stop();
+            reloadSound.play();
+            reloadTime += 1;
+        } else if (reloadTime == 1) {
+            // reloadSound.stop();
+            tickSound.play();
+        };
         if (count_animation == 1) {
           cur_animation_val = 0;
           count_animation = 1;
@@ -2010,6 +2027,7 @@ jQuery(function() {
         jQuery('.zone').removeClass('transparent');
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        tickSound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v1_4');
           endNow()
@@ -2032,6 +2050,14 @@ jQuery(function() {
     count_animation = 1;
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            tickSound.stop();
+            reloadSound.play();
+            reloadTime += 1;
+        } else if (reloadTime == 1) {
+            // reloadSound.stop();
+            tickSound.play();
+        };
         jQuery('.zone_v0, .zone_v2, .zone_d2, .zone_cl').css({
             color: 'transparent',
             borderColor: 'transparent',
@@ -2103,6 +2129,7 @@ jQuery(function() {
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        tickSound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v1_3');
           endNow()
@@ -2204,13 +2231,14 @@ jQuery(function() {
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        tickSound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v1_2');
           endNow()
         } else {
           v1_2();
           // console.log('continue');
-        } 
+        }
       }
     }, 250);
   }
