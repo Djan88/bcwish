@@ -25,11 +25,17 @@ jQuery(function() {
       // sound = new buzz.sound( "/sounds/tick", {
       //     formats: [ "ogg", "mp3" ]
       // }),
-      reloadSound = new buzz.sound( "/sounds/reload", {
-          formats: [ "ogg", "mp3" ]
-      }),
+      // reloadSound = new buzz.sound( "/sounds/reload", {
+      //     formats: [ "ogg", "mp3" ]
+      // }),
       sound = new Howl({
           urls: ['/sounds/tick.ogg', '/sounds/tick.mp3'],
+          autoplay: false,
+          loop: false,
+          buffer: true
+      }),
+      reloadSound = new Howl({
+          urls: ['/sounds/reload.ogg', '/sounds/reload.mp3'],
           autoplay: false,
           loop: false,
           buffer: true
