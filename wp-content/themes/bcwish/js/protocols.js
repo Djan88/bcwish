@@ -728,6 +728,13 @@ jQuery(function() {
     count_animation = 1;
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
         jQuery('.zone_d5, .zone_v5, .zone_s5, .zone_s6').css({
             color: 'transparent',
             borderColor: 'transparent',
@@ -801,6 +808,7 @@ jQuery(function() {
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v2_4_2');
           endNow()
@@ -1151,6 +1159,13 @@ jQuery(function() {
     count_animation = 1;
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
         jQuery('.zone_d2, .zone_d2_, .zone_v2, .zone_s2, .zone_s2_').css({
             color: 'transparent',
             borderColor: 'transparent',
@@ -1234,6 +1249,7 @@ jQuery(function() {
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v2_2_1');
           endNow()
@@ -1777,8 +1793,7 @@ jQuery(function() {
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
-        } else if (reloadTime == 1) {
-            // reloadSound.stop();
+        } else if (reloadTime == 2) {
             sound.play();
         };
         reloadTime += 1;
@@ -1921,8 +1936,7 @@ jQuery(function() {
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
-        } else if (reloadTime == 1) {
-            // reloadSound.stop();
+        } else if (reloadTime == 2) {
             sound.play();
         };
         reloadTime += 1;
@@ -2065,8 +2079,7 @@ jQuery(function() {
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
-        } else if (reloadTime == 1) {
-            // reloadSound.stop();
+        } else if (reloadTime == 2) {
             sound.play();
         };
         reloadTime += 1;
@@ -2164,16 +2177,13 @@ jQuery(function() {
     count_animation = 1;
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
-        if (reloadTime == 1){                                                                       //1
+        if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
         } else if (reloadTime == 2) {
-            // reloadSound.stop();
             sound.play();
-            // console.log(reloadTime);
         };
         reloadTime += 1;
-        console.log(reloadTime);
         jQuery('.zone_v5, .zone_d5, .zone_d6').css({
             color: 'transparent',
             borderColor: 'transparent',

@@ -1355,7 +1355,6 @@
   <script src="<?php bloginfo('template_url'); ?>/js/exif.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/sweetalert.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/vivus.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/buzz.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/howler.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/protocols.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
