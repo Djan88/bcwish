@@ -22,6 +22,12 @@ jQuery(function() {
       secondTriangleAnimation,
       thirdTriangleAnimation,
       fourthTriangleAnimation,
+      tickSound = new buzz.sound( "/sounds/tick", {
+          formats: [ "ogg", "mp3" ]
+      }),
+      reloadSound = new buzz.sound( "/sounds/reload", {
+          formats: [ "ogg", "mp3" ]
+      }),
       supportsStorage = function(){
           try {
               return 'localStorage' in window && window['localStorage'] !== null;
@@ -2118,6 +2124,14 @@ jQuery(function() {
     rotateVal = 0;
     count_animation = 1;
     phaseOne = setInterval(function(){
+      if (reloadTime <= 1){                                                                       //1
+          tickSound.stop();
+          reloadSound.play();
+          reloadTime += 1;
+      } else {
+          reloadSound.stop();
+          tickSound.play();
+      };
       if (count_animation <= 344){
         jQuery('.zone_v5, .zone_d5, .zone_d6').css({
             color: 'transparent',
