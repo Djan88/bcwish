@@ -22,9 +22,9 @@ jQuery(function() {
       secondTriangleAnimation,
       thirdTriangleAnimation,
       fourthTriangleAnimation,
-      sound = new buzz.sound( "/sounds/tick", {
-          formats: [ "ogg", "mp3" ]
-      }),
+      // sound = new buzz.sound( "/sounds/tick", {
+      //     formats: [ "ogg", "mp3" ]
+      // }),
       reloadSound = new buzz.sound( "/sounds/reload", {
           formats: [ "ogg", "mp3" ]
       }),
