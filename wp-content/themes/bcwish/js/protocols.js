@@ -1771,11 +1771,11 @@ jQuery(function() {
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
-            reloadTime += 1;
         } else if (reloadTime == 1) {
             // reloadSound.stop();
             sound.play();
         };
+        reloadTime += 1;
         if (count_animation == 1) {
           cur_animation_val = 0;
           count_animation = 1;
@@ -1915,11 +1915,11 @@ jQuery(function() {
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
-            reloadTime += 1;
         } else if (reloadTime == 1) {
             // reloadSound.stop();
             sound.play();
         };
+        reloadTime += 1;
         if (count_animation == 1) {
           cur_animation_val = 0;
           count_animation = 1;
@@ -2059,11 +2059,11 @@ jQuery(function() {
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
-            reloadTime += 1;
         } else if (reloadTime == 1) {
             // reloadSound.stop();
             sound.play();
         };
+        reloadTime += 1;
         jQuery('.zone_v0, .zone_v2, .zone_d2, .zone_cl').css({
             color: 'transparent',
             borderColor: 'transparent',
@@ -2161,12 +2161,12 @@ jQuery(function() {
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
-            reloadTime += 1;
         } else if (reloadTime == 1) {
             // reloadSound.stop();
             sound.play();
             console.log(reloadTime);
         };
+        reloadTime += 1;
         jQuery('.zone_v5, .zone_d5, .zone_d6').css({
             color: 'transparent',
             borderColor: 'transparent',
