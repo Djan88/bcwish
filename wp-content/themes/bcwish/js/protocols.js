@@ -2158,13 +2158,13 @@ jQuery(function() {
     count_animation = 1;
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
-        if (reloadTime == 0){                                                                       //1
+        if (reloadTime == 1){                                                                       //1
             sound.stop();
             reloadSound.play();
-        } else if (reloadTime == 1) {
+        } else if (reloadTime == 2) {
             // reloadSound.stop();
             sound.play();
-            console.log(reloadTime);
+            // console.log(reloadTime);
         };
         reloadTime += 1;
         console.log(reloadTime);
