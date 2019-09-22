@@ -2129,8 +2129,8 @@ jQuery(function() {
           reloadSound.play();
           reloadTime += 1;
       } else {
-          reloadSound.stop();
-          tickSound.play();
+          // reloadSound.stop();
+          // tickSound.play();
       };
       if (count_animation <= 344){
         jQuery('.zone_v5, .zone_d5, .zone_d6').css({
