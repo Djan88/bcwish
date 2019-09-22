@@ -22,11 +22,17 @@ jQuery(function() {
       secondTriangleAnimation,
       thirdTriangleAnimation,
       fourthTriangleAnimation,
-      tickSound = new buzz.sound( "/sounds/tick", {
+      sound = new buzz.sound( "/sounds/tick", {
           formats: [ "ogg", "mp3" ]
       }),
       reloadSound = new buzz.sound( "/sounds/reload", {
           formats: [ "ogg", "mp3" ]
+      }),
+      sound = new Howl({
+          urls: ['/sounds/tick.ogg', '/sounds/tick.mp3'],
+          autoplay: false,
+          loop: false,
+          buffer: true
       }),
       supportsStorage = function(){
           try {
@@ -1763,12 +1769,12 @@ jQuery(function() {
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
         if (reloadTime == 0){                                                                       //1
-            tickSound.stop();
+            sound.stop();
             reloadSound.play();
             reloadTime += 1;
         } else if (reloadTime == 1) {
             // reloadSound.stop();
-            tickSound.play();
+            sound.play();
         };
         if (count_animation == 1) {
           cur_animation_val = 0;
@@ -1883,7 +1889,7 @@ jQuery(function() {
         jQuery('.zone').removeClass('transparent');
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
-        tickSound.stop();
+        sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v1_5_1');
           endNow()
@@ -1907,12 +1913,12 @@ jQuery(function() {
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
         if (reloadTime == 0){                                                                       //1
-            tickSound.stop();
+            sound.stop();
             reloadSound.play();
             reloadTime += 1;
         } else if (reloadTime == 1) {
             // reloadSound.stop();
-            tickSound.play();
+            sound.play();
         };
         if (count_animation == 1) {
           cur_animation_val = 0;
@@ -2027,7 +2033,7 @@ jQuery(function() {
         jQuery('.zone').removeClass('transparent');
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
-        tickSound.stop();
+        sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v1_4');
           endNow()
@@ -2051,12 +2057,12 @@ jQuery(function() {
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
         if (reloadTime == 0){                                                                       //1
-            tickSound.stop();
+            sound.stop();
             reloadSound.play();
             reloadTime += 1;
         } else if (reloadTime == 1) {
             // reloadSound.stop();
-            tickSound.play();
+            sound.play();
         };
         jQuery('.zone_v0, .zone_v2, .zone_d2, .zone_cl').css({
             color: 'transparent',
@@ -2129,7 +2135,7 @@ jQuery(function() {
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
-        tickSound.stop();
+        sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v1_3');
           endNow()
@@ -2153,12 +2159,12 @@ jQuery(function() {
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
         if (reloadTime == 0){                                                                       //1
-            tickSound.stop();
+            sound.stop();
             reloadSound.play();
             reloadTime += 1;
         } else if (reloadTime == 1) {
             // reloadSound.stop();
-            tickSound.play();
+            sound.play();
         };
         jQuery('.zone_v5, .zone_d5, .zone_d6').css({
             color: 'transparent',
@@ -2231,7 +2237,7 @@ jQuery(function() {
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
-        tickSound.stop();
+        sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v1_2');
           endNow()
