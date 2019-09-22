@@ -2165,6 +2165,7 @@ jQuery(function() {
         } else if (reloadTime == 1) {
             // reloadSound.stop();
             sound.play();
+            console.log(reloadTime);
         };
         jQuery('.zone_v5, .zone_d5, .zone_d6').css({
             color: 'transparent',
