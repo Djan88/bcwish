@@ -2124,15 +2124,15 @@ jQuery(function() {
     rotateVal = 0;
     count_animation = 1;
     phaseOne = setInterval(function(){
-      if (reloadTime <= 1){                                                                       //1
-          tickSound.stop();
-          reloadSound.play();
-          reloadTime += 1;
-      } else {
-          // reloadSound.stop();
-          tickSound.play();
-      };
       if (count_animation <= 344){
+        if (reloadTime <= 1){                                                                       //1
+            tickSound.stop();
+            reloadSound.play();
+            reloadTime += 1;
+        } else {
+            // reloadSound.stop();
+            tickSound.play();
+        };
         jQuery('.zone_v5, .zone_d5, .zone_d6').css({
             color: 'transparent',
             borderColor: 'transparent',
