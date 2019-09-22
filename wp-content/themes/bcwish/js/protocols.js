@@ -2125,11 +2125,11 @@ jQuery(function() {
     count_animation = 1;
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
-        if (reloadTime <= 1){                                                                       //1
+        if (reloadTime == 0){                                                                       //1
             tickSound.stop();
             reloadSound.play();
             reloadTime += 1;
-        } else {
+        } else if (reloadTime == 1) {
             // reloadSound.stop();
             tickSound.play();
         };
