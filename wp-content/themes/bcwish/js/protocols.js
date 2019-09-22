@@ -2167,6 +2167,7 @@ jQuery(function() {
             console.log(reloadTime);
         };
         reloadTime += 1;
+        console.log(reloadTime);
         jQuery('.zone_v5, .zone_d5, .zone_d6').css({
             color: 'transparent',
             borderColor: 'transparent',
