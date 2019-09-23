@@ -148,7 +148,7 @@ jQuery(function() {
     }
   });
 
-  v2_6 = function(){
+  v3_9 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
     jQuery('.wizard_percent').text('93%');
     jQuery('.ring').addClass('hidden');
