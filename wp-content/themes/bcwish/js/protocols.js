@@ -162,6 +162,11 @@ jQuery(function() {
     count_animation = 1;
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
           cur_animation_val += 1.5;
           jQuery('.zone_v1, .zone_v3, .zone_v4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
@@ -211,6 +216,11 @@ jQuery(function() {
     count_animation = 1;
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
           cur_animation_val += 1.5;
           jQuery('.zone_v1, .zone_v3, .zone_v4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
@@ -260,6 +270,11 @@ jQuery(function() {
     count_animation = 1;
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
           cur_animation_val += 1.5;
           jQuery('.zone_v1, .zone_v3, .zone_v4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
@@ -309,6 +324,11 @@ jQuery(function() {
     count_animation = 1;
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
           cur_animation_val += 1.5;
           jQuery('.zone_v1, .zone_v3, .zone_v4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
