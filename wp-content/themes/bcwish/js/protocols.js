@@ -1043,7 +1043,7 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 0.375;
+        rotateVal += 1.5;
         if(count_animation <= 120){
             cur_animation_val += 0.375;
             d12Val+= 9;
@@ -1156,7 +1156,7 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 0.375;
+        rotateVal += 1.5;
         if(count_animation <= 120){
             cur_animation_val += 0.375;
             d12Val+= 9;
@@ -1269,7 +1269,7 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 0.375;
+        rotateVal += 1.5;
         if(count_animation <= 120){
             cur_animation_val += 0.375;
             d12Val+= 9;
@@ -1382,7 +1382,7 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 0.375;
+        rotateVal += 1.5;
         if(count_animation <= 120){
             cur_animation_val += 0.375;
             d12Val+= 9;
@@ -2104,7 +2104,7 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 0.375;
+        rotateVal += 1.5;
         if(count_animation <= 120){
             cur_animation_val += 0.375;
             d12Val+= 9;
@@ -2570,7 +2570,7 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 0.375;
+        rotateVal += 1.5;
         if(count_animation <= 120){
             cur_animation_val += 0.375;
             d12Val+= 9;
@@ -3283,7 +3283,7 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 0.375;
+        rotateVal += 1.5;
         if(count_animation <= 120){
             cur_animation_val += 0.375;
             d12Val+= 9;
@@ -3426,7 +3426,7 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 0.375;
+        rotateVal += 1.5;
         if(count_animation <= 120){
             cur_animation_val += 0.375;
             d12Val+= 9;
@@ -3520,7 +3520,7 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 0.375;
+        rotateVal += 1.5;
         if(count_animation <= 120){
             cur_animation_val += 0.375;
             d12Val+= 9;
@@ -3621,7 +3621,7 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 0.375;
+        rotateVal += 1.5;
         if(count_animation <= 120){
             cur_animation_val += 0.375;
             d12Val+= 9;
