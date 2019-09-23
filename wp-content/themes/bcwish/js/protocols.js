@@ -160,7 +160,7 @@ jQuery(function() {
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
   //Этап 5-2-4
-    cur_animation_val = -40;
+    cur_animation_val = 350;
     count_animation = 1;
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
