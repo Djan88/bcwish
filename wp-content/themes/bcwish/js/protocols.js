@@ -353,7 +353,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_d3, .zone_d4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -407,7 +407,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_d3, .zone_d4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -461,7 +461,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_d3, .zone_d4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -515,7 +515,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_d3, .zone_d4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -569,7 +569,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_s3, .zone_s4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -623,7 +623,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_s3, .zone_s4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -677,7 +677,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_s3, .zone_s4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -731,7 +731,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_s3, .zone_s4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -785,7 +785,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v1, .zone_v3, .zone_v4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -839,7 +839,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v1, .zone_v3, .zone_v4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -893,7 +893,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v1, .zone_v3, .zone_v4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -947,7 +947,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v1, .zone_v3, .zone_v4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -1043,31 +1043,31 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 1.5;
+        rotateVal += 0.375;
         if(count_animation <= 120){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 120 && count_animation <= 228){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 228 && count_animation <= 292){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else if (count_animation >= 292 && count_animation <= 344){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else {
             d12Val+= 9;
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
@@ -1156,31 +1156,31 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 1.5;
+        rotateVal += 0.375;
         if(count_animation <= 120){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 120 && count_animation <= 228){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 228 && count_animation <= 292){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else if (count_animation >= 292 && count_animation <= 344){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else {
             d12Val+= 9;
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
@@ -1269,31 +1269,31 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 1.5;
+        rotateVal += 0.375;
         if(count_animation <= 120){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 120 && count_animation <= 228){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 228 && count_animation <= 292){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else if (count_animation >= 292 && count_animation <= 344){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else {
             d12Val+= 9;
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
@@ -1382,31 +1382,31 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 1.5;
+        rotateVal += 0.375;
         if(count_animation <= 120){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 120 && count_animation <= 228){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 228 && count_animation <= 292){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else if (count_animation >= 292 && count_animation <= 344){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else {
             d12Val+= 9;
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
@@ -1641,7 +1641,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                        //40
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_s2_, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -1695,7 +1695,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                       //40
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_s2_, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -1749,7 +1749,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                       //40
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_s2_, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -1803,7 +1803,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                       //40
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_s2, .zone_d2, .zone_d2_').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -1857,7 +1857,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                       //40
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_s2_, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -1911,7 +1911,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                       //40
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_s2_, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -1965,7 +1965,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                      //40
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_s2_, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -2019,7 +2019,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                        //40
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_s2_, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -2104,31 +2104,31 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 1.5;
+        rotateVal += 0.375;
         if(count_animation <= 120){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 120 && count_animation <= 228){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 228 && count_animation <= 292){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else if (count_animation >= 292 && count_animation <= 344){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else {
             d12Val+= 9;
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
@@ -2314,7 +2314,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                        //40
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v2, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -2368,7 +2368,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v2, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -2422,7 +2422,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v2, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -2476,7 +2476,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                        //40
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v2, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -2570,31 +2570,31 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 1.5;
+        rotateVal += 0.375;
         if(count_animation <= 120){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 120 && count_animation <= 228){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 228 && count_animation <= 292){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else if (count_animation >= 292 && count_animation <= 344){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else {
             d12Val+= 9;
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
@@ -2829,7 +2829,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                         //40
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -2883,7 +2883,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                        //60
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v3, .zone_s3').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -2937,7 +2937,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                        //22
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v4, .zone_v3').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -2991,7 +2991,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                         //40
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v1, .zone_v4, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -3045,7 +3045,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                         //60
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v1, .zone_s3').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -3098,7 +3098,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                         //53
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v1, .zone_v4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
@@ -3152,7 +3152,7 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;                                                                         //22
-          cur_animation_val += 1.5;
+          cur_animation_val += 0.375;
           jQuery('.zone_v0, .zone_v-').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
@@ -3283,31 +3283,31 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 1.5;
+        rotateVal += 0.375;
         if(count_animation <= 120){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 120 && count_animation <= 228){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 228 && count_animation <= 292){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else if (count_animation >= 292 && count_animation <= 344){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else {
             d12Val+= 9;
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
@@ -3426,31 +3426,31 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 1.5;
+        rotateVal += 0.375;
         if(count_animation <= 120){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 120 && count_animation <= 228){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 228 && count_animation <= 292){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else if (count_animation >= 292 && count_animation <= 344){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else {
             d12Val+= 9;
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
@@ -3520,31 +3520,31 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 1.5;
+        rotateVal += 0.375;
         if(count_animation <= 120){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 120 && count_animation <= 228){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 228 && count_animation <= 292){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else if (count_animation >= 292 && count_animation <= 344){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else {
             d12Val+= 9;
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
@@ -3621,31 +3621,31 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 1.5;
+        rotateVal += 0.375;
         if(count_animation <= 120){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 120 && count_animation <= 228){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 228 && count_animation <= 292){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else if (count_animation >= 292 && count_animation <= 344){
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             d12Val+= 9;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else {
             d12Val+= 9;
-            cur_animation_val += 1.5;
+            cur_animation_val += 0.375;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
