@@ -173,7 +173,7 @@ jQuery(function() {
             borderWidth: '1px',
             paddingTop: '4px',
             background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
-            transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
+            transform: 'rotate(-'+d12Val+'deg) scale(1.5)',
             zIndex: '1000'
         });
         jQuery('.zone_ring')
