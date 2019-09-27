@@ -148,6 +148,97 @@ jQuery(function() {
     }
   });
 
+  v4 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('0%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_cl, .zone_v1, .zone_v4').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+            transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
+            zIndex: '1000'
+        });
+        jQuery('.zone_ring')
+          .removeClass('hidden')
+          .css({
+            opacity: 0.8,
+            transform: 'scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+            transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
+          });
+        count_animation += 1;
+        rotateVal += 1.5;
+        if(count_animation <= 120){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 120 && count_animation <= 228){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 228 && count_animation <= 292){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else if (count_animation >= 292 && count_animation <= 344){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else {
+            d12Val+= 3;
+            cur_animation_val += 1.5;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        }
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_cl, .zone_v1, .zone_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '1'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'v4_2');
+          endNow()
+        } else {
+          v4_2();
+          // console.log('continue');
+        }
+      }
+    }, 250);
+  }
+
   v3_9 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
     jQuery('.wizard_percent').text('93%');
