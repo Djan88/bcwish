@@ -97,6 +97,7 @@ jQuery(function() {
 
   //К переносу зон
   jQuery('.wizard_protocol').on('click', function(event) {
+    jQuery('.zone_ring').addClass('hidden');
     jQuery('.wizard_operation').addClass('hidden');
     jQuery('.ring').removeClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');

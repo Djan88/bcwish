@@ -150,7 +150,7 @@ jQuery(function() {
 
   v4_13 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('93%');
+    jQuery('.wizard_percent').text('96%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -199,7 +199,7 @@ jQuery(function() {
 
   v4_12 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('83%');
+    jQuery('.wizard_percent').text('90%');
     jQuery('.ring').css('transform', 'rotate(0deg)');
     jQuery('.zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -336,7 +336,7 @@ jQuery(function() {
 
   v4_11_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('84%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -390,7 +390,7 @@ jQuery(function() {
 
   v4_11_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('81%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -498,7 +498,7 @@ jQuery(function() {
 
   v4_11_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('75%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -552,7 +552,7 @@ jQuery(function() {
 
   v4_10_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('72%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -606,7 +606,7 @@ jQuery(function() {
 
   v4_10_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('69%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -660,7 +660,7 @@ jQuery(function() {
 
   v4_10_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('66%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -714,7 +714,7 @@ jQuery(function() {
 
   v4_10_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('63%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -768,7 +768,7 @@ jQuery(function() {
 
   v4_9_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('60%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -822,7 +822,7 @@ jQuery(function() {
 
   v4_9_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('57%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -876,7 +876,7 @@ jQuery(function() {
 
   v4_9_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('54%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -930,7 +930,7 @@ jQuery(function() {
 
   v4_9_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('51%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -984,7 +984,7 @@ jQuery(function() {
 
   v4_8_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('48%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1038,7 +1038,7 @@ jQuery(function() {
 
   v4_8_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('45%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1092,7 +1092,7 @@ jQuery(function() {
 
   v4_8_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('42%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1146,7 +1146,7 @@ jQuery(function() {
 
   v4_8_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('39%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1200,7 +1200,7 @@ jQuery(function() {
 
   v4_7 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('36%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1292,7 +1292,7 @@ jQuery(function() {
 
   v4_6 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('30%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1384,7 +1384,7 @@ jQuery(function() {
 
   v4_5 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('24%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1477,7 +1477,7 @@ jQuery(function() {
 
   v4_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('18%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1569,7 +1569,7 @@ jQuery(function() {
 
   v4_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('12%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1672,7 +1672,7 @@ jQuery(function() {
 
   v4_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('6%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1866,7 +1866,7 @@ jQuery(function() {
 
   v3_9 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('93%');
+    jQuery('.wizard_percent').text('97%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -1915,7 +1915,7 @@ jQuery(function() {
 
   v3_8 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('83%');
+    jQuery('.wizard_percent').text('92%');
     jQuery('.ring').css('transform', 'rotate(0deg)');
     jQuery('.zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -2052,7 +2052,7 @@ jQuery(function() {
 
   v3_7_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('84%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2106,7 +2106,7 @@ jQuery(function() {
 
   v3_7_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('79%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2160,7 +2160,7 @@ jQuery(function() {
 
   v3_7_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('74%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2214,7 +2214,7 @@ jQuery(function() {
 
   v3_7_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('69%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2268,7 +2268,7 @@ jQuery(function() {
 
   v3_6_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('64%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2322,7 +2322,7 @@ jQuery(function() {
 
   v3_6_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('59%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2376,7 +2376,7 @@ jQuery(function() {
 
   v3_6_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('54%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2430,7 +2430,7 @@ jQuery(function() {
 
   v3_6_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('49%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2484,7 +2484,7 @@ jQuery(function() {
 
   v3_5_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('44%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2538,7 +2538,7 @@ jQuery(function() {
 
   v3_5_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('39%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2592,7 +2592,7 @@ jQuery(function() {
 
   v3_5_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('34%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2646,7 +2646,7 @@ jQuery(function() {
 
   v3_5_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('29%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2700,7 +2700,7 @@ jQuery(function() {
 
   v3_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('24%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2815,7 +2815,7 @@ jQuery(function() {
 
   v3_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('16%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2928,7 +2928,7 @@ jQuery(function() {
 
   v3_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('8%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
