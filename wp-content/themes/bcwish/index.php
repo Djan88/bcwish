@@ -92,6 +92,15 @@
           <?php } ?>
           <li><a href="#why-us">Программа</a></li>
           <li><a href="#footer">Обратная связь</a></li>
+          <li>
+            <div class="social-links">
+              <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a target="_blank" href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100012253260685&pnref" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a target="_blank" href="https://vk.com/id139677998" class="vk"><i class="fa fa-vk"></i></a>
+              <a target="_blank" href="https://chikurov.com" class="site"><i class="fa fa-globe"></i></a>
+            </div>
+          </li>
           <?php if(is_user_logged_in()){ ?>
             <li><a href="/wp-login.php?action=logout&_wpnonce=0d90a53269">Выход</a></li>
           <?php } ?>
