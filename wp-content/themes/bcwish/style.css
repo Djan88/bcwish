@@ -1105,6 +1105,7 @@ h6 {
   transition: all .3s ease-in-out;
   padding: 36px 0;
   position: relative;
+  background: #F5F8FD;
 }
 
 #pricing .card:after {
@@ -1129,7 +1130,7 @@ h6 {
 }
 
 #pricing .card .card-header {
-  background-color: white;
+  background-color: #F5F8FD;
   border-bottom: 0px;
   -moz-text-align-last: center;
   text-align-last: center;
@@ -1150,6 +1151,7 @@ h6 {
   padding: 6px;
   color: #413e66;
   font-weight: 300;
+  background: #F5F8FD;
 }
 
 #pricing .card h3 {
@@ -2126,6 +2128,15 @@ main#main
 .steps .arrow_box
 {
   z-index: 1;
+}
+.mobile-nav .social-links
+{
+  margin-left: 10px;
+} 
+.mobile-nav .social-links a 
+{
+  display: inline-block;
+  padding: 10px;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries

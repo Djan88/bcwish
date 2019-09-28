@@ -1162,7 +1162,7 @@
     <!--==========================
       Clients Section
     ============================-->
-    <section id="testimonials" class="section-bg">
+    <section id="testimonials" class="section-bg hidden">
       <div class="container">
 
         <header class="section-header">
@@ -1221,7 +1221,7 @@
     <!--==========================
       Pricing Section
     ============================-->
-    <section id="pricing" class="wow fadeInUp">
+    <section id="pricing" class="wow fadeInUp section-wh">
       <div class="container">
         <header class="section-header">
           <h3>Сколько стоит "WizardMachine"?</h3>
