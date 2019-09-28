@@ -2119,6 +2119,10 @@ main#main
 {
   background: #fff!important;
 }
+.wizard_prots .collapse 
+{
+  overflow: hidden;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
