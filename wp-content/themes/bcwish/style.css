@@ -2147,6 +2147,10 @@ main#main
   padding: 5px;
   text-align: center;
 }
+.template_load
+{
+  max-width: 200px;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
