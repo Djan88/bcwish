@@ -88,9 +88,15 @@
               $user_date  =  strtotime($user->user_registered);
               $cur_date  =  strtotime("now");
               $date_diff = $cur_date - $user_date;
+              if ($date_diff < 260000) {
+                $new_registred = true;
+              } else {
+                $new_registred = false;
+              }
               print_r('<div style="color: #fff;">'.$user_date.'</div>');
               print_r('<div style="color: #fff;">'.$cur_date.'</div>');
               print_r('<div style="color: #fff;">'.$date_diff.'</div>');
+              print_r('<div style="color: #fff;">'.$$new_registred.'</div>');
             ?>
             <li><a href="/cabinet">Личный кабинет</a></li>
             <?php if(current_user_can('administrator')){ ?>
