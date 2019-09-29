@@ -140,7 +140,13 @@
                 <a href="/cabinet" class="btn-get-started">Личный кабинет</a>
               </div>
             <?php } else if (current_user_can('contributor') || current_user_can('administrator') || $new_registred == 1) { ?>
-              <h2>Программа для коррекции <br><span>личностных психосоматических проблем!</span></h2>
+              <h2>
+                Программа для коррекции 
+                <br><span>личностных психосоматических проблем!</span>
+                <?php if ($new_registred == 1) { ?>
+                  <br><span style="color: red;">Благодарим за интерес к программе "WizardMachine"! Дарим Вам 3 дня доступа к протоколу "Универсальный"!</span>
+                <?php } ?> 
+              </h2>
               <div>
                 <a href="#services" class="btn-get-started scrollto wm_init">Начать</a>
                 <a href="#" class="btn btn-warning wizard_continue hidden">Продолжить</a>
@@ -157,10 +163,7 @@
           <?php } else { ?>
             <h2>
               Программа для коррекции 
-              <br><span>личностных психосоматических проблемэ!</span>
-              <?php if ($new_registred == 1) { ?>
-                <br><span style="color: red;">Благодарим за интерес к программе "WizardMachine"! Дарим Вам 3 дня доступа к протоколу "Универсальный"!</span>
-              <?php } ?> 
+              <br><span>личностных психосоматических проблем!</span>
             </h2>
             <div class="row">
               <div class="col-md-12 login_form bounceInUp wow" data-wow-duration="1.4s">
