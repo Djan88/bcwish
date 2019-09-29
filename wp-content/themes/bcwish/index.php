@@ -96,7 +96,7 @@
               print_r('<div style="color: #fff;">'.$user_date.'</div>');
               print_r('<div style="color: #fff;">'.$cur_date.'</div>');
               print_r('<div style="color: #fff;">'.$date_diff.'</div>');
-              print_r('<div style="color: #fff;">'.$$new_registred.'</div>');
+              print_r('<div style="color: #fff;">'.$new_registred.'</div>');
             ?>
             <li><a href="/cabinet">Личный кабинет</a></li>
             <?php if(current_user_can('administrator')){ ?>
