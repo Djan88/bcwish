@@ -2150,6 +2150,8 @@ main#main
 .template_load
 {
   max-width: 200px;
+  display: block;
+  margin: auto;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries

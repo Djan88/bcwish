@@ -236,7 +236,7 @@
     <!--==========================
       Main Section
     ============================-->
-    <section id="services" class="wm_start unopacity section-wh" style="height: 296px;">
+    <section id="services" class="wm_start unopacity section-wh" style="height: 550px;">
       <div class="container container_main">
 
         <header class="section-header">
