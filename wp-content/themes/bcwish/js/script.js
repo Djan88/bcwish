@@ -46,6 +46,10 @@ jQuery(function() {
     jQuery('.crop_photo').click();
   });
 
+  jQuery('.photo_upload').on('click', function(event) {
+    jQuery('.template_load').addClass('hidden');
+  });
+
 
   // НАЧАТЬ
   jQuery('.wm_init').on('click', function(event) {
@@ -291,14 +295,8 @@ jQuery(function() {
                           jcrop_api = this;
                       });
                   },3000);
-
               };
-
-
-
-
           });
-
       };
 
       // read selected file as DataURL
