@@ -190,7 +190,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         onEnd();
       }
@@ -238,7 +238,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
 // II
         jQuery('.wizard_percent').text('85%');
@@ -264,7 +264,7 @@ jQuery(function() {
                 borderColor: '#413e66',
                 transform: 'scale(1)',
                 paddingTop: '2px',
-                zIndex: '1'
+                zIndex: '2'
             });
 // III
             jQuery('.wizard_percent').text('87%');
@@ -290,7 +290,7 @@ jQuery(function() {
                     borderColor: '#413e66',
                     transform: 'scale(1)',
                     paddingTop: '2px',
-                    zIndex: '1'
+                    zIndex: '2'
                 });
 // IV
                 jQuery('.wizard_percent').text('89%');
@@ -316,7 +316,7 @@ jQuery(function() {
                         borderColor: '#413e66',
                         transform: 'scale(1)',
                         paddingTop: '2px',
-                        zIndex: '1'
+                        zIndex: '2'
                     });
                     if (pausedStatus == true) {
                       localStorage.setItem('paused', 'v4_13');
@@ -376,7 +376,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_12');
@@ -430,7 +430,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_11_4');
@@ -484,7 +484,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_11_3');
@@ -538,7 +538,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_11_2');
@@ -592,7 +592,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_11_1');
@@ -646,7 +646,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_10_4');
@@ -700,7 +700,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_10_3');
@@ -754,7 +754,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_10_2');
@@ -808,7 +808,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_10_1');
@@ -862,7 +862,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_9_4');
@@ -916,7 +916,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_9_3');
@@ -970,7 +970,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_9_2');
@@ -1024,7 +1024,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_9_1');
@@ -1078,7 +1078,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_8_4');
@@ -1132,7 +1132,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_8_3');
@@ -1186,7 +1186,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_8_2');
@@ -1274,7 +1274,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -1366,7 +1366,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -1458,7 +1458,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -1551,7 +1551,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -1654,7 +1654,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -1757,7 +1757,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -1848,7 +1848,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -1906,7 +1906,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         onEnd();
       }
@@ -1954,7 +1954,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
 // II
         jQuery('.wizard_percent').text('85%');
@@ -1980,7 +1980,7 @@ jQuery(function() {
                 borderColor: '#413e66',
                 transform: 'scale(1)',
                 paddingTop: '2px',
-                zIndex: '1'
+                zIndex: '2'
             });
 // III
             jQuery('.wizard_percent').text('87%');
@@ -2006,7 +2006,7 @@ jQuery(function() {
                     borderColor: '#413e66',
                     transform: 'scale(1)',
                     paddingTop: '2px',
-                    zIndex: '1'
+                    zIndex: '2'
                 });
 // IV
                 jQuery('.wizard_percent').text('89%');
@@ -2032,7 +2032,7 @@ jQuery(function() {
                         borderColor: '#413e66',
                         transform: 'scale(1)',
                         paddingTop: '2px',
-                        zIndex: '1'
+                        zIndex: '2'
                     });
                     if (pausedStatus == true) {
                       localStorage.setItem('paused', 'v3_9');
@@ -2092,7 +2092,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_8');
@@ -2146,7 +2146,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_7_4');
@@ -2200,7 +2200,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_7_3');
@@ -2254,7 +2254,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_7_2');
@@ -2308,7 +2308,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_7_1');
@@ -2362,7 +2362,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_6_4');
@@ -2416,7 +2416,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_6_3');
@@ -2470,7 +2470,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_6_2');
@@ -2524,7 +2524,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_6_1');
@@ -2578,7 +2578,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_5_4');
@@ -2632,7 +2632,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_5_3');
@@ -2686,7 +2686,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_5_2');
@@ -2797,7 +2797,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -2910,7 +2910,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -3023,7 +3023,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -3136,7 +3136,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -3194,7 +3194,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         onEnd();
       }
@@ -3242,7 +3242,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
 // II
         jQuery('.wizard_percent').text('85%');
@@ -3268,7 +3268,7 @@ jQuery(function() {
                 borderColor: '#413e66',
                 transform: 'scale(1)',
                 paddingTop: '2px',
-                zIndex: '1'
+                zIndex: '2'
             });
 // III
             jQuery('.wizard_percent').text('87%');
@@ -3294,7 +3294,7 @@ jQuery(function() {
                     borderColor: '#413e66',
                     transform: 'scale(1)',
                     paddingTop: '2px',
-                    zIndex: '1'
+                    zIndex: '2'
                 });
 // IV
                 jQuery('.wizard_percent').text('89%');
@@ -3320,7 +3320,7 @@ jQuery(function() {
                         borderColor: '#413e66',
                         transform: 'scale(1)',
                         paddingTop: '2px',
-                        zIndex: '1'
+                        zIndex: '2'
                     });
                     if (pausedStatus == true) {
                       localStorage.setItem('paused', 'v2_6');
@@ -3380,7 +3380,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_5');
@@ -3434,7 +3434,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_4_9');
@@ -3488,7 +3488,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_4_8');
@@ -3542,7 +3542,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_4_7');
@@ -3596,7 +3596,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_4_6');
@@ -3650,7 +3650,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_4_5');
@@ -3704,7 +3704,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_4_4');
@@ -3758,7 +3758,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_4_3');
@@ -3858,7 +3858,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -3915,7 +3915,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
 // II
         jQuery('.wizard_percent').text('30%');
@@ -3941,7 +3941,7 @@ jQuery(function() {
                 borderColor: '#413e66',
                 transform: 'scale(1)',
                 paddingTop: '2px',
-                zIndex: '1'
+                zIndex: '2'
             });
 // III
             jQuery('.wizard_percent').text('32%');
@@ -3967,7 +3967,7 @@ jQuery(function() {
                     borderColor: '#413e66',
                     transform: 'scale(1)',
                     paddingTop: '2px',
-                    zIndex: '1'
+                    zIndex: '2'
                 });
 // IV
                 jQuery('.wizard_percent').text('34%');
@@ -3993,7 +3993,7 @@ jQuery(function() {
                         borderColor: '#413e66',
                         transform: 'scale(1)',
                         paddingTop: '2px',
-                        zIndex: '1'
+                        zIndex: '2'
                     });
                     if (pausedStatus == true) {
                       localStorage.setItem('paused', 'v2_4_1');
@@ -4053,7 +4053,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_3');
@@ -4107,7 +4107,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_2_4');
@@ -4161,7 +4161,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_2_3');
@@ -4215,7 +4215,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_2_2');
@@ -4324,7 +4324,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -4382,7 +4382,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         onEnd();
       }
@@ -4430,7 +4430,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
 // II
         jQuery('.wizard_percent').text('81%');
@@ -4456,7 +4456,7 @@ jQuery(function() {
                 borderColor: '#413e66',
                 transform: 'scale(1)',
                 paddingTop: '2px',
-                zIndex: '1'
+                zIndex: '2'
             });
 // III
             jQuery('.wizard_percent').text('84%');
@@ -4482,7 +4482,7 @@ jQuery(function() {
                     borderColor: '#413e66',
                     transform: 'scale(1)',
                     paddingTop: '2px',
-                    zIndex: '1'
+                    zIndex: '2'
                 });
 // IV
                 jQuery('.wizard_percent').text('87%');
@@ -4508,7 +4508,7 @@ jQuery(function() {
                         borderColor: '#413e66',
                         transform: 'scale(1)',
                         paddingTop: '2px',
-                        zIndex: '1'
+                        zIndex: '2'
                     });
                     if (pausedStatus == true) {
                       localStorage.setItem('paused', 'v1_7');
@@ -4568,7 +4568,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_6');
@@ -4622,7 +4622,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_7');
@@ -4676,7 +4676,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_6');
@@ -4730,7 +4730,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_5');
@@ -4784,7 +4784,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_4');
@@ -4837,7 +4837,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_3');
@@ -4891,7 +4891,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'rotate(-'+0+'deg) scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
           });
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_2');
@@ -5274,7 +5274,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
@@ -5375,7 +5375,7 @@ jQuery(function() {
             borderColor: '#413e66',
             transform: 'scale(1)',
             paddingTop: '2px',
-            zIndex: '1'
+            zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
