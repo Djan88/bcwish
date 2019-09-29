@@ -82,6 +82,11 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <?php if(is_user_logged_in()){ ?>
+            <?php 
+              $user = get_userdata();
+              $last_name  =  $user->user_registered;
+              print_r($last_name);
+            ?>
             <li><a href="/cabinet">Личный кабинет</a></li>
             <?php if(current_user_can('administrator')){ ?>
               <li><a href="/wp-admin">Панель управления</a></li>
