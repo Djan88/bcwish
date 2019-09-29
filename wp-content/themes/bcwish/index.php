@@ -86,7 +86,9 @@
               $cur_user_id = get_current_user_id();
               $user = get_userdata($cur_user_id);
               $user_date  =  strtotime($user->user_registered);
+              $cur_date  =  strtotime("now");
               print_r($user_date);
+              print_r($cur_date);
             ?>
             <li><a href="/cabinet">Личный кабинет</a></li>
             <?php if(current_user_can('administrator')){ ?>
