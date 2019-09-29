@@ -295,11 +295,10 @@
                         «Краниальный протокол» - «используется при актуальности зоны головы, а также для терапевтической дефрагментации ума»
                       </p>
                       <?php if ($new_registred == 1) { ?>
-                        <p><button class="btn wizard_blue wizard_disabled wow bounceInUp" data-wow-duration="1.4s" data-toggle="popover" data-placement="right" title="Протокол недоступен!" data-content="Данный протокол доступен пользователям с действительным доступом">Активировать V1</button></p>
+                        <p><div class=" closed_protocol wow bounceInUp">Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                       <?php } else { ?>
                         <p><button class="btn wizard_blue wizard_protocol wizard_protocol_1 wizard_prot_1 wow bounceInUp" data-wow-duration="1.4s">Активировать V1</button></p>
                       <?php } ?>
-                      ?>
                       <!-- <p><button class="btn wizard_blue wizard_protocol wizard_protocol_1 wizard_prot_1 wow bounceInUp" data-wow-duration="1.4s">Активировать V1</button></p> -->
                     </div>
                   </li>
