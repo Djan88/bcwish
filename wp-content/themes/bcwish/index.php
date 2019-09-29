@@ -88,10 +88,10 @@
               $user_date  =  strtotime($user->user_registered);
               $cur_date  =  strtotime("now");
               $date_diff = $cur_date - $user_date;
-              if ($date_diff < 260000) {
-                $new_registred = true;
+              if ($date_diff < 259000) {
+                $new_registred = 'new';
               } else {
-                $new_registred = false;
+                $new_registred = 'old';
               }
               print_r('<div style="color: #fff;">'.$user_date.'</div>');
               print_r('<div style="color: #fff;">'.$cur_date.'</div>');
