@@ -89,9 +89,9 @@
               $cur_date  =  strtotime("now");
               $date_diff = $cur_date - $user_date;
               if ($date_diff < 259000) {
-                $new_registred = 'new';
+                $new_registred = 1;
               } else {
-                $new_registred = 'old';
+                $new_registred = 0;
               }
               print_r('<div style="color: #fff;">'.$user_date.'</div>');
               print_r('<div style="color: #fff;">'.$cur_date.'</div>');
@@ -134,12 +134,12 @@
       <div class="row justify-content-center align-self-center">
         <div class="col-md-12 intro-info order-md-first order-last">
           <?php if(is_user_logged_in()){ ?>
-            <?php if(current_user_can('subscriber')){ ?>
-              <h2>Доступ к программе закрыт!<br>Оплатите доступ в личном кабинете<span>и пользуйтесь программой целый год!</span></h2>
+            <?php if(current_user_can('subscriber') && $new_registred == 0){ ?>
+              <h2>Доступ к программе закрыт!<br>Оплатите доступ в личном кабинете<span> и пользуйтесь программой целый год!</span></h2>
               <div>
                 <a href="/cabinet" class="btn-get-started">Личный кабинет</a>
               </div>
-            <?php } else if (current_user_can('contributor') || current_user_can('administrator')) { ?>
+            <?php } else if (current_user_can('contributor') || current_user_can('administrator') || $new_registred == 1) { ?>
               <h2>Программа для коррекции <br><span>личностных психосоматических проблем!</span></h2>
               <div>
                 <a href="#services" class="btn-get-started scrollto wm_init">Начать</a>
@@ -285,7 +285,14 @@
                       <p>
                         «Краниальный протокол» - «используется при актуальности зоны головы, а также для терапевтической дефрагментации ума»
                       </p>
-                      <p><button class="btn wizard_blue wizard_protocol wizard_protocol_1 wizard_prot_1 wow bounceInUp" data-wow-duration="1.4s">Активировать V1</button></p>
+                      <?php
+                      if ($new_registred == 1) {
+                        echo '<p><button class="btn wizard_blue wizard_disabled wow bounceInUp" data-wow-duration="1.4s" data-toggle="popover" data-placement="bottom" title="Протокол недоступен!" data-content="Данный протокол доступен пользователям с действительным доступом">Активировать V1</button></p>';
+                      } else {
+                        echo '<p><button class="btn wizard_blue wizard_protocol wizard_protocol_1 wizard_prot_1 wow bounceInUp" data-wow-duration="1.4s">Активировать V1</button></p>';
+                      }
+                      ?>
+                      <!-- <p><button class="btn wizard_blue wizard_protocol wizard_protocol_1 wizard_prot_1 wow bounceInUp" data-wow-duration="1.4s">Активировать V1</button></p> -->
                     </div>
                   </li>
                   <li>
