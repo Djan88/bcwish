@@ -2138,6 +2138,15 @@ main#main
   display: inline-block;
   padding: 10px;
 }
+.closed_protocol
+{
+  color: #413e66;
+  border: 2px solid #1bb1dc;
+  background: #d7edf3;
+  border-radius: 6px;
+  padding: 5px;
+  text-align: center;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
