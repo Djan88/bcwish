@@ -108,6 +108,9 @@
           <?php } ?>
           <li><a href="#why-us">Программа</a></li>
           <li><a href="#footer">Обратная связь</a></li>
+          <?php if(is_user_logged_in()){ ?>
+            <li><a href="/wp-login.php?action=logout&_wpnonce=0d90a53269">Выход</a></li>
+          <?php } ?>
           <li>
             <div class="social-links">
               <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -117,9 +120,6 @@
               <a target="_blank" href="https://chikurov.com" class="site"><i class="fa fa-globe"></i></a>
             </div>
           </li>
-          <?php if(is_user_logged_in()){ ?>
-            <li><a href="/wp-login.php?action=logout&_wpnonce=0d90a53269">Выход</a></li>
-          <?php } ?>
         </ul>
       </nav><!-- .main-nav -->
       
