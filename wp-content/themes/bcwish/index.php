@@ -296,7 +296,7 @@
                         «Краниальный протокол» - «используется при актуальности зоны головы, а также для терапевтической дефрагментации ума»
                       </p>
                       <?php if ($new_registred == 1) { ?>
-                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол закрыт! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
+                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                       <?php } else { ?>
                         <p><button class="btn wizard_blue wizard_protocol wizard_protocol_1 wizard_prot_1 wow bounceInUp" data-wow-duration="1.4s">Активировать V1</button></p>
                       <?php } ?>
@@ -309,7 +309,7 @@
                         «Показания для коррекции - застрявшие мысли/дилеммы категорий люди и отношения, а также предметы/вещи/деньги. Рационализации (самообман), неотпущенные переживания обиды и вины, клинические проявления V2 заболеваний.»
                       </p>
                       <?php if ($new_registred == 1) { ?>
-                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол закрыт! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
+                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                       <?php } else { ?>
                         <p><button class="btn wizard_blue wizard_protocol wizard_protocol_2 wizard_prot_2 wow bounceInUp" data-wow-duration="1.4s">Активировать V2-V5</button></p>
                       <?php } ?>
@@ -322,7 +322,7 @@
                         «Показания к применению - чувство непереносимости ситуации либо отношений, невозможности принять для себя это переживания, раздражение от всех и вся, попытки заставить вас принять чужое мнение, или ваши попытки заставить кого-либо принять вашу точку зрения, клинические проявления V3 заболеваний.»
                       </p>
                       <?php if ($new_registred == 1) { ?>
-                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол закрыт! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
+                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                       <?php } else { ?>
                         <p><button class="btn wizard_blue wizard_protocol wizard_protocol_3 wizard_prot_3 wow bounceInUp" data-wow-duration="1.4s">Активировать V3-V4</button></p>
                       <?php } ?>
@@ -335,7 +335,7 @@
                         «Показания к применению - переживание беспокойства, тревожности, суеты и торопливости, злости и заниженной самооценки. Клинические проявления V4 заболеваний.»
                       </p>
                       <?php if ($new_registred == 1) { ?>
-                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол закрыт! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
+                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                       <?php } else { ?>
                         <p><button class="btn wizard_blue wizard_protocol wizard_protocol_4 wizard_prot_4 wow bounceInUp" data-wow-duration="1.4s">Активировать V4-V3</button></p>
                       <?php } ?>
@@ -348,7 +348,7 @@
                         «Показания к применению - невротические переживания нехватки воздуха, страхов закрытого пространства, высоты. Синдром хронической усталости, последствия физических травм, насилия, утопления, кровопотери, общего наркоза и прочих ситуаций, связанных с угрозой жизни. Клинические проявления V5 заболеваний.»
                       </p>
                       <?php if ($new_registred == 1) { ?>
-                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол закрыт! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
+                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                       <?php } else { ?>
                         <p><button class="btn wizard_blue wizard_protocol wizard_protocol_5 wizard_prot_5 wow bounceInUp" data-wow-duration="1.4s">Активировать V5-V2</button></p>
                       <?php } ?>
@@ -361,7 +361,7 @@
                         «Дренажный протокол предназначен для флюидической очистки зон DSV тела ума. Рекомендован при хронических либо кармически отягощенных, а также гипоресурсных состояниях. Можно применять сразу дополнительно после основного протокола (кроме V5) либо самостоятельно»
                       </p>
                       <?php if ($new_registred == 1) { ?>
-                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол закрыт! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
+                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                       <?php } else { ?>
                         <p><button class="btn wizard_blue wizard_protocol wizard_protocol_6 wizard_prot_6 wow bounceInUp" data-wow-duration="1.4s">Активировать ДРЕНАЖ</button></p>
                       <?php } ?>
@@ -374,7 +374,7 @@
                         «Протокол "Solis" предназначен для "гиперресурсных" состояний, которые закономерно возникают после удачных проработок клиента на "wizardmachine", терапевтической дефрагментации, "Tarotmachine", а также после проработки кармических и родовых проблем либо после длительной "отжимке" негативного флюида из физического тела. При калибровке ставьте зону v3 на нижнюю границу сердца! Показания к применению - напряжения в теле и поведенческие дисфункции на полнолуние. Нормализация метафункционала вентральной оси. рекомендован ежедневно с 10-го по 15-й дни Луны!
                       </p>
                       <?php if ($new_registred == 1) { ?>
-                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол закрыт! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
+                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                       <?php } else { ?>
                         <p><button class="btn wizard_blue wizard_protocol wizard_protocol_7 wizard_prot_7 wow bounceInUp" data-wow-duration="1.4s">Активировать SOLIS</button></p>
                       <?php } ?>
@@ -387,7 +387,7 @@
                         «Печеночное продвижение. Для коррекции вегетативно/сосудистых, висцеральных, психосоматических проблем, а также состояний, связанных с нарушением иммунитета и обмена веществ»
                       </p>
                       <?php if ($new_registred == 1) { ?>
-                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол закрыт! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
+                        <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                       <?php } else { ?>
                         <p><button class="btn wizard_blue wizard_protocol wizard_protocol_8 wizard_prot_8 wow bounceInUp" data-wow-duration="1.4s">Активировать ВИСЦЕРАЛЬНЫЙ</button></p>
                       <?php } ?>
