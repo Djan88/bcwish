@@ -211,6 +211,7 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
+        console.log(count_animation);
         rotateVal += 1.5;
         if(count_animation <= 120){
             cur_animation_val += 1.5;
