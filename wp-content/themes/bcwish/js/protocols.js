@@ -166,7 +166,7 @@ jQuery(function() {
             reloadSound.play();
         };
         reloadTime += 1;
-        jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5, .zone_hidden_1, .zone_hidden_2, zone_hidden_3, .zone_hidden_4').css({
+        jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5, .zone_hidden_1, .zone_hidden_2, .zone_hidden_3, .zone_hidden_4').css({
             color: 'transparent',
             borderColor: 'transparent',
             opacity: 0.8,
@@ -285,7 +285,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5, .zone_hidden_1, .zone_hidden_2, zone_hidden_3, .zone_hidden_4').css({
+        jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5, .zone_hidden_1, .zone_hidden_2, .zone_hidden_3, .zone_hidden_4').css({
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
