@@ -150,6 +150,7 @@ jQuery(function() {
   });
 
   solis_3 = function(){
+    jQuery('.wizard_main_screen').addClass('wizard_main_screen_solis');
     jQuery('.wizard_heading').text('Выполняется "Solis"');
     jQuery('.wizard_percent').text('60%');
     reloadTime = 0;
@@ -163,8 +164,6 @@ jQuery(function() {
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
-        } else if (reloadTime == 2) {
-            sound.play();
         };
         reloadTime += 1;
         jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5, .zone_hidden_1, .zone_hidden_2, zone_hidden_3, .zone_hidden_4').css({
@@ -311,6 +310,7 @@ jQuery(function() {
 
 
   solis_2_4 = function(){
+    jQuery('.wizard_main_screen').addClass('wizard_main_screen_solis');
     jQuery('.wizard_heading').text('Выполняется "Solis"');
     jQuery('.wizard_percent').text('84%');
     reloadTime = 0;
@@ -365,6 +365,7 @@ jQuery(function() {
   }
 
   solis_2_3 = function(){
+    jQuery('.wizard_main_screen').addClass('wizard_main_screen_solis');
     jQuery('.wizard_heading').text('Выполняется "Solis"');
     jQuery('.wizard_percent').text('81%');
     reloadTime = 0;
@@ -419,6 +420,7 @@ jQuery(function() {
   }
 
   solis_2_2 = function(){
+    jQuery('.wizard_main_screen').addClass('wizard_main_screen_solis');
     jQuery('.wizard_heading').text('Выполняется "Solis"');
     jQuery('.wizard_percent').text('78%');
     reloadTime = 0;
@@ -473,6 +475,7 @@ jQuery(function() {
   }
 
   solis_2_1 = function(){
+    jQuery('.wizard_main_screen').addClass('wizard_main_screen_solis');
     jQuery('.wizard_heading').text('Выполняется "Solis"');
     jQuery('.wizard_percent').text('75%');
     reloadTime = 0;
@@ -532,7 +535,7 @@ jQuery(function() {
     jQuery('.wizard_percent').text('0%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
-    jQuery('.wizard_main_screen').css('paddingTop', '200px;');
+    jQuery('.wizard_main_screen').addClass('wizard_main_screen_solis');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;

@@ -1819,6 +1819,10 @@ h3.wizard_heading
   position: relative;
   transition: all 0.5s;
 }
+.wizard_main_screen_solis
+{
+  padding-top: 200px;: 
+}
 .wizard_zones 
 {
   border-right: 1px solid #413e66;
