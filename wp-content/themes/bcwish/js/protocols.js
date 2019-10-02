@@ -249,7 +249,7 @@ jQuery(function() {
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else if (count_animation > 654 && count_animation <= 688){
-            cur_animation_val -= 1.5;
+            cur_animation_val += 1.5;
             d12Val+= 3;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
