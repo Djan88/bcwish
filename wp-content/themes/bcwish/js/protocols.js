@@ -175,25 +175,25 @@ jQuery(function() {
             transform: 'scale(1.5)',
             zIndex: '1000'
         });
-        if (count_animation > 6 && count_animation <= 8) {
+        if (count_animation > 8 && count_animation <= 12) {
           jQuery('.zone_hidden_1').removeClass('hidden').css({
             background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
             left: parseFloat(jQuery('.zone_v1').css('left'))+'px',
             top: parseFloat(jQuery('.zone_v1').css('top'))-40+'px'
           });
-        } else if (count_animation > 8 && count_animation <= 10) {
+        } else if (count_animation > 12 && count_animation <= 16) {
           jQuery('.zone_hidden_2').removeClass('hidden').css({
             background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
             left: parseFloat(jQuery('.zone_hidden_1').css('left'))+'px',
             top: parseFloat(jQuery('.zone_hidden_1').css('top'))-40+'px'
           });
-        } else if (count_animation > 10 && count_animation <= 12) {
+        } else if (count_animation > 16 && count_animation <= 20) {
           jQuery('.zone_hidden_3').removeClass('hidden').css({
             background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
             left: parseFloat(jQuery('.zone_hidden_2').css('left'))+'px',
             top: parseFloat(jQuery('.zone_hidden_2').css('top'))-40+'px'
           });
-        } else if (count_animation > 12 && count_animation <= 14) {
+        } else if (count_animation > 20 && count_animation <= 24) {
           jQuery('.zone_hidden_4').removeClass('hidden').css({
             background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
             left: parseFloat(jQuery('.zone_hidden_3').css('left'))+'px',
