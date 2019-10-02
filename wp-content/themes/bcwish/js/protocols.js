@@ -159,7 +159,7 @@ jQuery(function() {
     rotateVal = 0;
     count_animation = 1;
     phaseOne = setInterval(function(){
-      if (count_animation <= 688){
+      if (count_animation <= 685){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -249,7 +249,7 @@ jQuery(function() {
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
-        } else if (count_animation > 635 && count_animation <= 688){
+        } else if (count_animation > 635 && count_animation <= 685){
             cur_animation_val += 1.5;
             d12Val+= 3;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
