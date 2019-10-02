@@ -149,8 +149,8 @@ jQuery(function() {
   });
 
   mmt_8 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('96%');
+    jQuery('.wizard_heading').text('Выполняется "Висцеральный протокол"');
+    jQuery('.wizard_percent').text('90%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -198,8 +198,8 @@ jQuery(function() {
   }
 
   mmt_7 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('90%');
+    jQuery('.wizard_heading').text('Выполняется "Висцеральный протокол"');
+    jQuery('.wizard_percent').text('80%');
     jQuery('.ring').css('transform', 'rotate(0deg)');
     jQuery('.zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -336,7 +336,7 @@ jQuery(function() {
 
   mmt_6 = function(){
     jQuery('.wizard_heading').text('Выполняется "Висцеральный протокол"');
-    jQuery('.wizard_percent').text('12%');
+    jQuery('.wizard_percent').text('75%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -470,7 +470,7 @@ jQuery(function() {
 
   mmt_5 = function(){
     jQuery('.wizard_heading').text('Выполняется "Висцеральный протокол"');
-    jQuery('.wizard_percent').text('12%');
+    jQuery('.wizard_percent').text('60%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -604,7 +604,7 @@ jQuery(function() {
 
   mmt_4 = function(){
     jQuery('.wizard_heading').text('Выполняется "Висцеральный протокол"');
-    jQuery('.wizard_percent').text('12%');
+    jQuery('.wizard_percent').text('45%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -738,7 +738,7 @@ jQuery(function() {
 
   mmt_3 = function(){
     jQuery('.wizard_heading').text('Выполняется "Висцеральный протокол"');
-    jQuery('.wizard_percent').text('12%');
+    jQuery('.wizard_percent').text('30%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -872,7 +872,7 @@ jQuery(function() {
 
   mmt_2 = function(){
     jQuery('.wizard_heading').text('Выполняется "Висцеральный протокол"');
-    jQuery('.wizard_percent').text('12%');
+    jQuery('.wizard_percent').text('15%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1006,7 +1006,7 @@ jQuery(function() {
 
   mmt = function(){
     jQuery('.wizard_heading').text('Выполняется "Висцеральный протокол"');
-    jQuery('.wizard_percent').text('12%');
+    jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
