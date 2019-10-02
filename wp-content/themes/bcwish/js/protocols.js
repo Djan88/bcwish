@@ -243,7 +243,7 @@ jQuery(function() {
             d12Val+= 3;
             jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
-        } else if (count_animation > 586 && count_animation <= 654){
+        } else if (count_animation > 586 && count_animation <= 635){
             cur_animation_val -= 1.5;
             d12Val+= 3;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
