@@ -556,13 +556,13 @@ jQuery(function() {
             zIndex: '1000'
         });
         jQuery('.zone_v2').css({
-            background: '#fff url(/wp-content/themes/bcwish/img/nerazd.png) center center/120% no-repeat'
+            background: 'url(/wp-content/themes/bcwish/img/nerazd.png) center center/100% no-repeat'
         });
         jQuery('.zone_v3').css({
-            background: '#fff url(/wp-content/themes/bcwish/img/nerazd_001.png) center center/120% no-repeat'
+            background: 'url(/wp-content/themes/bcwish/img/nerazd_001.png) center center/100% no-repeat'
         });
         jQuery('.zone_v4').css({
-            background: '#fff url(/wp-content/themes/bcwish/img/nerazd_002.png) center center/120% no-repeat'
+            background: 'url(/wp-content/themes/bcwish/img/nerazd_002.png) center center/100% no-repeat'
         });
         
         count_animation += 1;
