@@ -153,6 +153,8 @@ jQuery(function() {
     jQuery('.wizard_main_screen').addClass('wizard_main_screen_solis');
     jQuery('.wizard_heading').text('Выполняется "Solis"');
     jQuery('.wizard_percent').text('60%');
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
