@@ -123,7 +123,7 @@ jQuery(function() {
       cur_protocol = 'drenag';
     } else if (jQuery(this).hasClass('wizard_protocol_7')) {
       cur_protocol = 'solis';
-    } else if (jQuery(this).hasClass('wizard_protocol_7')) {
+    } else if (jQuery(this).hasClass('wizard_protocol_8')) {
       cur_protocol = 'visceral';
     }
     localStorage.setItem('cur_protocol', cur_protocol);
