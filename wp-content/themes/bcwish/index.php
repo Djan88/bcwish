@@ -1113,6 +1113,12 @@
                 <div class="zone zone_movable zone_s6 draggable">S6</div>
 
                 <div class="zone zone_movable zone_cl draggable">L</div>
+
+                <div class="zone zone_movable zone_hidden zone_hidden_1 hidden draggable"></div>
+                <div class="zone zone_movable zone_hidden zone_hidden_2 hidden draggable"></div>
+                <div class="zone zone_movable zone_hidden zone_hidden_3 hidden draggable"></div>
+                <div class="zone zone_movable zone_hidden zone_hidden_4 hidden draggable"></div>
+
               </div>
               <div class="col-sm-6">
                 <img src="" class="wizard_returned draggable" alt="wizard_returned">

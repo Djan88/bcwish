@@ -1817,6 +1817,7 @@ h3.wizard_heading
 .wizard_main_screen 
 {
   position: relative;
+  transition: all 0.5s;
 }
 .wizard_zones 
 {
