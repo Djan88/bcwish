@@ -1817,7 +1817,7 @@ h3.wizard_heading
 .wizard_main_screen 
 {
   position: relative;
-  transition: all 2s;
+  transition: padding-top 2s;
 }
 .wizard_main_screen_solis
 {
