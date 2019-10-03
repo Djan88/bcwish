@@ -176,6 +176,8 @@ jQuery(function() {
             paddingTop: '4px',
             transform: 'scale(1.5)',
             zIndex: '1000',
+        });
+        jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5').css({
             background: 'transparent'
         });
 
@@ -191,41 +193,41 @@ jQuery(function() {
           jQuery('.zone_v5, .zone_v4, .zone_v3').css({
             background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
           });
-        } else if (count_animation > 16 && count_animation <= 18) {
+        } else if (count_animation > 16 && count_animation <= 20) {
           jQuery('.zone_v5, .zone_v4, .zone_v3, .zone_v2').css({
             background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
           });
-        } else if (count_animation > 18 && count_animation <= 22) {
+        } else if (count_animation > 20 && count_animation <= 24) {
           jQuery('.zone_v5, .zone_v4, .zone_v3, .zone_v2, .zone_v1').css({
             background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
           });
-        } else if (count_animation > 22 && count_animation <= 26) {
+        } else if (count_animation > 24 && count_animation <= 28) {
           jQuery('.zone_hidden_1').removeClass('hidden').css({
             background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
             left: parseFloat(jQuery('.zone_v1').css('left'))+'px',
             top: parseFloat(jQuery('.zone_v1').css('top'))-40+'px'
           });
-        } else if (count_animation > 26 && count_animation <= 30) {
-          jQuery('.zone_hidden_2').removeClass('hidden').css({
+        } else if (count_animation > 28 && count_animation <= 32) {
+          jQuery('.zone_hidden_1, .zone_hidden_2').removeClass('hidden').css({
             background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
             left: parseFloat(jQuery('.zone_hidden_1').css('left'))+'px',
             top: parseFloat(jQuery('.zone_hidden_1').css('top'))-40+'px'
           });
-        } else if (count_animation > 30 && count_animation <= 34) {
-          jQuery('.zone_hidden_3').removeClass('hidden').css({
+        } else if (count_animation > 32 && count_animation <= 36) {
+          jQuery('.zone_hidden_1, .zone_hidden_2, .zone_hidden_3').removeClass('hidden').css({
             background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
             left: parseFloat(jQuery('.zone_hidden_2').css('left'))+'px',
             top: parseFloat(jQuery('.zone_hidden_2').css('top'))-40+'px'
           });
-        } else if (count_animation > 34 && count_animation <= 38) {
-          jQuery('.zone_hidden_4').removeClass('hidden').css({
+        } else if (count_animation > 36 && count_animation <= 40) {
+          jQuery('.zone_hidden_1, .zone_hidden_2, .zone_hidden_3, .zone_hidden_4').removeClass('hidden').css({
             background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
             left: parseFloat(jQuery('.zone_hidden_3').css('left'))+'px',
             top: parseFloat(jQuery('.zone_hidden_3').css('top'))-40+'px'
           });
         }
 
-        if (count_animation > 22 && count_animation <= 120) {
+        if (count_animation > 24 && count_animation <= 120) {
           jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
           });
