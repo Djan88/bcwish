@@ -258,7 +258,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
         });
-        jQuery(', .zone_hidden_1, .zone_hidden_2, zone_hidden_3').addClass('hidden');
+        jQuery('.zone_hidden_1, .zone_hidden_2, zone_hidden_3').addClass('hidden');
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
         sound.stop();
