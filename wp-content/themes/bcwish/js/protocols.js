@@ -177,7 +177,7 @@ jQuery(function() {
             transform: 'scale(1.5)',
             zIndex: '1000',
         });
-        jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5').css({
+        jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5, .zone_v0').css({
             background: 'transparent'
         });
 
