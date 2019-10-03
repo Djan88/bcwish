@@ -168,7 +168,7 @@ jQuery(function() {
             reloadSound.play();
         };
         reloadTime += 1;
-        jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5, .zone_v0, .zone_hidden_1, .zone_hidden_2, .zone_hidden_3').css({
+        jQuery('.zone_v-, .zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5, .zone_v0, .zone_hidden_1, .zone_hidden_2, .zone_hidden_3').css({
             color: 'transparent',
             borderColor: 'transparent',
             opacity: 0.8,
@@ -176,6 +176,9 @@ jQuery(function() {
             paddingTop: '4px',
             transform: 'scale(1.5)',
             zIndex: '1000',
+        });
+        jQuery('.zone_v-').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/drenag_2.png) center center/100% no-repeat',
         });
         jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5, .zone_v0').css({
             background: 'transparent'
@@ -259,7 +262,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5, .zone_v0, .zone_hidden_1, .zone_hidden_2, .zone_hidden_3').css({
+        jQuery('.zone_v-, .zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5, .zone_v0, .zone_hidden_1, .zone_hidden_2, .zone_hidden_3').css({
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
