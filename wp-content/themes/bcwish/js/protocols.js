@@ -149,9 +149,229 @@ jQuery(function() {
     }
   });
 
+
+  drenag = function(){
+    jQuery('.wizard_heading').text('Выполняется "Ресурсный протокол"');
+    jQuery('.wizard_percent').text('60%');
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 560){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_v3').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'scale(1.5)',
+            zIndex: '1000',
+            background: '#fff url(/wp-content/themes/bcwish/img/edinenie_s_tvorcom.png) center center/110% no-repeat',
+        });
+        if (count_animation > 1 && count_animation <= 20) {
+          jQuery('.zone_v1').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 20 && count_animation <= 40) {
+          jQuery('.zone_v1').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d2').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 40 && count_animation <= 60) {
+          jQuery('.zone_d2').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d2_').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 60 && count_animation <= 80) {
+          jQuery('.zone_d2_').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d3').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 80 && count_animation <= 100) {
+          jQuery('.zone_d3').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d4').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 100 && count_animation <= 120) {
+          jQuery('.zone_d4').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d5').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 120 && count_animation <= 140) {
+          jQuery('.zone_d5').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d6').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 140 && count_animation <= 160) {
+          jQuery('.zone_d6').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_v1').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 160 && count_animation <= 180) {
+          jQuery('.zone_v1').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d2').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v-, .zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5, .zone_v0, .zone_hidden_1, .zone_hidden_2, .zone_hidden_3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.zone_hidden_1, .zone_hidden_2, .zone_hidden_3').addClass('hidden');
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'drenag_2');
+          endNow()
+        } else {
+          // drenag_2();
+          console.log('continue');
+        }
+      }
+    }, 250);
+  }
+
   v5_14 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('90%');
+    jQuery('.wizard_percent').text('93%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -200,7 +420,7 @@ jQuery(function() {
 
   v5_13 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('80%');
+    jQuery('.wizard_percent').text('87%');
     jQuery('.ring').css('transform', 'rotate(0deg)');
     jQuery('.zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -553,7 +773,7 @@ jQuery(function() {
 
   v5_11_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('84%');
+    jQuery('.wizard_percent').text('72%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -607,7 +827,7 @@ jQuery(function() {
 
   v5_11_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('81%');
+    jQuery('.wizard_percent').text('69%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -661,7 +881,7 @@ jQuery(function() {
 
   v5_11_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('66%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -715,7 +935,7 @@ jQuery(function() {
 
   v5_11_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('75%');
+    jQuery('.wizard_percent').text('63%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -769,7 +989,7 @@ jQuery(function() {
 
   v5_10_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('84%');
+    jQuery('.wizard_percent').text('60%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -787,7 +1007,7 @@ jQuery(function() {
           };
           reloadTime += 1;
           cur_animation_val += 1.5;
-          jQuery('.zone_v1, .zone_v5, .zone_d5, .zone_d6, .zone_v-').css({
+          jQuery('.zone_v1, .zone_v5, .zone_v-').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
             color: 'transparent',
@@ -803,7 +1023,7 @@ jQuery(function() {
         } else {
           clearInterval(phaseSeven_one);
           count_animation = 1;
-          jQuery('.zone_v1, .zone_v5, .zone_d5, .zone_d6, .zone_v-').css({
+          jQuery('.zone_v1, .zone_v5, .zone_v-').css({
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
@@ -823,7 +1043,7 @@ jQuery(function() {
 
   v5_10_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('81%');
+    jQuery('.wizard_percent').text('57%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -841,7 +1061,7 @@ jQuery(function() {
           };
           reloadTime += 1;
           cur_animation_val += 1.5;
-          jQuery('.zone_v1, .zone_v5, .zone_d5, .zone_d6, .zone_v-').css({
+          jQuery('.zone_v1, .zone_v5, .zone_v-').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
             color: 'transparent',
@@ -857,7 +1077,7 @@ jQuery(function() {
         } else {
           clearInterval(phaseSeven_one);
           count_animation = 1;
-          jQuery('.zone_v1, .zone_v5, .zone_d5, .zone_d6, .zone_v-').css({
+          jQuery('.zone_v1, .zone_v5, .zone_v-').css({
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
@@ -877,7 +1097,7 @@ jQuery(function() {
 
   v5_10_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('54%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -895,7 +1115,7 @@ jQuery(function() {
           };
           reloadTime += 1;
           cur_animation_val += 1.5;
-          jQuery('.zone_v1, .zone_v5, .zone_d5, .zone_d6, .zone_v-').css({
+          jQuery('.zone_v1, .zone_v5, .zone_v-').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
             transform: 'rotate('+cur_animation_val+'deg) scale(1.5)',
             color: 'transparent',
@@ -911,7 +1131,7 @@ jQuery(function() {
         } else {
           clearInterval(phaseSeven_one);
           count_animation = 1;
-          jQuery('.zone_v1, .zone_v5, .zone_d5, .zone_d6, .zone_v-').css({
+          jQuery('.zone_v1, .zone_v5, .zone_v-').css({
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
@@ -931,7 +1151,7 @@ jQuery(function() {
 
   v5_10_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('75%');
+    jQuery('.wizard_percent').text('51%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -949,7 +1169,7 @@ jQuery(function() {
           };
           reloadTime += 1;
           cur_animation_val += 1.5;
-          jQuery('.zone_v1, .zone_v5, .zone_d5, .zone_d6, .zone_v-').css({
+          jQuery('.zone_v1, .zone_v5, .zone_v-').css({
             background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
             transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
             color: 'transparent',
@@ -965,7 +1185,7 @@ jQuery(function() {
         } else {
           clearInterval(phaseSeven_one);
           count_animation = 1;
-          jQuery('.zone_v1, .zone_v5, .zone_d5, .zone_d6, .zone_v-').css({
+          jQuery('.zone_v1, .zone_v5, .zone_v-').css({
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
@@ -985,7 +1205,7 @@ jQuery(function() {
 
   v5_9 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('48%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1087,7 +1307,7 @@ jQuery(function() {
   }
   v5_8 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('42%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1189,7 +1409,7 @@ jQuery(function() {
   }
   v5_7 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('36%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1291,7 +1511,7 @@ jQuery(function() {
   }
   v5_6 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('30%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1394,7 +1614,7 @@ jQuery(function() {
 
   v5_5 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('24%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1496,7 +1716,7 @@ jQuery(function() {
   }
   v5_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('18%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1598,7 +1818,7 @@ jQuery(function() {
   }
   v5_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('12%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1700,7 +1920,7 @@ jQuery(function() {
   }
   v5_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 5 — V 2"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('6%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;

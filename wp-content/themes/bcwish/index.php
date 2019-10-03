@@ -290,6 +290,15 @@
               <div id="faq" class="col-md-12 wizard_prots hidden">
                 <ul id="faq-list" class="wow fadeInUp">
                   <li>
+                    <a data-toggle="collapse" href="#faq8" class="collapsed">(УНИВЕРСАЛЬНЫЙ) Универсальный протокол <i class="ion-android-remove"></i></a>
+                    <div id="faq8" class="collapse" data-parent="#faq-list">
+                      <p>
+                        «...»
+                      </p>
+                      <p><button class="btn wizard_blue wizard_protocol wizard_protocol_9 wizard_prot_9 wow bounceInUp" data-wow-duration="1.4s">Активировать УНИВЕРСАЛЬНЫЙ</button></p>
+                    </div>
+                  </li>
+                  <li>
                     <a data-toggle="collapse" class="collapsed" href="#faq1">(V1) Краниальный протокол <i class="ion-android-remove"></i></a>
                     <div id="faq1" class="collapse" data-parent="#faq-list">
                       <p>

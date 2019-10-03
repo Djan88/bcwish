@@ -125,6 +125,8 @@ jQuery(function() {
       cur_protocol = 'solis';
     } else if (jQuery(this).hasClass('wizard_protocol_8')) {
       cur_protocol = 'visceral';
+    } else if (jQuery(this).hasClass('wizard_protocol_9')) {
+      cur_protocol = 'universal';
     }
     localStorage.setItem('cur_protocol', cur_protocol);
 
