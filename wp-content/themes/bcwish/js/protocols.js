@@ -162,7 +162,7 @@ jQuery(function() {
     rotateVal = 0;
     count_animation = 1;
     phaseOne = setInterval(function(){
-      if (count_animation <= 560){
+      if (count_animation <= 600){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -178,7 +178,7 @@ jQuery(function() {
             zIndex: '1000',
             background: '#fff url(/wp-content/themes/bcwish/img/edinenie_s_tvorcom.png) center center/110% no-repeat',
         });
-        if (count_animation > 1 && count_animation <= 20) {
+        if (count_animation > 0 && count_animation <= 20) {
           jQuery('.zone_v1').css({
               color: 'transparent',
               borderColor: 'transparent',
@@ -474,20 +474,267 @@ jQuery(function() {
               zIndex: '1000',
               background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
           });
+        } else if (count_animation > 320 && count_animation <= 340) {
+          jQuery('.zone_d2').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d2_').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 340 && count_animation <= 360) {
+          jQuery('.zone_d2_').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d3').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 360 && count_animation <= 380) {
+          jQuery('.zone_d3').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d4').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 380 && count_animation <= 400) {
+          jQuery('.zone_d4').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d5').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 400 && count_animation <= 420) {
+          jQuery('.zone_d5').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d6').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 420 && count_animation <= 440) {
+          jQuery('.zone_d6').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_v1').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 440 && count_animation <= 460) {
+          jQuery('.zone_v1').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d2').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 460 && count_animation <= 480) {
+          jQuery('.zone_d2').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d2_').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 480 && count_animation <= 500) {
+          jQuery('.zone_d2_').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d3').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 500 && count_animation <= 520) {
+          jQuery('.zone_d3').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d4').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 520 && count_animation <= 540) {
+          jQuery('.zone_d4').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d5').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 540 && count_animation <= 560) {
+          jQuery('.zone_d5').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_d6').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 560 && count_animation <= 580) {
+          jQuery('.zone_d6').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+          jQuery('.zone_v1').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'scale(1.5)',
+              zIndex: '1000',
+              background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/110% no-repeat',
+          });
+        } else if (count_animation > 580 && count_animation <= 600) {
+          jQuery('.zone_v1').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
         }
         count_animation += 1;
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_v-, .zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5, .zone_v0, .zone_hidden_1, .zone_hidden_2, .zone_hidden_3').css({
-            background: '#fff',
-            color: '#413e66',
-            borderColor: '#413e66',
-            transform: 'scale(1)',
-            paddingTop: '2px',
-            zIndex: '2'
-        });
-        jQuery('.zone_hidden_1, .zone_hidden_2, .zone_hidden_3').addClass('hidden');
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
         sound.stop();
