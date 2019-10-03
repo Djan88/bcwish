@@ -175,7 +175,8 @@ jQuery(function() {
             borderWidth: '1px',
             paddingTop: '4px',
             transform: 'scale(1.5)',
-            zIndex: '1000'
+            zIndex: '1000',
+            background: 'transparent'
         });
 
         if (count_animation > 4 && count_animation <= 8) {
@@ -245,6 +246,7 @@ jQuery(function() {
             background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
           });
         }
+        count_animation += 1;
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
