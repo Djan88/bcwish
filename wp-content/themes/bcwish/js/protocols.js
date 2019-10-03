@@ -998,7 +998,7 @@ jQuery(function() {
               paddingTop: '2px',
               zIndex: '2'
           });
-          jQuery('.zone_v4_').css({
+          jQuery('.zone_v4').css({
               color: 'transparent',
               borderColor: 'transparent',
               opacity: 0.8,
@@ -1093,7 +1093,7 @@ jQuery(function() {
               paddingTop: '2px',
               zIndex: '2'
           });
-          jQuery('.zone_v4_').css({
+          jQuery('.zone_v4').css({
               color: 'transparent',
               borderColor: 'transparent',
               opacity: 0.8,
@@ -2443,7 +2443,7 @@ jQuery(function() {
               paddingTop: '2px',
               zIndex: '2'
           });
-          jQuery('.zone_v4_').css({
+          jQuery('.zone_v4').css({
               color: 'transparent',
               borderColor: 'transparent',
               opacity: 0.8,
@@ -2538,7 +2538,7 @@ jQuery(function() {
               paddingTop: '2px',
               zIndex: '2'
           });
-          jQuery('.zone_v4_').css({
+          jQuery('.zone_v4').css({
               color: 'transparent',
               borderColor: 'transparent',
               opacity: 0.8,
@@ -2633,7 +2633,7 @@ jQuery(function() {
               paddingTop: '2px',
               zIndex: '2'
           });
-          jQuery('.zone_v4_').css({
+          jQuery('.zone_v4').css({
               color: 'transparent',
               borderColor: 'transparent',
               opacity: 0.8,
@@ -2728,7 +2728,7 @@ jQuery(function() {
               paddingTop: '2px',
               zIndex: '2'
           });
-          jQuery('.zone_v4_').css({
+          jQuery('.zone_v4').css({
               color: 'transparent',
               borderColor: 'transparent',
               opacity: 0.8,
@@ -4078,7 +4078,7 @@ jQuery(function() {
               paddingTop: '2px',
               zIndex: '2'
           });
-          jQuery('.zone_v4_').css({
+          jQuery('.zone_v4').css({
               color: 'transparent',
               borderColor: 'transparent',
               opacity: 0.8,
@@ -4173,7 +4173,7 @@ jQuery(function() {
               paddingTop: '2px',
               zIndex: '2'
           });
-          jQuery('.zone_v4_').css({
+          jQuery('.zone_v4').css({
               color: 'transparent',
               borderColor: 'transparent',
               opacity: 0.8,
@@ -4268,7 +4268,7 @@ jQuery(function() {
               paddingTop: '2px',
               zIndex: '2'
           });
-          jQuery('.zone_v4_').css({
+          jQuery('.zone_v4').css({
               color: 'transparent',
               borderColor: 'transparent',
               opacity: 0.8,
@@ -4363,7 +4363,7 @@ jQuery(function() {
               paddingTop: '2px',
               zIndex: '2'
           });
-          jQuery('.zone_v4_').css({
+          jQuery('.zone_v4').css({
               color: 'transparent',
               borderColor: 'transparent',
               opacity: 0.8,
@@ -5713,7 +5713,7 @@ jQuery(function() {
               paddingTop: '2px',
               zIndex: '2'
           });
-          jQuery('.zone_v4_').css({
+          jQuery('.zone_v4').css({
               color: 'transparent',
               borderColor: 'transparent',
               opacity: 0.8,
@@ -5808,7 +5808,7 @@ jQuery(function() {
               paddingTop: '2px',
               zIndex: '2'
           });
-          jQuery('.zone_v4_').css({
+          jQuery('.zone_v4').css({
               color: 'transparent',
               borderColor: 'transparent',
               opacity: 0.8,
