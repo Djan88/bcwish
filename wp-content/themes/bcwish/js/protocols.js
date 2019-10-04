@@ -8524,23 +8524,19 @@ jQuery(function() {
           });
         }
 
-        if (count_animation > 24 && count_animation <= 120) {
+        if (count_animation > 24 && count_animation <= 160) {
           jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
           });
-        } else if (count_animation > 120 && count_animation <= 220) {
-          jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5').css({
-            background: '#fff url(/wp-content/themes/bcwish/img/vaterfall.png) center center/100% no-repeat'
-          });
-        } else if (count_animation > 220 && count_animation <= 440) {
+        } else if (count_animation > 160 && count_animation <= 320) {
           jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat',
           });
-        } else if (count_animation > 440 && count_animation <= 560) {
+        } else if (count_animation > 320 && count_animation <= 480) {
           jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'
           });
-        } else if (count_animation > 560) {
+        } else if (count_animation > 480) {
           jQuery('.zone_v1, .zone_v2, .zone_v3, .zone_v4, .zone_v5').css({
             background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
           });
