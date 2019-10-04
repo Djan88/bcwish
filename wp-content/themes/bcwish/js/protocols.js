@@ -150,7 +150,7 @@ jQuery(function() {
   });
   drenag_12 = function(){
     jQuery('.wizard_heading').text('Выполняется "Ресурсный протокол"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('92%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -743,7 +743,7 @@ jQuery(function() {
 
   drenag_11 = function(){
     jQuery('.wizard_heading').text('Выполняется "Ресурсный протокол"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('80%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -1181,7 +1181,7 @@ jQuery(function() {
 
   drenag_10 = function(){
     jQuery('.wizard_heading').text('Выполняется "Ресурсный протокол"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('72%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -1779,7 +1779,7 @@ jQuery(function() {
   }
   drenag_9 = function(){
     jQuery('.wizard_heading').text('Выполняется "Ресурсный протокол"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('64%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -2378,7 +2378,7 @@ jQuery(function() {
 
   drenag_8 = function(){
     jQuery('.wizard_heading').text('Выполняется "Ресурсный протокол"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('56%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -2816,7 +2816,7 @@ jQuery(function() {
 
   drenag_7 = function(){
     jQuery('.wizard_heading').text('Выполняется "Ресурсный протокол"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('48%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -3414,7 +3414,7 @@ jQuery(function() {
   }
   drenag_6 = function(){
     jQuery('.wizard_heading').text('Выполняется "Ресурсный протокол"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('40%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -4013,7 +4013,7 @@ jQuery(function() {
 
   drenag_5 = function(){
     jQuery('.wizard_heading').text('Выполняется "Ресурсный протокол"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('32%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -4451,7 +4451,7 @@ jQuery(function() {
 
   drenag_4 = function(){
     jQuery('.wizard_heading').text('Выполняется "Ресурсный протокол"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('24%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -5049,7 +5049,7 @@ jQuery(function() {
   }
   drenag_3 = function(){
     jQuery('.wizard_heading').text('Выполняется "Ресурсный протокол"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('16%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -5648,7 +5648,7 @@ jQuery(function() {
 
   drenag_2 = function(){
     jQuery('.wizard_heading').text('Выполняется "Ресурсный протокол"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('8%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -6086,7 +6086,7 @@ jQuery(function() {
 
   drenag = function(){
     jQuery('.wizard_heading').text('Выполняется "Ресурсный протокол"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('0%');
     jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
