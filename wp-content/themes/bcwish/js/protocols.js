@@ -152,7 +152,7 @@ jQuery(function() {
   universal_9 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
     jQuery('.wizard_percent').text('93%');
-    jQuery('.ring').addClass('hidden');
+    jQuery('.ring').removeClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -417,6 +417,8 @@ jQuery(function() {
   universal_7 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
     jQuery('.wizard_percent').text('0%');
+    jQuery('.ring').removeClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -746,6 +748,8 @@ jQuery(function() {
   universal_5 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
     jQuery('.wizard_percent').text('0%');
+    jQuery('.ring').removeClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1075,6 +1079,8 @@ jQuery(function() {
   universal_3 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
     jQuery('.wizard_percent').text('0%');
+    jQuery('.ring').removeClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
