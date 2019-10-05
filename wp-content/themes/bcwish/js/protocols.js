@@ -8436,6 +8436,192 @@ jQuery(function() {
     }, 250);
   }  
 
+  solis_8 = function(){
+    jQuery('.wizard_heading').text('Выполняется "Висцеральный протокол"');
+    jQuery('.wizard_percent').text('90%');
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_v0, .zone_v-').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/110% no-repeat',
+            zIndex: '1000'
+        });
+        jQuery('.zone_v-').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/x.png) center center/120% no-repeat'
+        });
+        
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v0, .zone_v-').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        onEnd();
+      }
+    }, 250);
+  }
+
+  solis_7 = function(){
+    jQuery('.wizard_heading').text('Выполняется "Висцеральный протокол"');
+    jQuery('.wizard_percent').text('80%');
+    jQuery('.ring').css('transform', 'rotate(0deg)');
+    jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+// I
+    phaseOne = setInterval(function(){
+      if (count_animation <= 88){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_v5, .zone_d2, .zone_d5, .zone_d6, .zone_s2_').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'rotate(70deg) scale(1.5)',
+            background: 'url(/wp-content/themes/bcwish/img/triangle_air.png) center center/88% no-repeat',
+            zIndex: '1000'
+        });
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v5, .zone_d2, .zone_d5, .zone_d6, .zone_s2_').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+// II
+        jQuery('.wizard_percent').text('85%');
+        phaseOne = setInterval(function(){
+          if (count_animation <= 88){
+            jQuery('.zone_v1, .zone_s2, .zone_s4, .zone_v5, .zone_s5, .zone_s6').css({
+                color: 'transparent',
+                borderColor: 'transparent',
+                opacity: 0.8,
+                borderWidth: '1px',
+                paddingTop: '4px',
+                transform: 'rotate(20deg) scale(1.5)',
+                background: 'url(/wp-content/themes/bcwish/img/triangle_fire.png) center center/88% no-repeat',
+                zIndex: '1000'
+            });
+            count_animation += 1;
+          } else {
+            clearInterval(phaseOne);
+            count_animation = 1;
+            jQuery('.zone_v1, .zone_s2, .zone_s4, .zone_v5, .zone_s5, .zone_s6').css({
+                background: '#fff',
+                color: '#413e66',
+                borderColor: '#413e66',
+                transform: 'scale(1)',
+                paddingTop: '2px',
+                zIndex: '2'
+            });
+// III
+            jQuery('.wizard_percent').text('87%');
+            phaseOne = setInterval(function(){
+              if (count_animation <= 88){
+                jQuery('.zone_s3, .zone_v4').css({
+                    color: 'transparent',
+                    borderColor: 'transparent',
+                    opacity: 0.8,
+                    borderWidth: '1px',
+                    paddingTop: '4px',
+                    transform: 'rotate(50deg) scale(1.5)',
+                    background: 'url(/wp-content/themes/bcwish/img/triangle_water.png) center center/88% no-repeat',
+                    zIndex: '1000'
+                });
+                count_animation += 1;
+              } else {
+                clearInterval(phaseOne);
+                count_animation = 1;
+                jQuery('.zone_s3, .zone_v4').css({
+                    background: '#fff',
+                    color: '#413e66',
+                    borderColor: '#413e66',
+                    transform: 'scale(1)',
+                    paddingTop: '2px',
+                    zIndex: '2'
+                });
+// IV
+                jQuery('.wizard_percent').text('89%');
+                phaseOne = setInterval(function(){
+                  if (count_animation <= 88){
+                    jQuery('.zone_d4, .zone_d3, .zone_d2_, .zone_v2, .zone_v3').css({
+                        color: 'transparent',
+                        borderColor: 'transparent',
+                        opacity: 0.8,
+                        borderWidth: '1px',
+                        paddingTop: '4px',
+                        transform: 'rotate(100deg) scale(1.5)',
+                        background: 'url(/wp-content/themes/bcwish/img/triangle_earth.png) center center/88% no-repeat',
+                        zIndex: '1000'
+                    });
+                    count_animation += 1;
+                  } else {
+                    clearInterval(phaseOne);
+                    count_animation = 1;
+                    jQuery('.zone_d4, .zone_d3, .zone_d2_, .zone_v2, .zone_v3').css({
+                        background: '#fff',
+                        color: '#413e66',
+                        borderColor: '#413e66',
+                        transform: 'scale(1)',
+                        paddingTop: '2px',
+                        zIndex: '2'
+                    });
+                    if (pausedStatus == true) {
+                      localStorage.setItem('paused', 'solis_8');
+                      endNow()
+                    } else {
+                      solis_8();
+                    } 
+                  }
+                }, 250);
+              }
+            }, 250);
+          }
+        }, 250);
+      }
+    }, 250);
+  }
+
   solis_6 = function(){
     jQuery('.wizard_main_screen').addClass('wizard_main_screen_solis');
     jQuery('.wizard_heading').text('Выполняется "Solis"');
