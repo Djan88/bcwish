@@ -8470,7 +8470,7 @@ jQuery(function() {
         jQuery('.zone_v3').css({
             background: '#fff url(/wp-content/themes/bcwish/img/drenag.png) center center/100% no-repeat',
         });
-        jQuery('.zone_v-, .zone_v3, .zone_v0').css({
+        jQuery('.zone_v0').css({
             background: 'transparent'
         });
 
