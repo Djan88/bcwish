@@ -456,16 +456,6 @@ jQuery(function() {
             background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
           });
         }
-        jQuery('.zone_cl').css({
-            color: 'transparent',
-            borderColor: 'transparent',
-            opacity: 0.8,
-            borderWidth: '1px',
-            paddingTop: '4px',
-            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
-            transform: 'rotate(-'+rotateVal+'deg) scale(1.5)',
-            zIndex: '1000'
-        });
         jQuery('.zone_ring')
           .removeClass('hidden')
           .css({
@@ -507,7 +497,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1, .zone_cl').css({
+        jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').css({
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
@@ -787,16 +777,6 @@ jQuery(function() {
             background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
           });
         }
-        jQuery('.zone_cl').css({
-            color: 'transparent',
-            borderColor: 'transparent',
-            opacity: 0.8,
-            borderWidth: '1px',
-            paddingTop: '4px',
-            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
-            transform: 'rotate(-'+rotateVal+'deg) scale(1.5)',
-            zIndex: '1000'
-        });
         jQuery('.zone_ring')
           .removeClass('hidden')
           .css({
@@ -838,7 +818,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6, .zone_cl').css({
+        jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').css({
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
@@ -1118,16 +1098,6 @@ jQuery(function() {
             background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
           });
         }
-        jQuery('.zone_cl').css({
-            color: 'transparent',
-            borderColor: 'transparent',
-            opacity: 0.8,
-            borderWidth: '1px',
-            paddingTop: '4px',
-            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
-            transform: 'rotate(-'+rotateVal+'deg) scale(1.5)',
-            zIndex: '1000'
-        });
         jQuery('.zone_ring')
           .removeClass('hidden')
           .css({
@@ -1169,7 +1139,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_s3, .zone_v4, .zone_cl').css({
+        jQuery('.zone_s3, .zone_v4').css({
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
