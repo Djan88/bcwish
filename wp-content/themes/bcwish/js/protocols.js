@@ -151,8 +151,8 @@ jQuery(function() {
 
   universal_9 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('93%');
-    jQuery('.ring').removeClass('hidden');
+    jQuery('.wizard_percent').text('90%');
+    jQuery('.ring').addClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -254,7 +254,7 @@ jQuery(function() {
 
   universal_8_3 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('81%');
+    jQuery('.wizard_percent').text('80%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -308,7 +308,7 @@ jQuery(function() {
 
   universal_8_2 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('76%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -362,7 +362,7 @@ jQuery(function() {
 
   universal_8_1 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('75%');
+    jQuery('.wizard_percent').text('72%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -416,7 +416,7 @@ jQuery(function() {
 
   universal_7 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('66%');
     jQuery('.ring').removeClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -531,7 +531,7 @@ jQuery(function() {
 
   universal_6_4 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('84%');
+    jQuery('.wizard_percent').text('62%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -585,7 +585,7 @@ jQuery(function() {
 
   universal_6_3 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('81%');
+    jQuery('.wizard_percent').text('58%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -639,7 +639,7 @@ jQuery(function() {
 
   universal_6_2 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('54%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -693,7 +693,7 @@ jQuery(function() {
 
   universal_6_1 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('75%');
+    jQuery('.wizard_percent').text('50%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -747,7 +747,7 @@ jQuery(function() {
 
   universal_5 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('44%');
     jQuery('.ring').removeClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -862,7 +862,7 @@ jQuery(function() {
 
   universal_4_4 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('84%');
+    jQuery('.wizard_percent').text('40%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -916,7 +916,7 @@ jQuery(function() {
 
   universal_4_3 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('81%');
+    jQuery('.wizard_percent').text('36%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -970,7 +970,7 @@ jQuery(function() {
 
   universal_4_2 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('32%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1024,7 +1024,7 @@ jQuery(function() {
 
   universal_4_1 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('75%');
+    jQuery('.wizard_percent').text('28%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1078,7 +1078,7 @@ jQuery(function() {
 
   universal_3 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('22%');
     jQuery('.ring').removeClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     reloadTime = 0;
@@ -1193,7 +1193,7 @@ jQuery(function() {
 
   universal_2_4 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('84%');
+    jQuery('.wizard_percent').text('18%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1247,7 +1247,7 @@ jQuery(function() {
 
   universal_2_3 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('81%');
+    jQuery('.wizard_percent').text('14%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1301,7 +1301,7 @@ jQuery(function() {
 
   universal_2_2 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('78%');
+    jQuery('.wizard_percent').text('10%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1355,7 +1355,7 @@ jQuery(function() {
 
   universal_2_1 = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
-    jQuery('.wizard_percent').text('75%');
+    jQuery('.wizard_percent').text('6%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
