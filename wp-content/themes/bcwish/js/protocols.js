@@ -8697,6 +8697,15 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
+        jQuery('.zone_hidden_1, .zone_hidden_2, .zone_hidden_3').addClass('hidden');
+        jQuery('.zone_v0').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
         jQuery('.zone_v-, .zone_v3, .zone_v0, .zone_hidden_1, .zone_hidden_2, .zone_hidden_3').css({
             background: '#fff',
             color: '#413e66',
