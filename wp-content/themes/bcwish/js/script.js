@@ -70,7 +70,7 @@ jQuery(function() {
   });
 
 
-  jQuery('.mobile-nav-toggle, .mobile-nav a, .photo_upload, .wizard_crop, .crop_photo, .btn_diag, .btn_prot_choice, .wizard_clean_graf, .btn_prot_choice_fromDiag, #faq-list li, .wizard_protocol, .wizard_play, .wizard_stop, .cancel, .confirm, .wizard_continue').on('click', function(event) {
+  jQuery('.mobile-nav-toggle, .mobile-nav a, .photo_upload, .wizard_crop, .crop_photo, .btn_diag, .btn_prot_choice, .wizard_clean_graf, .btn_prot_choice_fromDiag, #faq-list li, .wizard_protocol, .wizard_play, .wizard_stop, .cancel, .confirm, .wizard_continue, .confirm').on('click', function(event) {
     nextSound.play();
   });
   jQuery('.wizard_to_protList, .wizard_to_what_way, .wizard_to_start').on('click', function(event) {
@@ -156,11 +156,15 @@ jQuery(function() {
 
    //Назад. К списку протоколов
   jQuery('.wizard_to_protList').on('click', function(event) {
-    jQuery('.wizard_main_screen').addClass('hidden');
-    jQuery('.wizard_to_protList, .wizard_play').addClass('hidden');
-    jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_operation').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_heading').text('Выберите протокол');
+    if (jQuery(this).hasClass('prot_in_progress')) {
+      
+    } else {
+      jQuery('.wizard_main_screen').addClass('hidden');
+      jQuery('.wizard_to_protList, .wizard_play').addClass('hidden');
+      jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
+      jQuery('.wizard_operation').fadeIn(500).removeClass('hidden');
+      jQuery('.wizard_heading').text('Выберите протокол');
+    }
   });
 
   jQuery('.wizard_clean_graf').on('click', function(event) {

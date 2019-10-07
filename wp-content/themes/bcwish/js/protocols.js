@@ -17308,6 +17308,7 @@ jQuery(function() {
           jQuery('.status_title').text('Висцеральный протокол');
         }
       }
+      jQuery('.wizard_to_protList').addClass('prot_in_progress');
       localStorage.removeItem('paused');
       localStorage.removeItem('pausedPhoto');
       jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
