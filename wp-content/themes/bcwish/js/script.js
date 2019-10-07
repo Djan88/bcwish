@@ -8,6 +8,12 @@ jQuery(function() {
           loop: false,
           buffer: true
       }),
+      prevSound = new Howl({
+          urls: ['/sounds/Cancel_2.mp3'],
+          autoplay: false,
+          loop: false,
+          buffer: true
+      }),
       supportsStorage = function(){
           try {
               return 'localStorage' in window && window['localStorage'] !== null;
@@ -64,8 +70,11 @@ jQuery(function() {
   });
 
 
-  jQuery('.mobile-nav-toggle, .mobile-nav a').on('click', function(event) {
+  jQuery('.mobile-nav-toggle, .mobile-nav a, .photo_upload, .wizard_crop, .crop_photo, .btn_diag, .btn_prot_choice, .wizard_clean_graf, .btn_prot_choice_fromDiag, #faq-list li, .wizard_protocol, .wizard_play').on('click', function(event) {
     nextSound.play();
+  });
+  jQuery('.wizard_to_protList, .wizard_to_what_way, .wizard_to_start').on('click', function(event) {
+    prevSound.play();
   });
 
 
