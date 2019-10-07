@@ -3,7 +3,7 @@ jQuery(function() {
       cur_protocol,
       returned_img,
       nextSound = new Howl({
-          urls: ['/sounds/button.ogg', '/sounds/button.mp3'],
+          urls: ['/sounds/button.mp3'],
           autoplay: false,
           loop: false,
           buffer: true
@@ -63,12 +63,12 @@ jQuery(function() {
   // НАЧАТЬ
   jQuery('.wm_init').on('click', function(event) {
     jQuery('.wm_start').removeClass('unopacity');
-    sound_button.play();
+    nextSound.play();
   });
 
 
   jQuery('.mobile-nav-toggle, .mobile-nav a').on('click', function(event) {
-    sound_button.play();
+    nextSound.play();
   });
 
 
