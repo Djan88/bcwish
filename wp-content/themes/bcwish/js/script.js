@@ -8,6 +8,9 @@ jQuery(function() {
           loop: false,
           buffer: true
       }),
+      sound_button = new buzz.sound( "/sounds/button", {
+          formats: [ "ogg", "mp3" ]
+      }),
       supportsStorage = function(){
           try {
               return 'localStorage' in window && window['localStorage'] !== null;
@@ -60,12 +63,12 @@ jQuery(function() {
   // НАЧАТЬ
   jQuery('.wm_init').on('click', function(event) {
     jQuery('.wm_start').removeClass('unopacity');
-    nextSound.play();
+    sound_button.play();
   });
 
 
   jQuery('.mobile-nav-toggle, .mobile-nav a').on('click', function(event) {
-    nextSound.play();
+    sound_button.play();
   });
 
 
