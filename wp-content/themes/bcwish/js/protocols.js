@@ -35,7 +35,13 @@ jQuery(function() {
           buffer: true
       }),
       reloadSound = new Howl({
-          urls: ['/sounds/reload.ogg', '/sounds/reload.mp3'],
+          urls: ['/sounds/success.mp3'],
+          autoplay: false,
+          loop: false,
+          buffer: true
+      }),
+      alertSound = new Howl({
+          urls: ['/sounds/alert.mp3'],
           autoplay: false,
           loop: false,
           buffer: true
@@ -61,6 +67,7 @@ jQuery(function() {
     cur_animation_val = 0;
     rotateVal = 0;
     count_animation = 1;
+    alertSound.play();
 
     swal({
       title: "Приостановлено пользователем",
@@ -98,6 +105,7 @@ jQuery(function() {
     pausedStatus = false;
 
     // protocolName = localStor
+    alertSound.play();
     swal({
       title: "Протокол завершен",
       text: "Что делать дальше?",
@@ -17250,10 +17258,11 @@ jQuery(function() {
 
   jQuery('.wizard_play').on('click', function(event) {
     checkPoints();
-    // if(pointsStatus == false){
-    //   swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото все зоны.", "info");
-    //   pointsStatus = true;
-    // } else {
+    if(pointsStatus == false){
+      swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото все зоны.", "info");
+      alertSound.play();
+      pointsStatus = true;
+    } else {
       if (pausedStatus == true) {
         // jQuery('.wizard_returned').attr('src', localStorage.getItem('pausedPhoto'));
         // console.log(localStorage.getItem('pausedPhoto'));
@@ -17298,7 +17307,7 @@ jQuery(function() {
           mmt();
           jQuery('.status_title').text('Висцеральный протокол');
         }
-      // }
+      }
       localStorage.removeItem('paused');
       localStorage.removeItem('pausedPhoto');
       jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
