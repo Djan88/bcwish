@@ -2,6 +2,12 @@ jQuery(function() {
   var croppedImg,
       cur_protocol,
       returned_img,
+      nextSound = new Howl({
+          urls: ['/sounds/Button_5.ogg', '/sounds/Button_5.mp3'],
+          autoplay: false,
+          loop: false,
+          buffer: true
+      }),
       supportsStorage = function(){
           try {
               return 'localStorage' in window && window['localStorage'] !== null;
@@ -54,6 +60,12 @@ jQuery(function() {
   // НАЧАТЬ
   jQuery('.wm_init').on('click', function(event) {
     jQuery('.wm_start').removeClass('unopacity');
+    nextSound.play();
+  });
+
+
+  jQuery('.mobile-nav-toggle, .mobile-nav a').on('click', function(event) {
+    nextSound.play();
   });
 
 
