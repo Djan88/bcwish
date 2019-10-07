@@ -3,7 +3,7 @@ jQuery(function() {
       cur_protocol,
       returned_img,
       nextSound = new Howl({
-          urls: ['/sounds/Button_5.ogg', '/sounds/Button_5.mp3'],
+          urls: ['/sounds/button.ogg', '/sounds/button.mp3'],
           autoplay: false,
           loop: false,
           buffer: true
