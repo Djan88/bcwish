@@ -35,13 +35,13 @@ jQuery(function() {
           buffer: true
       }),
       reloadSound = new Howl({
-          urls: ['/sounds/success.mp3'],
+          urls: ['/sounds/complete.mp3'],
           autoplay: false,
           loop: false,
           buffer: true
       }),
       alertSound = new Howl({
-          urls: ['/sounds/alert.mp3'],
+          urls: ['/sounds/success.mp3'],
           autoplay: false,
           loop: false,
           buffer: true
