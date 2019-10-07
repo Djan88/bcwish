@@ -3,13 +3,10 @@ jQuery(function() {
       cur_protocol,
       returned_img,
       nextSound = new Howl({
-          urls: ['/sounds/button.mp3'],
+          urls: ['/sounds/tap.mp3'],
           autoplay: false,
           loop: false,
           buffer: true
-      }),
-      sound_button = new buzz.sound( "/sounds/button", {
-          formats: [ "ogg", "mp3" ]
       }),
       supportsStorage = function(){
           try {
