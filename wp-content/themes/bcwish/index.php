@@ -77,7 +77,7 @@
 
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
-        <h1 class="text-light"><a href="/" class="scrollto"><span><span class="acent">W</span>IZARD<span class="acent">M</span>ACHINE</span></a></h1>
+        <h1 class="text-light"><a href="/" class="scrollto"><span><span class="acent">W</span>IZARD<span class="acent">D</span>UOS</span></a></h1>
         <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
@@ -1348,15 +1348,15 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="footer-info">
-                  <h3><span class="acent">W</span>izard<span class="acent">M</span>achine</h3>
-                  <p><b>"WizardMachine"</b> корректирует нарушения в тонком теле ума человека через фото. <br>Позитивные эффекты проявляются на уровне переживаний физического тела и событийных рядов. <br>Процессинг полностью автоматизирован и ведётся по специальным протокол</b> 2015 г.</p>
+                  <h3><span class="acent">W</span>izard<span class="acent">D</span>uos</h3>
+                  <p><b>"WizardDuos"</b> корректирует нарушения в тонком теле ума человека через фото. <br>Позитивные эффекты проявляются на уровне переживаний физического тела и событийных рядов. <br>Процессинг полностью автоматизирован и ведётся по специальным протоколам</b> 2016 г.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <h4>Новости школы</h4>
-            <p>Подпишитесь на новости <b>"Школы Доктора Чикурова"</b> и <b>"WizardMachine"</b> в любой из социальных сетей. Будет интересно, гарантируем!</p>
+            <p>Подпишитесь на новости <b>"Школы Доктора Чикурова"</b> и <b>"WizardDuos"</b> в любой из социальных сетей. Будет интересно, гарантируем!</p>
             <div class="social-links">
               <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
               <a target="_blank" href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
@@ -1368,7 +1368,7 @@
           <div class="col-sm-4">
             <div class="form">
               <h4>Есть вопрос? Есть ответ!</h4>
-              <p>У Вас остались вопросы? Нужна помощь в освоениии <b>"WizardMachine"</b>? Хотите сказать нам спасибо? Воспользуйтесь формой ниже. Вам оперативно ответят!<br><button class="form_triger" data-toggle="modal" data-target="#mail"><i class="fa fa-envelope"></i></button></p>
+              <p>У Вас остались вопросы? Нужна помощь в освоениии <b>"WizardDuos"</b>? Хотите сказать нам спасибо? Воспользуйтесь формой ниже. Вам оперативно ответят!<br><button class="form_triger" data-toggle="modal" data-target="#mail"><i class="fa fa-envelope"></i></button></p>
             </div>
           </div>
         </div>
