@@ -110,7 +110,7 @@
             <li><a href="#services">Инструкция</a></li>
           <?php } ?>
           <li>
-            <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
+            <?php //echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
           </li>
           <li><a class="mobile-nav-toggle mobile-nav-toggle_open" href="" data-toggle="modal" data-target="#mail">Обратная связь</a></li>
           <li><a target="_blank" href="https://www.youtube.com/watch?v=9XI9Z7kHmmY&t=95s">Обучающее видео</a></li>
