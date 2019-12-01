@@ -28,7 +28,7 @@ body {
 }
 
 a {
-  color: #1bb1dc;
+  color: #E84938;
   transition: 0.5s;
 }
 
@@ -267,6 +267,7 @@ h6 {
   transition: 0.5s;
   color: #fff;
   background: #E84938;
+  border: 1px solid #a7382c;
   color: #fff;
   position: relative;
   z-index: 2;
@@ -466,7 +467,7 @@ h6 {
   text-align: center;
   border-radius: 6px;
   margin: 10px 18px 0 0;
-  border: 2px solid #e8c1bc;
+  border: 2px solid #F1D8DE;
   width: 37px;
   height: 32px;
   padding: 0;
@@ -1524,7 +1525,7 @@ html.all
 }
 .toLogin, .toRegistration
 {
-  color: #1bb1dc;
+  color: #E84938;
   cursor: pointer;
 }
 .login_field
@@ -1554,7 +1555,7 @@ html.all
 }
 .form_heading
 {
-  color: #1bb1dc;
+  color: #E84938;
 }
 .login_form, .register_form
 {
@@ -1664,8 +1665,8 @@ html.all
 }
 .arrow_box path 
 {
-  stroke: #1bb1dc;
-  fill: #1bb1dc;
+  stroke: #E84938;
+  fill: #E84938;
 }
 .wizard_blue 
 {
@@ -1688,6 +1689,7 @@ html.all
 {
   background: #a7382c;
   border: 1px solid #a7382c;
+  color: #fff;
 }
 .jcrop-handle
 {
@@ -1740,7 +1742,7 @@ h3.wizard_heading
   line-height: 1;
   cursor: pointer;
   text-align: right;
-  border: 2px solid #d7edf3;
+  border: 2px solid #F1D8DE;
   border-radius: 6px;
   margin: 10px 18px 0 0;
   padding: 0;
