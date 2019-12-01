@@ -3,13 +3,13 @@ jQuery(function() {
       cur_protocol,
       returned_img,
       nextSound = new Howl({
-          urls: ['/sounds/tap.mp3'],
+          urls: ['/sounds/Cancel_2.mp3'],
           autoplay: false,
           loop: false,
           buffer: true
       }),
       prevSound = new Howl({
-          urls: ['/sounds/Cancel_2.mp3'],
+          urls: ['/sounds/button.mp3'],
           autoplay: false,
           loop: false,
           buffer: true
@@ -70,7 +70,7 @@ jQuery(function() {
   });
 
 
-  jQuery('.mobile-nav-toggle, .mobile-nav a, .photo_upload, .crop_photo, .btn_diag, .btn_prot_choice, .wizard_clean_graf, .btn_prot_choice_fromDiag, #faq-list li, .wizard_protocol, .wizard_play, .wizard_stop, body .cancel, body .confirm, .wizard_continue').on('click', function(event) {
+  jQuery('.mobile-nav-toggle, .mobile-nav a, .photo_upload, .crop_photo, .btn_diag, .btn_prot_choice, .wizard_clean_graf, .btn_prot_choice_fromDiag, #faq-list li a, .wizard_protocol, .wizard_play, .wizard_starter_alt, .wizard_stop, body .cancel, body .confirm, .wizard_continue, .mobile-nav select, .wpcf7-submit, .btn-get-started').on('click', function(event) {
     nextSound.play();
   });
   jQuery('.wizard_to_protList, .wizard_to_what_way, .wizard_to_start').on('click', function(event) {
@@ -127,7 +127,7 @@ jQuery(function() {
     jQuery('.ring').removeClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     jQuery('.wizard_to_what_way, .wizard_to_protDiag').addClass('hidden');
-    jQuery('.wizard_to_protList, .wizard_play').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.wizard_heading').text('Осталось перенести зоны на фото и можно начинать!');
     if (jQuery(this).hasClass('wizard_protocol_1')) {
@@ -160,7 +160,7 @@ jQuery(function() {
 
     } else {
       jQuery('.wizard_main_screen').addClass('hidden');
-      jQuery('.wizard_to_protList, .wizard_play').addClass('hidden');
+      jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').addClass('hidden');
       jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
       jQuery('.wizard_operation').fadeIn(500).removeClass('hidden');
       jQuery('.wizard_heading').text('Выберите протокол');

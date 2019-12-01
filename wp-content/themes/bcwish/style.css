@@ -1,5 +1,5 @@
 /*
-Theme Name: bcwish
+Theme Name: Полная версия
 Theme URI: http://www/chikurov.com
 Author: Ivan Avraamov
 Author URI: http://www/chikurov.com
@@ -413,6 +413,11 @@ h6 {
   color: #fff;
   padding: 10px 20px;
   font-weight: 500;
+  border: none;
+  font-size: 16px;
+  width: auto;
+  text-align: left;
+  margin-top: 0;
 }
 
 .mobile-nav a:hover,
@@ -1964,7 +1969,8 @@ h3.wizard_heading
 .marakata
 {
   cursor: pointer;
-  width: 72%;
+  width: 50%;
+  left: 22%!important;
   height: 100%!important;
 }
 .knife_rate
@@ -2025,7 +2031,7 @@ h3.wizard_heading
   color: #413e66;
   display: block;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 47%;
   width: 35px;
   height: 35px;
@@ -2115,7 +2121,7 @@ main#main
 .wm_start
 {
   transition: all 0.5s linear;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .wm_start.unopacity
 {
@@ -2158,6 +2164,111 @@ main#main
   display: block;
   margin: auto;
 }
+.mobile-nav select 
+{
+  margin-left: 12px;
+  background: transparent;
+  color: #1bb1dc;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.wpcf7-form-control.wpcf7-submit, .form_triger
+{
+  background: #1bb1dc;
+  border: 0;
+  border-radius: 3px;
+  padding: 8px 30px;
+  color: #fff;
+  transition: 0.3s;
+}
+main.kabinet
+{
+  padding-top: 80px;
+}
+.grecaptcha-badge 
+{
+  display: none!important;
+}
+.footer-newsletter 
+{
+  margin-top: 17px;
+}
+#footer .col-sm-4 h4
+{
+  padding: 0;
+  margin: 0;
+  margin-top: 65px;
+  margin-bottom: 10px;
+}
+#mail .close
+{
+  right: 10px;
+  top: 10px;
+  position: absolute;
+}
+#mail .modal-text
+{
+  padding: 20px;
+}
+#mail h4
+{
+  width: 100%;
+}
+button.form_triger
+{
+  margin-top: 10px;
+}
+button.wizard_play.header_btn
+{
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  top: -4px;
+  background: #d7edf3;
+  border-color: green;
+}
+button.wizard_play.header_btn:hover
+{
+  border-color: #1bb1dc;
+}
+button.wizard_play.header_btn .fa
+{
+  color: green!important;
+}
+button.wizard_starter_alt.btn.btn-success 
+{
+  margin: auto;
+  display: inherit!important;
+  margin-top: 20px;
+}
+.ring:after, .ring:before
+{
+  content: ' ';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: green;
+  font-size: 50px;
+  line-height: 1px;
+  position: absolute;
+}
+.ring.in_progress:after, .ring.in_progress:before
+{
+  background: transparent;
+}
+.ring:after
+{
+  right: -4px;
+  top: 48%;
+}
+.ring:before
+{
+  bottom: -4px;
+  left: 50%;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
@@ -2195,7 +2306,8 @@ main#main
 @media (max-width: 1199px) {
   .marakata
   {
-    width: 83%;
+    width: 50%;
+    left: 32%!important;
   }
   .zone_v0
   {

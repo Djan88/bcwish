@@ -46,6 +46,12 @@ jQuery(function() {
           loop: false,
           buffer: true
       }),
+      alert_altSound = new Howl({
+          urls: ['/sounds/alert_alt.mp3'],
+          autoplay: false,
+          loop: false,
+          buffer: true
+      }),
       supportsStorage = function(){
           try {
               return 'localStorage' in window && window['localStorage'] !== null;
@@ -68,6 +74,7 @@ jQuery(function() {
     rotateVal = 0;
     count_animation = 1;
     alertSound.play();
+    jQuery('.ring').removeClass('in_progress');
 
     swal({
       title: "Приостановлено пользователем",
@@ -85,12 +92,13 @@ jQuery(function() {
         jQuery(location).attr('href','/');
       } else {
         jQuery('.wizard_stop, .zone_ring').addClass('hidden');
-        jQuery('.wizard_play').fadeIn(500).removeClass('hidden');
+        jQuery('.wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
       }
     })
   }
 
   onEnd = function(){
+    jQuery('.ring').removeClass('in_progress');
     jQuery('.btn-to_endNow').addClass('hidden');
     jQuery('.btn_start').removeAttr('disabled');
     jQuery('.wizard_percent').text('100%');
@@ -149,7 +157,7 @@ jQuery(function() {
         knife_rate_class_dotted = '.knife_rate-'+knife;
         jQuery('.wizard_grafic').append('<div class='+knife_rate_class+'></div>');
         jQuery(knife_rate_class_dotted).addClass('knife_rate').css({
-            top: +knife+45+'px',
+            top: +knife+15+'px',
             width: knifeDateDiff*2+'px'
         });
         knifeDateOld = knifeDate;
@@ -17241,7 +17249,7 @@ jQuery(function() {
     jQuery('.wizard_returned').attr('src', returned_img);
     jQuery('.wm_start').removeClass('unopacity');
     jQuery('.wm_start').removeAttr('style');
-    jQuery('.wizard_to_protList, .wizard_play').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.wizard_heading').text('Перенесите зоны на фото и можно будет продолжить работу.');
   });
@@ -17253,14 +17261,17 @@ jQuery(function() {
         pointsStatus = false;
         console.log('status '+' '+jQuery(this).text()+' '+jQuery(this).css('top')+' '+pointsStatus);
       }
+      if (parseFloat(jQuery('.ring').css('left')) < 380) {
+        pointsStatus = false;
+      }
     });
   }
 
-  jQuery('.wizard_play').on('click', function(event) {
+  jQuery('.wizard_play, .wizard_starter_alt').on('click', function(event) {
     checkPoints();
     if(pointsStatus == false){
-      swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото все зоны.", "info");
-      alertSound.play();
+      swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото калибровочное кольцо и все зоны.", "info");
+      alert_altSound.play();
       pointsStatus = true;
     } else {
       if (pausedStatus == true) {
@@ -17270,11 +17281,11 @@ jQuery(function() {
         console.log(protocolfromMemory);
         protocolfromMemory();
         pausedStatus = false;
-        jQuery(this).addClass('hidden');
+        jQuery('.wizard_play, .wizard_starter_alt').addClass('hidden');
         jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
       } else {
         pausedStatus = false;
-        jQuery(this).addClass('hidden');
+        jQuery('.wizard_play, .wizard_starter_alt').addClass('hidden');
         jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
         jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
         var protocol = localStorage.getItem('cur_protocol');
@@ -17309,6 +17320,7 @@ jQuery(function() {
         }
       }
       jQuery('.wizard_to_protList').addClass('prot_in_progress');
+      jQuery('.ring').addClass('in_progress');
       localStorage.removeItem('paused');
       localStorage.removeItem('pausedPhoto');
       jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
