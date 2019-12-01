@@ -1680,14 +1680,14 @@ html.all
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #1bb1dc;
-  border: 1px solid #0a98c0;
+  background: #E84938;
+  border: 1px solid #a7382c;
   color: #fff;
 }
 .wizard_blue:hover
 {
-  background: #0a98c0;
-  border: 1px solid #0a98c0;
+  background: #a7382c;
+  border: 1px solid #a7382c;
 }
 .jcrop-handle
 {
@@ -1748,7 +1748,7 @@ h3.wizard_heading
 }
 .header_btn:hover, .mobile-nav-toggle:hover, .wizard_stop
 {
-  border-color: #a7382c;
+  border-color: #E84938;
 }
 .header_btn i
 {
