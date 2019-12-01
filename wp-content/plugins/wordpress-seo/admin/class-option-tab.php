@@ -6,17 +6,29 @@
  */
 
 /**
- * Class WPSEO_Option_Tab
+ * Class WPSEO_Option_Tab.
  */
 class WPSEO_Option_Tab {
 
-	/** @var string Name of the tab */
+	/**
+	 * Name of the tab.
+	 *
+	 * @var string
+	 */
 	private $name;
 
-	/** @var string Label of the tab */
+	/**
+	 * Label of the tab.
+	 *
+	 * @var string
+	 */
 	private $label;
 
-	/** @var array Optional arguments */
+	/**
+	 * Optional arguments.
+	 *
+	 * @var array
+	 */
 	private $arguments;
 
 	/**
@@ -48,15 +60,6 @@ class WPSEO_Option_Tab {
 	 */
 	public function get_label() {
 		return $this->label;
-	}
-
-	/**
-	 * Gets the video URL.
-	 *
-	 * @return string The video url.
-	 */
-	public function get_video_url() {
-		return $this->get_argument( 'video_url' );
 	}
 
 	/**

@@ -72,15 +72,12 @@ class WPSEO_Admin_Menu extends WPSEO_Base_Menu {
 	public function get_submenu_pages() {
 		global $wpseo_admin;
 
-		$search_console_callback       = null;
-		$search_console_hook_callbacks = null;
+		$search_console_callback = null;
 
 		// Account for when the available submenu pages are requested from outside the admin.
 		if ( isset( $wpseo_admin ) ) {
-			$admin_features = $wpseo_admin->get_admin_features();
-
-			$search_console_callback       = array( $admin_features['google_search_console'], 'display' );
-			$search_console_hook_callbacks = array( array( $admin_features['google_search_console'], 'set_help' ) );
+			$google_search_console   = new WPSEO_GSC();
+			$search_console_callback = array( $google_search_console, 'display' );
 		}
 
 		// Submenu pages.
@@ -90,8 +87,7 @@ class WPSEO_Admin_Menu extends WPSEO_Base_Menu {
 			$this->get_submenu_page(
 				__( 'Search Console', 'wordpress-seo' ),
 				'wpseo_search_console',
-				$search_console_callback,
-				$search_console_hook_callbacks
+				$search_console_callback
 			),
 			$this->get_submenu_page( __( 'Social', 'wordpress-seo' ), 'wpseo_social' ),
 			$this->get_submenu_page( __( 'Tools', 'wordpress-seo' ), 'wpseo_tools' ),
@@ -130,12 +126,6 @@ class WPSEO_Admin_Menu extends WPSEO_Base_Menu {
 	 * @return string Capability to check against.
 	 */
 	protected function get_manage_capability() {
-		/**
-		 * Filter: 'wpseo_manage_options_capability' - Allow changing the capability users need to view the settings pages
-		 *
-		 * @deprecated 5.5
-		 * @api string unsigned The capability
-		 */
-		return apply_filters_deprecated( 'wpseo_manage_options_capability', array( 'wpseo_manage_options' ), 'WPSEO 5.5.0', false, 'Use the introduced wpseo_manage_options capability instead.' );
+		return 'wpseo_manage_options';
 	}
 }
