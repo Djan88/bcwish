@@ -1748,7 +1748,7 @@ h3.wizard_heading
 }
 .header_btn:hover, .mobile-nav-toggle:hover, .wizard_stop
 {
-  border-color: #1bb1dc;
+  border-color: #a7382c;
 }
 .header_btn i
 {
@@ -2177,7 +2177,7 @@ main#main
 
 .wpcf7-form-control.wpcf7-submit, .form_triger
 {
-  background: #1bb1dc;
+  background: #E84938;
   border: 0;
   border-radius: 3px;
   padding: 8px 30px;
