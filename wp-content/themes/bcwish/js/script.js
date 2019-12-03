@@ -72,7 +72,7 @@ jQuery(function() {
       jQuery('.machine_screen, #intro').addClass('hidden');
       jQuery('.wizard_way').removeClass('hidden');
       jQuery('.wizard_returned').attr('src', croppedImg.src);
-      jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
+      jQuery('.wizard_heading').text('Диагностика');
       jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
       jQuery('.wm_start').removeClass('unopacity');
       jQuery('.wm_start').removeAttr('style');

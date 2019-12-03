@@ -435,6 +435,14 @@ h6 {
   padding-top: 40px;
   min-height: 450px;
 }
+
+.btn_prot_choice 
+{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
 .uploaded_pics 
 {
   width: 200px!important;
