@@ -54,7 +54,7 @@ jQuery(function() {
   //   jQuery('.wm_start').removeAttr('style');
   // }
 
-  if(croppedImg){
+  if(croppedImg && croppedImg.hasAttribute('src')){
     if((supportsStorage && localStorage.getItem('croppedImg'))){
       croppedImg = localStorage.getItem('croppedImg');
       jQuery('.itemlist-two_img').attr('src', croppedImg);
