@@ -1,5 +1,6 @@
 jQuery(function() {
   var croppedImg,
+  var croppedImgTwo,
       cur_protocol,
       returned_img,
       nextSound = new Howl({
@@ -43,14 +44,38 @@ jQuery(function() {
   croppedImg = jQuery('.wizard_returned').children()[0];
 
 // Если фото уже загружено
-  if (croppedImg && croppedImg.hasAttribute('src')) {
-    jQuery('.machine_screen, #intro').addClass('hidden');
-    jQuery('.wizard_way').removeClass('hidden');
-    jQuery('.wizard_returned').attr('src', croppedImg.src);
-    jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
-    jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
-    jQuery('.wm_start').removeClass('unopacity');
-    jQuery('.wm_start').removeAttr('style');
+  // if (croppedImg && croppedImg.hasAttribute('src')) {
+  //   jQuery('.machine_screen, #intro').addClass('hidden');
+  //   jQuery('.wizard_way').removeClass('hidden');
+  //   jQuery('.wizard_returned').attr('src', croppedImg.src);
+  //   jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
+  //   jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
+  //   jQuery('.wm_start').removeClass('unopacity');
+  //   jQuery('.wm_start').removeAttr('style');
+  // }
+
+  if(croppedImg){
+    if((supportsStorage && localStorage.getItem('croppedImg'))){
+      croppedImg = localStorage.getItem('croppedImg');
+      jQuery('.itemlist-two_img').attr('src', croppedImg);
+      localStorage.setItem('croppedImgTwo', jQuery('#main').children().attr('src'));
+      croppedImgTwo = jQuery('#main').children().attr('src');
+      jQuery('.itemlist-three_img').attr('src', croppedImgTwo);
+      console.log(croppedImg);
+      console.log(croppedImgTwo);
+      // jQuery('.step_img div').text('Фото загружено');
+      jQuery('.machine_screen, #intro').addClass('hidden');
+      jQuery('.wizard_way').removeClass('hidden');
+      jQuery('.wizard_returned').attr('src', croppedImg.src);
+      jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
+      jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
+      jQuery('.wm_start').removeClass('unopacity');
+      jQuery('.wm_start').removeAttr('style');
+    } else {
+      localStorage.setItem('croppedImg', jQuery('#main').children().attr('src'));
+      jQuery('.wizard_heading').text('Загрузите второе фото');
+      
+    }
   }
 
 // Вторая кнопка обрезки

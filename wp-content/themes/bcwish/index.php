@@ -278,7 +278,7 @@
         <div class="container container_main">
 
           <header class="section-header">
-            <h3 class="wizard_heading">Загрузите фото в полный рост по аналогии с примером ниже и отредактируйте его</h3>
+            <h3 class="wizard_heading">Загрузите первое фото</h3>
           </header>
 
           <div class="row">
