@@ -39,6 +39,11 @@ jQuery(function() {
     console.log('pausedStatus = false');
   });
 
+  jQuery('.to_home').on('click', function(event) {
+    localStorage.removeItem('croppedImg');
+    localStorage.removeItem('croppedImgTwo');
+  });
+
 //Скрываем возможно загруженное изображение
   jQuery('.wizard_returned').find('img:first-child').addClass('returned hidden');
   croppedImg = jQuery('.wizard_returned').children()[0];
