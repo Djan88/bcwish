@@ -39,7 +39,7 @@ jQuery(function() {
     console.log('pausedStatus = false');
   });
 
-  jQuery('.to_home').on('click', function(event) {
+  jQuery('.to_home, .wizard_to_start').on('click', function(event) {
     localStorage.removeItem('croppedImg');
     localStorage.removeItem('croppedImgTwo');
   });
@@ -62,10 +62,10 @@ jQuery(function() {
   if(croppedImg && croppedImg.hasAttribute('src')){
     if((supportsStorage && localStorage.getItem('croppedImg'))){
       croppedImg = localStorage.getItem('croppedImg');
-      jQuery('.itemlist-two_img').attr('src', croppedImg);
+      jQuery('.uploaded_pics_1').attr('src', croppedImg);
       localStorage.setItem('croppedImgTwo', jQuery('.wizard_returned').children().attr('src'));
       croppedImgTwo = jQuery('.wizard_returned').children().attr('src');
-      jQuery('.itemlist-three_img').attr('src', croppedImgTwo);
+      jQuery('.uploaded_pics_2').attr('src', croppedImgTwo);
       console.log(croppedImg);
       console.log(croppedImgTwo);
       // jQuery('.step_img div').text('Фото загружено');

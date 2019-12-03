@@ -324,6 +324,8 @@
                 <div class="col-md-12 wizard_way hidden">
                   <button class="btn btn-success btn_diag wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.4s">Диагностика</button>
                   <button class="btn btn-success btn_prot_choice wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.8s">Выбор протокола</button>
+                  <img src="" alt="" class="uploaded_pics uploaded_pics_1 draggable">
+                  <img src="" alt="" class="uploaded_pics uploaded_pics_2 draggable">
                 </div>
                 <div id="faq" class="col-md-12 wizard_prots hidden">
                   <ul id="faq-list" class="wow fadeInUp">
