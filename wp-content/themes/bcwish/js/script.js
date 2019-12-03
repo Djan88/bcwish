@@ -63,8 +63,8 @@ jQuery(function() {
     if((supportsStorage && localStorage.getItem('croppedImg'))){
       croppedImg = localStorage.getItem('croppedImg');
       jQuery('.itemlist-two_img').attr('src', croppedImg);
-      localStorage.setItem('croppedImgTwo', jQuery('#main').children().attr('src'));
-      croppedImgTwo = jQuery('#main').children().attr('src');
+      localStorage.setItem('croppedImgTwo', jQuery('.wizard_returned').children().attr('src'));
+      croppedImgTwo = jQuery('.wizard_returned').children().attr('src');
       jQuery('.itemlist-three_img').attr('src', croppedImgTwo);
       console.log(croppedImg);
       console.log(croppedImgTwo);
@@ -77,7 +77,7 @@ jQuery(function() {
       jQuery('.wm_start').removeClass('unopacity');
       jQuery('.wm_start').removeAttr('style');
     } else {
-      localStorage.setItem('croppedImg', jQuery('#main').children().attr('src'));
+      localStorage.setItem('croppedImg', jQuery('.wizard_returned').children().attr('src'));
       jQuery('.wizard_heading').text('Загрузите второе фото');
       
     }
