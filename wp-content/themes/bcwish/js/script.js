@@ -79,6 +79,7 @@ jQuery(function() {
     } else {
       localStorage.setItem('croppedImg', jQuery('.wizard_returned').children().attr('src'));
       jQuery('.wizard_heading').text('Загрузите второе фото');
+      jQuery('.wm_init').click();
       
     }
   }
