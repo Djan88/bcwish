@@ -428,6 +428,12 @@ h6 {
   text-decoration: none;
 }
 
+.uploaded_pics_wrap
+{
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
 .uploaded_pics 
 {
   width: 200px!important;
