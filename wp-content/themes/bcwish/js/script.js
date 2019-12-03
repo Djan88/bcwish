@@ -1,6 +1,6 @@
 jQuery(function() {
   var croppedImg,
-  var croppedImgTwo,
+      croppedImgTwo,
       cur_protocol,
       returned_img,
       nextSound = new Howl({
