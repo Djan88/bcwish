@@ -86,7 +86,14 @@ jQuery(function() {
   }
 
   jQuery('.btn_rotate_left').on('click', function(event) {
-    rotateVal = parseFloat(jQuery('.uploaded_pics_1').css('transform'))
+    jQuery(this).addClass('hidden');
+    jQuery('.btn_rotate_right').removeClass('hidden');
+    jQuery('.uploaded_pics').css('transform', '-90deg');
+  });
+  jQuery('.btn_rotate_right').on('click', function(event) {
+    jQuery(this).addClass('hidden');
+    jQuery('.btn_rotate_left').removeClass('hidden');
+    jQuery('.uploaded_pics').css('transform', '0deg');
   });
 
 // Вторая кнопка обрезки
