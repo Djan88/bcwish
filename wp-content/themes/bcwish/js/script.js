@@ -52,7 +52,7 @@ jQuery(function() {
   // Dragging knife
   jQuery('.draggable_photo').draggable({
     drag: function() {
-      jQuery('.wizard_heading').addClass('hidden');
+      jQuery('.wizard_heading').addClass('unvisible');
     }
   });
 
@@ -85,6 +85,7 @@ jQuery(function() {
 
   jQuery('.btn_rotate_left').on('click', function(event) {
     jQuery(this).addClass('hidden');
+    jQuery('.wizard_heading').addClass('unvisible');
     jQuery('.btn_rotate_right').removeClass('hidden');
     jQuery('.uploaded_pics').css('transform', 'rotate(-90deg)');
   });
@@ -125,7 +126,7 @@ jQuery(function() {
     jQuery('.wizard_to_start').addClass('hidden');
     jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_heading').removeClass('hidden');
+    jQuery('.wizard_heading').removeClass('unvisible');
     jQuery('.wizard_heading').text('Выберите протокол');
   });
   // К протоколам с ножа

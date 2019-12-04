@@ -455,6 +455,11 @@ h6 {
   transform: scale(-1, 1);
 }
 
+.unvisible
+{
+  visibility: hidden;
+}
+
 .uploaded_pics 
 {
   width: 200px!important;
