@@ -1,7 +1,8 @@
 jQuery(function() {
   var croppedImg,
       croppedImgTwo,
-      rotateVal,
+      photo_left,
+      photo_right,
       cur_protocol,
       returned_img,
       nextSound = new Howl({
@@ -53,6 +54,13 @@ jQuery(function() {
   jQuery('.draggable_photo').draggable({
     drag: function() {
       jQuery('.wizard_heading').addClass('unvisible');
+      if (jQuery(this).hasClass('uploaded_pics_1')) {
+        photo_left = parseFloat(jQuery(this).css('left'));
+        photo_top = parseFloat(jQuery(this).css('top'));
+        jQuery('.uploaded_pics_2').css('top', -photo_top+'px');
+      } else {
+
+      }
     }
   });
 
