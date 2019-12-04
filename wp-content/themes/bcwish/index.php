@@ -329,7 +329,7 @@
                   </div>
                   <button class="btn btn-success btn_prot_choice wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="1.2s">Выбор протокола</button>
                   <button class="btn btn-success btn_rotate btn_rotate_left wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="1.2s"><i class="fa fa-undo"></i></button>
-                  <button class="btn btn-success btn_rotate btn_rotate_right hidden wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="1.2s"><i class="fa fa-redo"></i></button>
+                  <button class="btn btn-success btn_rotate btn_rotate_right hidden wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="1.2s"><i class="fa fa-undo"></i></button>
                   
                 </div>
                 <div id="faq" class="col-md-12 wizard_prots hidden">
