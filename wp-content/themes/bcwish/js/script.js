@@ -84,7 +84,7 @@ jQuery(function() {
 // Вращение фото
 
   jQuery('.btn_rotate_left').on('click', function(event) {
-    jQuery(this).addClass('hidden').removeClass('wow bounceInUp').removeAttr('style');
+    jQuery('.uploaded_pics, .btn_rotate_left, .btn_prot_choice').addClass('hidden').removeClass('wow bounceInUp').removeAttr('style');
     jQuery('.wizard_heading').addClass('unvisible');
     jQuery('.btn_rotate_right').removeClass('hidden');
     jQuery('.uploaded_pics').css('transform', 'rotate(-90deg)');
