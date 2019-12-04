@@ -324,8 +324,8 @@
                 <div class="col-md-12 wizard_way hidden">
                   <!-- <button class="btn btn-success btn_diag wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.4s">Диагностика</button> -->
                   <div class="row uploaded_pics_wrap">
-                    <img src="" alt="" class="uploaded_pics uploaded_pics_1 draggable wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.4s">
-                    <img src="" alt="" class="uploaded_pics uploaded_pics_2 draggable wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.8s">
+                    <img src="" alt="" class="uploaded_pics uploaded_pics_1 draggable_photo wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.4s">
+                    <img src="" alt="" class="uploaded_pics uploaded_pics_2 draggable_photo wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.8s">
                   </div>
                   <button class="btn btn-success btn_prot_choice wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="1.2s">Выбор протокола</button>
                   <button class="btn btn-success btn_rotate btn_rotate_left wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="1.2s"><i class="fa fa-undo"></i></button>
