@@ -1,6 +1,7 @@
 jQuery(function() {
   var croppedImg,
       croppedImgTwo,
+      rotateVal,
       cur_protocol,
       returned_img,
       nextSound = new Howl({
@@ -83,6 +84,10 @@ jQuery(function() {
       jQuery('.wm_start').removeClass('unopacity');
     }
   }
+
+  jQuery('.btn_rotate_left').on('click', function(event) {
+    rotateVal = parseFloat(jQuery('.uploaded_pics_1').css('transform'))
+  });
 
 // Вторая кнопка обрезки
   jQuery('.wizard_crop').on('click', function(event) {
