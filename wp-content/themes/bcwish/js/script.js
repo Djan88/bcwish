@@ -127,7 +127,7 @@ jQuery(function() {
     jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').removeClass('unvisible');
-    jQuery('.uploaded_pics, .btn_prot_choice').removeClass('wow bounceInUp').removeAttr('style');
+    jQuery('.uploaded_pics, .btn_prot_choice, .btn_rotate').removeClass('wow bounceInUp').removeAttr('style');
     jQuery('.wizard_heading').text('Выберите протокол');
   });
   // К протоколам с ножа
