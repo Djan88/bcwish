@@ -86,12 +86,12 @@ jQuery(function() {
   jQuery('.btn_rotate_left').on('click', function(event) {
     jQuery(this).addClass('hidden');
     jQuery('.btn_rotate_right').removeClass('hidden');
-    jQuery('.uploaded_pics').css('transform', '(-90deg)');
+    jQuery('.uploaded_pics').css('transform', 'rotate(-90deg)');
   });
   jQuery('.btn_rotate_right').on('click', function(event) {
     jQuery(this).addClass('hidden');
     jQuery('.btn_rotate_left').removeClass('hidden');
-    jQuery('.uploaded_pics').css('transform', '(0deg)');
+    jQuery('.uploaded_pics').css('transform', 'rotate(0deg)');
   });
 
 // Вторая кнопка обрезки
