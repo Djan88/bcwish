@@ -152,7 +152,7 @@ jQuery(function() {
     jQuery('.wizard_to_what_way').addClass('hidden');
     jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_way').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
+    jQuery('.wizard_heading').text('Диагностика');
   });
   //Назад. К диагностике
   jQuery('.wizard_to_protDiag').on('click', function(event) {
