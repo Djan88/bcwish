@@ -100,11 +100,13 @@ jQuery(function() {
     jQuery('.wizard_heading').addClass('unvisible');
     jQuery('.btn_rotate_right').removeClass('hidden');
     jQuery('.uploaded_pics').css('transform', 'rotate(-90deg)');
+    nextSound.play();
   });
   jQuery('.btn_rotate_right').on('click', function(event) {
     jQuery(this).addClass('hidden');
     jQuery('.btn_rotate_left').removeClass('hidden');
     jQuery('.uploaded_pics').css('transform', 'rotate(0deg)');
+    nextSound.play();
   });
 
 // Вторая кнопка обрезки
