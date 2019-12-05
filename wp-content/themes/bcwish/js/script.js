@@ -59,8 +59,11 @@ jQuery(function() {
         photo_top = parseFloat(jQuery(this).css('top'));
         jQuery('.uploaded_pics_2').css('top', -photo_top+'px');
         jQuery('.uploaded_pics_2').css('left', -photo_left+'px');
-      } else {
-
+      } else if (jQuery(this).hasClass('uploaded_pics_2')) {} {
+        photo_left = parseFloat(jQuery(this).css('left'));
+        photo_top = parseFloat(jQuery(this).css('top'));
+        jQuery('.uploaded_pics_1').css('top', -photo_top+'px');
+        jQuery('.uploaded_pics_1').css('left', -photo_left+'px');
       }
     }
   });
