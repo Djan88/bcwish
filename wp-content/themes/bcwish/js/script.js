@@ -58,6 +58,7 @@ jQuery(function() {
         photo_left = parseFloat(jQuery(this).css('left'));
         photo_top = parseFloat(jQuery(this).css('top'));
         jQuery('.uploaded_pics_2').css('top', -photo_top+'px');
+        jQuery('.uploaded_pics_2').css('left', -photo_left+'px');
       } else {
 
       }
