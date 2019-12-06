@@ -72,7 +72,7 @@ jQuery(function() {
       cur_left = parseFloat(jQuery(this).css('left'));
       cur_top = parseFloat(jQuery(this).css('top'));
       console.log(cur_left+' '+ cur_top);
-      if (cur_left < -150) {
+      if (cur_left > -150) {
         jQuery(this).css('left', '-150px'); 
       } else if (cur_left > 400) {
         jQuery(this).css('left', '400px'); 
