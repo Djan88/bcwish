@@ -4,6 +4,10 @@ jQuery(function() {
       photo_left,
       photo_right,
       cur_protocol,
+      cur_left,
+      cur_right,
+      cur_top,
+      cur_bottom,
       returned_img,
       nextSound = new Howl({
           urls: ['/sounds/Cancel_2.mp3'],
@@ -64,6 +68,18 @@ jQuery(function() {
         photo_top = parseFloat(jQuery(this).css('top'));
         jQuery('.uploaded_pics_1').css('top', -photo_top+'px');
         jQuery('.uploaded_pics_1').css('left', -photo_left+'px');
+      }
+      cur_left = parseFloat(jQuery(this).css('left'));
+      cur_top = parseFloat(jQuery(this).css('top'));
+      if (cur_left < -150) {
+        jQuery(this).css('left', '-150px'); 
+      } else if (cur_left > 400) {
+        jQuery(this).css('left', '400px'); 
+      }
+      if (cur_top < -150) {
+        jQuery(this).css('top', '-150px'); 
+      } else if (cur_top > 200) {
+        jQuery(this).css('top', '200px'); 
       }
     }
   });
