@@ -2314,6 +2314,16 @@ button.wizard_starter_alt.btn.btn-success
   bottom: -4px;
   left: 50%;
 }
+.uploaded_pics_1:after
+{
+  content: '1';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #5cb85c;
+  color: #fff;
+  border-radius: 50%;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
