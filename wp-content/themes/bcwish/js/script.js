@@ -55,16 +55,16 @@ jQuery(function() {
     containment: '#main',
     drag: function() {
       jQuery('.wizard_heading').addClass('unvisible');
-      if (jQuery(this).hasClass('uploaded_pics_1')) {
+      if (jQuery(this).hasClass('uploaded_pics_wrapper_1')) {
         photo_left = parseFloat(jQuery(this).css('left'));
         photo_top = parseFloat(jQuery(this).css('top'));
-        jQuery('.uploaded_pics_2').css('top', -photo_top+'px');
-        jQuery('.uploaded_pics_2').css('left', -photo_left+'px');
-      } else if (jQuery(this).hasClass('uploaded_pics_2')) {} {
+        jQuery('.uploaded_pics_wrapper_2').css('top', -photo_top+'px');
+        jQuery('.uploaded_pics_wrapper_2').css('left', -photo_left+'px');
+      } else if (jQuery(this).hasClass('uploaded_pics_wrapper_2')) {} {
         photo_left = parseFloat(jQuery(this).css('left'));
         photo_top = parseFloat(jQuery(this).css('top'));
-        jQuery('.uploaded_pics_1').css('top', -photo_top+'px');
-        jQuery('.uploaded_pics_1').css('left', -photo_left+'px');
+        jQuery('.uploaded_pics_wrapper_1').css('top', -photo_top+'px');
+        jQuery('.uploaded_pics_wrapper_1').css('left', -photo_left+'px');
       }
     }
   });
@@ -100,13 +100,13 @@ jQuery(function() {
     jQuery(this).addClass('hidden').removeClass('wow bounceInUp').removeAttr('style');
     jQuery('.wizard_heading').addClass('unvisible');
     jQuery('.btn_rotate_right').removeClass('hidden');
-    jQuery('.uploaded_pics').css('transform', 'rotate(-90deg)');
+    jQuery('.uploaded_pics_wrapper').css('transform', 'rotate(-90deg)');
     nextSound.play();
   });
   jQuery('.btn_rotate_right').on('click', function(event) {
     jQuery(this).addClass('hidden');
     jQuery('.btn_rotate_left').removeClass('hidden');
-    jQuery('.uploaded_pics').css('transform', 'rotate(0deg)');
+    jQuery('.uploaded_pics_wrapper').css('transform', 'rotate(0deg)');
     nextSound.play();
   });
 
@@ -142,7 +142,7 @@ jQuery(function() {
     jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').removeClass('unvisible');
-    jQuery('.uploaded_pics, .btn_prot_choice, .btn_rotate').removeClass('wow bounceInUp').removeAttr('style');
+    jQuery('.uploaded_pics_wrapper, .btn_prot_choice, .btn_rotate').removeClass('wow bounceInUp').removeAttr('style');
     jQuery('.wizard_heading').text('Выберите протокол');
   });
   // К протоколам с ножа

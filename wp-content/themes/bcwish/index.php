@@ -323,9 +323,13 @@
               <div class="row wizard_operation">
                 <div class="col-md-12 wizard_way hidden">
                   <!-- <button class="btn btn-success btn_diag wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.4s">Диагностика</button> -->
-                  <div class="row uploaded_pics_wrap">
-                    <img src="" alt="" class="uploaded_pics uploaded_pics_1 draggable_photo wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.4s">
-                    <img src="" alt="" class="uploaded_pics uploaded_pics_2 draggable_photo wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.8s">
+                  <div class="row uploaded_pics_wrap draggable_photo wow bounceInUp back-to-top_2">
+                    <div class="uploaded_pics_wrapper uploaded_pics_wrapper_1 draggable_photo wow bounceInUp back-to-top_1" data-wow-duration="1.4s" data-wow-delay="0.4s">
+                      <img src="" alt="" class="uploaded_pics uploaded_pics_1">
+                    </div>
+                    <div class="uploaded_pics_wrapper uploaded_pics_wrapper_2 draggable_photo wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.8s">
+                      <img src="" alt="" class="uploaded_pics uploaded_pics_2 ">
+                    </div>
                   </div>
                   <button class="btn btn-success btn_prot_choice wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="1.2s">Выбор протокола</button>
                   <button class="btn btn-success btn_rotate btn_rotate_left wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="1.2s"><i class="fa fa-undo"></i></button>

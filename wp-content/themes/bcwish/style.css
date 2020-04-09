@@ -460,7 +460,7 @@ h6 {
   visibility: hidden;
 }
 
-.uploaded_pics 
+.uploaded_pics
 {
   width: 200px!important;
   height: auto!important;
@@ -2314,7 +2314,7 @@ button.wizard_starter_alt.btn.btn-success
   bottom: -4px;
   left: 50%;
 }
-.to_home:after
+.uploaded_pics_wrapper:after
 {
   content: '1';
   position: absolute;
