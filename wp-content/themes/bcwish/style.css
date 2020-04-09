@@ -459,8 +459,7 @@ h6 {
 {
   visibility: hidden;
 }
-
-.uploaded_pics
+.uploaded_pics_wrapper
 {
   width: 200px!important;
   height: auto!important;
@@ -469,6 +468,11 @@ h6 {
   transform: rotate(0deg);
   transition: transform 0.5s;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+.uploaded_pics
+{
+  width: 200px!important;
+  height: auto!important;
 }
 
 .mobile-nav .drop-down > a:after {
