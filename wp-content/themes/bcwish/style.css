@@ -2314,7 +2314,7 @@ button.wizard_starter_alt.btn.btn-success
   bottom: -4px;
   left: 50%;
 }
-.uploaded_pics_1:after
+.to_home:after
 {
   content: '1';
   position: absolute;
