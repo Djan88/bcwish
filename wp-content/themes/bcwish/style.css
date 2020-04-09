@@ -462,7 +462,9 @@ h6 {
 .uploaded_pics_wrapper
 {
   width: 200px!important;
+  display: inline-block;
   height: auto!important;
+  overflow: hidden;
   border-radius: 6px;
   margin: 0 5px;
   transform: rotate(0deg);
@@ -2320,14 +2322,25 @@ button.wizard_starter_alt.btn.btn-success
 }
 .uploaded_pics_wrapper:after
 {
-  content: '1';
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  padding-left: 20px;
+  padding-top: 23px;
+  top: -25px;
   background: #5cb85c;
   color: #fff;
   border-radius: 50%;
 }
+.uploaded_pics_wrapper_1:after
+{
+  content: '1';
+}
+.uploaded_pics_wrapper_2:after
+{
+  content: '2';}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
