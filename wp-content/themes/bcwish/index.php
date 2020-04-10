@@ -321,7 +321,7 @@
                 </div>
               </div>
               <div class="row wizard_operation">
-                <div class="col-md-6 wizard_way wizard_prots hidden">
+                <div class="col-md-6 wizard_way wizard_prots hidden" id="faq">
                   <ul id="faq-list" class="wow fadeInUp">
                     <li>
                       <a data-toggle="collapse" href="#faq9" class="collapsed">УНИВЕРСАЛЬНЫЙ <i class="ion-android-remove"></i></a>
