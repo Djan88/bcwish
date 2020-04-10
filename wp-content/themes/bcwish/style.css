@@ -1781,7 +1781,7 @@ h3.wizard_heading
 .wizard_way 
 {
   text-align: center;
-  transition: width linear 0.4s;
+  transition: all linear 0.4s;
 }
 .header_btn
 {
