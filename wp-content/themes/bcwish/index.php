@@ -321,7 +321,7 @@
                 </div>
               </div>
               <div class="row wizard_operation">
-                <div class="col-md-6 wizard_way wizard_prots hidden" id="faq">
+                <div class="col-md-2 wizard_way wizard_prots hidden" id="faq">
                   <ul id="faq-list" class="wow fadeInUp">
                     <li>
                       <a data-toggle="collapse" href="#faq9" class="collapsed">УНИВЕРСАЛЬНЫЙ <i class="ion-android-remove"></i></a>
@@ -373,7 +373,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-md-6 wizard_way hidden">
+                <div class="col-md-10 wizard_way hidden">
                   <div class="row uploaded_pics_wrap draggable_photo wow bounceInUp back-to-top_2">
                     <div class="uploaded_pics_wrapper uploaded_pics_wrapper_1 draggable_photo wow bounceInUp back-to-top_1" data-wow-duration="1.4s" data-wow-delay="0.4s">
                       <img src="" alt="" class="uploaded_pics uploaded_pics_1">
