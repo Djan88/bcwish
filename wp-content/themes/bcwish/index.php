@@ -348,9 +348,6 @@
                   <button class="btn btn-success btn_rotate btn_rotate_right hidden"><i class="fa fa-undo"></i></button> -->
                   
                 </div>
-                <div id="faq" class="col-md-12 wizard_prots hidden">
-                  
-                </div>
               </div>
               <div class="row wizard_main_screen hidden">
                 <div class="col-sm-6 wizard_zones">
