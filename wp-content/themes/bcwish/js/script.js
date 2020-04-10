@@ -66,6 +66,21 @@ jQuery(function() {
         jQuery('.uploaded_pics_wrapper_1').css('top', -photo_top+'px');
         jQuery('.uploaded_pics_wrapper_1').css('left', -photo_left+'px');
       }
+    },
+    stop: function () {
+      jQuery('.uploaded_pics_wrapper').addClass('slow_top');
+      var img_1 = parseFloat(jQuery('.uploaded_pics_wrapper_1').css('top'));
+      var img_2 = parseFloat(jQuery('.uploaded_pics_wrapper_2').css('top'));
+      if (img_1 < 0) {
+        jQuery('.uploaded_pics_wrapper_1').css('top', 0);
+        jQuery('.uploaded_pics_wrapper_2').css('top', (img_2+img_2)+'px');
+      } else if (img_2 < 0) {
+        jQuery('.uploaded_pics_wrapper_2').css('top', 0);
+        jQuery('.uploaded_pics_wrapper_1').css('top', (img_1+img_1)+'px');
+      }
+      setTimeout(function(){
+        jQuery('.uploaded_pics_wrapper').removeClass('slow_top');
+      },1000);
     }
   });
 
@@ -175,7 +190,6 @@ jQuery(function() {
     jQuery('.wizard_templates').fadeIn(500);
     jQuery('.wizard_template').addClass('hidden');
     jQuery('.uploaded_pics_wrapper').addClass('slow_top');
-    // jQuery('.uploaded_pics_wrapper').draggable( "disable");
     var img_1 = parseFloat(jQuery('.uploaded_pics_wrapper_1').css('top'));
     var img_2 = parseFloat(jQuery('.uploaded_pics_wrapper_2').css('top'));
     if (img_1 < 0) {
