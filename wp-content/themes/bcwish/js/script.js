@@ -168,8 +168,8 @@ jQuery(function() {
   //К переносу зон
   jQuery('.faq_item').on('click', function(event) {
     // jQuery('.zone_ring').addClass('hidden');
-    jQuery('.wizard_prots').addClass('hidden');
-    jQuery('.ring, .wizard_templates').removeClass('hidden');
+    jQuery('.wizard_prots, .wizard_to_protDiag').addClass('hidden');
+    jQuery('.ring, .wizard_templates, .wizard_to_protList').removeClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     jQuery('.wizard_to_what_way, .wizard_to_protDiag').addClass('hidden');
     jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
@@ -191,18 +191,11 @@ jQuery(function() {
     console.log(cur_protocol);
   });
 
-
    //Назад. К списку протоколов
   jQuery('.wizard_to_protList').on('click', function(event) {
-    if (jQuery(this).hasClass('prot_in_progress')) {
-
-    } else {
-      jQuery('.wizard_main_screen').addClass('hidden');
-      jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').addClass('hidden');
-      jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
-      jQuery('.wizard_operation').fadeIn(500).removeClass('hidden');
-      jQuery('.wizard_heading').text('Выберите протокол');
-    }
+    jQuery(this).addClass('hidden');
+    jQuery('.wizard_templates').addClass('hidden');
+    jQuery('.wizard_to_protDiag, .wizard_prots').removeClass('hidden');
   });
 
   jQuery('.wizard_clean_graf').on('click', function(event) {
