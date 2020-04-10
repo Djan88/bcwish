@@ -321,7 +321,7 @@
                 </div>
               </div>
               <div class="row wizard_operation">
-                <div class="col-xs-1 wizard_prots hidden" id="faq">
+                <div class="col-sm-1 col-md-1 wizard_prots hidden" id="faq">
                   <div id="faq-list" class="faq-list wow fadeInLeft">
                     <div class="faq_item faq_item_1">УНИВЕРСАЛЬНЫЙ<span>УН</span></div>
                     <div class="faq_item faq_item_2">ОБЩИЙ<span>МЖ</span></div>
@@ -329,7 +329,7 @@
                     <div class="faq_item faq_item_4">МУЖСКОЙ<span>ММ</span></div>
                   </div>
                 </div>
-                <div class="col-xs-1 wizard_prots hidden" id="faq">
+                <div class="col-sm-1 col-md-1 wizard_prots hidden" id="faq">
                   <div id="faq-list" class="faq-list wow fadeInLeft">
                     <div class="faq_item faq_item_1">УНИВЕРСАЛЬНЫЙ<span>УН</span></div>
                     <div class="faq_item faq_item_2">ОБЩИЙ<span>МЖ</span></div>
@@ -337,7 +337,7 @@
                     <div class="faq_item faq_item_4">МУЖСКОЙ<span>ММ</span></div>
                   </div>
                 </div>
-                <div class="col-xs-12 wizard_way hidden">
+                <div class="col-sm-12 col-md-12 wizard_way hidden">
                   <div class="row uploaded_pics_wrap draggable_photo wow bounceInUp back-to-top_2">
                     <div class="uploaded_pics_wrapper uploaded_pics_wrapper_1 draggable_photo wow bounceInUp back-to-top_1" data-wow-duration="1.4s" data-wow-delay="0.4s">
                       <img src="" alt="" class="uploaded_pics uploaded_pics_1">
