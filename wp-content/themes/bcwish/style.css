@@ -2361,6 +2361,8 @@ button.wizard_starter_alt.btn.btn-success
   font-weight: 400;
   padding-right: 20px;
   border-bottom: 1px solid #ebebeb;
+  cursor: pointer;
+  transition: color 0.5s;
 }
 .faq_item.active, .faq_item:hover
 {
