@@ -332,7 +332,7 @@
                 <div class="col-sm-6 col-md-6 wizard_templates hidden wow fadeInLeft" id="template">
                   <img src="<?php bloginfo('template_url'); ?>/img/mw.png" alt="" class="wizard_template wizard_template_1 hidden">
                   <img src="<?php bloginfo('template_url'); ?>/img/ww.png" alt="" class="wizard_template wizard_template_2 hidden">
-                  <img src="<?php bloginfo('template_url'); ?>/img/ww.png" alt="" class="wizard_template wizard_template_3 hidden">
+                  <img src="<?php bloginfo('template_url'); ?>/img/mm.png" alt="" class="wizard_template wizard_template_3 hidden">
                 </div>
                 <div class="col-sm-12 col-md-12 wizard_way hidden">
                   <div class="row uploaded_pics_wrap wow bounceInUp back-to-top_2">
