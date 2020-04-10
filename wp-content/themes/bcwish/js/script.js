@@ -159,7 +159,7 @@ jQuery(function() {
     jQuery('.wizard_prots').addClass('hidden');
     jQuery('.wizard_to_protDiag').addClass('hidden');
     jQuery('.wizard_to_start').removeClass('hidden');
-    jQuery('.wizard_prots').removeClass('wow bounceInUp').removeAttr('style');
+    jQuery('.faq-list').removeClass('animated');
     jQuery('.wizard_way').removeClass('col-sm-6 col-md-6').addClass('col-sm-12 col-md-12');
     jQuery('.wizard_prots').removeClass('col-sm-6 col-md-6').addClass('col-sm-1 col-md-1 hidden');
     jQuery('.wizard_heading').text('Диагностика');
