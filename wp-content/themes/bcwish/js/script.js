@@ -128,7 +128,7 @@ jQuery(function() {
     jQuery('.wizard_to_start, .btn_prot_choice').addClass('hidden');
     jQuery('.btn_prot_choice').removeClass('wow bounceInUp').removeAttr('style');
     jQuery('.wizard_heading').text('Выберите протокол');
-    jQuery('.uploaded_pics_wrapper').removeClass('draggable');
+    jQuery('.uploaded_pics_wrapper').draggable( "disable");
   });
 
   //Назад. К выбору режимов
@@ -148,6 +148,7 @@ jQuery(function() {
     jQuery('.wizard_prots').fadeOut(500).removeClass('col-sm-6 col-md-6').addClass('col-sm-1 col-md-1 hidden');
     jQuery('.wizard_way').removeClass('col-sm-6 col-md-6').addClass('col-sm-12 col-md-12');
     jQuery('.wizard_heading').text('Диагностика');
+    jQuery('.uploaded_pics_wrapper').draggable( "enable");
   });
 
   //К переносу зон
