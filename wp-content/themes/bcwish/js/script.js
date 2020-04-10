@@ -123,11 +123,10 @@ jQuery(function() {
   jQuery('.btn_prot_choice').on('click', function(event) {
     jQuery('.wizard_way').removeClass('col-sm-12 col-md-12').addClass('col-sm-6 col-md-6');
     jQuery('.wizard_prots').removeClass('col-sm-1 col-md-1 hidden').addClass('col-sm-6 col-md-6');
-    jQuery('.wizard_heading').removeClass('unvisible');
     jQuery('.wizard_to_protDiag').removeClass('hidden');
     jQuery('.wizard_to_start, .btn_prot_choice').addClass('hidden');
     jQuery('.btn_prot_choice').removeClass('wow bounceInUp').removeAttr('style');
-    jQuery('.wizard_heading').text('Выберите протокол');
+    jQuery('.wizard_heading').text('Выберите протокол').removeClass('unvisible');
     jQuery('.uploaded_pics_wrapper').addClass('slow_top');
     // jQuery('.uploaded_pics_wrapper').draggable( "disable");
     var img_1 = parseFloat(jQuery('.uploaded_pics_wrapper_1').css('top'));
@@ -150,7 +149,7 @@ jQuery(function() {
     jQuery('.wizard_to_what_way').addClass('hidden');
     jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_way').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_heading').text('Диагностика');
+    jQuery('.wizard_heading').text('Диагностика').removeClass('unvisible');
   });
   //Назад. К диагностике
   jQuery('.wizard_to_protDiag').on('click', function(event) {
@@ -160,7 +159,7 @@ jQuery(function() {
     jQuery('.faq-list').removeClass('wow bounceInUp').removeAttr('style');
     jQuery('.wizard_prots').fadeOut(500).removeClass('col-sm-6 col-md-6').addClass('col-sm-1 col-md-1 hidden');
     jQuery('.wizard_way').removeClass('col-sm-6 col-md-6').addClass('col-sm-12 col-md-12');
-    jQuery('.wizard_heading').text('Диагностика');
+    jQuery('.wizard_heading').text('Диагностика').removeClass('unvisible');
     // jQuery('.uploaded_pics_wrapper').draggable( "enable");
   });
 
@@ -191,19 +190,19 @@ jQuery(function() {
     if (jQuery(this).hasClass('faq_item_1')) {
       cur_protocol = 'un';
       jQuery('.wizard_template_1').removeClass('hidden');
-      jQuery('.wizard_heading').text('Активирован протокол "Универсальный". Перенесите зоны на фото');
+      jQuery('.wizard_heading').removeClass('unvisible').text('Активирован протокол "Универсальный". Перенесите зоны на фото');
     } else if (jQuery(this).hasClass('faq_item_2')) {
       cur_protocol = 'mw';
       jQuery('.wizard_template_1').removeClass('hidden');
-      jQuery('.wizard_heading').text('Активирован протокол "Общий". Перенесите зоны на фото');
+      jQuery('.wizard_heading').removeClass('unvisible').text('Активирован протокол "Общий". Перенесите зоны на фото');
     } else if (jQuery(this).hasClass('faq_item_3')) {
       cur_protocol = 'ww';
       jQuery('.wizard_template_2').removeClass('hidden');
-      jQuery('.wizard_heading').text('Активирован протокол "Женский". Перенесите зоны на фото');
+      jQuery('.wizard_heading').removeClass('unvisible').text('Активирован протокол "Женский". Перенесите зоны на фото');
     } else if (jQuery(this).hasClass('faq_item_4')) {
       cur_protocol = 'mm';
       jQuery('.wizard_template_3').removeClass('hidden');
-      jQuery('.wizard_heading').text('Активирован протокол "Мужской". Перенесите зоны на фото');
+      jQuery('.wizard_heading').removeClass('unvisible').text('Активирован протокол "Мужской". Перенесите зоны на фото');
     }
     localStorage.setItem('cur_protocol', cur_protocol);
     console.log(cur_protocol);
@@ -214,7 +213,7 @@ jQuery(function() {
     jQuery(this).addClass('hidden');
     jQuery('.wizard_templates').addClass('hidden');
     jQuery('.wizard_to_protDiag, .wizard_prots').removeClass('hidden');
-    jQuery('.wizard_heading').text('Выберите протокол');
+    jQuery('.wizard_heading').text('Выберите протокол').removeClass('unvisible');
     jQuery('.uploaded_pics_wrapper').draggable( "enable");
   });
 
