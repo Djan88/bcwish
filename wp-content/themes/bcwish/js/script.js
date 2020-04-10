@@ -143,22 +143,6 @@ jQuery(function() {
     jQuery('.btn_prot_choice, .btn_rotate').removeClass('wow bounceInUp').removeAttr('style');
     jQuery('.wizard_heading').text('Выберите протокол');
   });
-  // К протоколам с ножа
-  jQuery('.btn_prot_choice_fromDiag').on('click', function(event) {
-    jQuery('.wizard_diag').addClass('hidden');
-    jQuery('.wizard_to_what_way, .wizard_clean_graf').addClass('hidden');
-    jQuery('.wizard_to_protDiag').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_heading').text('Выберите протокол');
-  });
-  // К диагностике
-  jQuery('.btn_diag').on('click', function(event) {
-    jQuery('.wizard_way').addClass('hidden');
-    jQuery('.wizard_to_start').addClass('hidden');
-    jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_diag').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.wizard_heading').text('Определите актуальную зону.');
-  });
 
   //Назад. К выбору режимов
   jQuery('.wizard_to_what_way').on('click', function(event) {
@@ -180,34 +164,24 @@ jQuery(function() {
   //К переносу зон
   jQuery('.wizard_protocol').on('click', function(event) {
     // jQuery('.zone_ring').addClass('hidden');
-    jQuery('.wizard_operation').addClass('hidden');
+    jQuery('.wizard_prots').addClass('hidden');
     jQuery('.ring').removeClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     jQuery('.wizard_to_what_way, .wizard_to_protDiag').addClass('hidden');
     jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
+    jQuery('.wizard_templates').fadeIn(500);
     jQuery('.wizard_heading').text('Осталось перенести зоны на фото и можно начинать!');
-    if (jQuery(this).hasClass('wizard_protocol_1')) {
-      cur_protocol = 'v1';
-    } else if (jQuery(this).hasClass('wizard_protocol_2')) {
-      cur_protocol = 'v2';
-    } else if (jQuery(this).hasClass('wizard_protocol_3')) {
-      cur_protocol = 'v3';
-    } else if (jQuery(this).hasClass('wizard_protocol_4')) {
-      cur_protocol = 'v4';
-    } else if (jQuery(this).hasClass('wizard_protocol_5')) {
-      cur_protocol = 'v5';
-    } else if (jQuery(this).hasClass('wizard_protocol_6')) {
-      cur_protocol = 'drenag';
-    } else if (jQuery(this).hasClass('wizard_protocol_7')) {
-      cur_protocol = 'solis';
-    } else if (jQuery(this).hasClass('wizard_protocol_8')) {
-      cur_protocol = 'visceral';
-    } else if (jQuery(this).hasClass('wizard_protocol_9')) {
-      cur_protocol = 'universal';
+    if (jQuery(this).hasClass('faq_item_1')) {
+      cur_protocol = 'un';
+    } else if (jQuery(this).hasClass('faq_item_2')) {
+      cur_protocol = 'mw';
+    } else if (jQuery(this).hasClass('faq_item_3')) {
+      cur_protocol = 'ww';
+    } else if (jQuery(this).hasClass('faq_item_4')) {
+      cur_protocol = 'mm';
     }
     localStorage.setItem('cur_protocol', cur_protocol);
-
+    console.log(cur_protocol);
   });
 
 

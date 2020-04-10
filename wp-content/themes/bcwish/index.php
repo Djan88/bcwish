@@ -329,13 +329,8 @@
                     <div class="faq_item faq_item_4">МУЖСКОЙ<span>ММ</span></div>
                   </div>
                 </div>
-                <div class="col-sm-1 col-md-1 wizard_prots hidden" id="faq">
-                  <div id="faq-list" class="faq-list wow fadeInLeft">
-                    <div class="faq_item faq_item_1">УНИВЕРСАЛЬНЫЙ<span>УН</span></div>
-                    <div class="faq_item faq_item_2">ОБЩИЙ<span>МЖ</span></div>
-                    <div class="faq_item faq_item_3">ЖЕНСКИЙ<span>ЖЖ</span></div>
-                    <div class="faq_item faq_item_4">МУЖСКОЙ<span>ММ</span></div>
-                  </div>
+                <div class="col-sm-1 col-md-1 wizard_templates hidden wow fadeInLeft" id="template">
+                  шаблоны
                 </div>
                 <div class="col-sm-12 col-md-12 wizard_way hidden">
                   <div class="row uploaded_pics_wrap draggable_photo wow bounceInUp back-to-top_2">
