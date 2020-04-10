@@ -66,21 +66,6 @@ jQuery(function() {
         jQuery('.uploaded_pics_wrapper_1').css('top', -photo_top+'px');
         jQuery('.uploaded_pics_wrapper_1').css('left', -photo_left+'px');
       }
-    },
-    stop: function () {
-      jQuery('.uploaded_pics_wrapper').addClass('slow_top');
-      var img_1 = parseFloat(jQuery('.uploaded_pics_wrapper_1').css('top'));
-      var img_2 = parseFloat(jQuery('.uploaded_pics_wrapper_2').css('top'));
-      if (img_1 < 0) {
-        jQuery('.uploaded_pics_wrapper_1').css('top', 0);
-        jQuery('.uploaded_pics_wrapper_2').css('top', (img_2+img_2)+'px');
-      } else if (img_2 < 0) {
-        jQuery('.uploaded_pics_wrapper_2').css('top', 0);
-        jQuery('.uploaded_pics_wrapper_1').css('top', (img_1+img_1)+'px');
-      }
-      setTimeout(function(){
-        jQuery('.uploaded_pics_wrapper').removeClass('slow_top');
-      },1000);
     }
   });
 
@@ -182,6 +167,7 @@ jQuery(function() {
   //К переносу зон
   jQuery('.faq_item').on('click', function(event) {
     // jQuery('.zone_ring').addClass('hidden');
+    jQuery('.uploaded_pics_wrapper').draggable( "disable");
     jQuery('.wizard_prots, .wizard_to_protDiag').addClass('hidden');
     jQuery('.ring, .wizard_templates, .wizard_to_protList').removeClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
@@ -229,6 +215,7 @@ jQuery(function() {
     jQuery('.wizard_templates').addClass('hidden');
     jQuery('.wizard_to_protDiag, .wizard_prots').removeClass('hidden');
     jQuery('.wizard_heading').text('Выберите протокол');
+    jQuery('.uploaded_pics_wrapper').draggable( "enable");
   });
 
   jQuery('.wizard_clean_graf').on('click', function(event) {
