@@ -1783,6 +1783,10 @@ h3.wizard_heading
   text-align: center;
   transition: all linear 0.4s;
 }
+.wizard_prots
+{
+  transition: all linear 0.4s;
+}
 .header_btn
 {
   position: fixed;
