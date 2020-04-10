@@ -196,6 +196,7 @@ jQuery(function() {
     jQuery(this).addClass('hidden');
     jQuery('.wizard_templates').addClass('hidden');
     jQuery('.wizard_to_protDiag, .wizard_prots').removeClass('hidden');
+    jQuery('.wizard_heading').text('Выберите протокол');
   });
 
   jQuery('.wizard_clean_graf').on('click', function(event) {
