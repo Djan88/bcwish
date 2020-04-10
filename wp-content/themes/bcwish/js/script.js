@@ -128,7 +128,21 @@ jQuery(function() {
     jQuery('.wizard_to_start, .btn_prot_choice').addClass('hidden');
     jQuery('.btn_prot_choice').removeClass('wow bounceInUp').removeAttr('style');
     jQuery('.wizard_heading').text('Выберите протокол');
-    jQuery('.uploaded_pics_wrapper').draggable( "disable");
+    jQuery('.uploaded_pics_wrapper').addClass('slow_top');
+    // jQuery('.uploaded_pics_wrapper').draggable( "disable");
+    var img_1 = parseFloat(jQuery('.uploaded_pics_wrapper_1').css('top'));
+    var img_2 = parseFloat(jQuery('.uploaded_pics_wrapper_2').css('top'));
+    if (img_1 < 0) {
+      jQuery('.uploaded_pics_wrapper_1').css('top', 0);
+      jQuery('.uploaded_pics_wrapper_2').css('top', (img_1+img_2)+'px');
+    }
+    if (img_2 < 0) {
+      jQuery('.uploaded_pics_wrapper_2').css('top', 0);
+      jQuery('.uploaded_pics_wrapper_1').css('top', (img_1+img_2)+'px');
+    }
+    setTimeout(function(){
+      jQuery('.uploaded_pics_wrapper').removeClass('slow_top');
+    },1000);
   });
 
   //Назад. К выбору режимов
@@ -148,7 +162,7 @@ jQuery(function() {
     jQuery('.wizard_prots').fadeOut(500).removeClass('col-sm-6 col-md-6').addClass('col-sm-1 col-md-1 hidden');
     jQuery('.wizard_way').removeClass('col-sm-6 col-md-6').addClass('col-sm-12 col-md-12');
     jQuery('.wizard_heading').text('Диагностика');
-    jQuery('.uploaded_pics_wrapper').draggable( "enable");
+    // jQuery('.uploaded_pics_wrapper').draggable( "enable");
   });
 
   //К переносу зон

@@ -2378,6 +2378,10 @@ button.wizard_starter_alt.btn.btn-success
   height: auto;
   display: block;
 }
+.slow_top
+{
+  transition: top 0.2s;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
