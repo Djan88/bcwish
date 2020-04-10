@@ -134,11 +134,10 @@ jQuery(function() {
     var img_2 = parseFloat(jQuery('.uploaded_pics_wrapper_2').css('top'));
     if (img_1 < 0) {
       jQuery('.uploaded_pics_wrapper_1').css('top', 0);
-      jQuery('.uploaded_pics_wrapper_2').css('top', (img_1+img_2)+'px');
-    }
-    if (img_2 < 0) {
+      jQuery('.uploaded_pics_wrapper_2').css('top', (img_2+img_2)+'px');
+    } else if (img_2 < 0) {
       jQuery('.uploaded_pics_wrapper_2').css('top', 0);
-      jQuery('.uploaded_pics_wrapper_1').css('top', (img_1+img_2)+'px');
+      jQuery('.uploaded_pics_wrapper_1').css('top', (img_1+img_1)+'px');
     }
     setTimeout(function(){
       jQuery('.uploaded_pics_wrapper').removeClass('slow_top');
