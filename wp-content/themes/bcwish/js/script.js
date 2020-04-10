@@ -140,6 +140,8 @@ jQuery(function() {
     jQuery('.wizard_way').removeClass('col-sm-12 col-md-12').addClass('col-sm-6 col-md-6');
     jQuery('.wizard_prots').removeClass('col-sm-1 col-md-1 hidden').addClass('col-sm-6 col-md-6');
     jQuery('.wizard_heading').removeClass('unvisible');
+    jQuery('.wizard_to_protDiag').removeClass('hidden');
+    jQuery('.wizard_to_start').addClass('hidden');
     jQuery('.btn_prot_choice, .btn_rotate').removeClass('wow bounceInUp').removeAttr('style');
     jQuery('.wizard_heading').text('Выберите протокол');
   });
@@ -156,9 +158,10 @@ jQuery(function() {
   jQuery('.wizard_to_protDiag').on('click', function(event) {
     jQuery('.wizard_prots').addClass('hidden');
     jQuery('.wizard_to_protDiag').addClass('hidden');
-    jQuery('.wizard_to_what_way, .wizard_clean_graf').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_diag').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_heading').text('Определите актуальную зону.');
+    jQuery('.wizard_to_start').removeClass('hidden');
+    jQuery('.wizard_way').removeClass('col-sm-6 col-md-6').addClass('col-sm-12 col-md-12');
+    jQuery('.wizard_prots').removeClass('col-sm-6 col-md-6').addClass('col-sm-1 col-md-1 hidden');
+    jQuery('.wizard_heading').text('Диагностика');
   });
 
   //К переносу зон
