@@ -322,24 +322,6 @@
               </div>
               <div class="row wizard_operation">
                 <div class="col-md-6 wizard_way hidden">
-                  шаблоны
-                </div>
-                <div class="col-md-6 wizard_way hidden">
-                  <!-- <button class="btn btn-success btn_diag wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.4s">Диагностика</button> -->
-                  <div class="row uploaded_pics_wrap draggable_photo wow bounceInUp back-to-top_2">
-                    <div class="uploaded_pics_wrapper uploaded_pics_wrapper_1 draggable_photo wow bounceInUp back-to-top_1" data-wow-duration="1.4s" data-wow-delay="0.4s">
-                      <img src="" alt="" class="uploaded_pics uploaded_pics_1">
-                    </div>
-                    <div class="uploaded_pics_wrapper uploaded_pics_wrapper_2 draggable_photo wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.8s">
-                      <img src="" alt="" class="uploaded_pics uploaded_pics_2 ">
-                    </div>
-                  </div>
-                  <button class="btn btn-success btn_prot_choice wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="1.2s">Выбор протокола</button>
-                  <button class="btn btn-success btn_rotate btn_rotate_left wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="1.2s"><i class="fa fa-undo"></i></button>
-                  <button class="btn btn-success btn_rotate btn_rotate_right hidden"><i class="fa fa-undo"></i></button>
-                  
-                </div>
-                <div id="faq" class="col-md-12 wizard_prots hidden">
                   <ul id="faq-list" class="wow fadeInUp">
                     <li>
                       <a data-toggle="collapse" href="#faq9" class="collapsed">УНИВЕРСАЛЬНЫЙ <i class="ion-android-remove"></i></a>
@@ -389,74 +371,24 @@
                         <?php } ?>
                       </div>
                     </li>
-                    <li>
-                      <a data-toggle="collapse" href="#faq4" class="collapsed">(V4) ЗЛОСТЬ И РАЗДРАЖЕНИЕ <i class="ion-android-remove"></i></a>
-                      <div id="faq4" class="collapse" data-parent="#faq-list">
-                        <p>
-                          Коррекция переживаний основанных на раздражительной злости, беспокойстве, тревожности, суеты, торопливости и заниженной самооценки. Негативных влияний сновидений и прочих насад на пуповину Рода. Проблем поведенческой наследственности с передачей по женской линии.
-                        </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
-                          <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
-                        <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_4 wizard_prot_4 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
-                        <?php } ?>
-                      </div>
-                    </li>
-                    <li>
-                      <a data-toggle="collapse" href="#faq5" class="collapsed">(V5) ВОСХОДЯЩИЙ ПОТОК СИЛЫ <i class="ion-android-remove"></i></a>
-                      <div id="faq5" class="collapse" data-parent="#faq-list">
-                        <p>
-                          Коррекция блокировки восходящего потока жизненной Силы -  невротических переживаний нехватки воздуха, страхов закрытого пространства, высоты, навязчивого мытья рук и прочих обсессий и компульсий. Синдрома хронической усталости, отсутствия желаний, либидо и прочей хандры. Проблем поведенческой наследственности с передачей по мужской линии, последствий депривации детского возраста.
-                        </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
-                          <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
-                        <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_5 wizard_prot_5 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
-                        <?php } ?>
-                      </div>
-                    </li>
-                    <li>
-                      <a data-toggle="collapse" href="#faq6" class="collapsed">ДРЕНАЖ <i class="ion-android-remove"></i></a>
-                      <div id="faq6" class="collapse" data-parent="#faq-list">
-                        <p>
-                          Реактивация ресурсов организма через устранение негативного флюида из зон DSV с последующим наполнением зон позитивным флюидом.<br>
-                          Рекомендован при хронических либо кармически отягощенных, а также гипоресурсных состояниях. Можно применять сразу дополнительно после основного протокола либо самостоятельно.
-                        </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
-                          <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
-                        <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_6 wizard_prot_6 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
-                        <?php } ?>
-                      </div>
-                    </li>
-                    <li>
-                      <a data-toggle="collapse" href="#faq7" class="collapsed">SOLIS <i class="ion-android-remove"></i></a>
-                      <div id="faq7" class="collapse" data-parent="#faq-list">
-                        <p>
-                          Протокол для коррекции энергетического баланса на Полнолуние. Способствует наилучшему  продольному прохождению через тело и систему  DSV восходящего потока жизненной Силы с последующим формированием порции высокопотенциированного позитивного флюида (Плода) используемого в последующем для успешной реализации наших добрых Намерений и Дел.<br>
-                           Работает только в дни Полнолуния!
-                        </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
-                          <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
-                        <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_7 wizard_prot_7 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
-                        <?php } ?>
-                      </div>
-                    </li>
-                    <li>
-                      <a data-toggle="collapse" href="#faq8" class="collapsed">ВИСЦЕРАЛЬНЫЙ <i class="ion-android-remove"></i></a>
-                      <div id="faq8" class="collapse" data-parent="#faq-list">
-                        <p>
-                          Предназначен для оптимального энергетического баланса внутренних органов, включая нормализацию обмена веществ, иммунитета и гормонов! Может быть использован в комбинации с другими DSV протоколами либо самостоятельно.
-                        </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
-                          <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
-                        <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_8 wizard_prot_8 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
-                        <?php } ?>
-                      </div>
-                    </li>
                   </ul>
+                </div>
+                <div class="col-md-6 wizard_way hidden">
+                  <div class="row uploaded_pics_wrap draggable_photo wow bounceInUp back-to-top_2">
+                    <div class="uploaded_pics_wrapper uploaded_pics_wrapper_1 draggable_photo wow bounceInUp back-to-top_1" data-wow-duration="1.4s" data-wow-delay="0.4s">
+                      <img src="" alt="" class="uploaded_pics uploaded_pics_1">
+                    </div>
+                    <div class="uploaded_pics_wrapper uploaded_pics_wrapper_2 draggable_photo wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.8s">
+                      <img src="" alt="" class="uploaded_pics uploaded_pics_2 ">
+                    </div>
+                  </div>
+                  <button class="btn btn-success btn_prot_choice wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="1.2s">Выбор протокола</button>
+                  <button class="btn btn-success btn_rotate btn_rotate_left wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="1.2s"><i class="fa fa-undo"></i></button>
+                  <button class="btn btn-success btn_rotate btn_rotate_right hidden"><i class="fa fa-undo"></i></button>
+                  
+                </div>
+                <div id="faq" class="col-md-12 wizard_prots hidden">
+                  
                 </div>
               </div>
               <div class="row wizard_main_screen hidden">
