@@ -322,7 +322,7 @@
               </div>
               <div class="row wizard_operation">
                 <div class="col-md-1 wizard_prots hidden" id="faq">
-                  <ul id="faq-list" class="wow fadeInRight">
+                  <ul id="faq-list" class="wow fadeInLeft">
                     <li>
                       <a data-toggle="collapse" href="#faq9" class="collapsed">УНИВЕРСАЛЬНЫЙ <i class="ion-android-remove"></i></a>
                       <div id="faq9" class="collapse" data-parent="#faq-list">
