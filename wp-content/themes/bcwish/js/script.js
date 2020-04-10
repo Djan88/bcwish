@@ -137,8 +137,8 @@ jQuery(function() {
 
   // К протоколам
   jQuery('.btn_prot_choice').on('click', function(event) {
-    jQuery('.wizard_way').removeClass('col-md-12').addClass('col-md-6');
-    jQuery('.wizard_prots').removeClass('col-md-1 hidden').addClass('col-md-6');
+    jQuery('.wizard_way').removeClass('col-xs-12').addClass('col-xs-6');
+    jQuery('.wizard_prots').removeClass('col-xs-1 hidden').addClass('col-xs-6');
     jQuery('.wizard_heading').removeClass('unvisible');
     jQuery('.btn_prot_choice, .btn_rotate').removeClass('wow bounceInUp').removeAttr('style');
     jQuery('.wizard_heading').text('Выберите протокол');
@@ -179,7 +179,7 @@ jQuery(function() {
 
   //К переносу зон
   jQuery('.wizard_protocol').on('click', function(event) {
-    jQuery('.zone_ring').addClass('hidden');
+    // jQuery('.zone_ring').addClass('hidden');
     jQuery('.wizard_operation').addClass('hidden');
     jQuery('.ring').removeClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');

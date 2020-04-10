@@ -321,63 +321,23 @@
                 </div>
               </div>
               <div class="row wizard_operation">
-                <div class="col-md-1 wizard_prots hidden" id="faq">
+                <div class="col-xs-1 wizard_prots hidden" id="faq">
                   <div id="faq-list" class="faq-list wow fadeInLeft">
                     <div class="faq_item faq_item_1">УНИВЕРСАЛЬНЫЙ<span>УН</span></div>
                     <div class="faq_item faq_item_2">ОБЩИЙ<span>МЖ</span></div>
+                    <div class="faq_item faq_item_3">ЖЕНСКИЙ<span>ЖЖ</span></div>
+                    <div class="faq_item faq_item_4">МУЖСКОЙ<span>ММ</span></div>
                   </div>
-                  <ul id="faq-list" class="wow fadeInLeft">
-                    <li>
-                      <a data-toggle="collapse" href="#faq9" class="collapsed">УНИВЕРСАЛЬНЫЙ <i class="ion-android-remove"></i></a>
-                      <div id="faq9" class="collapse" data-parent="#faq-list">
-                        <p>
-                          Универсальный протокол - самодостаточный глобальный протокол. Применяем в непонятных случаях.
-                        </p>
-                        <p><button class="btn wizard_blue wizard_protocol wizard_protocol_9 wizard_prot_9 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
-                      </div>
-                    </li>
-                    <li>
-                      <a data-toggle="collapse" class="collapsed" href="#faq1">(V1) НИЖНИЕ МИРЫ <i class="ion-android-remove"></i></a>
-                      <div id="faq1" class="collapse" data-parent="#faq-list">
-                        <p>
-                          «Краниальный протокол» - применяем при флюэдической нагрузке головы, а также пространства над головой и под ногами. Терапия типичных последствий магии или несовсем экологичного занятия энергетическими практиками. Последствия посещения «мест силы» в экзотических странах, а также приема внутрь всяких психоактивных гадостей, будь то грибы или айаваска.
-                        </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
-                          <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
-                        <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_1 wizard_prot_1 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
-                        <?php } ?>
-                      </div>
-                    </li>
-                    <li>
-                      <a data-toggle="collapse" href="#faq2" class="collapsed">(V2) ГОРЕ ОТ УМА <i class="ion-android-remove"></i></a>
-                      <div id="faq2" class="collapse" data-parent="#faq-list">
-                        <p>
-                          Коррекция ситуации «Горе от ума» с вторичным подавлением восходящего потока Ресурса жизненной Силы. Дилемм, проблем выбора цели или предметов. Вовлечения во что-либо и вожделения. Регулярных состояний недостижения результата, событийного вектора «Потеря», особенно повторяющихся по типу «дня сурка». Отсутствие поддержки Отца.
-                        </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
-                          <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
-                        <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_2 wizard_prot_2 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
-                        <?php } ?>
-                      </div>
-                    </li>
-                    <li>
-                      <a data-toggle="collapse" href="#faq3" class="collapsed">(V3) МОЯ ПРАВДА <i class="ion-android-remove"></i></a>
-                      <div id="faq3" class="collapse" data-parent="#faq-list">
-                        <p>
-                          Коррекция переживаний, основанных на неприятии себя, ощущении, что «живу не своей жизнью». Саморазрушительных тенденций, основанных на внешнем гиперконтроле Матери и подавлении, исходящем от нее.<br>Чувства непереносимости ситуации либо отношений. Несправедливости. Избыточного Действия по преодолению сложностей в делах.
-                        </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
-                          <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
-                        <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_3 wizard_prot_3 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
-                        <?php } ?>
-                      </div>
-                    </li>
-                  </ul>
                 </div>
-                <div class="col-md-12 wizard_way hidden">
+                <div class="col-xs-1 wizard_prots hidden" id="faq">
+                  <div id="faq-list" class="faq-list wow fadeInLeft">
+                    <div class="faq_item faq_item_1">УНИВЕРСАЛЬНЫЙ<span>УН</span></div>
+                    <div class="faq_item faq_item_2">ОБЩИЙ<span>МЖ</span></div>
+                    <div class="faq_item faq_item_3">ЖЕНСКИЙ<span>ЖЖ</span></div>
+                    <div class="faq_item faq_item_4">МУЖСКОЙ<span>ММ</span></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 wizard_way hidden">
                   <div class="row uploaded_pics_wrap draggable_photo wow bounceInUp back-to-top_2">
                     <div class="uploaded_pics_wrapper uploaded_pics_wrapper_1 draggable_photo wow bounceInUp back-to-top_1" data-wow-duration="1.4s" data-wow-delay="0.4s">
                       <img src="" alt="" class="uploaded_pics uploaded_pics_1">
