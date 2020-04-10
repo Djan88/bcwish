@@ -432,7 +432,6 @@ h6 {
 {
   text-align: center;
   display: block;
-  padding-top: 40px;
   min-height: 450px;
 }
 
@@ -1775,9 +1774,14 @@ h3.wizard_heading
   font-size: 28px;
   margin-top: 40px;
 }
-.col-md-12.wizard_way 
+.wizard_operation
+{
+  white-space: nowrap;
+}
+.wizard_way 
 {
   text-align: center;
+  transition: width linear 0.4s;
 }
 .header_btn
 {
