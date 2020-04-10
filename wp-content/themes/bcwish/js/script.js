@@ -170,14 +170,17 @@ jQuery(function() {
     jQuery('.wizard_to_what_way, .wizard_to_protDiag').addClass('hidden');
     jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_templates').fadeIn(500);
-    jQuery('.wizard_heading').text('Осталось перенести зоны на фото и можно начинать!');
     if (jQuery(this).hasClass('faq_item_1')) {
       cur_protocol = 'un';
+      jQuery('.wizard_heading').text('Активирован протокол "Универсальный". Перенесите зоны на фото');
     } else if (jQuery(this).hasClass('faq_item_2')) {
+      jQuery('.wizard_heading').text('Активирован протокол "Общий". Перенесите зоны на фото');
       cur_protocol = 'mw';
     } else if (jQuery(this).hasClass('faq_item_3')) {
+      jQuery('.wizard_heading').text('Активирован протокол "Женский". Перенесите зоны на фото');
       cur_protocol = 'ww';
     } else if (jQuery(this).hasClass('faq_item_4')) {
+      jQuery('.wizard_heading').text('Активирован протокол "Мужской". Перенесите зоны на фото');
       cur_protocol = 'mm';
     }
     localStorage.setItem('cur_protocol', cur_protocol);
