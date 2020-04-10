@@ -329,7 +329,7 @@
                     <div class="faq_item faq_item_4">МУЖСКОЙ<span>ММ</span></div>
                   </div>
                 </div>
-                <div class="col-sm-1 col-md-1 wizard_templates hidden wow fadeInLeft" id="template">
+                <div class="col-sm-6 col-md-6 wizard_templates hidden wow fadeInLeft" id="template">
                   шаблоны
                 </div>
                 <div class="col-sm-12 col-md-12 wizard_way hidden">
