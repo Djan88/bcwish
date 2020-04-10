@@ -335,7 +335,7 @@
                   <img src="<?php bloginfo('template_url'); ?>/img/ww.png" alt="" class="wizard_template wizard_template_3 hidden">
                 </div>
                 <div class="col-sm-12 col-md-12 wizard_way hidden">
-                  <div class="row uploaded_pics_wrap draggable_photo wow bounceInUp back-to-top_2">
+                  <div class="row uploaded_pics_wrap wow bounceInUp back-to-top_2">
                     <div class="uploaded_pics_wrapper uploaded_pics_wrapper_1 draggable_photo wow bounceInUp back-to-top_1" data-wow-duration="1.4s" data-wow-delay="0.4s">
                       <img src="" alt="" class="uploaded_pics uploaded_pics_1">
                     </div>
