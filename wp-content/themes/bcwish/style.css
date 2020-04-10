@@ -2372,6 +2372,12 @@ button.wizard_starter_alt.btn.btn-success
 {
   float: right;
 }
+.wizard_template
+{
+  width: 500px;
+  height: auto;
+  display: block;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
