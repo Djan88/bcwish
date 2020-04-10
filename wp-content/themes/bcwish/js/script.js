@@ -55,17 +55,17 @@ jQuery(function() {
     containment: '.uploaded_pics_wrap',
     drag: function() {
       jQuery('.wizard_heading').addClass('unvisible');
-      // if (jQuery(this).hasClass('uploaded_pics_wrapper_1')) {
-      //   photo_left = parseFloat(jQuery(this).css('left'));
-      //   photo_top = parseFloat(jQuery(this).css('top'));
-      //   jQuery('.uploaded_pics_wrapper_2').css('top', -photo_top+'px');
-      //   jQuery('.uploaded_pics_wrapper_2').css('left', -photo_left+'px');
-      // } else if (jQuery(this).hasClass('uploaded_pics_wrapper_2')) {} {
-      //   photo_left = parseFloat(jQuery(this).css('left'));
-      //   photo_top = parseFloat(jQuery(this).css('top'));
-      //   jQuery('.uploaded_pics_wrapper_1').css('top', -photo_top+'px');
-      //   jQuery('.uploaded_pics_wrapper_1').css('left', -photo_left+'px');
-      // }
+      if (jQuery(this).hasClass('uploaded_pics_wrapper_1')) {
+        photo_left = parseFloat(jQuery(this).css('left'));
+        photo_top = parseFloat(jQuery(this).css('top'));
+        jQuery('.uploaded_pics_wrapper_2').css('top', -photo_top+'px');
+        jQuery('.uploaded_pics_wrapper_2').css('left', -photo_left+'px');
+      } else if (jQuery(this).hasClass('uploaded_pics_wrapper_2')) {} {
+        photo_left = parseFloat(jQuery(this).css('left'));
+        photo_top = parseFloat(jQuery(this).css('top'));
+        jQuery('.uploaded_pics_wrapper_1').css('top', -photo_top+'px');
+        jQuery('.uploaded_pics_wrapper_1').css('left', -photo_left+'px');
+      }
     }
   });
 
