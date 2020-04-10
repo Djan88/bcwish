@@ -94,22 +94,6 @@ jQuery(function() {
     }
   }
 
-// Вращение фото
-
-  // jQuery('.btn_rotate_left').on('click', function(event) {
-  //   jQuery(this).addClass('hidden').removeClass('wow bounceInUp').removeAttr('style');
-  //   jQuery('.wizard_heading').addClass('unvisible');
-  //   jQuery('.btn_rotate_right').removeClass('hidden');
-  //   jQuery('.uploaded_pics_wrapper').css('transform', 'rotate(-90deg)');
-  //   nextSound.play();
-  // });
-  // jQuery('.btn_rotate_right').on('click', function(event) {
-  //   jQuery(this).addClass('hidden');
-  //   jQuery('.btn_rotate_left').removeClass('hidden');
-  //   jQuery('.uploaded_pics_wrapper').css('transform', 'rotate(0deg)');
-  //   nextSound.play();
-  // });
-
 // Вторая кнопка обрезки
   jQuery('.wizard_crop').on('click', function(event) {
     jQuery('.crop_photo').click();
@@ -144,6 +128,7 @@ jQuery(function() {
     jQuery('.wizard_to_start, .btn_prot_choice').addClass('hidden');
     jQuery('.btn_prot_choice').removeClass('wow bounceInUp').removeAttr('style');
     jQuery('.wizard_heading').text('Выберите протокол');
+    jQuery('.uploaded_pics_wrapper').removeClass('draggable');
   });
 
   //Назад. К выбору режимов
