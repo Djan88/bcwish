@@ -322,6 +322,10 @@
               </div>
               <div class="row wizard_operation">
                 <div class="col-md-1 wizard_prots hidden" id="faq">
+                  <div id="faq-list" class="faq-list wow fadeInLeft">
+                    <div class="faq_item faq_item_1">УНИВЕРСАЛЬНЫЙ<span>УН</span></div>
+                    <div class="faq_item faq_item_2">ОБЩИЙ<span>МЖ</span></div>
+                  </div>
                   <ul id="faq-list" class="wow fadeInLeft">
                     <li>
                       <a data-toggle="collapse" href="#faq9" class="collapsed">УНИВЕРСАЛЬНЫЙ <i class="ion-android-remove"></i></a>
