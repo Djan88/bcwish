@@ -432,7 +432,7 @@ h6 {
 {
   text-align: center;
   display: block;
-  min-height: 650px;
+  /*min-height: 650px;*/
 }
 
 .btn_prot_choice 
