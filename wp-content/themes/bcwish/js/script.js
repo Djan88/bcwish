@@ -52,7 +52,7 @@ jQuery(function() {
 
   // Dragging knife
   jQuery('.draggable_photo').draggable({
-    containment: '#main',
+    containment: '.uploaded_pics_wrap',
     drag: function() {
       jQuery('.wizard_heading').addClass('unvisible');
       if (jQuery(this).hasClass('uploaded_pics_wrapper_1')) {
