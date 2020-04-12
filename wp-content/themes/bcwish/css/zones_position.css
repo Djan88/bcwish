@@ -407,7 +407,7 @@
 }
 .wizard_templates_mm .zone_d5
 {
-  left: 195x;
+  left: 125px;
   top: 172px;
 }
 .wizard_templates_mm .zone_s2
@@ -437,85 +437,85 @@
 }
 
 /*MM_ALT*/
-.wizard_templates_mm .zone_alt_v1
+.wizard_templates_mm .zone_v1
 {
-  left: 227px;
-  top: 11px;
+  left: 152px;
+  top: 300px;
 }
-.wizard_templates_mm .zone_alt_v2
+.wizard_templates_mm .zone_v2
 {
-  left: 227px;
-  top: 52px;
+  left: 152px;
+  top: 341px;
 }
-.wizard_templates_mm .zone_alt_v3
+.wizard_templates_mm .zone_v3
 {
-  left: 227px;
-  top: 86px;
+  left: 152px;
+  top: 371px;
 }
-.wizard_templates_mm .zone_alt_v4
+.wizard_templates_mm .zone_v4
 {
-  left: 227px;
-  top: 116px;
+  left: 152px;
+  top: 402px;
 }
-.wizard_templates_mm .zone_alt_v5
+.wizard_templates_mm .zone_v5
 {
-  left: 227px;
-  top: 142px;
+  left: 152px;
+  top: 429px;
 }
-.wizard_templates_mm .zone_alt_v-
+.wizard_templates_mm .zone_v-
 {
-  left: 227px;
-  top: 273px;
+  left: 152px;
+  top: 559px;
 }
-.wizard_templates_mm .zone_alt_d2
+.wizard_templates_mm .zone_d2
 {
-  left: 197px;
-  top: 50px;
+  left: 114px;
+  top: 336px;
 }
-.wizard_templates_mm .zone_alt_d2_
+.wizard_templates_mm .zone_d2_
 {
-  left: 203px;
-  top: 76px;
+  left: 122px;
+  top: 361px;
 }
-.wizard_templates_mm .zone_alt_d3
+.wizard_templates_mm .zone_d3
 {
-  left: 205px;
-  top: 102px;
+  left: 126px;
+  top: 389px;
 }
-.wizard_templates_mm .zone_alt_d4
+.wizard_templates_mm .zone_d4
 {
-  left: 203px;
-  top: 129px;
+  left: 128px;
+  top: 414px;
 }
-.wizard_templates_mm .zone_alt_d5
+.wizard_templates_mm .zone_d5
 {
-  left: 203px;
-  top: 175px;
+  left: 125px;
+  top: 461px;
 }
-.wizard_templates_mm .zone_alt_s2
+.wizard_templates_mm .zone_s2
 {
-  left: 259px;
-  top: 50px;
+  left: 186px;
+  top: 336px;
 }
-.wizard_templates_mm .zone_alt_s2_
+.wizard_templates_mm .zone_s2_
 {
-  left: 252px;
-  top: 76px;
+  left: 180px;
+  top: 361px;
 }
-.wizard_templates_mm .zone_alt_s3
+.wizard_templates_mm .zone_s3
 {
-  left: 250px;
-  top: 102px;
+  left: 176px;
+  top: 389px;
 }
-.wizard_templates_mm .zone_alt_s4
+.wizard_templates_mm .zone_s4
 {
-  left: 250px;
-  top: 129px;
+  left: 175px;
+  top: 414px;
 }
-.wizard_templates_mm .zone_alt_s5
+.wizard_templates_mm .zone_s5
 {
-  left: 252px;
-  top: 175px;
+  left: 182px;
+  top: 461px;
 }
 
 @media (max-width: 1199px) {
