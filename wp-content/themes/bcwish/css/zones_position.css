@@ -3,8 +3,8 @@
 {
   width: 450px;
   height: 450px;
-  left: -72px;
-  top: -38px;
+  left: -60px;
+  top: -45px;
 }
 .wizard_templates_mw .zone_v1
 {
@@ -169,84 +169,5 @@
   top: 175px;
 }
 @media (max-width: 1199px) {
-  .wizard_templates_mw .zone_v1
-  {
-    left: 250px;
-    top: 37px;
-  }
-  .wizard_templates_mw .zone_v2
-  {
-    left: 250px;
-    top: 93px;
-  }
-  .wizard_templates_mw .zone_v3
-  {
-    left: 250px;
-    top: 145px;
-  }
-  .wizard_templates_mw .zone_v4
-  {
-    left: 250px;
-    top: 192px;
-  }
-  .wizard_templates_mw .zone_v5
-  {
-    left: 250px;
-    top: 230px;
-  }
-  .wizard_templates_mw .zone_v-
-  {
-    left: 250px;
-    top: 460px;
-  }
-  .wizard_templates_mw .zone_d2
-  {
-    left: 200px;
-    top: 94px;
-  }
-  .wizard_templates_mw .zone_d2_
-  {
-    left: 200px;
-    top: 138px;
-  }
-  .wizard_templates_mw .zone_d3
-  {
-    left: 215px;
-    top: 170px;
-  }
-  .wizard_templates_mw .zone_d4
-  {
-    left: 215px;
-    top: 210px;
-  }
-  .wizard_templates_mw .zone_d5
-  {
-    left: 211px;
-    top: 277px;
-  }
-  .wizard_templates_mw .zone_s2
-  {
-    left: 295px;
-    top: 94px;
-  }
-  .wizard_templates_mw .zone_s2_
-  {
-    left: 295px;
-    top: 138px;
-  }
-  .wizard_templates_mw .zone_s3
-  {
-    left: 285px;
-    top: 170px;
-  }
-  .wizard_templates_mw .zone_s4
-  {
-    left: 287px;
-    top: 210px;
-  }
-  .wizard_templates_mw .zone_s5
-  {
-    left: 287px;
-    top: 277px;
-  }
+
 } 
