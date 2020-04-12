@@ -258,7 +258,7 @@
   top: 171px;
 }
 
-/*WM_ALT*/
+/*WW_ALT*/
 .wizard_templates_ww .ring
 {
   width: 605px;
@@ -346,6 +346,178 @@
   left: 173px;
   top: 461px;
 }
+
+/*MM*/
+.wizard_templates_mw .ring
+{
+  width: 605px;
+  height: 605px;
+  left: -140px;
+  top: -10px;
+}
+.wizard_templates_mw .zone_v1
+{
+  left: 152px;
+  top: 11px;
+}
+.wizard_templates_mw .zone_v2
+{
+  left: 152px;
+  top: 52px;
+}
+.wizard_templates_mw .zone_v3
+{
+  left: 152px;
+  top: 82px;
+}
+.wizard_templates_mw .zone_v4
+{
+  left: 152px;
+  top: 112px;
+}
+.wizard_templates_mw .zone_v5
+{
+  left: 152px;
+  top: 140px;
+}
+.wizard_templates_mw .zone_v-
+{
+  left: 152px;
+  top: 270px;
+}
+.wizard_templates_mw .zone_d2
+{
+  left: 114px;
+  top: 47px;
+}
+.wizard_templates_mw .zone_d2_
+{
+  left: 122px;
+  top: 72px;
+}
+.wizard_templates_mw .zone_d3
+{
+  left: 126px;
+  top: 100px;
+}
+.wizard_templates_mw .zone_d4
+{
+  left: 128px;
+  top: 125px;
+}
+.wizard_templates_mw .zone_d5
+{
+  left: 195x;
+  top: 172px;
+}
+.wizard_templates_mw .zone_s2
+{
+  left: 186px;
+  top: 47px;
+}
+.wizard_templates_mw .zone_s2_
+{
+  left: 180px;
+  top: 72px;
+}
+.wizard_templates_mw .zone_s3
+{
+  left: 176px;
+  top: 100px;
+}
+.wizard_templates_mw .zone_s4
+{
+  left: 175px;
+  top: 125px;
+}
+.wizard_templates_mw .zone_s5
+{
+  left: 182px;
+  top: 172px;
+}
+
+/*MM_ALT*/
+.wizard_templates_mw .zone_alt_v1
+{
+  left: 227px;
+  top: 11px;
+}
+.wizard_templates_mw .zone_alt_v2
+{
+  left: 227px;
+  top: 52px;
+}
+.wizard_templates_mw .zone_alt_v3
+{
+  left: 227px;
+  top: 86px;
+}
+.wizard_templates_mw .zone_alt_v4
+{
+  left: 227px;
+  top: 116px;
+}
+.wizard_templates_mw .zone_alt_v5
+{
+  left: 227px;
+  top: 142px;
+}
+.wizard_templates_mw .zone_alt_v-
+{
+  left: 227px;
+  top: 273px;
+}
+.wizard_templates_mw .zone_alt_d2
+{
+  left: 197px;
+  top: 50px;
+}
+.wizard_templates_mw .zone_alt_d2_
+{
+  left: 203px;
+  top: 76px;
+}
+.wizard_templates_mw .zone_alt_d3
+{
+  left: 205px;
+  top: 102px;
+}
+.wizard_templates_mw .zone_alt_d4
+{
+  left: 203px;
+  top: 129px;
+}
+.wizard_templates_mw .zone_alt_d5
+{
+  left: 203px;
+  top: 175px;
+}
+.wizard_templates_mw .zone_alt_s2
+{
+  left: 259px;
+  top: 50px;
+}
+.wizard_templates_mw .zone_alt_s2_
+{
+  left: 252px;
+  top: 76px;
+}
+.wizard_templates_mw .zone_alt_s3
+{
+  left: 250px;
+  top: 102px;
+}
+.wizard_templates_mw .zone_alt_s4
+{
+  left: 250px;
+  top: 129px;
+}
+.wizard_templates_mw .zone_alt_s5
+{
+  left: 252px;
+  top: 175px;
+}
+
 @media (max-width: 1199px) {
 
 } 
