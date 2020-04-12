@@ -1847,15 +1847,16 @@ h3.wizard_heading
 }
 .zone 
 {
-  width: 30px!important;
-  height: 30px!important;
+  width: 25px!important;
+  height: 25px!important;
   background: #fff;
   cursor: pointer;
   border-radius: 50%;
   color: #413e66;
   text-align: center;
-  padding-top: 2px;
-  border: 1px solid #413e66;
+  font-size: 14px;
+  padding-top: 1px;
+  border: 1px solid green;
   z-index: 3;
   position: absolute!important;
   transition: transform 0.250s linear;
@@ -1866,7 +1867,7 @@ h3.wizard_heading
   position: absolute;
   width: 500px;
   border-top: 1px solid red;
-  top: 14px;
+  top: 11px;
   left: -220px;
 }
 .zone:hover:after
@@ -1876,7 +1877,7 @@ h3.wizard_heading
   height: 500px;
   border-left: 1px solid red;
   top: -220px;
-  left: 14px;
+  left: 11px;
 }
 .wizard_main_screen 
 {

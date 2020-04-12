@@ -360,7 +360,7 @@
                   <div class="zone zone_movable zone_alt_v1 draggable">V1</div>
                   <div class="zone zone_movable zone_alt_v2 draggable">V2</div>
                   <div class="zone zone_movable zone_alt_v3 draggable">V3</div>
-                  <div class="zone zone_movable zone_v4 draggable">V4</div>
+                  <div class="zone zone_movable zone_alt_v4 draggable">V4</div>
                   <div class="zone zone_movable zone_alt_v5 draggable">V5</div>
                   <div class="zone zone_movable zone_alt_v- draggable">V-</div>
 
