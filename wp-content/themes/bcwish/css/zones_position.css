@@ -2,6 +2,9 @@
 .wizard_templates_mw .ring
 {
   width: 450px;
+  height: 450px;
+  left: -72px;
+  top: -38px;
 }
 .wizard_templates_mw .zone_v1
 {
@@ -140,7 +143,7 @@
   left: 203px;
   top: 175px;
 }
-.wizard_templates_mw .zone_s2
+.wizard_templates_mw .zone_alt_s2
 {
   left: 259px;
   top: 50px;
