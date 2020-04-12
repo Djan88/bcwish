@@ -1,0 +1,177 @@
+.wizard_templates_mw .zone_v0
+{
+  left: 270px;
+  top: 1px;
+}
+.wizard_templates_mw .zone_v1
+{
+  left: 270px;
+  top: 37px;
+}
+.wizard_templates_mw .zone_v2
+{
+  left: 270px;
+  top: 93px;
+}
+.wizard_templates_mw .zone_v3
+{
+  left: 270px;
+  top: 145px;
+}
+.wizard_templates_mw .zone_v4
+{
+  left: 270px;
+  top: 191px;
+}
+.wizard_templates_mw .zone_v5
+{
+  left: 270px;
+  top: 230px;
+}
+.wizard_templates_mw .zone_v-
+{
+  left: 270px;
+  top: 460px;
+}
+.wizard_templates_mw .zone_d2
+{
+  left: 219px;
+  top: 94px;
+}
+.wizard_templates_mw .zone_d2_
+{
+  left: 219px;
+  top: 138px;
+}
+.wizard_templates_mw .zone_d3
+{
+  left: 236px;
+  top: 170px;
+}
+.wizard_templates_mw .zone_d4
+{
+  left: 234px;
+  top: 210px;
+}
+.wizard_templates_mw .zone_d5
+{
+  left: 235px;
+  top: 277px;
+}
+.wizard_templates_mw .zone_s2
+{
+  left: 317px;
+  top: 94px;
+}
+.wizard_templates_mw .zone_s2_
+{
+  left: 312px;
+  top: 138px;
+}
+.wizard_templates_mw .zone_s3
+{
+  left: 303px;
+  top: 170px;
+}
+.wizard_templates_mw .zone_s4
+{
+  left: 306px;
+  top: 210px;
+}
+.wizard_templates_mw .zone_s5
+{
+  left: 307px;
+  top: 277px;
+}
+.wizard_templates_mw .zone_cl
+{
+  left: 49px;
+  top: 110px;
+}
+@media (max-width: 1199px) {
+  .wizard_templates_mw .zone_v0
+  {
+    left: 250px;
+    top: 2px;
+  }
+  .wizard_templates_mw .zone_v1
+  {
+    left: 250px;
+    top: 37px;
+  }
+  .wizard_templates_mw .zone_v2
+  {
+    left: 250px;
+    top: 93px;
+  }
+  .wizard_templates_mw .zone_v3
+  {
+    left: 250px;
+    top: 145px;
+  }
+  .wizard_templates_mw .zone_v4
+  {
+    left: 250px;
+    top: 192px;
+  }
+  .wizard_templates_mw .zone_v5
+  {
+    left: 250px;
+    top: 230px;
+  }
+  .wizard_templates_mw .zone_v-
+  {
+    left: 250px;
+    top: 460px;
+  }
+  .wizard_templates_mw .zone_d2
+  {
+    left: 200px;
+    top: 94px;
+  }
+  .wizard_templates_mw .zone_d2_
+  {
+    left: 200px;
+    top: 138px;
+  }
+  .wizard_templates_mw .zone_d3
+  {
+    left: 215px;
+    top: 170px;
+  }
+  .wizard_templates_mw .zone_d4
+  {
+    left: 215px;
+    top: 210px;
+  }
+  .wizard_templates_mw .zone_d5
+  {
+    left: 211px;
+    top: 277px;
+  }
+  .wizard_templates_mw .zone_s2
+  {
+    left: 295px;
+    top: 94px;
+  }
+  .wizard_templates_mw .zone_s2_
+  {
+    left: 295px;
+    top: 138px;
+  }
+  .wizard_templates_mw .zone_s3
+  {
+    left: 285px;
+    top: 170px;
+  }
+  .wizard_templates_mw .zone_s4
+  {
+    left: 287px;
+    top: 210px;
+  }
+  .wizard_templates_mw .zone_s5
+  {
+    left: 287px;
+    top: 277px;
+  }
+} 

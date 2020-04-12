@@ -190,18 +190,22 @@ jQuery(function() {
     if (jQuery(this).hasClass('faq_item_1')) {
       cur_protocol = 'un';
       jQuery('.wizard_template_1').removeClass('hidden');
+      jQuery('.wizard_templates').removeClass('wizard_templates_mw, wizard_templates_ww, wizard_templates_mm').addClass('wizard_templates_un');
       jQuery('.wizard_heading').removeClass('unvisible').text('Активирован протокол "Универсальный". Перенесите зоны на фото');
     } else if (jQuery(this).hasClass('faq_item_2')) {
       cur_protocol = 'mw';
       jQuery('.wizard_template_1').removeClass('hidden');
+      jQuery('.wizard_templates').removeClass('wizard_templates_un, wizard_templates_ww, wizard_templates_mm').addClass('wizard_templates_mw');
       jQuery('.wizard_heading').removeClass('unvisible').text('Активирован протокол "Общий". Перенесите зоны на фото');
     } else if (jQuery(this).hasClass('faq_item_3')) {
       cur_protocol = 'ww';
       jQuery('.wizard_template_2').removeClass('hidden');
+      jQuery('.wizard_templates').removeClass('wizard_templates_un, wizard_templates_mw, wizard_templates_mm').addClass('wizard_templates_ww');
       jQuery('.wizard_heading').removeClass('unvisible').text('Активирован протокол "Женский". Перенесите зоны на фото');
     } else if (jQuery(this).hasClass('faq_item_4')) {
       cur_protocol = 'mm';
       jQuery('.wizard_template_3').removeClass('hidden');
+      jQuery('.wizard_templates').removeClass('wizard_templates_un, wizard_templates_mw, wizard_templates_ww').addClass('wizard_templates_mm');
       jQuery('.wizard_heading').removeClass('unvisible').text('Активирован протокол "Мужской". Перенесите зоны на фото');
     }
     localStorage.setItem('cur_protocol', cur_protocol);
