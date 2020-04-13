@@ -206,7 +206,7 @@
               <div class="row">
                 <div class="col-md-12 login_form bounceInUp wow" data-wow-duration="1.4s">
                   <h3 class="form_heading">Вход</h3>
-                  <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
+                  <form name="loginform" id="loginform" action="<?php echo esc_url( site_url() ); ?>" method="post">
                       <p class="login_field">
                           <input type="text" name="log" id="user_login" class="input form-control" value="<?php echo esc_attr($user_login); ?>" placeholder="Логин" size="20" /></label>
                       </p>
