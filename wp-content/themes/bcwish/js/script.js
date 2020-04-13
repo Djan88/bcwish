@@ -36,7 +36,6 @@ jQuery(function() {
 
   jQuery('.btn-get-started').on('click', function(event) {
     localStorage.removeItem('paused');
-    jQuery('.wizard_heading').removeClass('hidden');
     localStorage.removeItem('pausedPhoto'); 
     localStorage.removeItem('pausedPhoto2'); 
     pausedStatus = false;
