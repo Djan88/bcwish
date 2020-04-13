@@ -91,7 +91,7 @@ jQuery(function() {
       if (isConfirm) {
         jQuery(location).attr('href','/');
       } else {
-        jQuery('.wizard_stop, .zone_ring').addClass('hidden');
+        jQuery('.wizard_stop, .zone_ring, .wizard_templates').addClass('hidden');
         jQuery('.wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
       }
     })
@@ -1517,10 +1517,10 @@ jQuery(function() {
     jQuery('.machine_screen, #intro').addClass('hidden');
     jQuery('.uploaded_pics_1').attr('src', returned_img);
     jQuery('.uploaded_pics_2').attr('src', returned_img2);
-    jQuery('.wm_start').removeClass('unopacity');
-    jQuery('.wm_start').removeAttr('style');
+    jQuery('.wm_start').removeClass('unopacity').removeAttr('style');
+    jQuery('.ring, .wizard_templates, .wizard_way').removeClass('hidden');
+
     jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.wizard_heading').text('Перенесите зоны на фото и можно будет продолжить работу.');
   });
 
