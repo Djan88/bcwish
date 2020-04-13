@@ -81,6 +81,7 @@
         <h1 class="text-light"><a href="/" class="to_home scrollto"><span><span class="acent">W</span>IZARD<span class="acent">D</span>UOS</span></a></h1>
         <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
+      <div class="wizard_heading float-left">Загрузите первое фото</div>
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
@@ -278,9 +279,9 @@
       <section id="services" class="wm_start unopacity section-wh" style="height: 550px;">
         <div class="container container_main">
 
-          <header class="section-header">
+          <!-- <header class="section-header">
             <h3 class="wizard_heading">Загрузите первое фото</h3>
-          </header>
+          </header> -->
 
           <div class="row">
             <div class="col-md-12 wizard">

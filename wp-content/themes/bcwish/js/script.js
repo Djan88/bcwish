@@ -215,7 +215,7 @@ jQuery(function() {
    //Назад. К списку протоколов
   jQuery('.wizard_to_protList').on('click', function(event) {
     jQuery(this).addClass('hidden');
-    jQuery('.wizard_templates').addClass('hidden');
+    jQuery('.wizard_templates, .wizard_play').addClass('hidden');
     jQuery('.wizard_to_protDiag, .wizard_prots').removeClass('hidden');
     jQuery('.wizard_heading').text('Выберите протокол').removeClass('unvisible');
     jQuery('.uploaded_pics_wrapper').draggable( "enable");
