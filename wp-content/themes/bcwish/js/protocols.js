@@ -1521,6 +1521,7 @@ jQuery(function() {
     jQuery('.wm_start').removeClass('unopacity').removeAttr('style');
     jQuery('.ring, .wizard_templates, .wizard_way').removeClass('hidden');
     jQuery('.uploaded_pics_wrapper').draggable( "disable");
+    console.log(protocol);
     if (protocol == 'un') {
       jQuery('.wizard_template_1').removeClass('hidden');
       jQuery('.wizard_templates').removeClass('wizard_templates_mw wizard_templates_ww wizard_templates_mm').addClass('wizard_templates_un');
