@@ -1515,7 +1515,7 @@ jQuery(function() {
   }
 
   jQuery('.wizard_continue.btn-warning').on('click', function(event) {
-    jQuery('.machine_screen, #intro').addClass('hidden');
+    jQuery('.machine_screen, #intro, .btn_prot_choice').addClass('hidden');
     jQuery('.uploaded_pics_1').attr('src', returned_img);
     jQuery('.uploaded_pics_2').attr('src', returned_img2);
     jQuery('.wm_start').removeClass('unopacity').removeAttr('style');
