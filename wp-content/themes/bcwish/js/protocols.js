@@ -91,7 +91,7 @@ jQuery(function() {
       if (isConfirm) {
         jQuery(location).attr('href','/');
       } else {
-        jQuery('.wizard_stop, .zone_ring, .wizard_templates').addClass('hidden');
+        jQuery('.wizard_stop, .zone_ring').addClass('hidden');
         jQuery('.wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
       }
     })
