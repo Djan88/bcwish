@@ -61,7 +61,7 @@
       <span class="wizard_percent">0%</span>
       <i class="fa fa-stop-circle wizard_stop_icon"></i>
     </button>
-
+    <div class="wizard_heading float-left">Загрузите первое фото</div>
     <div id="topbar">
       <div class="container">
         <div class="social-links">
@@ -73,7 +73,6 @@
         </div>
       </div>
     </div>
-
     <div class="container container_main container container_main_main">
 
       <div class="logo float-left">
@@ -81,7 +80,6 @@
         <h1 class="text-light"><a href="/" class="to_home scrollto"><span><span class="acent">W</span>IZARD<span class="acent">D</span>UOS</span></a></h1>
         <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
-      <div class="wizard_heading float-left">Загрузите первое фото</div>
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>

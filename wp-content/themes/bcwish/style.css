@@ -1758,10 +1758,21 @@ html.all
   height: 70px;
   padding: 15px 0;
   z-index: 1001;
+  min-width: 992px!important;
 }
 #header .logo h1 {
   font-size: 28px;
   padding: 8px 0;
+}
+.wizard_heading 
+{
+  font-size: 18px;
+  color: #413e66;
+  margin: 10px 10px;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
 }
 .d-none {
   display: none!important;
@@ -1777,6 +1788,7 @@ h3.wizard_heading
 .wizard_operation
 {
   white-space: nowrap;
+  margin-top: 70px;
 }
 .wizard_way 
 {
