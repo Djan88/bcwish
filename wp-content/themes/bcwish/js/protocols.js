@@ -1540,7 +1540,7 @@ jQuery(function() {
       jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Мужской". Перенесите зоны на фото');
     }
     jQuery('.wizard_to_protList, .wizard_play').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_heading').text('Перенесите зоны на фото и можно будет продолжить работу.');
+    jQuery('.wizard_heading').removeClass('hidden').text('Перенесите зоны на фото и можно будет продолжить работу.');
   });
 
   

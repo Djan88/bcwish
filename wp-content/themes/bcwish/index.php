@@ -61,7 +61,7 @@
       <span class="wizard_percent">0%</span>
       <i class="fa fa-stop-circle wizard_stop_icon"></i>
     </button>
-    <div class="wizard_heading float-left">Загрузите первое фото</div>
+    <div class="wizard_heading hidden float-left">Загрузите первое фото</div>
     <div id="topbar">
       <div class="container">
         <div class="social-links">
