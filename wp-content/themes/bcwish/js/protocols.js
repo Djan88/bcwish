@@ -1509,6 +1509,7 @@ jQuery(function() {
     returned_img = localStorage.getItem('pausedPhoto');
     returned_img2 = localStorage.getItem('pausedPhoto2');
     pausedStatus = true;
+    var protocol = localStorage.getItem('cur_protocol');
     jQuery('.main_arrow').addClass('main_arrow_combine');
     jQuery('.main_arrow_title').addClass('main_arrow_title_combine');
   }
@@ -1519,8 +1520,25 @@ jQuery(function() {
     jQuery('.uploaded_pics_2').attr('src', returned_img2);
     jQuery('.wm_start').removeClass('unopacity').removeAttr('style');
     jQuery('.ring, .wizard_templates, .wizard_way').removeClass('hidden');
-
-    jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
+    jQuery('.uploaded_pics_wrapper').draggable( "disable");
+    if (protocol == 'un') {
+      jQuery('.wizard_template_1').removeClass('hidden');
+      jQuery('.wizard_templates').removeClass('wizard_templates_mw wizard_templates_ww wizard_templates_mm').addClass('wizard_templates_un');
+      jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Универсальный". Перенесите зоны на фото');
+    } else if (protocol == 'wm') {
+      jQuery('.wizard_template_1').removeClass('hidden');
+      jQuery('.wizard_templates').removeClass('wizard_templates_un wizard_templates_ww wizard_templates_mm').addClass('wizard_templates_mw');
+      jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Общий". Перенесите зоны на фото');
+    } else if (protocol == 'ww') {
+      jQuery('.wizard_template_2').removeClass('hidden');
+      jQuery('.wizard_templates').removeClass('wizard_templates_un wizard_templates_mw wizard_templates_mm').addClass('wizard_templates_ww');
+      jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Женский". Перенесите зоны на фото');
+    } else if (protocol == 'mm') {
+      jQuery('.wizard_template_3').removeClass('hidden');
+      jQuery('.wizard_templates').removeClass('wizard_templates_un wizard_templates_mw wizard_templates_ww').addClass('wizard_templates_mm');
+      jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Мужской". Перенесите зоны на фото');
+    }
+    jQuery('.wizard_to_protList, .wizard_play').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_heading').text('Перенесите зоны на фото и можно будет продолжить работу.');
   });
 
@@ -1558,7 +1576,7 @@ jQuery(function() {
         jQuery('.wizard_play, .wizard_starter_alt').addClass('hidden');
         jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
         jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
-        var protocol = localStorage.getItem('cur_protocol');
+        protocol = localStorage.getItem('cur_protocol');
         console.log(protocol);
         if (protocol == 'un') {
           un();
