@@ -110,6 +110,7 @@ jQuery(function() {
     count_animation = 0;
     localStorage.removeItem('paused');
     localStorage.removeItem('pausedPhoto');
+    localStorage.removeItem('pausedPhoto2');
     pausedStatus = false;
 
     // protocolName = localStor
@@ -4334,10 +4335,121 @@ jQuery(function() {
     }, 250);
   }
 
+
+
+
+
+
+
+
+
+  mw = function(){
+    jQuery('.wizard_heading').text('Протокол "Общий"');
+    jQuery('.wizard_percent').text('0%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_d4, .zone_d5, .zone_alt_s4, .zone_alt_s5').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'scale(1.5)',
+            zIndex: '1000'
+        });
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_d4, .zone_d5, .zone_alt_s4, .zone_alt_s5').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'
+          });
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_d4, .zone_d5, .zone_alt_s4, .zone_alt_s5').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'
+          });
+        } else if (count_animation > 220) {
+          jQuery('.zone_d4, .zone_d5, .zone_alt_s4, .zone_alt_s5').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
+          });
+        }
+        jQuery('.zone_ring')
+          .removeClass('hidden')
+          .css({
+            opacity: 0.8,
+            transform: 'scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+            transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
+          });
+        count_animation += 1;
+        rotateVal += 1.5;
+        if(count_animation <= 120){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 120 && count_animation <= 228){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 228 && count_animation <= 292){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else if (count_animation >= 292 && count_animation <= 344){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else {
+            d12Val+= 3;
+            cur_animation_val += 1.5;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        }
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_d4, .zone_d5, .zone_alt_s4, .zone_alt_s5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'mw_2');
+          endNow()
+        } else {
+          mw_2();
+        } 
+      }
+    }, 250);
+  }
+
 // Если есть незавершенный протокол
   if (localStorage.getItem('paused')) {
     jQuery('.wizard_continue').removeClass('hidden');
     returned_img = localStorage.getItem('pausedPhoto');
+    returned_img2 = localStorage.getItem('pausedPhoto2');
     pausedStatus = true;
     jQuery('.main_arrow').addClass('main_arrow_combine');
     jQuery('.main_arrow_title').addClass('main_arrow_title_combine');
@@ -4345,7 +4457,8 @@ jQuery(function() {
 
   jQuery('.wizard_continue.btn-warning').on('click', function(event) {
     jQuery('.machine_screen, #intro').addClass('hidden');
-    jQuery('.wizard_returned').attr('src', returned_img);
+    jQuery('.uploaded_pics_1').attr('src', returned_img);
+    jQuery('.uploaded_pics_2').attr('src', returned_img2);
     jQuery('.wm_start').removeClass('unopacity');
     jQuery('.wm_start').removeAttr('style');
     jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
@@ -4368,11 +4481,11 @@ jQuery(function() {
 
   jQuery('.wizard_play, .wizard_starter_alt').on('click', function(event) {
     checkPoints();
-    if(pointsStatus == false){
-      swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото калибровочное кольцо и все зоны.", "info");
-      alert_altSound.play();
-      pointsStatus = true;
-    } else {
+    // if(pointsStatus == false){
+    //   swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото калибровочное кольцо и все зоны.", "info");
+    //   alert_altSound.play();
+    //   pointsStatus = true;
+    // } else {
       if (pausedStatus == true) {
         // jQuery('.wizard_returned').attr('src', localStorage.getItem('pausedPhoto'));
         // console.log(localStorage.getItem('pausedPhoto'));
@@ -4389,42 +4502,31 @@ jQuery(function() {
         jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
         var protocol = localStorage.getItem('cur_protocol');
         console.log(protocol);
-        if (protocol == 'v1') {
-          v1();
-          jQuery('.status_title').text('Протокол V1');
-        } else if (protocol == 'v2') {
-          v2();
-          jQuery('.status_title').text('Протокол V2-5');
-        } else if (protocol == 'v3') {
-          v3();
-          jQuery('.status_title').text('Протокол V3-4');
-        } else if (protocol == 'v4') {
-          v4();
-          jQuery('.status_title').text('Протокол V4-3');
-        } else if (protocol == 'v5') {
-          v5();
-          jQuery('.status_title').text('Протокол V5-2');
-        } else if (protocol == 'solis') {
-          solis();
-          jQuery('.status_title').text('Протокол Solis');
-        } else if (protocol == 'drenag') {
-          drenag();
-          jQuery('.status_title').text('Дренажный протокол');
-        } else if (protocol == 'universal') {
-          universal();
-          jQuery('.status_title').text('Универсальный протокол');
-        } else if (protocol == 'visceral') {
-          mmt();
-          jQuery('.status_title').text('Висцеральный протокол');
+        if (protocol == 'un') {
+          un();
+          jQuery('.wizard_heading').text('Протокол "Универсальный"');
+        } else if (protocol == 'mw') {
+          mw();
+          jQuery('.wizard_heading').text('Протокол "Общий"');
+        } else if (protocol == 'ww') {
+          ww();
+          jQuery('.wizard_heading').text('Протокол "Женский"');
+        } else if (protocol == 'mm') {
+          mm();
+          jQuery('.wizard_heading').text('Протокол "Мужской"');
         }
       }
       jQuery('.wizard_to_protList').addClass('prot_in_progress');
       jQuery('.ring').addClass('in_progress');
       localStorage.removeItem('paused');
       localStorage.removeItem('pausedPhoto');
+      localStorage.removeItem('pausedPhoto2');
       jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
-    }
+    // }
   });
+
+
+
 
 
   // STOP
@@ -4438,7 +4540,8 @@ jQuery(function() {
     // endStatus = true;
     jQuery('.wizard_stop').popover('show');
     setTimeout(hideNote, 5000);
-    localStorage.setItem('pausedPhoto', jQuery('.wizard_returned').attr('src'));
+    localStorage.setItem('pausedPhoto', jQuery('.uploaded_pics_1').attr('src'));
+    localStorage.setItem('pausedPhoto2', jQuery('.uploaded_pics_2').attr('src'));
     pausedStatus = true;
     console.log('pausedStatus = true');
   });
