@@ -1526,7 +1526,7 @@ jQuery(function() {
       jQuery('.wizard_template_1').removeClass('hidden');
       jQuery('.wizard_templates').removeClass('wizard_templates_mw wizard_templates_ww wizard_templates_mm').addClass('wizard_templates_un');
       jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Универсальный". Перенесите зоны на фото');
-    } else if (protocol == 'wm') {
+    } else if (protocol == 'mw') {
       jQuery('.wizard_template_1').removeClass('hidden');
       jQuery('.wizard_templates').removeClass('wizard_templates_un wizard_templates_ww wizard_templates_mm').addClass('wizard_templates_mw');
       jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Общий". Перенесите зоны на фото');
