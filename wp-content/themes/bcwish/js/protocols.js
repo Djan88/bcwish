@@ -75,7 +75,10 @@ jQuery(function() {
     count_animation = 1;
     alertSound.play();
     jQuery('.ring').removeClass('in_progress');
-
+    localStorage.setItem('top1', jQuery('.uploaded_pics_1').css('top'));
+    localStorage.setItem('left1', jQuery('.uploaded_pics_1').css('left'));
+    localStorage.setItem('top2', jQuery('.uploaded_pics_2').css('top'));
+    localStorage.setItem('left2', jQuery('.uploaded_pics_2').css('left'));
     swal({
       title: "Приостановлено пользователем",
       text: "Что делать дальше?",
@@ -1515,6 +1518,14 @@ jQuery(function() {
   }
 
   jQuery('.wizard_continue.btn-warning').on('click', function(event) {
+    var top1 = localStorage.getItem('top1');
+    var left1 = localStorage.getItem('left1');
+    var top2 =  localStorage.getItem('top2');
+    var left2 = localStorage.getItem('left2');
+    jQuery('.uploaded_pics_1').css('top', top1);
+    jQuery('.uploaded_pics_1').css('left', left1);
+    jQuery('.uploaded_pics_2').css('top', top2);
+    jQuery('.uploaded_pics_2').css('left', left2);
     jQuery('.machine_screen, #intro, .btn_prot_choice').addClass('hidden');
     jQuery('.uploaded_pics_1').attr('src', returned_img);
     jQuery('.uploaded_pics_2').attr('src', returned_img2);
