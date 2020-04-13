@@ -4343,6 +4343,519 @@ jQuery(function() {
 
 
 
+
+
+
+  mw_6 = function(){
+    jQuery('.wizard_heading').text('Протокол "Общий"');
+    jQuery('.wizard_percent').text('0%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_d2, .zone_s3, .zone_s4, .zone_alt_v3').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'scale(1.5)',
+            zIndex: '1000'
+        });
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_d2, .zone_s3, .zone_s4, .zone_alt_v3').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'
+          });
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_d2, .zone_s3, .zone_s4, .zone_alt_v3').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'
+          });
+        } else if (count_animation > 220) {
+          jQuery('.zone_d2, .zone_s3, .zone_s4, .zone_alt_v3').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
+          });
+        }
+        jQuery('.zone_ring')
+          .removeClass('hidden')
+          .css({
+            opacity: 0.8,
+            transform: 'scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+            transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
+          });
+        count_animation += 1;
+        rotateVal += 1.5;
+        if(count_animation <= 120){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 120 && count_animation <= 228){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 228 && count_animation <= 292){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else if (count_animation >= 292 && count_animation <= 344){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else {
+            d12Val+= 3;
+            cur_animation_val += 1.5;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        }
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_d2, .zone_s3, .zone_s4, .zone_alt_v3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'mw_7');
+          endNow()
+        } else {
+          mw_7();
+        } 
+      }
+    }, 250);
+  }
+
+  mw_5 = function(){
+    jQuery('.wizard_heading').text('Протокол "Общий"');
+    jQuery('.wizard_percent').text('0%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_v3, .zone_v4, .zone_alt_v3, .zone_alt_v4').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'scale(1.5)',
+            zIndex: '1000'
+        });
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_v3, .zone_v4, .zone_alt_v3, .zone_alt_v4').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'
+          });
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_v3, .zone_v4, .zone_alt_v3, .zone_alt_v4').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'
+          });
+        } else if (count_animation > 220) {
+          jQuery('.zone_v3, .zone_v4, .zone_alt_v3, .zone_alt_v4').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
+          });
+        }
+        jQuery('.zone_ring')
+          .removeClass('hidden')
+          .css({
+            opacity: 0.8,
+            transform: 'scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+            transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
+          });
+        count_animation += 1;
+        rotateVal += 1.5;
+        if(count_animation <= 120){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 120 && count_animation <= 228){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 228 && count_animation <= 292){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else if (count_animation >= 292 && count_animation <= 344){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else {
+            d12Val+= 3;
+            cur_animation_val += 1.5;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        }
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v3, .zone_v4, .zone_alt_v3, .zone_alt_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'mw_6');
+          endNow()
+        } else {
+          mw_6();
+        } 
+      }
+    }, 250);
+  }
+
+  mw_4 = function(){
+    jQuery('.wizard_heading').text('Протокол "Общий"');
+    jQuery('.wizard_percent').text('0%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_v2, .zone_v5, .zone_alt_v2, .zone_alt_v5').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'scale(1.5)',
+            zIndex: '1000'
+        });
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_v2, .zone_v5, .zone_alt_v2, .zone_alt_v5').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'
+          });
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_v2, .zone_v5, .zone_alt_v2, .zone_alt_v5').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'
+          });
+        } else if (count_animation > 220) {
+          jQuery('.zone_v2, .zone_v5, .zone_alt_v2, .zone_alt_v5').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
+          });
+        }
+        jQuery('.zone_ring')
+          .removeClass('hidden')
+          .css({
+            opacity: 0.8,
+            transform: 'scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+            transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
+          });
+        count_animation += 1;
+        rotateVal += 1.5;
+        if(count_animation <= 120){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 120 && count_animation <= 228){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 228 && count_animation <= 292){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else if (count_animation >= 292 && count_animation <= 344){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else {
+            d12Val+= 3;
+            cur_animation_val += 1.5;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        }
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v2, .zone_v5, .zone_alt_v2, .zone_alt_v5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'mw_5');
+          endNow()
+        } else {
+          mw_5();
+        } 
+      }
+    }, 250);
+  }
+
+  mw_3 = function(){
+    jQuery('.wizard_heading').text('Протокол "Общий"');
+    jQuery('.wizard_percent').text('0%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_d2_, .zone_s2_, .zone_alt_d2_, .zone_alt_s2_').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'scale(1.5)',
+            zIndex: '1000'
+        });
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_d2_, .zone_s2_, .zone_alt_d2_, .zone_alt_s2_').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'
+          });
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_d2_, .zone_s2_, .zone_alt_d2_, .zone_alt_s2_').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'
+          });
+        } else if (count_animation > 220) {
+          jQuery('.zone_d2_, .zone_s2_, .zone_alt_d2_, .zone_alt_s2_').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
+          });
+        }
+        jQuery('.zone_ring')
+          .removeClass('hidden')
+          .css({
+            opacity: 0.8,
+            transform: 'scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+            transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
+          });
+        count_animation += 1;
+        rotateVal += 1.5;
+        if(count_animation <= 120){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 120 && count_animation <= 228){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 228 && count_animation <= 292){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else if (count_animation >= 292 && count_animation <= 344){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else {
+            d12Val+= 3;
+            cur_animation_val += 1.5;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        }
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_d2_, .zone_s2_, .zone_alt_d2_, .zone_alt_s2_').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'mw_4');
+          endNow()
+        } else {
+          mw_4();
+        } 
+      }
+    }, 250);
+  }
+
+  mw_2 = function(){
+    jQuery('.wizard_heading').text('Протокол "Общий"');
+    jQuery('.wizard_percent').text('0%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_d2, .zone_d3, .zone_alt_s2, .zone_alt_s3').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'scale(1.5)',
+            zIndex: '1000'
+        });
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_d2, .zone_d3, .zone_alt_s2, .zone_alt_s3').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'
+          });
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_d2, .zone_d3, .zone_alt_s2, .zone_alt_s3').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'
+          });
+        } else if (count_animation > 220) {
+          jQuery('.zone_d2, .zone_d3, .zone_alt_s2, .zone_alt_s3').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
+          });
+        }
+        jQuery('.zone_ring')
+          .removeClass('hidden')
+          .css({
+            opacity: 0.8,
+            transform: 'scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+            transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
+          });
+        count_animation += 1;
+        rotateVal += 1.5;
+        if(count_animation <= 120){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 120 && count_animation <= 228){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 228 && count_animation <= 292){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else if (count_animation >= 292 && count_animation <= 344){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else {
+            d12Val+= 3;
+            cur_animation_val += 1.5;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        }
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_d2, .zone_d3, .zone_alt_s2, .zone_alt_s3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'mw_3');
+          endNow()
+        } else {
+          mw_3();
+        } 
+      }
+    }, 250);
+  }
+
   mw = function(){
     jQuery('.wizard_heading').text('Протокол "Общий"');
     jQuery('.wizard_percent').text('0%');
