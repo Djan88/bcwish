@@ -219,6 +219,8 @@ jQuery(function() {
   jQuery('.wizard_to_protList').on('click', function(event) {
     if (!jQuery(this).hasClass('prot_in_progress')) {
       jQuery(this).addClass('hidden');
+      jQuery('.faq_item').removeClass('active');
+      jQuery('.zone').removeAttr('style');
       jQuery('.wizard_way').removeClass('col-sm-12 col-md-12').addClass('col-sm-6 col-md-6');
       jQuery('.wizard_prots').removeClass('col-sm-1 col-md-1 hidden').addClass('col-sm-6 col-md-6');
       jQuery('.wizard_templates, .wizard_play').addClass('hidden');
