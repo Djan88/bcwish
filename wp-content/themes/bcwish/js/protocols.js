@@ -79,25 +79,25 @@ jQuery(function() {
     localStorage.setItem('left1', jQuery('.uploaded_pics_wrapper_1').css('left'));
     localStorage.setItem('top2', jQuery('.uploaded_pics_wrapper_2').css('top'));
     localStorage.setItem('left2', jQuery('.uploaded_pics_wrapper_2').css('left'));
-    // swal({
-    //   title: "Приостановлено пользователем",
-    //   text: "Что делать дальше?",
-    //   type: "info",
-    //   showCancelButton: true,
-    //   confirmButtonClass: "btn-danger",
-    //   cancelButtonClass: "btn-success",
-    //   cancelButtonText: "Продолжить",
-    //   confirmButtonText: "К началу",
-    //   closeOnConfirm: false
-    // },
-    // function(isConfirm) {
-    //   if (isConfirm) {
-    //     jQuery(location).attr('href','/');
-    //   } else {
-    //     jQuery('.wizard_stop, .zone_ring').addClass('hidden');
-    //     jQuery('.wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
-    //   }
-    // })
+    swal({
+      title: "Приостановлено пользователем",
+      text: "Что делать дальше?",
+      type: "info",
+      showCancelButton: true,
+      confirmButtonClass: "btn-danger",
+      cancelButtonClass: "btn-success",
+      cancelButtonText: "Продолжить",
+      confirmButtonText: "К началу",
+      closeOnConfirm: false
+    },
+    function(isConfirm) {
+      if (isConfirm) {
+        jQuery(location).attr('href','/');
+      } else {
+        jQuery('.wizard_stop, .zone_ring').addClass('hidden');
+        jQuery('.wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
+      }
+    })
   }
 
   onEnd = function(){
@@ -119,63 +119,28 @@ jQuery(function() {
 
     // protocolName = localStor
     alertSound.play();
-    // swal({
-    //   title: "Протокол завершен",
-    //   text: "Что делать дальше?",
-    //   type: "success",
-    //   showCancelButton: true,
-    //   confirmButtonClass: "btn-danger",
-    //   cancelButtonClass: "btn-success",
-    //   cancelButtonText: "Другой протокол",
-    //   confirmButtonText: "Новый клиент",
-    //   closeOnConfirm: false
-    // },
-    // function(isConfirm) {
-    //   if (isConfirm) {
-    //     jQuery(location).attr('href','/');
-    //   } else {
-    //     jQuery('.wizard_main_screen, .wizard_to_protList').addClass('hidden');
-    //     jQuery('.wizard_stop').addClass('hidden');
-    //     jQuery('.wizard_prots, .wizard_operation, .wizard_to_what_way').fadeIn(500).removeClass('hidden');
-    //     jQuery('.wizard_heading').text('Выберите протокол');
-    //   }
-    // })
-
     swal({
       title: "Протокол завершен",
       text: "Что делать дальше?",
-      buttons: {
-        cancel: {
-          text: "Повторить протокол",
-        },
-        catch: {
-          text: "Другой протокол",
-          value: "catch",
-        },
-        defeat: {
-          dangerMode: true,
-          text: 'Новый клиент',
-
-        }
-      },
-    }).then((value) => {
-      switch (value) {
-     
-        case "defeat":
-          jQuery(location).attr('href','/');
-     
-        case "catch":
-          jQuery('.wizard_main_screen, .wizard_to_protList').addClass('hidden');
-          jQuery('.wizard_stop').addClass('hidden');
-          jQuery('.wizard_prots, .wizard_operation, .wizard_to_what_way').fadeIn(500).removeClass('hidden');
-          jQuery('.wizard_heading').text('Выберите протокол');
-          break;
-     
-        default:
-          closeModal: true;
-          break;
+      type: "success",
+      showCancelButton: true,
+      confirmButtonClass: "btn-danger",
+      cancelButtonClass: "btn-success",
+      cancelButtonText: "Другой протокол",
+      confirmButtonText: "Новый клиент",
+      closeOnConfirm: false
+    },
+    function(isConfirm) {
+      if (isConfirm) {
+        jQuery(location).attr('href','/');
+      } else {
+        jQuery('.wizard_main_screen, .wizard_to_protList').addClass('hidden');
+        jQuery('.wizard_stop').addClass('hidden');
+        jQuery('.wizard_prots, .wizard_operation, .wizard_to_what_way').fadeIn(500).removeClass('hidden');
+        jQuery('.wizard_heading').text('Выберите протокол');
       }
-    });
+    })
+
   }
 
   //Dragging elems
