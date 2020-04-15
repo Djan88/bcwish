@@ -2578,7 +2578,7 @@ jQuery(function() {
 
 
   mm_10 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
