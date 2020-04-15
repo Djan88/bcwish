@@ -158,8 +158,7 @@ jQuery(function() {
 
         }
       },
-    })
-    .then((value) => {
+    }).then((value) => {
       switch (value) {
      
         case "defeat":
