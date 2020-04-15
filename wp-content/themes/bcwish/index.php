@@ -182,7 +182,7 @@
                   Программа для коррекции 
                   <br><span>парных взаимоотношений!</span>
                   <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
-                    <br><span style=" color: red; font-size: 20px;">Благодарим за интерес к программе "WizardDuos"! Дарим Вам 3 дня доступа к протоколу "Универсальный"!</span>
+                    <br><span style=" color: red; font-size: 20px;">Благодарим за интерес к программе "WizardDuos"! Дарим Вам 3 дня доступа к протоколу "Инверсный"!</span>
                   <?php } ?> 
                 </h2>
                 <div>
@@ -323,7 +323,7 @@
               <div class="row wizard_operation">
                 <div class="col-sm-1 col-md-1 wizard_prots hidden" id="faq">
                   <div id="faq-list" class="faq-list wow fadeInLeft">
-                    <div class="faq_item faq_item_1">УНИВЕРСАЛЬНЫЙ<span>УН</span></div>
+                    <div class="faq_item faq_item_1">ИНВЕРСНЫЙ<span>ИН</span></div>
                     <div class="faq_item faq_item_2">ОБЩИЙ<span>МЖ</span></div>
                     <div class="faq_item faq_item_3">ЖЕНСКИЙ<span>ЖЖ</span></div>
                     <div class="faq_item faq_item_4">МУЖСКОЙ<span>ММ</span></div>
