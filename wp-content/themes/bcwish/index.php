@@ -323,10 +323,10 @@
               <div class="row wizard_operation">
                 <div class="col-sm-1 col-md-1 wizard_prots hidden" id="faq">
                   <div id="faq-list" class="faq-list wow fadeInLeft">
-                    <div class="faq_item faq_item_1">ИНВЕРСНЫЙ<span>ИН</span></div>
-                    <div class="faq_item faq_item_2">ОБЩИЙ<span>МЖ</span></div>
-                    <div class="faq_item faq_item_3">ЖЕНСКИЙ<span>ЖЖ</span></div>
-                    <div class="faq_item faq_item_4">МУЖСКОЙ<span>ММ</span></div>
+                    <div class="faq_item faq_item_1">ИНВЕРСНЫЙ<span>Откалибровано</span></div>
+                    <div class="faq_item faq_item_2">ОБЩИЙ<span>Откалибровано</span></div>
+                    <div class="faq_item faq_item_3">ЖЕНСКИЙ<span>Откалибровано</span></div>
+                    <div class="faq_item faq_item_4">МУЖСКОЙ<span>Откалибровано</span></div>
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-6 wizard_templates hidden wow fadeInLeft" id="template">

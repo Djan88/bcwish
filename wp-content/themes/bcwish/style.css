@@ -2283,6 +2283,13 @@ button.wizard_starter_alt.btn.btn-success
 .faq_item span
 {
   float: right;
+  display: none;
+  font-size: 15px;
+  color: deepskyblue;
+}
+.faq_item.active span
+{
+  display: inline;
 }
 .wizard_template
 {

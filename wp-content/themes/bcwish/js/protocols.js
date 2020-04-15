@@ -126,7 +126,7 @@ jQuery(function() {
       showCancelButton: true,
       confirmButtonClass: "btn-danger",
       cancelButtonClass: "btn-success",
-      cancelButtonText: "Другой протокол",
+      cancelButtonText: "Продолжить сессию",
       confirmButtonText: "Новый клиент",
       closeOnConfirm: false
     },
@@ -135,7 +135,7 @@ jQuery(function() {
         jQuery(location).attr('href','/');
       } else {
         jQuery('.wizard_main_screen, .wizard_to_protList').addClass('hidden');
-        jQuery('.wizard_stop').addClass('hidden');
+        jQuery('.wizard_stop, .wizard_templates').addClass('hidden');
         jQuery('.wizard_prots, .wizard_operation, .wizard_to_what_way').fadeIn(500).removeClass('hidden');
         jQuery('.wizard_heading').text('Выберите протокол');
       }
