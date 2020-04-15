@@ -5286,16 +5286,16 @@ jQuery(function() {
         console.log(protocol);
         if (protocol == 'un') {
           un();
-          jQuery('.wizard_heading').text('Протокол "Универсальный"');
+          jQuery('.wizard_heading').text('Протокол "Универсальный"').removeClass('hidden');
         } else if (protocol == 'mw') {
           mw();
-          jQuery('.wizard_heading').text('Протокол "Общий"');
+          jQuery('.wizard_heading').text('Протокол "Общий"').removeClass('hidden');
         } else if (protocol == 'ww') {
           ww();
-          jQuery('.wizard_heading').text('Протокол "Женский"');
+          jQuery('.wizard_heading').text('Протокол "Женский"').removeClass('hidden');
         } else if (protocol == 'mm') {
           mm();
-          jQuery('.wizard_heading').text('Протокол "Мужской"');
+          jQuery('.wizard_heading').text('Протокол "Мужской"').removeClass('hidden');
         }
       }
       jQuery('.wizard_to_protList').addClass('prot_in_progress');
