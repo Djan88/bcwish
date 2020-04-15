@@ -4040,6 +4040,7 @@ jQuery(function() {
     cur_animation_val = 0;
     rotateVal = 0;
     count_animation = 1;
+    jQuery('.ring').addClass('hidden');
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
         if (reloadTime == 0){                                                                       //1
@@ -4394,6 +4395,7 @@ jQuery(function() {
     cur_animation_val = 0;
     rotateVal = 0;
     count_animation = 1;
+    jQuery('.ring').addClass('hidden');
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
         if (reloadTime == 0){                                                                       //1
@@ -4583,9 +4585,6 @@ jQuery(function() {
     }, 1000);
   }
 
-
-
-
   un_5_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
     jQuery('.wizard_percent').text('0%');
@@ -4751,6 +4750,7 @@ jQuery(function() {
     cur_animation_val = 0;
     rotateVal = 0;
     count_animation = 1;
+    jQuery('.ring').addClass('hidden');
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
         if (reloadTime == 0){                                                                       //1
