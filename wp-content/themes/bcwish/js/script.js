@@ -170,6 +170,7 @@ jQuery(function() {
       jQuery('.faq_item').removeClass('active');
       jQuery(this).addClass('active');
       jQuery('.zone').removeAttr('style');
+      jQuery('.zone span').removeClass('canRepeat');
     }
     jQuery('.uploaded_pics_wrapper').draggable( "disable");
     jQuery('.wizard_prots, .wizard_to_protDiag').addClass('hidden');
@@ -221,8 +222,6 @@ jQuery(function() {
   jQuery('.wizard_to_protList').on('click', function(event) {
     if (!jQuery(this).hasClass('prot_in_progress')) {
       jQuery(this).addClass('hidden');
-      jQuery('.faq_item').removeClass('active');
-      jQuery('.zone').removeAttr('style');
       jQuery('.wizard_way').removeClass('col-sm-12 col-md-12').addClass('col-sm-6 col-md-6');
       jQuery('.wizard_prots').removeClass('col-sm-1 col-md-1 hidden').addClass('col-sm-6 col-md-6');
       jQuery('.wizard_templates, .wizard_play').addClass('hidden');

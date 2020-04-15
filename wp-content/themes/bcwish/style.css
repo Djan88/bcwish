@@ -2287,7 +2287,7 @@ button.wizard_starter_alt.btn.btn-success
   font-size: 15px;
   color: deepskyblue;
 }
-.faq_item.active span
+.faq_item.active span.canRepeat
 {
   display: inline;
 }
