@@ -2304,7 +2304,7 @@ button.wizard_starter_alt.btn.btn-success
 .wizard_to_protList.prot_in_progress
 {
   border-color: red;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
