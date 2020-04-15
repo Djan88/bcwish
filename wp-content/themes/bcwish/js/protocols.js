@@ -8,6 +8,7 @@ jQuery(function() {
       protocol,
       checkPoints,
       pointsStatus = true,
+      prot_in_progress = false,
       reloadTime = 0,
       reloadTime1 = 0,
       d12Val = 0,
@@ -115,6 +116,7 @@ jQuery(function() {
     localStorage.removeItem('pausedPhoto');
     localStorage.removeItem('pausedPhoto2');
     pausedStatus = false;
+    prot_in_progress == false;
 
     // protocolName = localStor
     alertSound.play();
@@ -5266,42 +5268,45 @@ jQuery(function() {
     //   alert_altSound.play();
     //   pointsStatus = true;
     // } else {
-      if (pausedStatus == true) {
-        // jQuery('.wizard_returned').attr('src', localStorage.getItem('pausedPhoto'));
-        // console.log(localStorage.getItem('pausedPhoto'));
-        protocolfromMemory = eval(localStorage.getItem('paused'));
-        console.log(protocolfromMemory);
-        protocolfromMemory();
-        pausedStatus = false;
-        jQuery('.wizard_play, .wizard_starter_alt, .wizard_to_protDiag').addClass('hidden');
-        jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
-      } else {
-        pausedStatus = false;
-        jQuery('.wizard_play, .wizard_starter_alt').addClass('hidden');
-        jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
-        jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
-        protocol = localStorage.getItem('cur_protocol');
-        console.log(protocol);
-        if (protocol == 'un') {
-          un();
-          jQuery('.wizard_heading').text('Протокол "Универсальный"');
-        } else if (protocol == 'mw') {
-          mw();
-          jQuery('.wizard_heading').text('Протокол "Общий"');
-        } else if (protocol == 'ww') {
-          ww();
-          jQuery('.wizard_heading').text('Протокол "Женский"');
-        } else if (protocol == 'mm') {
-          mm();
-          jQuery('.wizard_heading').text('Протокол "Мужской"');
+      if (prot_in_progress == false) {
+        if (pausedStatus == true) {
+          // jQuery('.wizard_returned').attr('src', localStorage.getItem('pausedPhoto'));
+          // console.log(localStorage.getItem('pausedPhoto'));
+          protocolfromMemory = eval(localStorage.getItem('paused'));
+          console.log(protocolfromMemory);
+          protocolfromMemory();
+          pausedStatus = false;
+          jQuery('.wizard_play, .wizard_starter_alt, .wizard_to_protDiag').addClass('hidden');
+          jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
+        } else {
+          pausedStatus = false;
+          jQuery('.wizard_play, .wizard_starter_alt').addClass('hidden');
+          jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
+          jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
+          protocol = localStorage.getItem('cur_protocol');
+          console.log(protocol);
+          if (protocol == 'un') {
+            un();
+            jQuery('.wizard_heading').text('Протокол "Универсальный"');
+          } else if (protocol == 'mw') {
+            mw();
+            jQuery('.wizard_heading').text('Протокол "Общий"');
+          } else if (protocol == 'ww') {
+            ww();
+            jQuery('.wizard_heading').text('Протокол "Женский"');
+          } else if (protocol == 'mm') {
+            mm();
+            jQuery('.wizard_heading').text('Протокол "Мужской"');
+          }
         }
+        jQuery('.wizard_to_protList').addClass('hidden');
+        prot_in_progress = true
+        jQuery('.ring').addClass('in_progress');
+        localStorage.removeItem('paused');
+        localStorage.removeItem('pausedPhoto');
+        localStorage.removeItem('pausedPhoto2');
+        jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
       }
-      jQuery('.wizard_to_protList').addClass('prot_in_progress');
-      jQuery('.ring').addClass('in_progress');
-      localStorage.removeItem('paused');
-      localStorage.removeItem('pausedPhoto');
-      localStorage.removeItem('pausedPhoto2');
-      jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
     // }
   });
 
