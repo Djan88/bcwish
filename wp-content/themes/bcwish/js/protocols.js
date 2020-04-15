@@ -141,7 +141,7 @@ jQuery(function() {
     //   }
     // })
 
-    swal.fire({
+    swal.({
       title: "Протокол завершен",
       text: "Что делать дальше?",
       buttons: {
