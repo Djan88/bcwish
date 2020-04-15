@@ -166,9 +166,11 @@ jQuery(function() {
 
   //К переносу зон
   jQuery('.faq_item').on('click', function(event) {
-    jQuery('.faq_item').removeClass('active');
-    jQuery(this).addClass('active');
-    jQuery('.zone').removeAttr('style');
+    if (!jQuery(this).hasClass('active')) {
+      jQuery('.faq_item').removeClass('active');
+      jQuery(this).addClass('active');
+      jQuery('.zone').removeAttr('style');
+    }
     jQuery('.uploaded_pics_wrapper').draggable( "disable");
     jQuery('.wizard_prots, .wizard_to_protDiag').addClass('hidden');
     jQuery('.ring, .wizard_templates, .wizard_to_protList').removeClass('hidden');
