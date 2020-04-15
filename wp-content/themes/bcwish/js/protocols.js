@@ -136,6 +136,7 @@ jQuery(function() {
       } else {
         jQuery('.wizard_main_screen, .wizard_to_protList').addClass('hidden');
         jQuery('.wizard_stop, .wizard_templates').addClass('hidden');
+        jQuery('.zone_ring').addClass('hidden');
         jQuery('.wizard_prots, .wizard_operation, .wizard_to_what_way').fadeIn(500).removeClass('hidden');
         jQuery('.wizard_heading').text('Выберите протокол');
       }
