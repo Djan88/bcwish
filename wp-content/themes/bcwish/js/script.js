@@ -172,6 +172,7 @@ jQuery(function() {
       jQuery('.zone').removeAttr('style');
       jQuery('.zone span').removeClass('canRepeat');
     }
+    nextSound.play();
     jQuery('.uploaded_pics_wrapper').draggable( "disable");
     jQuery('.wizard_prots, .wizard_to_protDiag').addClass('hidden');
     jQuery('.ring, .wizard_templates, .wizard_to_protList').removeClass('hidden');
