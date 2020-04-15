@@ -4032,7 +4032,7 @@ jQuery(function() {
   }
 
   un_10 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Инверсный-"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -4040,7 +4040,7 @@ jQuery(function() {
     cur_animation_val = 0;
     rotateVal = 0;
     count_animation = 1;
-    jQuery('.ring').addClass('hidden');
+    jQuery('.ring').removeClass('hidden');
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
         if (reloadTime == 0){                                                                       //1
@@ -4387,7 +4387,7 @@ jQuery(function() {
   }
 
   un_7 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Инверсный-"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -4395,7 +4395,7 @@ jQuery(function() {
     cur_animation_val = 0;
     rotateVal = 0;
     count_animation = 1;
-    jQuery('.ring').addClass('hidden');
+    jQuery('.ring').removeClass('hidden');
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
         if (reloadTime == 0){                                                                       //1
@@ -4750,7 +4750,7 @@ jQuery(function() {
     cur_animation_val = 0;
     rotateVal = 0;
     count_animation = 1;
-    jQuery('.ring').addClass('hidden');
+    jQuery('.ring').removeClass('hidden');
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
         if (reloadTime == 0){                                                                       //1
