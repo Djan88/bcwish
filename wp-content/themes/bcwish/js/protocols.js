@@ -4760,7 +4760,7 @@ jQuery(function() {
             sound.play();
         };
         reloadTime += 1;
-        jQuery('.zone_v4, .zone_s3, .zone_v3, .zone_alt_v4, .zone_alt_s3, .zone_alt_v4').css({
+        jQuery('.zone_v4, .zone_s3, .zone_v3, .zone_alt_v4, .zone_alt_s3, .zone_alt_v3').css({
             color: 'transparent',
             borderColor: 'transparent',
             opacity: 0.8,
@@ -4770,15 +4770,15 @@ jQuery(function() {
             zIndex: '1000'
         });
         if (count_animation > 0 && count_animation <= 120) {
-          jQuery('.zone_v4, .zone_s3, .zone_v3, .zone_alt_v4, .zone_alt_s3, .zone_alt_v4').css({
+          jQuery('.zone_v4, .zone_s3, .zone_v3, .zone_alt_v4, .zone_alt_s3, .zone_alt_v3').css({
             background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'
           });
         } else if (count_animation > 120 && count_animation <= 220) {
-          jQuery('.zone_v4, .zone_s3, .zone_v3, .zone_alt_v4, .zone_alt_s3, .zone_alt_v4').css({
+          jQuery('.zone_v4, .zone_s3, .zone_v3, .zone_alt_v4, .zone_alt_s3, .zone_alt_v3').css({
             background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'
           });
         } else if (count_animation > 220) {
-          jQuery('.zone_v4, .zone_s3, .zone_v3, .zone_alt_v4, .zone_alt_s3, .zone_alt_v4').css({
+          jQuery('.zone_v4, .zone_s3, .zone_v3, .zone_alt_v4, .zone_alt_s3, .zone_alt_v3').css({
             background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
           });
         }
@@ -4823,7 +4823,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_v4, .zone_s3, .zone_v3, .zone_alt_v4, .zone_alt_s3, .zone_alt_v4').css({
+        jQuery('.zone_v4, .zone_s3, .zone_v3, .zone_alt_v4, .zone_alt_s3, .zone_alt_v3').css({
             background: '#fff',
             color: '#413e66',
             borderColor: 'green',
