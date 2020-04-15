@@ -5298,7 +5298,7 @@ jQuery(function() {
           jQuery('.wizard_heading').text('Протокол "Мужской"').removeClass('hidden');
         }
       }
-      jQuery('.zone span').addClass('canRepeat');
+      jQuery('.faq_item span').addClass('canRepeat');
       jQuery('.wizard_to_protList').addClass('prot_in_progress');
       jQuery('.ring').addClass('in_progress');
       localStorage.removeItem('paused');

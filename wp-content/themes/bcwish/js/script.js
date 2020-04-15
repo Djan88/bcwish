@@ -170,7 +170,7 @@ jQuery(function() {
       jQuery('.faq_item').removeClass('active');
       jQuery(this).addClass('active');
       jQuery('.zone').removeAttr('style');
-      jQuery('.zone span').removeClass('canRepeat');
+      jQuery('.faq_item span').removeClass('canRepeat');
     }
     nextSound.play();
     jQuery('.uploaded_pics_wrapper').draggable( "disable");
