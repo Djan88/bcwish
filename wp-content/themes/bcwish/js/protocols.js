@@ -141,39 +141,29 @@ jQuery(function() {
     //   }
     // })
 
-    swal({
-      title: "Протокол завершен",
-      text: "Что делать дальше?",
+    swal("A wild Pikachu appeared! What do you want to do?", {
       buttons: {
-        cancel: {
-          text: "Повторить протокол",
-        },
+        cancel: "Run away!",
         catch: {
-          text: "Другой протокол",
+          text: "Throw Pokéball!",
           value: "catch",
         },
-        defeat: {
-          dangerMode: true,
-          text: 'Новый клиент',
-
-        }
+        defeat: true,
       },
-    }).then((value) => {
+    })
+    .then((value) => {
       switch (value) {
      
         case "defeat":
-          jQuery(location).attr('href','/');
+          swal("Pikachu fainted! You gained 500 XP!");
+          break;
      
         case "catch":
-          jQuery('.wizard_main_screen, .wizard_to_protList').addClass('hidden');
-          jQuery('.wizard_stop').addClass('hidden');
-          jQuery('.wizard_prots, .wizard_operation, .wizard_to_what_way').fadeIn(500).removeClass('hidden');
-          jQuery('.wizard_heading').text('Выберите протокол');
+          swal("Gotcha!", "Pikachu was caught!", "success");
           break;
      
         default:
-          closeModal: true;
-          break;
+          swal("Got away safely!");
       }
     });
   }
