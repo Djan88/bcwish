@@ -151,7 +151,7 @@ jQuery(function() {
 
 
   mw_10 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -277,7 +277,7 @@ jQuery(function() {
   }
 
   mw_9_4 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -329,7 +329,7 @@ jQuery(function() {
   }
 
   mw_9_3 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -381,7 +381,7 @@ jQuery(function() {
   }
 
   mw_9_2 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -433,7 +433,7 @@ jQuery(function() {
   }
 
   mw_9_1 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -485,7 +485,7 @@ jQuery(function() {
   }
 
   mw_8_4 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -537,7 +537,7 @@ jQuery(function() {
   }
 
   mw_8_3 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -589,7 +589,7 @@ jQuery(function() {
   }
 
   mw_8_2 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -641,7 +641,7 @@ jQuery(function() {
   }
 
   mw_8_1 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -693,7 +693,7 @@ jQuery(function() {
   }
 
   mw_7_4 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -745,7 +745,7 @@ jQuery(function() {
   }
 
   mw_7_3 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -797,7 +797,7 @@ jQuery(function() {
   }
 
   mw_7_2 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -849,7 +849,7 @@ jQuery(function() {
   }
 
   mw_7_1 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -901,7 +901,7 @@ jQuery(function() {
   }
 
   mw_6 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -1001,7 +1001,7 @@ jQuery(function() {
   }
 
   mw_5 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -1102,7 +1102,7 @@ jQuery(function() {
   }
 
   mw_4 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -1204,7 +1204,7 @@ jQuery(function() {
   }
 
   mw_3 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -1306,7 +1306,7 @@ jQuery(function() {
   }
 
   mw_2 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -1408,7 +1408,7 @@ jQuery(function() {
   }
 
   mw = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Общий"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -5231,11 +5231,11 @@ jQuery(function() {
     if (protocol == 'un') {
       jQuery('.wizard_template_1').removeClass('hidden');
       jQuery('.wizard_templates').removeClass('wizard_templates_mw wizard_templates_ww wizard_templates_mm').addClass('wizard_templates_un');
-      jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Универсальный". Перенесите зоны на фото');
+      jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Инверсный". Перенесите зоны на фото');
     } else if (protocol == 'mw') {
       jQuery('.wizard_template_1').removeClass('hidden');
       jQuery('.wizard_templates').removeClass('wizard_templates_un wizard_templates_ww wizard_templates_mm').addClass('wizard_templates_mw');
-      jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Общий". Перенесите зоны на фото');
+      jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Классический". Перенесите зоны на фото');
     } else if (protocol == 'ww') {
       jQuery('.wizard_template_2').removeClass('hidden');
       jQuery('.wizard_templates').removeClass('wizard_templates_un wizard_templates_mw wizard_templates_mm').addClass('wizard_templates_ww');
@@ -5287,10 +5287,10 @@ jQuery(function() {
         console.log(protocol);
         if (protocol == 'un') {
           un();
-          jQuery('.wizard_heading').text('Протокол "Универсальный"').removeClass('hidden');
+          jQuery('.wizard_heading').text('Протокол "Инверсный"').removeClass('hidden');
         } else if (protocol == 'mw') {
           mw();
-          jQuery('.wizard_heading').text('Протокол "Общий"').removeClass('hidden');
+          jQuery('.wizard_heading').text('Протокол "Классический"').removeClass('hidden');
         } else if (protocol == 'ww') {
           ww();
           jQuery('.wizard_heading').text('Протокол "Женский"').removeClass('hidden');

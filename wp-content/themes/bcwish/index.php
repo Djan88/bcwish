@@ -324,7 +324,7 @@
                 <div class="col-sm-1 col-md-1 wizard_prots hidden" id="faq">
                   <div id="faq-list" class="faq-list wow fadeInLeft">
                     <div class="faq_item faq_item_1">ИНВЕРСНЫЙ<span>Повтор</span></div>
-                    <div class="faq_item faq_item_2">ОБЩИЙ<span>Повтор</span></div>
+                    <div class="faq_item faq_item_2">КЛАССИЧЕСКИЙ<span>Повтор</span></div>
                     <div class="faq_item faq_item_3">ЖЕНСКИЙ<span>Повтор</span></div>
                     <div class="faq_item faq_item_4">МУЖСКОЙ<span>Повтор</span></div>
                   </div>
@@ -333,6 +333,7 @@
                   <img src="<?php bloginfo('template_url'); ?>/img/mw.png" alt="" class="wizard_template wizard_template_1 hidden">
                   <img src="<?php bloginfo('template_url'); ?>/img/ww.png" alt="" class="wizard_template wizard_template_2 hidden">
                   <img src="<?php bloginfo('template_url'); ?>/img/mm.png" alt="" class="wizard_template wizard_template_3 hidden">
+                  <img src="<?php bloginfo('template_url'); ?>/img/un.png" alt="" class="wizard_template wizard_template_4 hidden">
                   <div class="ring draggable" id="ring">
                     <div class="zone zone_ring hidden"></div>
                   </div>
