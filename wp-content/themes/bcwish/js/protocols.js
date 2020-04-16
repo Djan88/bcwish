@@ -4745,7 +4745,7 @@ jQuery(function() {
   }
 
   un_4 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Инверсный-"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
@@ -5100,7 +5100,7 @@ jQuery(function() {
   }
 
   un = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Инверсный-"');
+    jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
