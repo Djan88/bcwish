@@ -116,6 +116,7 @@ jQuery(function() {
     localStorage.removeItem('pausedPhoto2');
     pausedStatus = false;
     jQuery('.wizard_to_protList').removeClass('prot_in_progress');
+    jQuery('#header').removeClass('.header_transparent');
 
     // protocolName = localStor
     alertSound.play();
@@ -5606,6 +5607,7 @@ jQuery(function() {
           jQuery('.wizard_heading').text('Протокол "Мужской"').removeClass('hidden');
         }
       }
+      jQuery('#header').addClass('.header_transparent');
       jQuery('.faq_item span').addClass('canRepeat');
       jQuery('.wizard_to_protList').addClass('prot_in_progress');
       jQuery('.ring').addClass('in_progress');

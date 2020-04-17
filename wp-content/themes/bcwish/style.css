@@ -186,6 +186,13 @@ h6 {
   background-color: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
+#header.header-scrolled.header_transparent,
+#header.header-pages.header_transparent {
+  height: 50px;
+  padding: 5px 0;
+  background-color: transparent;
+  box-shadow: none;
+}
 
 #header.header-scrolled .header_btn i, #header.header-scrolled .mobile-nav-toggle i
 {
