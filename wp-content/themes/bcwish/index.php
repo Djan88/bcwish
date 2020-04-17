@@ -505,7 +505,7 @@
                 <div class="steps_item steps_item_5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                   <!-- <div class="icon"></div> -->
                   <h4 class="title">Подготовка</h4>
-                  <p class="description">Поместите калибровочное кольцо так чтоб обе фотографии оказались в нем целиком. Размер кольца можно менять потянув за зеленые точки. Перенесите все зоны с шаблонного изображения на фото клиентов.</p>
+                  <p class="description">Поместите калибровочное кольцо так чтобы обе фотографии оказались в нем целиком. Размер кольца можно менять потянув за зеленые точки. Перенесите все зоны с шаблонного изображения на фото клиентов.</p>
                 </div>
                 <div class="steps_item steps_item_6 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
                   <!-- <div class="icon"></div> -->
