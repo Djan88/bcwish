@@ -112,21 +112,25 @@ jQuery(function() {
   });
 
 
-  jQuery('.mobile-nav-toggle, .mobile-nav a, .photo_upload, .crop_photo, .btn_diag, .btn_prot_choice, .wizard_clean_graf, .btn_prot_choice_fromDiag, #faq-list li a, .wizard_protocol, .wizard_play, .wizard_starter_alt, .wizard_stop, body .cancel, body .confirm, .wizard_continue, .mobile-nav select, .wpcf7-submit, .btn-get-started').on('click', function(event) {
+  jQuery('.mobile-nav-toggle, .mobile-nav a, .photo_upload, .crop_photo, .btn_diag, .btn_prot_choice, .btn_reset, .wizard_clean_graf, .btn_prot_choice_fromDiag, #faq-list li a, .wizard_protocol, .wizard_play, .wizard_starter_alt, .wizard_stop, body .cancel, body .confirm, .wizard_continue, .mobile-nav select, .wpcf7-submit, .btn-get-started').on('click', function(event) {
     nextSound.play();
   });
   jQuery('.wizard_to_protList, .wizard_to_what_way, .wizard_to_start').on('click', function(event) {
     prevSound.play();
   });
 
+  jQuery('.btn_reset').on('click', function(event) {
+    jQuery('html, body').animate({scrollTop: jQuery('#main').offset().top}, 300);
+    jQuery('.uploaded_pics_wrapper').attr('style', 'position: relative; visibility: visible; animation-duration: 1.4s; animation-delay: 0.4s; animation-name: bounceInUp;');
+  });
 
   // К протоколам
   jQuery('.btn_prot_choice').on('click', function(event) {
     jQuery('.wizard_way').removeClass('col-sm-12 col-md-12').addClass('col-sm-6 col-md-6');
     jQuery('.wizard_prots').removeClass('col-sm-1 col-md-1 hidden').addClass('col-sm-6 col-md-6');
     jQuery('.wizard_to_protDiag').removeClass('hidden');
-    jQuery('.wizard_to_start, .btn_prot_choice').addClass('hidden');
-    jQuery('.btn_prot_choice').removeClass('wow bounceInUp').removeAttr('style');
+    jQuery('.wizard_to_start, .btn_prot_choice, .btn_reset').addClass('hidden');
+    jQuery('.btn_prot_choice, .btn_reset').removeClass('wow bounceInUp').removeAttr('style');
     jQuery('.wizard_heading').text('Выберите протокол').removeClass('unvisible');
     jQuery('.uploaded_pics_wrapper').addClass('slow_top');
     // jQuery('.uploaded_pics_wrapper').draggable( "disable");
@@ -156,7 +160,7 @@ jQuery(function() {
   jQuery('.wizard_to_protDiag').on('click', function(event) {
     jQuery('.wizard_prots').addClass('hidden');
     jQuery('.wizard_to_protDiag').addClass('hidden');
-    jQuery('.wizard_to_start, .btn_prot_choice').removeClass('hidden');
+    jQuery('.wizard_to_start, .btn_prot_choice, .btn_reset').removeClass('hidden');
     jQuery('.faq-list').removeClass('wow bounceInUp').removeAttr('style');
     jQuery('.wizard_prots').fadeOut(500).removeClass('col-sm-6 col-md-6').addClass('col-sm-1 col-md-1 hidden');
     jQuery('.wizard_way').removeClass('col-sm-6 col-md-6').addClass('col-sm-12 col-md-12');

@@ -5221,7 +5221,7 @@ jQuery(function() {
     jQuery('.uploaded_pics_wrapper_1').css('left', left1);
     jQuery('.uploaded_pics_wrapper_2').css('top', top2);
     jQuery('.uploaded_pics_wrapper_2').css('left', left2);
-    jQuery('.machine_screen, #intro, .btn_prot_choice').addClass('hidden');
+    jQuery('.machine_screen, #intro, .btn_prot_choice, .btn_reset').addClass('hidden');
     jQuery('.uploaded_pics_1').attr('src', returned_img);
     jQuery('.uploaded_pics_2').attr('src', returned_img2);
     jQuery('.wm_start').removeClass('unopacity').removeAttr('style');

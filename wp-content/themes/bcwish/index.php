@@ -395,8 +395,7 @@
                     </div>
                   </div>
                   <button class="btn btn-success btn_prot_choice wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="1.2s">Выбор протокола</button>
-                  <!-- <button class="btn btn-success btn_rotate btn_rotate_left wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="1.2s"><i class="fa fa-undo"></i></button>
-                  <button class="btn btn-success btn_rotate btn_rotate_right hidden"><i class="fa fa-undo"></i></button> -->
+                  <button class="btn btn-success btn_reset btn_rotate_left wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="1.2s"><i class="fa fa-undo"></i></button>
                   
                 </div>
               </div>
