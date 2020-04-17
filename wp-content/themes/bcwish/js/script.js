@@ -39,7 +39,7 @@ jQuery(function() {
     localStorage.removeItem('pausedPhoto'); 
     localStorage.removeItem('pausedPhoto2'); 
     pausedStatus = false;
-    console.log('pausedStatus = false');
+    jQuery('.wizard_heading').text('Загрузите первое фото');
   });
 
   jQuery('.to_home, .wizard_to_start').on('click', function(event) {
