@@ -350,12 +350,14 @@
                   <div class="zone zone_movable zone_d3 draggable">D3</div>
                   <div class="zone zone_movable zone_d4 draggable">D4</div>
                   <div class="zone zone_movable zone_d5 draggable">D5</div>
+                  <div class="zone zone_movable zone_d6 draggable">D6</div>
 
                   <div class="zone zone_movable zone_s2 draggable">S2</div>
                   <div class="zone zone_movable zone_s2_ draggable">S2</div>
                   <div class="zone zone_movable zone_s3 draggable">S3</div>
                   <div class="zone zone_movable zone_s4 draggable">S4</div>
                   <div class="zone zone_movable zone_s5 draggable">S5</div>
+                  <div class="zone zone_movable zone_s6 draggable">S6</div>
 
                   <div class="zone zone_movable zone_alt_v1 draggable">V1</div>
                   <div class="zone zone_movable zone_alt_v2 draggable">V2</div>
@@ -369,12 +371,14 @@
                   <div class="zone zone_movable zone_alt_d3 draggable">D3</div>
                   <div class="zone zone_movable zone_alt_d4 draggable">D4</div>
                   <div class="zone zone_movable zone_alt_d5 draggable">D5</div>
+                  <div class="zone zone_movable zone_alt_d6 draggable">D6</div>
 
                   <div class="zone zone_movable zone_alt_s2 draggable">S2</div>
                   <div class="zone zone_movable zone_alt_s2_ draggable">S2</div>
                   <div class="zone zone_movable zone_alt_s3 draggable">S3</div>
                   <div class="zone zone_movable zone_alt_s4 draggable">S4</div>
                   <div class="zone zone_movable zone_alt_s5 draggable">S5</div>
+                  <div class="zone zone_movable zone_alt_s6 draggable">S6</div>
 
                   <div class="zone zone_movable zone_hidden zone_hidden_1 hidden draggable"></div>
                   <div class="zone zone_movable zone_hidden zone_hidden_2 hidden draggable"></div>
