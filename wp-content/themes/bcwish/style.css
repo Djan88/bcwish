@@ -443,11 +443,12 @@ h6 {
   z-index: 999;
 }
 
-.btn_rotate 
+.btn_reset 
 {
   position: fixed;
   left: 20px;
   bottom: 20px;
+  z-index: 999;
 }
 
 .btn_rotate_right
