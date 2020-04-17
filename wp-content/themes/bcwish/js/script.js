@@ -86,7 +86,7 @@ jQuery(function() {
       jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
       jQuery('.wm_start').removeClass('unopacity');
       jQuery('.wm_start').removeAttr('style');
-      jQuery('.wizard_heading').text('Загрузите первое фото');
+      jQuery('.wizard_heading').text('Диагностика');
     } else {
       localStorage.setItem('croppedImg', jQuery('.wizard_returned').children().attr('src'));
       jQuery('.wizard_heading').text('Загрузите второе фото');
