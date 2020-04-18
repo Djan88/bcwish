@@ -182,7 +182,7 @@ jQuery(function() {
     } else {
       if (!jQuery(this).hasClass('active')) {
         jQuery('.faq_item').removeClass('active');
-        jQuery(this).addClass('active').tooltip('destroy');
+        jQuery(this).addClass('active');
         jQuery('.zone').removeAttr('style');
         jQuery('.faq_item span').removeClass('canRepeat');
       }
