@@ -169,7 +169,7 @@ jQuery(function() {
   });
 
   //К переносу зон
-  jQuery('.faq_item_disabled').on('click', function(event) {
+  jQuery('.faq_item').on('click', function(event) {
     if (jQuery(this).hasClass('faq_item_disabled')) {
       jQuery('.faq_item_disabled').tooltip({
         title: 'Не забудьте установить фото в правильную позицию',
