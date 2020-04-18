@@ -173,10 +173,14 @@ jQuery(function() {
     if (jQuery(this).hasClass('faq_item_disabled')) {
       jQuery('.faq_item_disabled').tooltip({
         title: 'Не забудьте установить фото в правильную позицию',
-        placement: 'right',
-        trigger: 'click',
-        delay: { show: 10, hide: 2000 }
+        placement: 'bottom',
+        trigger: 'click'
       })
+      jQuery('.uploaded_pics_wrapper').addClass('highlited');
+      setTimeout(function(){
+        jQuery('.faq_item_disabled').tooltip('hide');
+        jQuery('.uploaded_pics_wrapper').removeClass('highlited');
+      },2000);
     } else {
       if (!jQuery(this).hasClass('active')) {
         jQuery('.faq_item').removeClass('active');
