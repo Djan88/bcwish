@@ -217,7 +217,7 @@ jQuery(function() {
         cur_protocol = 'mw';
         jQuery('.wizard_template_1').removeClass('hidden');
         jQuery('.wizard_templates').removeClass('wizard_templates_un wizard_templates_ww wizard_templates_mm').addClass('wizard_templates_mw');
-        jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Общий". Перенесите зоны на фото');
+        jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Классический". Перенесите зоны на фото');
       } else if (jQuery(this).hasClass('faq_item_3')) {
         cur_protocol = 'ww';
         jQuery('.wizard_template_2').removeClass('hidden');
