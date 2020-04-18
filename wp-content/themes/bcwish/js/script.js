@@ -50,15 +50,6 @@ jQuery(function() {
   jQuery('.wizard_returned').find('img:first-child').addClass('returned hidden');
   croppedImg = jQuery('.wizard_returned').children()[0];
 
-
-
-  jQuery('.faq_item').tooltip({
-    title: 'Не забудьте установить фото в правильную позицию',
-    placement: 'right',
-    trigger: 'click',
-    delay: { show: 0, hide: 2000 }
-  })
-
   // Dragging knife
   jQuery('.draggable_photo').draggable({
     containment: '#main',
@@ -178,9 +169,14 @@ jQuery(function() {
   });
 
   //К переносу зон
-  jQuery('.faq_item').on('click', function(event) {
+  jQuery('.faq_item_disabled').on('click', function(event) {
     if (jQuery(this).hasClass('faq_item_disabled')) {
-
+      jQuery('.faq_item_disabled').tooltip({
+        title: 'Не забудьте установить фото в правильную позицию',
+        placement: 'right',
+        trigger: 'click',
+        delay: { show: 0, hide: 2000 }
+      })
     } else {
       if (!jQuery(this).hasClass('active')) {
         jQuery('.faq_item').removeClass('active');
