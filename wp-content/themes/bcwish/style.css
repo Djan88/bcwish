@@ -479,10 +479,6 @@ h6 {
   transition: border 0.3s;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
-.uploaded_pics_wrapper.highlited
-{
-  border: 3px solid #5cb85c;
-}
 .uploaded_pics
 {
   width: 200px!important;
