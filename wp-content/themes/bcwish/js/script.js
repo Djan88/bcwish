@@ -68,7 +68,7 @@ jQuery(function() {
       }
     },
     stop: function () {
-      jQuery('.faq_item_disabled').tooltip('destroy');
+      jQuery('.faq_item_disabled').tooltip('hide');
       jQuery('.faq_item').removeClass('faq_item_disabled');
     }
   });
