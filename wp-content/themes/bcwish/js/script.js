@@ -184,7 +184,6 @@ jQuery(function() {
         jQuery('.faq_item').removeClass('active');
         jQuery(this).addClass('active');
         jQuery('.zone').removeAttr('style');
-        jQuery(this).tooltip('destroy');
         jQuery('.faq_item span').removeClass('canRepeat');
       }
       nextSound.play();
@@ -242,6 +241,7 @@ jQuery(function() {
       }
       localStorage.setItem('cur_protocol', cur_protocol);
       console.log(cur_protocol);
+      jQuery('.faq_item').tooltip('destroy');
     }
   });
 
