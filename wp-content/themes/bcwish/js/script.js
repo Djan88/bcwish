@@ -52,7 +52,7 @@ jQuery(function() {
 
 
 
-  ('.faq_item_disabled').tooltip({
+  jQuery('.faq_item_disabled').tooltip({
     title: 'Не забудьте установить фото в правильную позицию',
     placement: 'right',
     trigger: 'click',
