@@ -182,7 +182,7 @@
               <?php } else if (current_user_can('contributor') || current_user_can('administrator') || (current_user_can('subscriber') && $new_registred == 1)) { ?>
                 <h2>
                   Программа для коррекции 
-                  <br><span>парных взаимоотношений!</span>
+                  <br><span>кармических отношений!</span>
                   <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
                     <br><span style=" color: red; font-size: 20px;">Благодарим за интерес к программе "WizardDuos"! Дарим Вам 3 дня доступа к протоколу "Инверсный"!</span>
                   <?php } ?> 
@@ -203,7 +203,7 @@
             <?php } else { ?>
               <h2>
                 Программа для коррекции 
-                <br><span>парных взаимоотношений!</span>
+                <br><span>кармических отношений!</span>
               </h2>
               <div class="row">
                 <div class="col-md-12 login_form bounceInUp wow" data-wow-duration="1.4s">
