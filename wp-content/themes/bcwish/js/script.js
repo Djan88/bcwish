@@ -66,6 +66,9 @@ jQuery(function() {
         jQuery('.uploaded_pics_wrapper_1').css('top', -photo_top+'px');
         jQuery('.uploaded_pics_wrapper_1').css('left', -photo_left+'px');
       }
+    },
+    stop: function () {
+      jQuery('.faq_item').removeClass('faq_item_disabled');
     }
   });
 

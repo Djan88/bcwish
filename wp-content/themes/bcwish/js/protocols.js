@@ -5607,6 +5607,16 @@ jQuery(function() {
           jQuery('.wizard_heading').text('Протокол "Мужской"').removeClass('hidden');
         }
       }
+      jQuery('.faq_item').each(function(i,elem) {
+        if (!jQuery(this).hasClass('active')) {
+          jQuery(this).addClass('faq_item_disabled');
+        }
+      });
+      jQuery('.faq_item_disabled').tooltip({
+        title: 'Не забудьте установить фото в правильную позицию',
+        placement: 'bottom',
+        trigger: 'click'
+      })
       jQuery('#header').addClass('.header_transparent');
       jQuery('.faq_item span').addClass('canRepeat');
       jQuery('.wizard_to_protList').addClass('prot_in_progress');
