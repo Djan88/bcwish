@@ -171,10 +171,10 @@ jQuery(function() {
   //К переносу зон
   jQuery('.faq_item').on('click', function(event) {
     if (jQuery(this).hasClass('faq_item_disabled')) {
-      jQuery('.uploaded_pics_wrapper').addClass('animated shake');
+      jQuery('.wizard_way').addClass('animated shake');
       setTimeout(function(){
         jQuery('.faq_item_disabled').tooltip('hide');
-        jQuery('.uploaded_pics_wrapper').removeClass('animated shake');
+        jQuery('.wizard_way').removeClass('animated shake');
       },2000);
     } else {
       if (!jQuery(this).hasClass('active')) {
