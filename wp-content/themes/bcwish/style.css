@@ -2293,14 +2293,13 @@ button.wizard_starter_alt.btn.btn-success
 }
 .faq_item.faq_item_disabled
 {
-  opacity: 0.3;
+  color: #c4c6d4;
   cursor: default;
 }
 .faq_item.faq_item_disabled:hover
 {
-  opacity: 0.3;
   cursor: default;
-  color: #413e66;
+  color: #c4c6d4;
 }
 .faq_item span
 {
