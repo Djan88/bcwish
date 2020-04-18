@@ -187,16 +187,6 @@ jQuery(function() {
         jQuery('.faq_item span').removeClass('canRepeat');
       }
       nextSound.play();
-      jQuery('.faq_item').each(function(i,elem) {
-        if (!jQuery(this).hasClass('active')) {
-          jQuery(this).addClass('faq_item_disabled');
-        }
-      });
-      jQuery('.faq_item_disabled').tooltip({
-        title: 'Не забудьте установить фото в правильную позицию',
-        placement: 'bottom',
-        trigger: 'click'
-      })
       jQuery('.uploaded_pics_wrapper').draggable( "disable");
       jQuery('.wizard_prots, .wizard_to_protDiag').addClass('hidden');
       jQuery('.ring, .wizard_templates, .wizard_to_protList').removeClass('hidden');
