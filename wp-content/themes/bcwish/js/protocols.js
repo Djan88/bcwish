@@ -1627,7 +1627,7 @@ jQuery(function() {
 
   ww_10 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('96%');
+    jQuery('.wizard_percent').text('92%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1667,7 +1667,7 @@ jQuery(function() {
 
   ww_9_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('90%');
+    jQuery('.wizard_percent').text('83%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1719,7 +1719,7 @@ jQuery(function() {
 
   ww_9_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('83%');
+    jQuery('.wizard_percent').text('77%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1771,7 +1771,7 @@ jQuery(function() {
 
   ww_9_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('77%');
+    jQuery('.wizard_percent').text('72%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1823,7 +1823,7 @@ jQuery(function() {
 
   ww_9_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('72%');
+    jQuery('.wizard_percent').text('66%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1875,7 +1875,7 @@ jQuery(function() {
 
   ww_8 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('66%');
+    jQuery('.wizard_percent').text('60%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1980,7 +1980,7 @@ jQuery(function() {
 
   ww_7 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('60%');
+    jQuery('.wizard_percent').text('53%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2082,7 +2082,7 @@ jQuery(function() {
 
   ww_6 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('53%');
+    jQuery('.wizard_percent').text('47%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2184,7 +2184,7 @@ jQuery(function() {
 
   ww_5_dop = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('47%');
+    jQuery('.wizard_percent').text('40%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2286,7 +2286,7 @@ jQuery(function() {
 
   ww_5 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('40%');
+    jQuery('.wizard_percent').text('34%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2388,7 +2388,7 @@ jQuery(function() {
 
   ww_4_dop = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('34%');
+    jQuery('.wizard_percent').text('26%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2490,7 +2490,7 @@ jQuery(function() {
 
   ww_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('26%');
+    jQuery('.wizard_percent').text('19%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2592,7 +2592,7 @@ jQuery(function() {
 
   ww_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('19%');
+    jQuery('.wizard_percent').text('13%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2694,7 +2694,7 @@ jQuery(function() {
 
   ww_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('13%');
+    jQuery('.wizard_percent').text('6%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2796,7 +2796,7 @@ jQuery(function() {
 
   ww = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('6%');
+    jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
