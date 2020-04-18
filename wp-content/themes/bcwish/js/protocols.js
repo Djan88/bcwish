@@ -163,7 +163,7 @@ jQuery(function() {
 
   mw_10 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('95%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -289,7 +289,7 @@ jQuery(function() {
 
   mw_9_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('90%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -341,7 +341,7 @@ jQuery(function() {
 
   mw_9_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('85%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -393,7 +393,7 @@ jQuery(function() {
 
   mw_9_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('80%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -445,7 +445,7 @@ jQuery(function() {
 
   mw_9_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('75%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -497,7 +497,7 @@ jQuery(function() {
 
   mw_8_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('70%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -549,7 +549,7 @@ jQuery(function() {
 
   mw_8_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('65%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -601,7 +601,7 @@ jQuery(function() {
 
   mw_8_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('60%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -653,7 +653,7 @@ jQuery(function() {
 
   mw_8_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('55%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -705,7 +705,7 @@ jQuery(function() {
 
   mw_7_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('50%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -757,7 +757,7 @@ jQuery(function() {
 
   mw_7_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('45%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -809,7 +809,7 @@ jQuery(function() {
 
   mw_7_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('40%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -861,7 +861,7 @@ jQuery(function() {
 
   mw_7_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('35%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -913,7 +913,7 @@ jQuery(function() {
 
   mw_6 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('30%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1013,7 +1013,7 @@ jQuery(function() {
 
   mw_5 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('25%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1114,7 +1114,7 @@ jQuery(function() {
 
   mw_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('20%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1216,7 +1216,7 @@ jQuery(function() {
 
   mw_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('15%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1318,7 +1318,7 @@ jQuery(function() {
 
   mw_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('10%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1421,7 +1421,7 @@ jQuery(function() {
 
   mw_dop = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('5%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1626,7 +1626,7 @@ jQuery(function() {
 
   ww_10 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('96%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1666,7 +1666,7 @@ jQuery(function() {
 
   ww_9_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('90%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1718,7 +1718,7 @@ jQuery(function() {
 
   ww_9_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('83%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1770,7 +1770,7 @@ jQuery(function() {
 
   ww_9_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('77%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1822,7 +1822,7 @@ jQuery(function() {
 
   ww_9_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('72%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1874,7 +1874,7 @@ jQuery(function() {
 
   ww_8 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('66%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -1979,7 +1979,7 @@ jQuery(function() {
 
   ww_7 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('60%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2081,7 +2081,7 @@ jQuery(function() {
 
   ww_6 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('53%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2183,7 +2183,7 @@ jQuery(function() {
 
   ww_5_dop = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('47%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2285,7 +2285,7 @@ jQuery(function() {
 
   ww_5 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('40%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2387,7 +2387,7 @@ jQuery(function() {
 
   ww_4_dop = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('34%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2489,7 +2489,7 @@ jQuery(function() {
 
   ww_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('26%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2591,7 +2591,7 @@ jQuery(function() {
 
   ww_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('19%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2693,7 +2693,7 @@ jQuery(function() {
 
   ww_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('13%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2795,7 +2795,7 @@ jQuery(function() {
 
   ww = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('6%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2900,7 +2900,7 @@ jQuery(function() {
 
   mm_10 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('94%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2966,7 +2966,7 @@ jQuery(function() {
 
   mm_9_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('87%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -3018,7 +3018,7 @@ jQuery(function() {
 
   mm_9_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('81%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -3070,7 +3070,7 @@ jQuery(function() {
 
   mm_9_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('75%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -3122,7 +3122,7 @@ jQuery(function() {
 
   mm_9_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('68%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -3174,7 +3174,7 @@ jQuery(function() {
 
   mm_8_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('62%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -3226,7 +3226,7 @@ jQuery(function() {
 
   mm_8_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('56%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -3278,7 +3278,7 @@ jQuery(function() {
 
   mm_8_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('50%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -3330,7 +3330,7 @@ jQuery(function() {
 
   mm_8_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('43%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -3382,7 +3382,7 @@ jQuery(function() {
 
   mm_7 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('37%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -3484,7 +3484,7 @@ jQuery(function() {
 
   mm_6 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('31%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -3586,7 +3586,7 @@ jQuery(function() {
 
   mm_5 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('25%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -3688,7 +3688,7 @@ jQuery(function() {
 
   mm_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('18%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -3790,7 +3790,7 @@ jQuery(function() {
 
   mm_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('12%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -3892,7 +3892,7 @@ jQuery(function() {
 
   mm_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Мужской"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('6%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4102,7 +4102,7 @@ jQuery(function() {
 
   un_12 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('98%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4146,7 +4146,7 @@ jQuery(function() {
 
   un_11_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('96%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4198,7 +4198,7 @@ jQuery(function() {
 
   un_11_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('92%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4250,7 +4250,7 @@ jQuery(function() {
 
   un_11_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('88%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4302,7 +4302,7 @@ jQuery(function() {
 
   un_11_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('84%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4354,7 +4354,7 @@ jQuery(function() {
 
   un_10 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('78%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4457,7 +4457,7 @@ jQuery(function() {
 
   un_9 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('74%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4501,7 +4501,7 @@ jQuery(function() {
 
   un_8_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('70%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4553,7 +4553,7 @@ jQuery(function() {
 
   un_8_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('66%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4605,7 +4605,7 @@ jQuery(function() {
 
   un_8_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('62%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4657,7 +4657,7 @@ jQuery(function() {
 
   un_8_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('58%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4709,7 +4709,7 @@ jQuery(function() {
 
   un_7 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('54%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4812,7 +4812,7 @@ jQuery(function() {
 
   un_6 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('48%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4856,7 +4856,7 @@ jQuery(function() {
 
   un_5_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('44%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4908,7 +4908,7 @@ jQuery(function() {
 
   un_5_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('40%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -4960,7 +4960,7 @@ jQuery(function() {
 
   un_5_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('34%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -5012,7 +5012,7 @@ jQuery(function() {
 
   un_5_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('30%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -5064,7 +5064,7 @@ jQuery(function() {
 
   un_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('26%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -5167,7 +5167,7 @@ jQuery(function() {
 
   un_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('20%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -5211,7 +5211,7 @@ jQuery(function() {
 
   un_2_4 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('16%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -5263,7 +5263,7 @@ jQuery(function() {
 
   un_2_3 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('12%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -5315,7 +5315,7 @@ jQuery(function() {
 
   un_2_2 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('8%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -5367,7 +5367,7 @@ jQuery(function() {
 
   un_2_1 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.wizard_percent').text('4%');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
