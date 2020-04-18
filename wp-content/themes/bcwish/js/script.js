@@ -68,9 +68,6 @@ jQuery(function() {
       }
     },
     stop: function () {
-      jQuery('.faq_item').each(function(i,elem) {
-          jQuery(this).tooltip('destroy');
-      });
       jQuery('.faq_item').removeClass('faq_item_disabled');
     }
   });
@@ -187,6 +184,7 @@ jQuery(function() {
         jQuery('.faq_item').removeClass('active');
         jQuery(this).addClass('active');
         jQuery('.zone').removeAttr('style');
+        jQuery(this).tooltip('destroy');
         jQuery('.faq_item span').removeClass('canRepeat');
       }
       nextSound.play();
