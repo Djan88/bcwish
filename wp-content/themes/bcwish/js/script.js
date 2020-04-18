@@ -175,7 +175,7 @@ jQuery(function() {
         title: 'Не забудьте установить фото в правильную позицию',
         placement: 'right',
         trigger: 'click',
-        delay: { show: 0, hide: 2000 }
+        delay: { show: 10, hide: 2000 }
       })
     } else {
       if (!jQuery(this).hasClass('active')) {

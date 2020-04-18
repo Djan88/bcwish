@@ -1276,7 +1276,6 @@ h6 {
 
 #faq #faq-list {
   list-style: none;
-  padding: 0 20px;
   list-style: none;
   background: #f5f8fd;
   border-radius: 6px;
@@ -2281,14 +2280,14 @@ button.wizard_starter_alt.btn.btn-success
 }*/
 .faq_item 
 {
-  padding: 22px 0;
+  padding: 22px 20px;
   display: block;
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 1;
   font-weight: 400;
-  padding-right: 20px;
+  padding-right: 0;
   border-bottom: 1px solid #ebebeb;
   cursor: pointer;
   transition: color 0.5s;
