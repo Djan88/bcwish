@@ -140,6 +140,16 @@ jQuery(function() {
         jQuery('.zone_ring').addClass('hidden');
         jQuery('.wizard_prots, .wizard_operation, .wizard_to_what_way').fadeIn(500).removeClass('hidden');
         jQuery('.wizard_heading').text('Выберите протокол');
+        jQuery('.faq_item').each(function(i,elem) {
+          if (!jQuery(this).hasClass('active')) {
+            jQuery(this).addClass('faq_item_disabled');
+          }
+        });
+        jQuery('.faq_item_disabled').tooltip({
+          title: 'Не забудьте установить фото в правильную позицию',
+          placement: 'bottom',
+          trigger: 'click'
+        })
       }
     })
 
@@ -5607,16 +5617,6 @@ jQuery(function() {
           jQuery('.wizard_heading').text('Протокол "Мужской"').removeClass('hidden');
         }
       }
-      jQuery('.faq_item').each(function(i,elem) {
-        if (!jQuery(this).hasClass('active')) {
-          jQuery(this).addClass('faq_item_disabled');
-        }
-      });
-      jQuery('.faq_item_disabled').tooltip({
-        title: 'Не забудьте установить фото в правильную позицию',
-        placement: 'bottom',
-        trigger: 'click'
-      })
       jQuery('#header').addClass('.header_transparent');
       jQuery('.faq_item span').addClass('canRepeat');
       jQuery('.wizard_to_protList').addClass('prot_in_progress');
