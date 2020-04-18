@@ -479,7 +479,7 @@ h6 {
   transition: transform 0.5s;
   border: 3px solid transparent;
   box-sizing: content-box;
-  transition: all 0.3s;
+  transition: border 0.3s;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 .uploaded_pics_wrapper.highlited
