@@ -140,6 +140,7 @@ jQuery(function() {
         jQuery('.zone_ring').addClass('hidden');
         jQuery('.wizard_prots, .wizard_operation, .wizard_to_what_way').fadeIn(500).removeClass('hidden');
         jQuery('.wizard_heading').text('Выберите протокол');
+        jQuery('.uploaded_pics_wrapper').draggable( "enable");
         jQuery('.faq_item').each(function(i,elem) {
           if (!jQuery(this).hasClass('active')) {
             jQuery(this).addClass('faq_item_disabled');
@@ -5572,7 +5573,7 @@ jQuery(function() {
     jQuery('.zone_movable').each(function() {
       if(parseFloat(jQuery(this).css('left')) < 600){
         pointsStatus = false;
-        console.log('status '+' '+jQuery(this).text()+' '+jQuery(this).css('top')+' '+pointsStatus);
+        // console.log('status '+' '+jQuery(this).text()+' '+jQuery(this).css('top')+' '+pointsStatus);
       }
       if (parseFloat(jQuery('.ring').css('left')) < 380) {
         pointsStatus = false;
