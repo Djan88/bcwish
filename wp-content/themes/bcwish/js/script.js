@@ -50,6 +50,15 @@ jQuery(function() {
   jQuery('.wizard_returned').find('img:first-child').addClass('returned hidden');
   croppedImg = jQuery('.wizard_returned').children()[0];
 
+
+
+  ('.faq_item_disabled').tooltip({
+    title: 'Не забудьте установить фото в правильную позицию',
+    placement: 'right',
+    trigger: 'click',
+    delay: { show: 0, hide: 2000 }
+  })
+
   // Dragging knife
   jQuery('.draggable_photo').draggable({
     containment: '#main',
