@@ -2285,10 +2285,22 @@ button.wizard_starter_alt.btn.btn-success
   border-bottom: 1px solid #ebebeb;
   cursor: pointer;
   transition: color 0.5s;
+  color: #413e66;
 }
 .faq_item.active, .faq_item:hover
 {
   color: #5cb85c;
+}
+.faq_item.faq_item_disabled
+{
+  opacity: 0.3;
+  cursor: default;
+}
+.faq_item.faq_item_disabled:hover
+{
+  opacity: 0.3;
+  cursor: default;
+  color: #413e66;
 }
 .faq_item span
 {

@@ -170,57 +170,66 @@ jQuery(function() {
 
   //К переносу зон
   jQuery('.faq_item').on('click', function(event) {
-    if (!jQuery(this).hasClass('active')) {
-      jQuery('.faq_item').removeClass('active');
-      jQuery(this).addClass('active');
-      jQuery('.zone').removeAttr('style');
-      jQuery('.faq_item span').removeClass('canRepeat');
+    if (jQuery(this).hasClass('faq_item_disabled')) {
+
+    } else {
+      if (!jQuery(this).hasClass('active')) {
+        jQuery('.faq_item').removeClass('active');
+        jQuery(this).addClass('active');
+        jQuery('.zone').removeAttr('style');
+        jQuery('.faq_item span').removeClass('canRepeat');
+      }
+      nextSound.play();
+      jQuery('.faq_item').each(function(i,elem) {
+        if (!jQuery(this).hasClass('active')) {
+          jQuery(this).addClass('faq_item_disabled');
+        }
+      });
+      jQuery('.uploaded_pics_wrapper').draggable( "disable");
+      jQuery('.wizard_prots, .wizard_to_protDiag').addClass('hidden');
+      jQuery('.ring, .wizard_templates, .wizard_to_protList').removeClass('hidden');
+      jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+      jQuery('.wizard_to_what_way, .wizard_to_protDiag').addClass('hidden');
+      jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
+      jQuery('.wizard_templates').fadeIn(500);
+      jQuery('.wizard_template').addClass('hidden');
+      jQuery('.uploaded_pics_wrapper').addClass('slow_top');
+      var img_1 = parseFloat(jQuery('.uploaded_pics_wrapper_1').css('top'));
+      var img_2 = parseFloat(jQuery('.uploaded_pics_wrapper_2').css('top'));
+      if (img_1 < 0) {
+        jQuery('.uploaded_pics_wrapper_1').css('top', 0);
+        jQuery('.uploaded_pics_wrapper_2').css('top', (img_2+img_2)+'px');
+      } else if (img_2 < 0) {
+        jQuery('.uploaded_pics_wrapper_2').css('top', 0);
+        jQuery('.uploaded_pics_wrapper_1').css('top', (img_1+img_1)+'px');
+      }
+      setTimeout(function(){
+        jQuery('.uploaded_pics_wrapper').removeClass('slow_top');
+      },1000);
+      if (jQuery(this).hasClass('faq_item_1')) {
+        cur_protocol = 'un';
+        jQuery('.wizard_template_4').removeClass('hidden');
+        jQuery('.wizard_templates').removeClass('wizard_templates_mw wizard_templates_ww wizard_templates_mm').addClass('wizard_templates_un');
+        jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Инверсный". Перенесите зоны на фото');
+      } else if (jQuery(this).hasClass('faq_item_2')) {
+        cur_protocol = 'mw';
+        jQuery('.wizard_template_1').removeClass('hidden');
+        jQuery('.wizard_templates').removeClass('wizard_templates_un wizard_templates_ww wizard_templates_mm').addClass('wizard_templates_mw');
+        jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Общий". Перенесите зоны на фото');
+      } else if (jQuery(this).hasClass('faq_item_3')) {
+        cur_protocol = 'ww';
+        jQuery('.wizard_template_2').removeClass('hidden');
+        jQuery('.wizard_templates').removeClass('wizard_templates_un wizard_templates_mw wizard_templates_mm').addClass('wizard_templates_ww');
+        jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Женский". Перенесите зоны на фото');
+      } else if (jQuery(this).hasClass('faq_item_4')) {
+        cur_protocol = 'mm';
+        jQuery('.wizard_template_3').removeClass('hidden');
+        jQuery('.wizard_templates').removeClass('wizard_templates_un wizard_templates_mw wizard_templates_ww').addClass('wizard_templates_mm');
+        jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Мужской". Перенесите зоны на фото');
+      }
+      localStorage.setItem('cur_protocol', cur_protocol);
+      console.log(cur_protocol);
     }
-    nextSound.play();
-    jQuery('.uploaded_pics_wrapper').draggable( "disable");
-    jQuery('.wizard_prots, .wizard_to_protDiag').addClass('hidden');
-    jQuery('.ring, .wizard_templates, .wizard_to_protList').removeClass('hidden');
-    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
-    jQuery('.wizard_to_what_way, .wizard_to_protDiag').addClass('hidden');
-    jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_templates').fadeIn(500);
-    jQuery('.wizard_template').addClass('hidden');
-    jQuery('.uploaded_pics_wrapper').addClass('slow_top');
-    var img_1 = parseFloat(jQuery('.uploaded_pics_wrapper_1').css('top'));
-    var img_2 = parseFloat(jQuery('.uploaded_pics_wrapper_2').css('top'));
-    if (img_1 < 0) {
-      jQuery('.uploaded_pics_wrapper_1').css('top', 0);
-      jQuery('.uploaded_pics_wrapper_2').css('top', (img_2+img_2)+'px');
-    } else if (img_2 < 0) {
-      jQuery('.uploaded_pics_wrapper_2').css('top', 0);
-      jQuery('.uploaded_pics_wrapper_1').css('top', (img_1+img_1)+'px');
-    }
-    setTimeout(function(){
-      jQuery('.uploaded_pics_wrapper').removeClass('slow_top');
-    },1000);
-    if (jQuery(this).hasClass('faq_item_1')) {
-      cur_protocol = 'un';
-      jQuery('.wizard_template_4').removeClass('hidden');
-      jQuery('.wizard_templates').removeClass('wizard_templates_mw wizard_templates_ww wizard_templates_mm').addClass('wizard_templates_un');
-      jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Инверсный". Перенесите зоны на фото');
-    } else if (jQuery(this).hasClass('faq_item_2')) {
-      cur_protocol = 'mw';
-      jQuery('.wizard_template_1').removeClass('hidden');
-      jQuery('.wizard_templates').removeClass('wizard_templates_un wizard_templates_ww wizard_templates_mm').addClass('wizard_templates_mw');
-      jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Общий". Перенесите зоны на фото');
-    } else if (jQuery(this).hasClass('faq_item_3')) {
-      cur_protocol = 'ww';
-      jQuery('.wizard_template_2').removeClass('hidden');
-      jQuery('.wizard_templates').removeClass('wizard_templates_un wizard_templates_mw wizard_templates_mm').addClass('wizard_templates_ww');
-      jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Женский". Перенесите зоны на фото');
-    } else if (jQuery(this).hasClass('faq_item_4')) {
-      cur_protocol = 'mm';
-      jQuery('.wizard_template_3').removeClass('hidden');
-      jQuery('.wizard_templates').removeClass('wizard_templates_un wizard_templates_mw wizard_templates_ww').addClass('wizard_templates_mm');
-      jQuery('.wizard_heading').removeClass('unvisible').text('Протокол "Мужской". Перенесите зоны на фото');
-    }
-    localStorage.setItem('cur_protocol', cur_protocol);
-    console.log(cur_protocol);
   });
 
    //Назад. К списку протоколов
