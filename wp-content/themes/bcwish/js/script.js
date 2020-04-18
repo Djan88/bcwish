@@ -68,7 +68,9 @@ jQuery(function() {
       }
     },
     stop: function () {
-      jQuery('.faq_item_disabled').tooltip('detach');
+      jQuery('.faq_item').each(function(i,elem) {
+          jQuery(this).tooltip('destroy');
+      });
       jQuery('.faq_item').removeClass('faq_item_disabled');
     }
   });
