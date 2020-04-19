@@ -328,8 +328,8 @@
                     <?php if(current_user_can('contributor') || current_user_can('administrator') || (current_user_can('subscriber') && $new_registred == 1)) { ?>
                         <div class="faq_item faq_item_1">ИНВЕРСНЫЙ<span>Повтор</span></div>
                         <div class="faq_item_closed" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Станет доступен после оплаты доступа!">КЛАССИЧЕСКИЙ</div>
-                        <div class="faq_item_closed">ЖЕНСКИЙ</div>
-                        <div class="faq_item_closed">МУЖСКОЙ</div>
+                        <div class="faq_item_closed" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Станет доступен после оплаты доступа!">ЖЕНСКИЙ</div>
+                        <div class="faq_item_closed" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Станет доступен после оплаты доступа!">МУЖСКОЙ</div>
                     <?php } else if(current_user_can('contributor') || current_user_can('administrator')) { ?>
                       <div class="faq_item faq_item_1">ИНВЕРСНЫЙ<span>Повтор</span></div>
                       <div class="faq_item faq_item_2">КЛАССИЧЕСКИЙ<span>Повтор</span></div>
