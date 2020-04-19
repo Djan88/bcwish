@@ -61,7 +61,20 @@
       <span class="wizard_percent">0%</span>
       <i class="fa fa-stop-circle wizard_stop_icon"></i>
     </button>
-    <?php echo $new_registred; ?>
+    <?php if(is_user_logged_in()){ ?>
+      <?php 
+        $cur_user_id = get_current_user_id();
+        $user = get_userdata($cur_user_id);
+        $user_date  =  strtotime($user->user_registered);
+        $cur_date  =  strtotime("now");
+        $date_diff = $cur_date - $user_date;
+        if ($date_diff < 259000) {
+          $new_registred = 1;
+        } else {
+          $new_registred = 0;
+        }
+      ?>
+    <?php } ?>
     <?php if(current_user_can('subscriber') && $new_registred == 0) { ?>
 
     <?php } else if(current_user_can('contributor') || current_user_can('administrator') || (current_user_can('subscriber') && $new_registred == 1)) { ?>
@@ -89,22 +102,6 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <?php if(is_user_logged_in()){ ?>
-            <?php 
-              $cur_user_id = get_current_user_id();
-              $user = get_userdata($cur_user_id);
-              $user_date  =  strtotime($user->user_registered);
-              $cur_date  =  strtotime("now");
-              $date_diff = $cur_date - $user_date;
-              if ($date_diff < 259000) {
-                $new_registred = 1;
-              } else {
-                $new_registred = 0;
-              }
-              // print_r('<div style="color: #fff;">'.$user_date.'</div>');
-              // print_r('<div style="color: #fff;">'.$cur_date.'</div>');
-              // print_r('<div style="color: #fff;">'.$date_diff.'</div>');
-              // print_r('<div style="color: #fff;"> status '.$new_registred.'</div>');
-            ?>
             <li><a href="/">Программа</a></li>
             <li><a href="/kabinet">Личный кабинет</a></li>
             <?php if(current_user_can('administrator')){ ?>
