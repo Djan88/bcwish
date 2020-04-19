@@ -61,7 +61,10 @@
       <span class="wizard_percent">0%</span>
       <i class="fa fa-stop-circle wizard_stop_icon"></i>
     </button>
-    <?php if(current_user_can('contributor') || current_user_can('administrator') || (current_user_can('subscriber') && $new_registred == 1)) { ?>
+    <?php echo $new_registred ?>;
+    <?php if(current_user_can('subscriber') && $new_registred == 0) { ?>
+
+    <?php } else if(current_user_can('contributor') || current_user_can('administrator') || (current_user_can('subscriber') && $new_registred == 1)) { ?>
       <div class="wizard_heading float-left">Загрузите первое фото</div>
     <?php } ?>
     <div id="topbar">
