@@ -72,6 +72,8 @@ jQuery(function() {
     }
   });
 
+  jQuery('.faq_item_closed').tooltip();
+
   if(croppedImg && croppedImg.hasAttribute('src')){
     if((supportsStorage && localStorage.getItem('croppedImg'))){
       croppedImg = localStorage.getItem('croppedImg');
