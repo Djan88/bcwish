@@ -63,7 +63,7 @@
     </button>
     <?php if(current_user_can('subscriber') && $new_registred == 0) { ?>
 
-    <?php } else if(is_user_logged_in() || (current_user_can('subscriber') && $new_registred == 1)) { ?>
+    <?php } else if(current_user_can('contributor') || current_user_can('administrator') || (current_user_can('subscriber') && $new_registred == 1)) { ?>
       <div class="wizard_heading float-left">Загрузите первое фото</div>
     <?php } ?>
     <div id="topbar">
