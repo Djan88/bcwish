@@ -61,7 +61,6 @@
       <span class="wizard_percent">0%</span>
       <i class="fa fa-stop-circle wizard_stop_icon"></i>
     </button>
-    <?php echo $new_registred ?>;
     <?php if(current_user_can('subscriber') && $new_registred == 0) { ?>
 
     <?php } else if(current_user_can('contributor') || current_user_can('administrator') || (current_user_can('subscriber') && $new_registred == 1)) { ?>
@@ -106,6 +105,7 @@
               // print_r('<div style="color: #fff;"> status '.$new_registred.'</div>');
             ?>
             <li><a href="/">Программа</a></li>
+            <li><?php echo $new_registred; ?></li>
             <li><a href="/kabinet">Личный кабинет</a></li>
             <?php if(current_user_can('administrator')){ ?>
               <li><a href="/wp-admin">Панель управления</a></li>
