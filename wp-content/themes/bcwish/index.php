@@ -61,7 +61,9 @@
       <span class="wizard_percent">0%</span>
       <i class="fa fa-stop-circle wizard_stop_icon"></i>
     </button>
-    <?php if(is_user_logged_in()){ ?>
+    <?php if(current_user_can('subscriber') && $new_registred == 0) { ?>
+
+    <?php } else if(is_user_logged_in()){ ?>
       <div class="wizard_heading float-left">Загрузите первое фото</div>
     <?php } ?>
     <div id="topbar">
