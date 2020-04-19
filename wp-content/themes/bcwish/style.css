@@ -2271,7 +2271,7 @@ button.wizard_starter_alt.btn.btn-success
 {
   content: '2';
 }*/
-.faq_item 
+.faq_item, .faq_item_closed
 {
   padding: 22px 20px;
   display: block;
@@ -2290,12 +2290,12 @@ button.wizard_starter_alt.btn.btn-success
 {
   color: #5cb85c;
 }
-.faq_item.faq_item_disabled
+.faq_item.faq_item_disabled, .faq_item_closed
 {
   color: #c4c6d4;
   cursor: default;
 }
-.faq_item.faq_item_disabled:hover
+.faq_item.faq_item_disabled:hover, .faq_item_closed:hover
 {
   cursor: default;
   color: #c4c6d4;

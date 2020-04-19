@@ -325,10 +325,17 @@
               <div class="row wizard_operation">
                 <div class="col-sm-1 col-md-1 wizard_prots hidden" id="faq">
                   <div id="faq-list" class="faq-list wow fadeInLeft">
-                    <div class="faq_item faq_item_1">ИНВЕРСНЫЙ<span>Повтор</span></div>
-                    <div class="faq_item faq_item_2">КЛАССИЧЕСКИЙ<span>Повтор</span></div>
-                    <div class="faq_item faq_item_3">ЖЕНСКИЙ<span>Повтор</span></div>
-                    <div class="faq_item faq_item_4">МУЖСКОЙ<span>Повтор</span></div>
+                    <?php if(current_user_can('contributor') || current_user_can('administrator') || (current_user_can('subscriber') && $new_registred == 1)) { ?>
+                        <div class="faq_item faq_item_1">ИНВЕРСНЫЙ<span>Повтор</span></div>
+                        <div class="faq_item_closed" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Станет доступен после оплаты доступа!">КЛАССИЧЕСКИЙ<span>Повтор</span></div>
+                        <div class="faq_item_closed">ЖЕНСКИЙ<span>Повтор</span></div>
+                        <div class="faq_item_closed">МУЖСКОЙ<span>Повтор</span></div>
+                    <?php } else if(current_user_can('contributor') || current_user_can('administrator')) { ?>
+                      <div class="faq_item faq_item_1">ИНВЕРСНЫЙ<span>Повтор</span></div>
+                      <div class="faq_item faq_item_2">КЛАССИЧЕСКИЙ<span>Повтор</span></div>
+                      <div class="faq_item faq_item_3">ЖЕНСКИЙ<span>Повтор</span></div>
+                      <div class="faq_item faq_item_4">МУЖСКОЙ<span>Повтор</span></div>
+                    <?php } ?>
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-6 wizard_templates hidden wow fadeInLeft" id="template">
