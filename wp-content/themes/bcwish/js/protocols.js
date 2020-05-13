@@ -162,7 +162,7 @@ jQuery(function() {
   });
 
 
-  mw_chg_10 = function(){
+  mw_chg_11 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
     jQuery('.wizard_percent').text('95%');
     reloadTime = 0;
