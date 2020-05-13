@@ -337,10 +337,10 @@ jQuery(function() {
             zIndex: '2'
           });
           if (pausedStatus == true) {
-            localStorage.setItem('paused', 'ww_chg_11');
+            localStorage.setItem('paused', 'mw_chg_11');
             endNow();
           } else {
-            ww_chg_11();
+            mw_chg_11();
           } 
         }
     }, 1000);
@@ -568,10 +568,10 @@ jQuery(function() {
             zIndex: '2'
           });
           if (pausedStatus == true) {
-            localStorage.setItem('paused', 'ww_chg_10_1');
+            localStorage.setItem('paused', 'mw_chg_10_1');
             endNow();
           } else {
-            ww_chg_10_1();
+            mw_chg_10_1();
           } 
         }
     }, 1000);
@@ -799,10 +799,10 @@ jQuery(function() {
             zIndex: '2'
           });
           if (pausedStatus == true) {
-            localStorage.setItem('paused', 'ww_chg_9_1');
+            localStorage.setItem('paused', 'mw_chg_9_1');
             endNow();
           } else {
-            ww_chg_9_1();
+            mw_chg_9_1();
           } 
         }
     }, 1000);
