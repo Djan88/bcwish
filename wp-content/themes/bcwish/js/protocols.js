@@ -2728,16 +2728,16 @@ jQuery(function() {
         jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
         protocol = localStorage.getItem('cur_protocol');
         console.log(protocol);
-        if (protocol == 'un') {
+        if (protocol == 'un_chg') {
           un();
           jQuery('.wizard_heading').text('Протокол "Инверсный"').removeClass('hidden');
-        } else if (protocol == 'mw') {
+        } else if (protocol == 'mw_chg') {
           mw();
           jQuery('.wizard_heading').text('Протокол "Классический"').removeClass('hidden');
-        } else if (protocol == 'ww') {
+        } else if (protocol == 'ww_chg') {
           ww();
           jQuery('.wizard_heading').text('Протокол "Женский"').removeClass('hidden');
-        } else if (protocol == 'mm') {
+        } else if (protocol == 'mm_chg') {
           mm();
           jQuery('.wizard_heading').text('Протокол "Мужской"').removeClass('hidden');
         }
