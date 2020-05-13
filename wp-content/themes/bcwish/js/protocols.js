@@ -2031,10 +2031,10 @@ jQuery(function() {
             zIndex: '2'
           });
           if (pausedStatus == true) {
-            localStorage.setItem('paused', 'un_chg_3');
+            localStorage.setItem('paused', 'un_chg_6');
             endNow();
           } else {
-            un_chg_3();
+            un_chg_6();
 
           } 
         }
