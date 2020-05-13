@@ -162,6 +162,2405 @@ jQuery(function() {
   });
 
 
+  mw_chg_10 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('95%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+// I
+    phaseOne = setInterval(function(){
+      if (count_animation <= 88){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_v1, .zone_s2, .zone_s4, .zone_v5, .zone_s5, .zone_s6, .zone_alt_v1, .zone_alt_s2, .zone_alt_s4, .zone_alt_v5, .zone_alt_s5, .zone_alt_s6').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'rotate(70deg) scale(1.5)',
+            background: 'url(/wp-content/themes/bcwish/img/triangle_fire.png) center center/88% no-repeat',
+            zIndex: '1000'
+        });
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v1, .zone_s2, .zone_s4, .zone_v5, .zone_s5, .zone_s6, .zone_alt_v1, .zone_alt_s2, .zone_alt_s4, .zone_alt_v5, .zone_alt_s5, .zone_alt_s6').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: 'green',
+            transform: 'scale(1)',
+            paddingTop: '1px',
+            zIndex: '3'
+        });
+// II
+        jQuery('.wizard_percent').text('0%');
+        phaseOne = setInterval(function(){
+          if (count_animation <= 88){
+            jQuery('.zone_v5, .zone_d2, .zone_d5, .zone_d6, .zone_s2_, .zone_alt_v5, .zone_alt_d2, .zone_alt_d5, .zone_alt_d6, .zone_alt_s2_').css({
+                color: 'transparent',
+                borderColor: 'transparent',
+                borderWidth: '1px',
+                paddingTop: '4px',
+                transform: 'rotate(20deg) scale(1.5)',
+                background: 'url(/wp-content/themes/bcwish/img/triangle_air.png) center center/88% no-repeat',
+                zIndex: '1000'
+            });
+            count_animation += 1;
+          } else {
+            clearInterval(phaseOne);
+            count_animation = 1;
+            jQuery('.zone_v5, .zone_d2, .zone_d5, .zone_d6, .zone_s2_, .zone_alt_v5, .zone_alt_d2, .zone_alt_d5, .zone_alt_d6, .zone_alt_s2_').css({
+                background: '#fff',
+                color: '#413e66',
+                borderColor: 'green',
+                transform: 'scale(1)',
+                paddingTop: '1px',
+                zIndex: '3'
+            });
+// III
+            jQuery('.wizard_percent').text('0%');
+            phaseOne = setInterval(function(){
+              if (count_animation <= 88){
+                jQuery('.zone_s3, .zone_v4, .zone_alt_s3, .zone_alt_v4').css({
+                    color: 'transparent',
+                    borderColor: 'transparent',
+                    borderWidth: '1px',
+                    paddingTop: '4px',
+                    transform: 'rotate(50deg) scale(1.5)',
+                    background: 'url(/wp-content/themes/bcwish/img/triangle_water.png) center center/88% no-repeat',
+                    zIndex: '1000'
+                });
+                count_animation += 1;
+              } else {
+                clearInterval(phaseOne);
+                count_animation = 1;
+                jQuery('.zone_s3, .zone_v4, .zone_alt_s3, .zone_alt_v4').css({
+                    background: '#fff',
+                    color: '#413e66',
+                    borderColor: 'green',
+                    transform: 'scale(1)',
+                    paddingTop: '1px',
+                    zIndex: '3'
+                });
+// IV
+                jQuery('.wizard_percent').text('0%');
+                phaseOne = setInterval(function(){
+                  if (count_animation <= 88){
+                    jQuery('.zone_d4, .zone_d3, .zone_d2_, .zone_v2, .zone_v3, .zone_alt_d4, .zone_alt_d3, .zone_alt_d2_, .zone_alt_v2, .zone_alt_v3').css({
+                        color: 'transparent',
+                        borderColor: 'transparent',
+                        borderWidth: '1px',
+                        paddingTop: '4px',
+                        transform: 'rotate(100deg) scale(1.5)',
+                        background: 'url(/wp-content/themes/bcwish/img/triangle_earth.png) center center/88% no-repeat',
+                        zIndex: '1000'
+                    });
+                    count_animation += 1;
+                  } else {
+                    clearInterval(phaseOne);
+                    count_animation = 1;
+                    jQuery('.zone_d4, .zone_d3, .zone_d2_, .zone_v2, .zone_v3, .zone_alt_d4, .zone_alt_d3, .zone_alt_d2_, .zone_alt_v2, .zone_alt_v3').css({
+                        background: '#fff',
+                        color: '#413e66',
+                        borderColor: 'green',
+                        transform: 'scale(1)',
+                        paddingTop: '1px',
+                        zIndex: '3'
+                    });
+                    onEnd();
+                  }
+                }, 250);
+              }
+            }, 250);
+          }
+        }, 250);
+      }
+    }, 250);
+  }
+
+  mw_chg_10_4 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('90%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'ww_chg_11');
+            endNow();
+          } else {
+            ww_chg_11();
+          } 
+        }
+    }, 1000);
+  }
+
+  mw_chg_10_3 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('85%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'mw_chg_10_4');
+            endNow();
+          } else {
+            mw_chg_10_4();
+          } 
+        }
+    }, 1000);
+  } 
+
+  mw_chg_10_2 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('80%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'mw_chg_10_3');
+            endNow();
+          } else {
+            mw_chg_10_3();
+          } 
+        }
+    }, 1000);
+  } 
+
+  mw_chg_10_1 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('75%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v4, .zone_v5, .zone_alt_v2, .zone_alt_v3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'mw_chg_10_2');
+            endNow();
+          } else {
+            mw_chg_10_2();
+            // console.log('continue');
+          } 
+        }
+    }, 1000);
+  }
+
+  mw_chg_9_4 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('70%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'ww_chg_10_1');
+            endNow();
+          } else {
+            ww_chg_10_1();
+          } 
+        }
+    }, 1000);
+  }
+
+  mw_chg_9_3 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('65%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'mw_chg_9_4');
+            endNow();
+          } else {
+            mw_chg_9_4();
+          } 
+        }
+    }, 1000);
+  } 
+
+  mw_chg_9_2 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('60%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'mw_chg_9_3');
+            endNow();
+          } else {
+            mw_chg_9_3();
+          } 
+        }
+    }, 1000);
+  } 
+
+  mw_chg_9_1 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('55%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v2, .zone_v3, .zone_alt_v4, .zone_alt_v5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'mw_chg_9_2');
+            endNow();
+          } else {
+            mw_chg_9_2();
+            // console.log('continue');
+          } 
+        }
+    }, 1000);
+  }
+
+  mw_chg_8_4 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('50%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'ww_chg_9_1');
+            endNow();
+          } else {
+            ww_chg_9_1();
+          } 
+        }
+    }, 1000);
+  }
+
+  mw_chg_8_3 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('45%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'mw_chg_8_4');
+            endNow();
+          } else {
+            mw_chg_8_4();
+          } 
+        }
+    }, 1000);
+  } 
+
+  mw_chg_8_2 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('40%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'mw_chg_8_3');
+            endNow();
+          } else {
+            mw_chg_8_3();
+          } 
+        }
+    }, 1000);
+  } 
+
+  mw_chg_8_1 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('35%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_d2, .zone_d3, .zone_d4, .zone_d5, .zone_d6, .zone_alt_s2, .zone_alt_s3, .zone_alt_s4, .zone_alt_s5, .zone_alt_s6').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'mw_chg_8_2');
+            endNow();
+          } else {
+            mw_chg_8_2();
+            // console.log('continue');
+          } 
+        }
+    }, 1000);
+  }
+
+  mw_chg_7 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('30%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('z.zone_d2, .zone_s3, .zone_s4, .zone_alt_v3').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('z.zone_d2, .zone_s3, .zone_s4, .zone_alt_v3').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('z.zone_d2, .zone_s3, .zone_s4, .zone_alt_v3').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('z.zone_d2, .zone_s3, .zone_s4, .zone_alt_v3').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('z.zone_d2, .zone_s3, .zone_s4, .zone_alt_v3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'mw_chg_8_1');
+          endNow()
+        } else {
+          mw_chg_8_1();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  mw_chg_6 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('25%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('zone_v3, .zone_v4, .zone_alt_v3, .zone_alt_v4').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('zone_v3, .zone_v4, .zone_alt_v3, .zone_alt_v4').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('zone_v3, .zone_v4, .zone_alt_v3, .zone_alt_v4').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('zone_v3, .zone_v4, .zone_alt_v3, .zone_alt_v4').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('zone_v3, .zone_v4, .zone_alt_v3, .zone_alt_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'mw_chg_7');
+          endNow()
+        } else {
+          mw_chg_7();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  mw_chg_5 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('20%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_v2, .zone_v5, .zone_alt_v2, .zone_alt_v5').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_v2, .zone_v5, .zone_alt_v2, .zone_alt_v5').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_v2, .zone_v5, .zone_alt_v2, .zone_alt_v5').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_v2, .zone_v5, .zone_alt_v2, .zone_alt_v5').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v2, .zone_v5, .zone_alt_v2, .zone_alt_v5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'mw_chg_6');
+          endNow()
+        } else {
+          mw_chg_6();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  mw_chg_4 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('15%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_d2_, .zone_s2_, .zone_alt_d2_, .zone_alt_s2_').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_d2_, .zone_s2_, .zone_alt_d2_, .zone_alt_s2_').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_d2_, .zone_s2_, .zone_alt_d2_, .zone_alt_s2_').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_d2_, .zone_s2_, .zone_alt_d2_, .zone_alt_s2_').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_d2_, .zone_s2_, .zone_alt_d2_, .zone_alt_s2_').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'mw_chg_5');
+          endNow()
+        } else {
+          mw_chg_5();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  mw_chg_3 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('10%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_d2, .zone_d3, .zone_alt_s2, .zone_alt_s3').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_d2, .zone_d3, .zone_alt_s2, .zone_alt_s3').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_d2, .zone_d3, .zone_alt_s2, .zone_alt_s3').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_d2, .zone_d3, .zone_alt_s2, .zone_alt_s3').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_d2, .zone_d3, .zone_alt_s2, .zone_alt_s3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'mw_chg_4');
+          endNow()
+        } else {
+          mw_chg_4();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  mw_chg_2 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('5%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_d6, .zone_alt_s6').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_d6, .zone_alt_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_d6, .zone_alt_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_d6, .zone_alt_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_d6, .zone_alt_s6').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'mw_chg_3');
+          endNow()
+        } else {
+          mw_chg_3();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  mw_chg = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Классический"');
+    jQuery('.wizard_percent').text('0%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_d4, .zone_d5, .zone_alt_s4, .zone_alt_s5').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_d4, .zone_d5, .zone_alt_s4, .zone_alt_s5').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_d4, .zone_d5, .zone_alt_s4, .zone_alt_s5').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_d4, .zone_d5, .zone_alt_s4, .zone_alt_s5').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_d4, .zone_d5, .zone_alt_s4, .zone_alt_s5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'mw_chg_2');
+          endNow()
+        } else {
+          mw_chg_2();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+
+  ww_chg_12 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('92%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+// I
+    phaseOne = setInterval(function(){
+      if (count_animation <= 88){
+        jQuery('.zone_s3, .zone_v4, .zone_alt_s3, .zone_alt_v4').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'rotate(50deg) scale(1.5)',
+            background: 'url(/wp-content/themes/bcwish/img/triangle_water.png) center center/88% no-repeat',
+            zIndex: '1000'
+        });
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_s3, .zone_v4, .zone_alt_s3, .zone_alt_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: 'green',
+            transform: 'scale(1)',
+            paddingTop: '1px',
+            zIndex: '3'
+        });
+        onEnd();
+      }
+    }, 250);
+  }
+
+  ww_chg_11_4 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('83%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'ww_chg_12');
+            endNow();
+          } else {
+            ww_chg_12();
+          } 
+        }
+    }, 1000);
+  }
+
+  ww_chg_11_3 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('77%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'ww_chg_11_4');
+            endNow();
+          } else {
+            ww_chg_11_4();
+          } 
+        }
+    }, 1000);
+  } 
+
+  ww_chg_11_2 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('72%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'ww_chg_11_3');
+            endNow();
+          } else {
+            ww_chg_11_3();
+          } 
+        }
+    }, 1000);
+  } 
+
+  ww_chg_11_1 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('66%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'rotate(0deg) scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v3, .zone_v4, .zone_alt_v4, .zone_alt_v3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'ww_chg_11_2');
+            endNow();
+          } else {
+            ww_chg_11_2();
+            // console.log('continue');
+          } 
+        }
+    }, 1000);
+  }
+
+  ww_chg_10 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('60%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_v1, .zone_v5, .zone_v-, .zone_alt_v1, .zone_alt_v5, .zone_alt_v-').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_v1, .zone_v5, .zone_v-, .zone_alt_v1, .zone_alt_v5, .zone_alt_v-').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_v1, .zone_v5, .zone_v-, .zone_alt_v1, .zone_alt_v5, .zone_alt_v-').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_v1, .zone_v5, .zone_v-, .zone_alt_v1, .zone_alt_v5, .zone_alt_v-').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v1, .zone_v5, .zone_v-, .zone_alt_v1, .zone_alt_v5, .zone_alt_v-').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'ww_chg_11_1');
+          endNow()
+        } else {
+          ww_chg_11_1();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  ww_chg_9 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('53%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_d3, .zone_alt_d4').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_d3, .zone_alt_d4').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_d3, .zone_alt_d4').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_d3, .zone_alt_d4').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_d3, .zone_alt_d4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'ww_chg_10');
+          endNow()
+        } else {
+          ww_chg_10();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  ww_chg_8 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('47%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_d5, .zone_d6, .zone_alt_d2_').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_d5, .zone_d6, .zone_alt_d2_').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_d5, .zone_d6, .zone_alt_d2_').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_d5, .zone_d6, .zone_alt_d2_').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_d5, .zone_d6, .zone_alt_d2_').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'ww_chg_9');
+          endNow()
+        } else {
+          ww_chg_9();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  ww_chg_7 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('40%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_s6, .zone_alt_s3').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_s6, .zone_alt_s3').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_s6, .zone_alt_s3').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_s6, .zone_alt_s3').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_s6, .zone_alt_s3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'ww_chg_8');
+          endNow()
+        } else {
+          ww_chg_8();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  ww_chg_6 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('34%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_s5, .zone_alt_s3').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_s5, .zone_alt_s3').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_s5, .zone_alt_s3').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_s5, .zone_alt_s3').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_s5, .zone_alt_s3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'ww_chg_7');
+          endNow()
+        } else {
+          ww_chg_7();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  ww_chg_5 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('26%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_s6, .zone_alt_s4').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_s6, .zone_alt_s4').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_s6, .zone_alt_s4').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_s6, .zone_alt_s4').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_s6, .zone_alt_s4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'ww_chg_6');
+          endNow()
+        } else {
+          ww_chg_6();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  ww_chg_4 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('19%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_s5, .zone_alt_s4').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_s5, .zone_alt_s4').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_s5, .zone_alt_s4').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_s5, .zone_alt_s4').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_s5, .zone_alt_s4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'ww_chg_5');
+          endNow()
+        } else {
+          ww_chg_5();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  ww_chg_3 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('13%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_v2, .zone_alt_v2').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_v2, .zone_alt_v2').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_v2, .zone_alt_v2').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_v2, .zone_alt_v2').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v2, .zone_alt_v2').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'ww_chg_4');
+          endNow()
+        } else {
+          ww_chg_4();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  ww_chg_2 = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('6%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_v2, .zone_alt_v2').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_v2, .zone_alt_v2').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_v2, .zone_alt_v2').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_v2, .zone_alt_v2').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v2, .zone_alt_v2').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'ww_chg_3');
+          endNow()
+        } else {
+          ww_chg_3();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  ww_chg = function() {
+    jQuery('.wizard_heading').text('Выполняется протокол "Женский"');
+    jQuery('.wizard_percent').text('0%');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_v4, .zone_alt_v4').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 0 && count_animation <= 120) {
+          jQuery('.zone_v4, .zone_alt_v4').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+        } else if (count_animation > 120 && count_animation <= 220) {
+          jQuery('.zone_v4, .zone_alt_v4').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
+        } else if (count_animation > 220 && count_animation <= 240) {
+          jQuery('.zone_v4, .zone_alt_v4').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+        } else if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v4, .zone_alt_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(0deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'ww_chg_2');
+          endNow()
+        } else {
+          ww_chg_2();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
 
 
   mm_chg_10 = function(){
