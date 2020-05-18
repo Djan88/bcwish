@@ -139,10 +139,10 @@
   ============================-->
   <div class="container">
     <div class="row wizard_operation">
-      <div class="col-sm-6 col-md-6 wizard_templates hidden wow fadeInLeft" id="template">
+      <div class="col-sm-6 col-md-6 wizard_templates wow fadeInLeft" id="template">
         <img src="<?php bloginfo('template_url'); ?>/img/mw.png" alt="" class="wizard_template wizard_template_1">
         <div class="ring draggable" id="ring">
-          <div class="zone zone_ring hidden"></div>
+          <div class="zone zone_ring"></div>
         </div>
         <!-- <div class="zone zone_movable zone_v0 draggable">V0</div> -->
         <div class="zone zone_movable zone_v1 draggable">V1</div>
