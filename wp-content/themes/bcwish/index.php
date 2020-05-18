@@ -139,7 +139,7 @@
   ============================-->
   <div class="container">
     <div class="row wizard_operation">
-      <div class="col-sm-6 col-md-6 wizard_templates wizard_templates_un wow fadeInLeft" id="template">
+      <div class="col-sm-6 col-md-6 wizard_templates wizard_templates_wm wow fadeInLeft" id="template">
         <img src="<?php bloginfo('template_url'); ?>/img/mw.png" alt="" class="wizard_template wizard_template_1">
         <div class="ring draggable" id="ring">
           <div class="zone zone_ring"></div>
