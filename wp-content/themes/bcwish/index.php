@@ -192,7 +192,7 @@
         <div class="zone zone_movable zone_hidden zone_hidden_3 hidden draggable"></div>
         <div class="zone zone_movable zone_hidden zone_hidden_4 hidden draggable"></div>
       </div>
-      <div class="col-sm-12 col-md-12 wizard_way hidden">
+      <div class="col-sm-12 col-md-12 wizard_way">
         <button class="btn btn-success wizard_play wizard_play_inline">START</button>
         
       </div>
