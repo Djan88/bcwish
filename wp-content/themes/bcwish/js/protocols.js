@@ -3703,7 +3703,7 @@ jQuery(function() {
     }, 250);
   }
 
-  un_2_2 = function() {
+  un_2_1 = function() {
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
     jQuery('.wizard_percent').text('26%');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
@@ -3770,72 +3770,15 @@ jQuery(function() {
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
         sound.stop();
         if (pausedStatus == true) {
-          localStorage.setItem('paused', 'un_2_3');
+          localStorage.setItem('paused', 'un_2_2');
           endNow()
         } else {
-          un_2_3();
+          un_2_2();
           // console.log('continue');
         } 
       }
     }, 250);
   }
-
-  un_2_1 = function(){
-    jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
-    jQuery('.wizard_percent').text('4%');
-    reloadTime = 0;
-    reloadTime1 = 0;
-    d12Val = 0;
-    rotateVal = 0;
-    jQuery('.ring').addClass('hidden');
-    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
-    cur_animation_val = 10;
-    count_animation = 1;
-    jQuery('.zone_v2, .zone_d3, .zone_d4, .zone_d2_, .zone_alt_v2,  .zone_alt_d3, .zone_alt_d4, .zone_alt_d2_').css({
-      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'rotate(0deg) scale(1.5)',
-      color: 'transparent',
-      borderColor: 'transparent',
-      opacity: 0.8,
-      borderWidth: '1px',
-      paddingTop: '4px',
-      zIndex: '1000'
-    });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v2, .zone_d3, .zone_d4, .zone_d2_, .zone_alt_v2,  .zone_alt_d3, .zone_alt_d4, .zone_alt_d2_',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v2, .zone_d3, .zone_d4, .zone_d2_, .zone_alt_v2,  .zone_alt_d3, .zone_alt_d4, .zone_alt_d2_',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v2, .zone_d3, .zone_d4, .zone_d2_, .zone_alt_v2,  .zone_alt_d3, .zone_alt_d4, .zone_alt_d2_',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    phaseSeven_one = setInterval(function(){
-        if (count_animation <= 40){
-          if (reloadTime == 0){                                                                       //1
-              sound.stop();
-              reloadSound.play();
-          };
-          reloadTime += 1;
-          count_animation += 1;
-        } else if(count_animation <= 57) {
-            count_animation += 1;
-        } else {
-          clearInterval(phaseSeven_one);
-          count_animation = 1;
-          jQuery('.zone_v2, .zone_d3, .zone_d4, .zone_d2_, .zone_alt_v2,  .zone_alt_d3, .zone_alt_d4, .zone_alt_d2_').css({
-            background: '#fff',
-            color: '#413e66',
-            borderColor: '#413e66',
-            transform: 'rotate(-'+0+'deg) scale(1)',
-            paddingTop: '2px',
-            zIndex: '2'
-          });
-          if (pausedStatus == true) {
-            localStorage.setItem('paused', 'un_2_2');
-            endNow();
-          } else {
-            un_2_2();
-            // console.log('continue');
-          } 
-        }
-    }, 1000);
-  }  
 
   un = function() {
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
