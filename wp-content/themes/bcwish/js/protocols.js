@@ -3632,7 +3632,7 @@ jQuery(function() {
   }
 
 
-  un_2_4 = function() {
+  un_2_3 = function() {
     jQuery('.wizard_heading').text('Выполняется протокол "Инверсный"');
     jQuery('.wizard_percent').text('54%');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)').removeClass('hidden');
@@ -3698,7 +3698,7 @@ jQuery(function() {
         jQuery('.ring').css('transform', 'rotate(0deg)');
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
         sound.stop();
-        
+        jQuery('.wizard_play').removeClass('hidden');
       }
     }, 250);
   }
@@ -3976,51 +3976,8 @@ jQuery(function() {
   }
 
   jQuery('.wizard_play, .wizard_starter_alt').on('click', function(event) {
-    checkPoints();
-    // if(pointsStatus == false){
-    //   swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото калибровочное кольцо и все зоны.", "info");
-    //   alert_altSound.play();
-    //   pointsStatus = true;
-    // } else {
-      if (pausedStatus == true) {
-        // jQuery('.wizard_returned').attr('src', localStorage.getItem('pausedPhoto'));
-        // console.log(localStorage.getItem('pausedPhoto'));
-        protocolfromMemory = eval(localStorage.getItem('paused'));
-        console.log(protocolfromMemory);
-        protocolfromMemory();
-        pausedStatus = false;
-        jQuery('.wizard_play, .wizard_starter_alt, .wizard_to_protDiag').addClass('hidden');
-        jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
-      } else {
-        pausedStatus = false;
-        jQuery('.wizard_play, .wizard_starter_alt').addClass('hidden');
-        jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
-        jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
-        protocol = localStorage.getItem('cur_protocol');
-        console.log(protocol);
-        if (protocol == 'un') {
-          un();
-          jQuery('.wizard_heading').text('Протокол "Инверсный"').removeClass('hidden');
-        } else if (protocol == 'mw') {
-          mw();
-          jQuery('.wizard_heading').text('Протокол "Классический"').removeClass('hidden');
-        } else if (protocol == 'ww') {
-          ww();
-          jQuery('.wizard_heading').text('Протокол "Женский"').removeClass('hidden');
-        } else if (protocol == 'mm') {
-          mm();
-          jQuery('.wizard_heading').text('Протокол "Мужской"').removeClass('hidden');
-        }
-      }
-      jQuery('#header').addClass('.header_transparent');
-      jQuery('.faq_item span').addClass('canRepeat');
-      jQuery('.wizard_to_protList').addClass('prot_in_progress');
-      jQuery('.ring').addClass('in_progress');
-      localStorage.removeItem('paused');
-      localStorage.removeItem('pausedPhoto');
-      localStorage.removeItem('pausedPhoto2');
-      jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
-    // }
+    un();
+    jQuery('.wizard_play').removeClass('hidden');
   });
 
 
